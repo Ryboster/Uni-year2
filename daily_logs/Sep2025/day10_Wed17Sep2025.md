@@ -4,23 +4,27 @@
 
 12am - Deployed the new `Agent` ([day 9](day9_Tue16Sep2025.md)). Immediately encountered an old error.
 
-
+12:30am - Realised I've already met all the requirements for my ticket. Informed Bogdan of the error and opened a PR. Will tackle this problem another time.
 
 1am - Thought of a strong opening to a song. Went songwriting.
 
 4am - Wrote a song. Composed a melody for it.
 
-5am -
+5am - Looked into stage presence for the upcoming music production.
 
-7:30pm - Moved all whiteboard images to my PC
+7:30pm - Moved all whiteboard images to my PC.
+
 7:50pm - Sketched up a quick tidy ERD of the new movement controller.
-8pm - Fixed my crontab (finally)
+
+8pm - Fixed my crontabs (finally). Now my daily logs are being made automatically and my whole GitHub portfolio is being updated once every 30 minutes.
 
 8:10pm - Carried on catching up with daily logs. It was a busy week working on SL and so prioritizing SL, I neglected my daily logs.
 
 9pm - Found a problem with the way MarkText interprets dragged-and-dropped images. Instead of the `markdown` syntax (`![alt text](src "name")`), it kept pasting it in `HTML` syntax (`<img src="path" ...>`).
 
 9:25pm - Found a solution to the problem. It's only converted to HTML if you resize the picture because markdown doesn't have an equivalent to `height` and `width` attributes of an `img` tag.
+
+10:20pm - Looked up how to link up other markdown documents on Github.
 
 <br>
 
@@ -32,7 +36,7 @@ Tried resolving this by:
 
 * Setting NPCs' `Rigidbody.CollisionDetection` to `Continuous Dynamic` and `Continuous Speculative`. Failed.
 
-*  Decreasing/Increasing their `Rigidbody.Mass`. Failed.
+* Decreasing/Increasing their `Rigidbody.Mass`. Failed.
 
 * Setting their `Rigidbody.Interpolate` to `Interpolate`. Failed.
 
@@ -43,6 +47,14 @@ Tried resolving this by:
 <br>
 
 # Next Steps
+
+Try:
+
+* Changing global physics settings
+
+* use a velocity-based approach (`Rigidbody.Velocity = Vector3()`) instead of `Rigidbody.MovePosition()`.
+
+* Increasing the scale of everything.
 
 <br>
 
@@ -56,6 +68,8 @@ Tried resolving this by:
 
 [How to stop falling through floors and colliders in Unity &#8211; John Stejskal : Software and Game Developer](https://johnstejskal.com/wp/how-to-stop-falling-through-floors-in-unity/)
 
+[GitHub relative link in Markdown file - Stack Overflow](https://stackoverflow.com/questions/7653483/github-relative-link-in-markdown-file)
 
+[Relative links in markup files - The GitHub Blog](https://github.blog/news-insights/product-news/relative-links-in-markup-files/)
 
 <br>
