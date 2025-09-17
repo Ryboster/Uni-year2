@@ -6,13 +6,11 @@
 
 1:30am - Made a quick ERD of the design
 
-<img src="file:///home/snek/Desktop/portfolio/Uni-year2/assets/newMovementControllerERD-1.jpg" title="" alt="newMovementControllerERD-1.jpg" width="285">
+![newMovementControllerERD-1.jpg](../assets/newMovementControllerERD-1.jpg)
 
-<img src="file:///home/snek/Desktop/portfolio/Uni-year2/assets/newMovementControllerERD-1.jpg" title="" alt="newMovementControllerERD-1.jpg" width="305">
+2 mistakes -
 
-* 2 mistakes -
-  
-  * **aggregation** (hollow rhombus) should've been **ownership** (filled rhombus).
+* * **aggregation** (hollow rhombus) should've been **ownership** (filled rhombus).
   
   * the aggregation arrow should be pointing the **other way**.
 
