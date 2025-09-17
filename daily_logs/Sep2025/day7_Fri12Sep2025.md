@@ -8,6 +8,8 @@
 
 <img src="file:///home/snek/Desktop/portfolio/Uni-year2/assets/newMovementControllerERD-1.jpg" title="" alt="newMovementControllerERD-1.jpg" width="285">
 
+<img src="file:///home/snek/Desktop/portfolio/Uni-year2/assets/newMovementControllerERD-1.jpg" title="" alt="newMovementControllerERD-1.jpg" width="305">
+
 * 2 mistakes -
   
   * **aggregation** (hollow rhombus) should've been **ownership** (filled rhombus).
