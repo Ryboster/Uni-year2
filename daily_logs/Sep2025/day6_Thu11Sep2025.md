@@ -2,8 +2,6 @@
 
 # Activities
 
-12pm - Woke up
-
 12:05pm - Got to work on redesigning the simulator used in training of `LocomotiveBrain` for my NPCs. The problem was that I tried removing the agents and map during training, which is not supported. Instead of that, I'm going to "reshuffle" the whole level.
 
 2pm - Done "reshuffling". Instead of throwing out the baby with the bathwater, now the simulator simply changes the positions of every entity in level when objective is reached. 
