@@ -20,8 +20,6 @@
 
 4:30pm - Contacted Creality about my 3D printer order. Apparently they delivered it to a random hotel???
 
-
-
 <br>
 
 # Issues/Errors

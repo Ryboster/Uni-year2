@@ -2,7 +2,7 @@
 
 # Activities
 
-3am - Downloaded Unity's AI Navigation package and researched NavMesh.
+3am - Discovered and downloaded Unity's AI Navigation package and researched NavMesh.
 
 6am - Added NavMesh to my randomized training environment.
 
@@ -12,7 +12,7 @@
 
 ![AppliedNavMeshCarvingToObstacles.png](../assets/AppliedNavMeshCarvingToObstacles.png)
 
-
+6:20am - Went ahead 
 
 <br>
 
