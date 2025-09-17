@@ -10,6 +10,8 @@
 
 6:15am - Applied NavMesh carving to obstacles.
 
+![AppliedNavMeshCarvingToObstacles.png](../assets/AppliedNavMeshCarvingToObstacles.png)
+
 
 
 <br>

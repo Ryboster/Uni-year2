@@ -12,7 +12,21 @@
 
 2am - Explored different ways of detection of that slope. Discussed it with Bogdan. 
 
-![newMovementControllerFlowChart2.jpg](/home/snek/Desktop/portfolio/Uni-year2/assets/newMovementControllerFlowChart2.jpg)
+![newMovementControllerFlowChart2.jpg](../assets/newMovementControllerFlowChart2.jpg)
+
+
+
+5am - Went ahead with 2-point precision and implemented it.
+
+![image.png](../assets/a3a9980d810f218041512e703bd5e8434d994fc4.png)<img title="" src="../assets/9e2fa03da3bd03cebaac78a67357dbecaaf092fa.png" alt="image1.png" data-align="left">
+
+
+
+6am - Extrapolated the difference between center and forward with 4 test different test cases and devised a simple conversion formula to convert the difference in distance to angle.
+
+![20250915_051440.jpg](../assets/a14fffa51f4a4e6c38d51f1ad421fa77aa3ab255.jpg)
+
+
 
 
 
