@@ -8,9 +8,9 @@
 
 ![newMovementControllerERD-1.jpg](../assets/newMovementControllerERD-1.jpg)
 
-2 mistakes -
-
-* * **aggregation** (hollow rhombus) should've been **ownership** (filled rhombus).
+* 2 mistakes:
+  
+  * **aggregation** (hollow rhombus) should've been **ownership** (filled rhombus).
   
   * the aggregation arrow should be pointing the **other way**.
 
