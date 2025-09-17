@@ -32,6 +32,8 @@
 
 # Issues/Errors
 
+The navigational problem here is that I need to provide my `Agent`s with observations that will prevent them from stepping on unfavorable terrain - Like very steep slopes. This requires them to (in some way) **observe** the environment around them - like humans would with their eyes. This is tricky because the only efficient way of doing that that i know of would be raycasting (and thus iterating) over 360 x 180 (64800) points for a single full hemispherical observation. This is incredibly resource expensive. 
+
 <br>
 
 # Next Steps
@@ -39,5 +41,7 @@
 <br>
 
 ## Resources
+
+[ML-Agents Overview | ML Agents | 3.0.0](https://docs.unity3d.com/Packages/com.unity.ml-agents%403.0/manual/index.html)
 
 <br>
