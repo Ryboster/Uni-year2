@@ -1,0 +1,23 @@
+**Date: Wed 17 Sep 2025**<br>
+# Activities
+<br>
+
+# Issues/Errors
+<br>
+
+# Next Steps
+<br>
+
+## Resources
+<br>
+# Activities
+<br>
+
+# Issues/Errors
+<br>
+
+# Next Steps
+<br>
+
+## Resources
+<br>
