@@ -12,10 +12,6 @@
 
 ![AppliedNavMeshCarvingToObstacles.png](../assets/AppliedNavMeshCarvingToObstacles.png)
 
-
-
-
-
 6:20pm - Went ahead and tried giving my `Agent`s the newly made `UniversalMovementController`. Encountered Issues. Discussed it with Bogdan.
 
 7pm - Went songwriting.
@@ -24,7 +20,47 @@
 
 ![newMovementControllerERD-FINAL.jpg](../assets/newMovementControllerERD-FINAL.jpg)
 
-* The solution involved redesigning the `Driver` to be a `MonoBehaviour`, and instead of connecting with the provider via serialization, doing it via ordinary aggregation. 
+* The solution involved redesigning the `Driver` to be a `MonoBehaviour`, and instead of connecting with the provider via serialization, doing it via ordinary aggregation with `GetComponent<>()`.
+
+11pm - Implemented the changes. With this I was finally able to apply the new `UniversalMovementController` to our `Agent`s.
+
+11:30pm - Modified the `HumanoidNPCMovementDriver` class (previously `LocomotiveBrain`) to prioritize using `NavMesh`es and penalized ignoring it. Also rewarded speed higher than `baseSpeed`.
+
+```csharp
+// Decide how to move
+public override void OnActionReceived(ActionBuffers actions)
+    {
+        float moveX = actions.ContinuousActions[0];
+        float moveZ = actions.ContinuousActions[1];
+        Vector3 movementDirection = new Vector3(moveX, 0f, moveZ);
+        Vector3 targetPosition = _rb.position + movementDirection * controller.baseSpeed;
+
+        if (!NavMesh.SamplePosition(targetPosition, out NavMeshHit hit, 0.5f, NavMesh.AllAreas))
+        {
+            AddReward(-0.2f);            
+        }
+        controller.movementDirection = movementDirection;
+
+        RewardUsingNavMesh();
+        RewardSpeed();
+        RewardDistance();
+        PenalizeTime();
+    }
+```
+
+11:50pm - Improved observations. Added `isOnMesh` flag. Added observation of speed. Removed the `Agent`'s own position and target's position in favour of distance to the target.
+
+```csharp
+// Collect information about the environment
+    public override void CollectObservations(VectorSensor sensor)
+    {
+        sensor.AddObservation(isOnMesh);
+        sensor.AddObservation(_rb.linearVelocity.magnitude);
+        sensor.AddObservation(Vector3.Distance(transform.localPosition, target.transform.localPosition));
+        sensor.AddObservation(reachedGoal);
+        sensor.AddObservation(lastTimeStamp);
+    }
+```
 
 <br>
 
@@ -41,9 +77,6 @@ In case of the `HardwareDriver: ScriptableObject`, there was no issue with this 
 In case of the `LocomotiveBrain` however, it is a `Agent`, which is **non-serializable**. As such, the `AIDriver` is unable to reach it.
 
 ![newMovementControllerERD-designIssue.jpg](../assets/newMovementControllerERD-designIssue.jpg)
-
-
-
 
 <br>
 
