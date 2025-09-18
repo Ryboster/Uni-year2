@@ -22,7 +22,11 @@
 
 
 
-9am - Attended RDMS session with 
+9am - Attended RDMS session with Charles.
+
+
+
+
 
 
 
