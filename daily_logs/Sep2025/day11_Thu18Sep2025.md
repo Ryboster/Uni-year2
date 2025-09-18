@@ -26,7 +26,9 @@
 
 10-11am - Learned about data normalization.
 
-11am - Attended User Centered Design with Dan.
+11am - Attended User Centered Design with Sam Tweedlie.
+
+
 
 
 
