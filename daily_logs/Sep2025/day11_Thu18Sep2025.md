@@ -16,6 +16,8 @@
 
 6am - Got to work on my "Lucid Dreamer" presentation.
 
+7:30am - Quick break.
+
 <br>
 
 # Issues/Errors
