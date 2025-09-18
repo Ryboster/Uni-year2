@@ -24,6 +24,10 @@
 
 9am - Attended RDMS session with Charles.
 
+10-11am - Learned about data normalization.
+
+11am - Attended User Centered Design with Dan 
+
 
 
 
