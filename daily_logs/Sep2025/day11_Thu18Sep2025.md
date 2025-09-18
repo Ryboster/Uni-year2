@@ -10,13 +10,21 @@
 
 4am - Wrote a new song.
 
-
-
-
-
 6am - Got to work on my "Lucid Dreamer" presentation.
 
 7:30am - Quick break.
+
+7:40am - Back.
+
+8:20am - Finished presentation.
+
+8:30am - Uploaded and timed the presentation. It is almost exactly 5 minutes long.
+
+
+
+9am - Attended RDMS session with 
+
+
 
 <br>
 
