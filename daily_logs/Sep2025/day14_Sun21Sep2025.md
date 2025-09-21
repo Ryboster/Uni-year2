@@ -14,9 +14,7 @@
 
 ![Screenshot from 2025-09-21 15-14-37.png](../assets/29430245180b197ac1b12d7bb0701c496aaaf22b.png)
 
-
-
-
+4:40pm - Started implementing the new database schema.
 
 <br>
 
