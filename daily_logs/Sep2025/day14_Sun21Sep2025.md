@@ -16,13 +16,31 @@
 
 4:40pm - Started implementing the new database schema.
 
+9:50pm - Managed to implement most of it but fell short of full rework. Will finish tomorrow.
+
 <br>
 
 # Issues/Errors
 
-<br>
+9:50pm - My code is incredibly spaghetti. Database structure was baked into the actual HTML and javascript. I allieviated this issue a little bit by extracting and processing the data in the backend and wrapping the output in a scalable boilerplate dictionary object that is then passed to the frontend. Now frontend doesn't really care about what's going on in the actual database as long as it gets a dictionary object with the keys `Date`, `Description`, and so on.
+
+Another thing that also helped a lot here is storing atomic data rather than 
+
+
 
 # Next Steps
+
+* Finish database rework.
+
+* Plan extensions for websites (additional endpoints).
+
+* Consider publishing website.
+
+* Open PR for ticket in SL.
+
+* Spend some time on IBM learning.
+
+* Write reflection on database upgrade.
 
 <br>
 
