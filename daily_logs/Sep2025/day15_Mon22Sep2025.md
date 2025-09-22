@@ -22,6 +22,18 @@
 
 9:50am - Started working on adding activity and category edit forms.
 
+
+
+12pm - Quick break. Did some basic research on face moisturizers and emolients. Planned the next four 3d prints.
+
+
+
+4:50pm - Resolved many outsdanding bugs with the code. Added category and activity edit forms. Streamlined usage and population of forms. Added more entry points to the edit forms (On add entry and in new `categories` view.)
+
+
+
+5:20pm - Sleepy time.
+
 <br>
 
 # Issues/Errors
