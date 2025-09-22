@@ -22,9 +22,11 @@
 
 # Issues/Errors
 
-9:50pm - My code is incredibly spaghetti. Database structure was baked into the actual HTML and javascript. I allieviated this issue a little bit by extracting and processing the data in the backend and wrapping the output in a scalable boilerplate dictionary object that is then passed to the frontend. Now frontend doesn't really care about what's going on in the actual database as long as it gets a dictionary object with the keys `Date`, `Description`, and so on.
+9:50pm - My code is incredibly spaghetti. Database structure was baked into the actual HTML and javascript. I allieviated this issue a little bit by extracting and processing the data in the backend and wrapping the output in a scalable boilerplate dictionary object that is then passed to the frontend. Now frontend doesn't really care about what's going on in the database as long as it gets a dictionary object with the keys `Date`, `Description`, and so on.
 
-Another thing that also helped a lot here is storing atomic data rather than 
+Another thing that also helped a lot here is storing atomic data rather than collections of data. Thanks to that the amount of necessary pre-processing (and resulting confusion) dwindled as I was able to preprocess everything in much more repeatable steps. This had the added benefit of debloating code.
+
+
 
 
 
