@@ -26,10 +26,6 @@
 
 Another thing that also helped a lot here is storing atomic data rather than collections of data. Thanks to that the amount of necessary pre-processing (and resulting confusion) dwindled as I was able to preprocess everything in much more repeatable steps. This had the added benefit of debloating code.
 
-
-
-
-
 # Next Steps
 
 * Finish database rework.

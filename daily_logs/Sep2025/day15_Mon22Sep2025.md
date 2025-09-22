@@ -22,15 +22,15 @@
 
 9:50am - Started working on adding activity and category edit forms.
 
-
-
 12pm - Quick break. Did some basic research on face moisturizers and emolients. Planned the next four 3d prints.
-
-
 
 4:50pm - Resolved many outsdanding bugs with the code. Added category and activity edit forms. Streamlined usage and population of forms. Added more entry points to the edit forms (On add entry and in new `categories` view.)
 
+5:20pm - Added a new log.
 
+5:40pm - Added more categories and activities and tidied the whole thing a bit.
+
+5:50pm - Made some quick changes to CSS to make it look a bit better. Mainly just increased the size of the mood on each entry.
 
 6pm - Sleepy time.
 
@@ -41,6 +41,22 @@
 <br>
 
 # Next Steps
+
+- Plan extensions for websites (additional endpoints).
+
+- Consider publishing website.
+
+- Open PR for ticket in SL.
+
+- Catch up with updates on https://scatteredlands.com/
+
+- Spend some time on IBM learning.
+
+- Write reflection on database upgrade.
+
+- Make a model of a bathroom organizer and speaker mount (+ potentiometer knob).
+
+- Find models of a curtain clamp and some sunglasses organizer.
 
 <br>
 
