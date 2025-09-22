@@ -14,6 +14,10 @@
 
 7:25am - Fixed the whole CRUD.
 
+7:40am - Tidied up the code all around.
+
+8am - Got to work on a quick script for repopulation
+
 
 
 <br>
