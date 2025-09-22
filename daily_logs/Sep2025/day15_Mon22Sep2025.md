@@ -20,6 +20,8 @@
 
 9:25am - Successfully repopulated the whole database. No data was lost.
 
+9:50am - Started working on adding activity and category edit forms.
+
 <br>
 
 # Issues/Errors
