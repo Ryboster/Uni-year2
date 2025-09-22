@@ -18,7 +18,7 @@
 
 8am - Got to work on a quick script for repopulation
 
-
+9:25am - Successfully repopulated the whole database. No data was lost.
 
 <br>
 
