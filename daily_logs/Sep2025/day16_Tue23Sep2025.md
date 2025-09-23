@@ -41,11 +41,11 @@
 
 10:35am - Got to work on a database creation endpoint.
 
-
-
 11:40am - Created a new endpoint for creating new logs.
 
 11:45am - Left to library to print out patient registration forms.
+
+12:20pm - Back. Got to work on extending the CRUD with additional methods.
 
 
 
