@@ -7,8 +7,6 @@
 6:30am - Thought of new endpoints. Came up with the idea to make a couple different templates for logs (e.g. a timeline, a journal, and a journal of tables) and give
  the user the ability to create as many new logs as they want for whatever purpose they need em. This will make the site a lot more modular, users will get a lot more utility out of it, and I won't have to work on manually adding new endpoints whenever I think of logging a new thing.
 
-7am - Quick break.
-
 7:50am - Designed new endpoint templates.
 
 ![](../assets/2025-09-23-07-57-50-image.png)
@@ -20,6 +18,8 @@
 ![](../assets/2025-09-23-08-18-50-image.png)
 
 8:20am - Food.
+
+9am - Eaten. Back to 
 
 
 
