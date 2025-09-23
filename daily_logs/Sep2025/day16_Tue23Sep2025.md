@@ -51,7 +51,7 @@
 
 
 
-
+8pm - Worked out the exact issue. Designed a much more modular approach. Implemented most of the design. Ran first successful operation on the modular design.
 
 # Issues/Errors
 
