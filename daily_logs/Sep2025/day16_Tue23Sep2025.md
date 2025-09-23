@@ -37,7 +37,11 @@
 
 10:20am - Wrote my sqlite3 creators for each database (see in #Resources).
 
-10:30am - 
+10:30am - Experienced a slight drop in efficiency. Logged it for future analysis. Might mean I'll have to change task soon.
+
+10:35am - Got to work on a database creation endpoint.
+
+
 
 
 
