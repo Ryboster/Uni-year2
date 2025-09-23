@@ -13,9 +13,13 @@
 
 ![](../assets/2025-09-23-07-57-50-image.png)
 
-8am - Got to work on planning out the database schema for each template
+8am - Got to work on planning out the database schema for each template.
 
-.
+8:20am - Done designing.
+
+![](../assets/2025-09-23-08-18-50-image.png)
+
+8:20am - Food.
 
 
 
