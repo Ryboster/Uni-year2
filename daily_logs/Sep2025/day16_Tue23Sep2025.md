@@ -45,7 +45,9 @@
 
 11:45am - Left to library to print out patient registration forms.
 
-12:20pm - Back. Got to work on extending the CRUD with additional methods.
+12:20pm - Pretty sure I got scammed on that 3D printer. Disputed transaction with bank.
+
+1pm - Done disputing. Back to work on extending the CRUD with additional methods.
 
 
 
