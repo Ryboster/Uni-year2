@@ -19,7 +19,23 @@
 
 8:20am - Food.
 
-9am - Eaten. Back to 
+9am - Eaten. Something still isn't right with this design.
+
+9:10am - I'm going to need another table for cataloguing other tables. Something like "All_Logs".
+
+9:50am - Using this hypothetical table i made a quick flowchart to see how it would work and to outline what this table is going to need. From it, I deduced it's going to need a name, and a template.
+
+![](../assets/2025-09-23-09-51-03-image.png)
+
+9:55am - Got to work on designing the table.
+
+10am - Done.
+
+![](../assets/2025-09-23-09-58-53-image.png)
+
+10am - Got to work on developing the endpoints.
+
+
 
 
 
