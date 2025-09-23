@@ -43,6 +43,10 @@
 
 
 
+11:40am - Created a new endpoint for creating new logs.
+
+11:45am - Left to library to print out patient registration forms.
+
 
 
 # Issues/Errors
