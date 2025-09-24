@@ -47,7 +47,9 @@ class CRUD():
 
 8:45am - Ok. Collapsibles are essentially just buttons with invisible children with an `onclick` function that reveals the children. Easy as.
 
+9:05am - Added the collapsibles. It works toots sweet. Don't really know what to do next. I'm quite proud and excited about what i've just done; I just made this website a lot more useful. Instead of it being just a single log you can now add and manage as many of them as you want - sky's the limit. I guess next up I'm gonna tidy up the whole interface, tidy up the code a little bit, and then get to work on introducing more templates so it's even more useful.
 
+![](../assets/2025-09-24-09-07-02-image.png)![](../assets/2025-09-24-09-07-11-image.png)
 
 
 
