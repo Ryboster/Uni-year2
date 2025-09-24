@@ -43,6 +43,10 @@ class CRUD():
 
 7:30am - Breakfast break.
 
+8:30am - Back to researching collapsibles and figuring out how they work.
+
+
+
 
 
 
