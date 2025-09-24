@@ -15,7 +15,7 @@ class Registry_Reader(CRUD):
     def __init__(self):
         super().__init__()
         self.CONTEXT_REGISTRY = {}
-        
+
     def ReadRegistry(self):
         registry = self.Read_DB(self.REGISTRY_DB_FILENAME, "All_Logs")        
         for record in registry:
@@ -51,7 +51,9 @@ class CRUD():
 
 ![](../assets/2025-09-24-09-07-02-image.png)![](../assets/2025-09-24-09-07-11-image.png)
 
+9:20am - Made a quick list of things that need to be changed before i can move on to adding more templates:
 
+![](../assets/2025-09-24-09-37-31-image.png)
 
 
 
@@ -76,9 +78,6 @@ class CRUD():
 [Element: children property - Web APIs | MDN](https://developer.mozilla.org/en-US/docs/Web/API/Element/children)
 
 [list-style-type - CSS | MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/list-style-type)
-
-
-
 
 <br>
 
@@ -110,7 +109,7 @@ class CRUD():
         <div id="filler" class="filler"> 
         </div>
     </div>
-    
+
     {% block body_postcontent %}
     {% endblock body_postcontent %}
 </body>
