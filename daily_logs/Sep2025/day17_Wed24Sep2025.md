@@ -55,6 +55,26 @@ class CRUD():
 
 ![](../assets/2025-09-24-09-37-31-image.png)
 
+10am - Tidied up code a little bit. Moved the database creation queries off to a separate class called `DatabaseCreationQueries`, and inherited from that class in my `CRUD`.
+
+10:10am - Added endpoints for editing and removing moods to `urls.py` (Django).
+
+10:30am - Added forms for editing and removing moods to my `diaries.html` and `diaries.css` documents.
+
+12pm - Started reworking the `Add Mood` button. Instead of displaying a form to add a mood, it is going to be the access point for all operations done on moods. 
+
+12:30pm - Finished reworking the view.
+
+![](../assets/2025-09-24-13-04-48-image.png)
+
+1pm - Added the `remove` and `add` mood functionalities.
+
+1:20pm - Resolved a bug with duplicate elements in the view.
+
+![](../assets/2025-09-24-13-11-53-image.png)
+
+
+
 
 
 # Issues/Errors
