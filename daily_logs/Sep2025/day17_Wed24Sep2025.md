@@ -45,6 +45,8 @@ class CRUD():
 
 8:30am - Back to researching collapsibles and figuring out how they work.
 
+8:45am - Ok. Collapsibles are essentially just buttons with invisible children with an `onclick` function that reveals the children. Easy as.
+
 
 
 
@@ -68,6 +70,10 @@ class CRUD():
 [JavaScript Array push() Method](https://www.w3schools.com/jsref/jsref_push.asp)
 
 [How To Create a Collapsible](https://www.w3schools.com/howto/howto_js_collapsible.asp)
+
+[Element: children property - Web APIs | MDN](https://developer.mozilla.org/en-US/docs/Web/API/Element/children)
+
+[list-style-type - CSS | MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/list-style-type)
 
 
 
