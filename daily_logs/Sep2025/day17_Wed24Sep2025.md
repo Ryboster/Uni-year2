@@ -73,6 +73,14 @@ class CRUD():
 
 ![](../assets/2025-09-24-13-11-53-image.png)
 
+2pm - Created, added and implemented the `edit` form for moods.
+
+2:05pm - Out of creative juices. break.
+
+
+
+
+
 
 
 
