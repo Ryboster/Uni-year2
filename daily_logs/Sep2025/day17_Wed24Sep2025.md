@@ -18,4 +18,8 @@
 
 ## Resources
 
+[Django extends Tag](https://www.w3schools.com/django/django_tags_extends.php)
+
+
+
 <br>
