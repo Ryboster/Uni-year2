@@ -77,9 +77,7 @@ class CRUD():
 
 2:05pm - Out of creative juices. break.
 
-
-
-
+5pm - 3D printer finally arrived.
 
 
 
