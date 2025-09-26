@@ -8,6 +8,8 @@
 
 
 
+11am - Researched my nemesis (https://play.google.com/store/apps/dev?id=5602142920564923111)
+
 <br>
 
 # Issues/Errors
