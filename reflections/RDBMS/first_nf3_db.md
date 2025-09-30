@@ -8,7 +8,7 @@ On 21st of September 2025, I have created my first-ever 3NF database schema.
 
 I got back to working on an application that I had begun and abandoned about a year ago. The application is an electronic journal where the user can submit entries and track their activity and progress over time.
 
-When I had returned to the application, the biggest problem I identified was the database. It was not normalized 
+When I had returned to the application, the biggest problem I identified was the database. It was an unnormalized form (UNF). It had one field that was not atomic - "Activities". It had duplicates, most notably the "Mood" field, which was an independent field in 2 separate tables (unconstrained by relationship). The "Activities" table could hold duplicate records. 
 
 
 
