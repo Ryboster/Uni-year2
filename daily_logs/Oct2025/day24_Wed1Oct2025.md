@@ -18,4 +18,6 @@
 
 ## Resources
 
-<br>
+```
+https://www.datacamp.com/tutorial/second-normal-form
+```
