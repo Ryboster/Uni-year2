@@ -16,15 +16,13 @@ When I had returned to the application, the biggest problem I identified was the
 
 * There was no database-enforced relationships between related tables and their fields, e.g. The "Mood" field of the "Entries" table had no association with the "Mood" field from the "Moods" table at the database level. This relationship only existed at the application level, which lead to some undesirable behaviours such as  having to edit both values manually. What a headache!
 
-
+* 
 
 Since the management system was split between the database level and the application level, it was incredibly difficult to work on the application because it was unclear what change would result in what. Additionally, it also resulted in questionable and inconsistent management, and ultimately patchy, hard to maintain and unreadable code.
 
-The lack of relationships also added 
+The lack of relationships also lead to undesired data being stored. The "Entries" table should be unable to hold a "Mood" value that doesn't exist in the "Moods" table. However, since the two fields weren't related, such a case was allowed. This lead to 
 
-
-
- in the expected data. The "Entries" table should be unable to hold a "Mood" value that doesn't exist in the "Moods" table. However, since there was no such relationship, such a case was allowed until the right application-level script was triggered and the record was removed.
+However, since there was no such relationship, such a case was allowed until the right application-level script was triggered and the record was removed.
 
 
 
