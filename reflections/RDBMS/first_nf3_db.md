@@ -18,19 +18,25 @@ When I had returned to the application, the biggest problem I identified was the
 
 * 
 
-Since the management system was split between the database level and the application level, it was incredibly difficult to work on the application because it was unclear what change would result in what. Additionally, it also resulted in questionable and inconsistent management, and ultimately patchy, hard to maintain and unreadable code.
+Since the management system was split between the database level and the application level, it was incredibly difficult to trace what responsibilities were taken care of and where. It also necessitated a compensation at the application level where code had to do something that the RDBMS should be doing, often doing it less effectively and efficiently.
 
-The lack of relationships also lead to undesired data being stored. The "Entries" table should be unable to hold a "Mood" value that doesn't exist in the "Moods" table. However, since the two fields weren't related, such a case was allowed. This lead to 
-
-However, since there was no such relationship, such a case was allowed until the right application-level script was triggered and the record was removed.
-
-
+The lack of relationships also lead to undesired data being stored. The "Entries" table should be unable to hold a "Mood" value that doesn't exist in the "Moods" table. However, since the two fields weren't related, such a case was allowed, and "Mood" values had to be updated manually.
 
 
 
 ### So what?
 
-'So What?' allows you to extract the meaning of 'What?'. Moreover, you should question what knowledge you and others had in the situation, and what knowledge or theories that could help you make sense of the situation.
+This year we're learning about proper ways to manage relational databases, and recently I've learned about normalization up to the third normalized form (3NF). 
+
+The sole goal of normalization is to reduce data redundancies and increase data integrity. This is done by strategically planning out the database structure with the aforementioned intents. This often leads to a larger number of smaller tables, each with a very fine-tuned responsibility. A stark contrast to what I had believed databases looked like.
+
+Having read and understood the benefits of database normalization, I returned to my application with the goal of reworking that database. I have since accomplished the goal
+
+
+
+
+
+
 
 ### Now what?
 
