@@ -20,7 +20,13 @@ When I had returned to the application, the biggest problem I identified was the
 
 Since the management system was split between the database level and the application level, it was incredibly difficult to work on the application because it was unclear what change would result in what. Additionally, it also resulted in questionable and inconsistent management, and ultimately patchy, hard to maintain and unreadable code.
 
-The lack of relationships also added some inconsistencies in the expected data. The "Entries" table should be unable to hold a "Mood" value that doesn't exist in the "Moods" table. However, since there was no such relationship, such a case was allowed until the right application-level script was triggered and the record was removed.
+The lack of relationships also added 
+
+
+
+ in the expected data. The "Entries" table should be unable to hold a "Mood" value that doesn't exist in the "Moods" table. However, since there was no such relationship, such a case was allowed until the right application-level script was triggered and the record was removed.
+
+
 
 
 
