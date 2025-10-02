@@ -26,7 +26,9 @@ When I had returned to the application, the biggest problem I identified was the
 
 Since the management system was split between the database level and the application level, it was incredibly difficult to trace what responsibilities were taken care of and where. It also necessitated a compensation at the application level where code had to do something that the RDBMS should be doing, often doing it less effectively and efficiently.
 
-The lack of relationships also lead to undesired data being stored. The "Entries" table should be unable to hold a "Mood" value that doesn't exist in the "Moods" table. However, since the two fields weren't related, such a case was allowed, and "Mood" values had to be updated manually.
+The lack of relationships also lead to undesired data being stored. The `Entries` table should be unable to hold a `Mood` value that doesn't exist in the `Moods` table. However, since the two fields weren't related, such a case was allowed, and `Mood` values had to be updated manually.
+
+
 
 ### So what?
 
@@ -40,9 +42,11 @@ Having read and understood the benefits of database normalization, I returned to
 
 ![](assets/2025-10-02-19-13-31-image.png)
 
-I have rid the `Entries` table of 2 fields; `Moods` and `Activities`, and I've moved that responsibility to join tables `Mood_Records` and `Activity_Records`. Those tables link each unique journal entry with its activities and moods while avoiding partial dependency.
+I have rid the `Entries` table of 2 fields; `Moods` and `Activities`, and I've moved that responsibility to join tables `Mood_Records` and `Activity_Records`. Those tables link each unique journal entry with its activities and moods while also enforcing atomicity for the activities. As is, the `Mood_Records` table is redundant as I could've just as well linked `Entries` and `Moods` tables directly with a foreign key, but I opted for the join table to make the design more symmetrical which helps with reading this schema in the future.
 
-I've added all the missing relationships.
+I have added 
+
+
 
 
 
