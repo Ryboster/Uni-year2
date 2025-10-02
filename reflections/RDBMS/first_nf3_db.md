@@ -10,11 +10,13 @@ I got back to working on an application that I had begun and abandoned about a y
 
 When I had returned to the application, the biggest problem I identified was the database. It was an unnormalized form (UNF), and it had many architectural problems.
 
-* It had one field that was not atomic - "Activities" field of "Entries" table. This field held multiple indivisable values.
+* It had one field that was not atomic - `Activities` field of `Entries` table. This field held multiple indivisable values.
 
-* The "Activities" table could hold duplicate records because it had no UNIQUE constraints or a primary key. It only had a foreign key associated with a primary key "Category" inside "Categories" table. It was a one-to-many relationship.
+* The `Activities` table could hold duplicate records because it had no UNIQUE constraints or a primary key. It only had a foreign key associated with a primary key `Category` inside `Categories` table. It was a one-to-many relationship.
 
-* There was no database-enforced relationships between related tables and their fields, e.g. The "Mood" field of the "Entries" table had no association with the "Mood" field from the "Moods" table at the database level. This relationship only existed at the application level, which lead to some undesirable behaviours such as  having to edit both values manually. What a headache!
+* There was no database-enforced relationships between related tables and their fields, e.g. The `Mood` field of the `Entries` table had no association with the `Mood` field from the `Moods` table at the database level. This relationship only existed at the application level, which lead to some undesirable behaviours such as  having to edit both values manually. What a headache!
+
+* 
 
 
 
@@ -38,7 +40,9 @@ Having read and understood the benefits of database normalization, I returned to
 
 ![](assets/2025-10-02-19-13-31-image.png)
 
-I have rid the `Entries` table of 2 fields; `Moods` and `Activities`, and I've moved that responsibility to join tables `Mood_Records` and `Activity_Records`. Those tables link each unique journal entry with its activities and moods while avoiding partial dependency 
+I have rid the `Entries` table of 2 fields; `Moods` and `Activities`, and I've moved that responsibility to join tables `Mood_Records` and `Activity_Records`. Those tables link each unique journal entry with its activities and moods while avoiding partial dependency.
+
+I've added all the missing relationships.
 
 
 
