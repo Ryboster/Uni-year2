@@ -34,6 +34,8 @@ Relational databases define two concepts called Entities and Attributes. An enti
 
 An unnormalized form is the crudest type of database. No rules are applied here.
 
+This form focuses more on "sketching out" the database schema. At this step you would normally identify your entities and degrees of relationships.
+
 #### First Normal Form (1NF)
 
 The first normal form enforces atomicity of fields. In this form, every field must be **atomic**, i.e. indivisable.
@@ -44,12 +46,12 @@ An atomic field is a field that holds a **single indivisable** value. **Single**
 
 The second normal form eliminates **partial dependencies**. 
 
-A partial dependency occurs when an attribute is dependent on only a part of a composite key instead of the whole key. For example:
+A partial dependency occurs when a non-key attribute is dependent on only a part of a composite key instead of the whole key. For example:
 
  <table>
   <tr>
-     <th><b>Order ID</b></th>
-     <th>Product ID</th>
+     <th>Order ID:PK</th>
+     <th>Product ID:FK</th>
      <th>Product Name</th>
      <th>Quantity</th>
   </tr>
@@ -65,8 +67,8 @@ In here, **Product Name** attribute is only *really* dependent on **Product ID**
 
 <table>
 <tr>
-<th>Order ID</th>
-<th>Product ID</th>
+<th>Order ID:PK</th>
+<th>Product ID:FK</th>
 <th>Quantity</th>
 </tr>
 <tr>
@@ -78,7 +80,7 @@ In here, **Product Name** attribute is only *really* dependent on **Product ID**
 
 <table>
 <tr>
-    <th>Product ID</th>
+    <th>Product ID:PK</th>
     <th>Product Name</th>
 <tr>
     <td>403</td>
@@ -87,11 +89,50 @@ In here, **Product Name** attribute is only *really* dependent on **Product ID**
 
 Now **Product Name** is only dependent on **Product ID**, and only that is required to retrieve it.
 
-
-
 #### Third Normal Form (3NF)
 
-The third normal form eliminates **transitive dependencies**
+The third normal form eliminates **transitive dependencies.**
+
+A transitive dependency occurs when a non-key attribute is dependent on another non-key attribute. If B depends on A, and C depends on B, then C commits transitive dependency because it also depends on A. For example, the following table has a transitive dependency:
+
+<table>
+<tr>
+<th>Entry ID:PK</th>
+<th>Date</th>
+<th>Day Of Week</th>
+</tr>
+<tr>
+<td>0</td>
+<td>3/10/2025</td>
+<td>Friday</td>
+</tr>
+</table>
+
+Here, **Date**, which is a non-key attribute, depends on **Entry ID**, and **Day Of Week**, which is also a non-key attribute, depends on **Date**. Now to resolve this to 3NF:
+
+<table>
+<tr>
+<th>Entry ID:PK</th>
+<th>Date:FK</th>
+</tr>
+<tr>
+<td>0</td>
+<td>3/10/2025</td>
+</tr>
+</table>
+
+<table>
+<tr>
+<th>Date:PK</th>
+<th>Day Of Week</th>
+</tr>
+<tr>
+<td>3/10/2025</td>
+<td>Friday</td>
+</tr>
+</table>
+
+
 
 
 
@@ -120,3 +161,5 @@ https://medium.com/@ethan.duong1120/8-critical-concepts-in-relational-database-8
 [Identifying Entities and Attributes - InterBase](https://docwiki.embarcadero.com/InterBase/2020/en/Identifying_Entities_and_Attributes)
 
 https://www.ibm.com/docs/en/eamfoc/7.6.0?topic=structure-database-relationships
+
+[Third Normal Form (3NF) - GeeksforGeeks](https://www.geeksforgeeks.org/dbms/third-normal-form-3nf/)
