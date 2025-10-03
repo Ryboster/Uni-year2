@@ -10,7 +10,7 @@
 
 Database normalization is the process of structuring relational databases in a way that reduces data redundancies and increases data integrity by reducing anomalies. It is accomplished by adhering to so-called normal forms that are sets of progressively strict rules constraining the database.
 
-A relational database is an abstract idea of tables wherein columns (fields) and rows (records) are related in some way to columns and rows of other tables. There are three types of relationships in relational databases. Those are:
+A relational database is an abstract idea of tables (entities) wherein columns (fields/attributes) and rows (records) are related in some way to columns and rows of other tables. There are three types of relationships in relational databases. Those are:
 
 1. One-to-many Relationship: Here, one record from table A can be associated with multiple records in table B.
 
@@ -26,8 +26,6 @@ A relational database management system (RDBMS) is software that provides tools 
 
 * enforcement of relational concepts such as **primary keys and foreign keys.**
 
-Relational databases define two concepts called Entities and Attributes. An entity is a category of the thing or person you're trying to describe; for example an employee. An attribute is what you can use to describe that object with; for example, every employee has an ID and salary.
-
 ### Normal forms
 
 #### Unnormalized Form (UNF)
@@ -36,15 +34,15 @@ An unnormalized form does not meet any normalization criteria defined by further
 
 An example database at this point in time may look like this:
 
-| Employee ID:PK | Name              | Salary |
-| -------------- | ----------------- | ------ |
-| 0              | Charles McCrimmon | $1     |
+| Employees | Employee ID:PK | Name              | Salary |
+| --------- | -------------- | ----------------- | ------ |
+|           | 0              | Charles McCrimmon | $1     |
 
+| Wages | Employee ID:FK | Hours Worked | Pay this week |
+| ----- | -------------- | ------------ | ------------- |
+|       | 0              | 60           | $0.028        |
 
-
-| Employee ID:FK | Hours Worked | Pay this week |
-| -------------- | ------------ | ------------- |
-| 0              | 60           | $0.028        |
+This table defines the entities (Employees and Wages), degrees of relationship (1:1), and unique identifiers (Employee ID), but doesn't yet comply with 1NF because the **Name** attribute is not atomic.
 
 
 
