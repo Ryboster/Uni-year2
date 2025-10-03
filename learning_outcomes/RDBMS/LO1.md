@@ -43,3 +43,7 @@ A relational database is an abstract idea of tables wherein columns and rows are
 https://cloud.google.com/learn/what-is-a-relational-database
 
 https://medium.com/@ethan.duong1120/8-critical-concepts-in-relational-database-80c74aa15e9c
+
+
+
+[Partial Dependency in DBMS - GeeksforGeeks](https://www.geeksforgeeks.org/dbms/partial-dependency-in-dbms/)
