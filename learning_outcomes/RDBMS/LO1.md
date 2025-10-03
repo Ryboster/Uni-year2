@@ -32,15 +32,46 @@ Relational databases define two concepts called Entities and Attributes. An enti
 
 #### Unnormalized Form (UNF)
 
-An unnormalized form is the crudest type of database. No rules are applied here.
+An unnormalized form does not meet any normalization criteria defined by further forms. It is usually the first step in building a database, before normalization. At this point in time you will have identified entities (tables), defined degrees of relationship (1:1/1:M/M:M), and devised main unique identifiers (primary and composite keys).
 
-This form focuses more on "sketching out" the database schema. At this step you would normally identify your entities and degrees of relationships.
+An example database at this point in time may look like this:
+
+| Employee ID:PK | Name              | Salary |
+| -------------- | ----------------- | ------ |
+| 0              | Charles McCrimmon | $1     |
+
+
+
+| Employee ID:FK | Hours Worked | Pay this week |
+| -------------- | ------------ | ------------- |
+| 0              | 60           | $0.028        |
+
+
 
 #### First Normal Form (1NF)
 
 The first normal form enforces atomicity of fields. In this form, every field must be **atomic**, i.e. indivisable.
 
-An atomic field is a field that holds a **single indivisable** value. **Single** means that it cannot be a collection of values such as a dictionary. **Indivisable** means that the value cannot be logically divided any further; it constitutes a single whole value.
+An atomic field is a field that holds a **single indivisable** value. **Single** means that it cannot be a collection of values such as a list. **Indivisable** means that the value cannot be logically divided any further; it constitutes a single whole value.
+
+For example, the following table is NOT atomic:
+
+<table>
+<tr>
+<th>Employee ID:PK</th>
+<th>Name</th>
+</tr>
+<tr>
+<td>0</td>
+<td>Charles McCrimmon</td>
+</tr>
+</table>
+
+Here, the first name and surname are combined into a single field - **Name**. To enforce atomicity in this table, we need to splite them:
+
+| Employee ID:PK | Name    | Surname   |
+| -------------- | ------- | --------- |
+| 0              | Charles | McCrimmon |
 
 #### Second Normal Form (2NF)
 
@@ -82,9 +113,11 @@ In here, **Product Name** attribute is only *really* dependent on **Product ID**
 <tr>
     <th>Product ID:PK</th>
     <th>Product Name</th>
+    <th>Origin</th>
 <tr>
     <td>403</td>
     <td>Fruit</td>
+    <td>Eden</td>
 </table>
 
 Now **Product Name** is only dependent on **Product ID**, and only that is required to retrieve it.
