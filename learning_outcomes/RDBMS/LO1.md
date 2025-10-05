@@ -42,9 +42,7 @@ An example database at this point in time may look like this:
 | ----- | -------------- | ------------ | ------------- |
 |       | 0              | 60           | $0.028        |
 
-This table defines the entities (Employees and Wages), degrees of relationship (1:1), and unique identifiers (Employee ID), but doesn't yet comply with 1NF because the **Name** attribute is not atomic.
-
-
+This database defines the entities (Employees and Wages), degrees of relationship (1:1), and unique identifiers (Employee ID), but doesn't yet comply with 1NF because the **Name** attribute is not atomic.
 
 #### First Normal Form (1NF)
 
@@ -65,7 +63,7 @@ For example, the following table is NOT atomic:
 </tr>
 </table>
 
-Here, the first name and surname are combined into a single field - **Name**. To enforce atomicity in this table, we need to splite them:
+Here, the first name and surname are combined into a single field - **Name**. To enforce atomicity in this table, we need to split them:
 
 | Employee ID:PK | Name    | Surname   |
 | -------------- | ------- | --------- |
@@ -77,7 +75,7 @@ The second normal form eliminates **partial dependencies**.
 
 A partial dependency occurs when a non-key attribute is dependent on only a part of a composite key instead of the whole key. For example:
 
- <table>
+<table>
   <tr>
      <th>Order ID:PK</th>
      <th>Product ID:FK</th>
@@ -90,7 +88,7 @@ A partial dependency occurs when a non-key attribute is dependent on only a part
      <td>Fruit</td>
      <td>1</td>
   </tr>
-</table> 
+</table>
 
 In here, **Product Name** attribute is only *really* dependent on **Product ID**, but you need both **Order ID** and **Product ID** to access it. This is a **partial dependency.** To now make this table compliant with 2NF, we need to eliminate it:
 
@@ -162,10 +160,6 @@ Here, **Date**, which is a non-key attribute, depends on **Entry ID**, and **Day
 <td>Friday</td>
 </tr>
 </table>
-
-
-
-
 
 ### Personal Experience
 
