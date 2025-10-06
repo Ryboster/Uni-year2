@@ -18,7 +18,31 @@ A relational database is an abstract idea of tables (entities) wherein columns (
 
 3. One-to-one Relationship: Here, only one record from table A can be associated with a single record in table B.
 
-Those relationships are usually enforced by utilization of a concept called unique identifiers (UIDs). Those are fields wherein every value is unique, i.e. does not repeat in the same field in the same entity. Every entity should have at least one UID. 
+A relational database management system (RDBMS) is software that provides tools necessary for creation and management of such tables, and for interaction with their data. An example here could be the `sqlite3` python library. It provides:
+
+- tools to **create, read, update, and delete** (CRUD) data,
+
+- a query language (SQL),
+
+- enforcement of relational concepts such as **primary keys and foreign keys.
+
+
+
+### Identifying Entities
+
+The first task in creating every database, completed during entity relationship modeling (ER Modeling), is identifying entities.
+
+At this stage, entity is not yet a table, it is instead an object with attributes, either real life or abstract object that you're trying to express/represent using a table. an example here could be employees, cars, sales ... Pretty much anything.
+
+
+
+
+
+Those relationships are usually enforced by utilization of a concept called unique identifiers (UIDs).  Those are single fields or collections of fields that 
+
+
+
+Those are fields wherein every value is unique, i.e. does not repeat in the same field in the same entity. Every entity should have at least one UID. 
 
 The primary function of a UID is identification of records which is instrumental in precise targetting of the record during CRUD operations.
 
@@ -26,13 +50,7 @@ There are
 
 
 
-A relational database management system (RDBMS) is software that provides tools necessary for creation and management of such tables, and for interaction with their data. An example here could be the `sqlite3` python library. It provides:
-
-* tools to **create, read, update, and delete** (CRUD) data,
-
-* a query language (SQL),
-
-* enforcement of relational concepts such as **primary keys and foreign keys.**
+**
 
 ### Normal forms
 
@@ -200,3 +218,5 @@ https://www.ibm.com/docs/en/eamfoc/7.6.0?topic=structure-database-relationships
 [Third Normal Form (3NF) - GeeksforGeeks](https://www.geeksforgeeks.org/dbms/third-normal-form-3nf/)
 
 https://wit-hdip-computer-science.github.io/semester-1-databases/topic04/talk-3/UIDs.pdf
+
+[Data Preparation: Unique Identifiers &ndash; DataRails](https://support.datarails.com/hc/en-us/articles/11047617937181-Data-Preparation-Unique-Identifiers)
