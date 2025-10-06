@@ -14,8 +14,6 @@
 
 3am - Checked for database leaks in previous commits - No leaks.
 
-
-
 5am - Got to work on a new project of mine - quickReader
 
 5:05am - Got an error. Started resolving.
@@ -24,8 +22,19 @@
 
 ![](../assets/2025-10-06-05-45-45-image.png)
 
-<br>
 
+
+
+
+6pm - Found and printed a set of funnels.
+
+6:30pm - Got to work on my QuickEbookReader project.
+
+6:50pm - Researched destructors in python.
+
+
+
+<br>
 
 # Issues/Errors
 
@@ -44,3 +53,5 @@
 [Getting Started &mdash; RPLCD 1.3.0 documentation](https://rplcd.readthedocs.io/en/stable/getting_started.html)
 
 [Introduction to Python Raspberry Pi (RPiGPIO) Library - GeeksforGeeks](https://www.geeksforgeeks.org/python/introduction-to-python-raspberry-pi-rpigpio-library/)
+
+[Destructors in Python - GeeksforGeeks](https://www.geeksforgeeks.org/python/destructors-in-python/)
