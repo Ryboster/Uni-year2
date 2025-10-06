@@ -10,13 +10,21 @@
 
 Database normalization is the process of structuring relational databases in a way that reduces data redundancies and increases data integrity by reducing anomalies. It is accomplished by adhering to so-called normal forms that are sets of progressively strict rules constraining the database.
 
-A relational database is an abstract idea of tables (entities) wherein columns (fields/attributes) and rows (records) are related in some way to columns and rows of other tables. There are three types of relationships in relational databases. Those are:
+A relational database is an abstract idea of tables (entities) wherein columns (fields/attributes) and rows (records) are related in some way to columns and rows of other tables. There are three degrees of relationships in relational databases. Those are:
 
 1. One-to-many Relationship: Here, one record from table A can be associated with multiple records in table B.
 
 2. Many-to-many Relationship: Here, multiple records from table A can be associated with multiple records in table B.
 
 3. One-to-one Relationship: Here, only one record from table A can be associated with a single record in table B.
+
+Those relationships are usually enforced by utilization of a concept called unique identifiers (UIDs). Those are fields wherein every value is unique, i.e. does not repeat in the same field in the same entity. Every entity should have at least one UID. 
+
+The primary function of a UID is identification of records which is instrumental in precise targetting of the record during CRUD operations.
+
+There are 
+
+
 
 A relational database management system (RDBMS) is software that provides tools necessary for creation and management of such tables, and for interaction with their data. An example here could be the `sqlite3` python library. It provides:
 
@@ -165,6 +173,8 @@ Here, **Date**, which is a non-key attribute, depends on **Entry ID**, and **Day
 
 ----------------------------------------------
 
+
+
 [link to LO]
 
 ### References
@@ -188,3 +198,5 @@ https://medium.com/@ethan.duong1120/8-critical-concepts-in-relational-database-8
 https://www.ibm.com/docs/en/eamfoc/7.6.0?topic=structure-database-relationships
 
 [Third Normal Form (3NF) - GeeksforGeeks](https://www.geeksforgeeks.org/dbms/third-normal-form-3nf/)
+
+https://wit-hdip-computer-science.github.io/semester-1-databases/topic04/talk-3/UIDs.pdf

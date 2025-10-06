@@ -38,6 +38,10 @@
 
 9:20pm - Researched identification vs admiration in psychology.
 
+10:40pm - Got to work on RDBMS LO 1.
+
+
+
 
 
 
