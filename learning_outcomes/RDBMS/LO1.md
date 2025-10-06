@@ -32,13 +32,21 @@ A relational database management system (RDBMS) is software that provides tools 
 
 The first task in creating every database, completed during entity relationship modeling (ER Modeling), is identifying entities.
 
-At this stage, entity is not yet a table, it is instead an object with attributes, either real life or abstract object that you're trying to express/represent using a table. an example here could be employees, cars, sales ... Pretty much anything.
+At this stage, entity is not yet a table, it is instead an object with attributes, either real life or abstract object that you're trying to express/represent using a table. an example here could be employees, cars, sales ... Pretty much anything as long as there is more than one, and as long as it has some attributes.
 
 
 
+An important thing about entities is that every entity should always have a unique identifier (UID). UIDs are single fields or collections of fields that uniquely identify the entity. There are many different types of UIDs, such as:
 
+* Atomic UID: A **single** attribute that alone uniquely identifies a record. It cannot be broken into smaller parts; it is the smallest possible logical part, e.g. `UserID`
 
-Those relationships are usually enforced by utilization of a concept called unique identifiers (UIDs).  Those are single fields or collections of fields that 
+* Composite UID: A collection of attributes that together uniquely identify a record, e.g. `(Order, Customer)`.
+
+* Recursive UID: 
+
+* Mandatory and optional UIDs
+
+* 
 
 
 
@@ -220,3 +228,5 @@ https://www.ibm.com/docs/en/eamfoc/7.6.0?topic=structure-database-relationships
 https://wit-hdip-computer-science.github.io/semester-1-databases/topic04/talk-3/UIDs.pdf
 
 [Data Preparation: Unique Identifiers &ndash; DataRails](https://support.datarails.com/hc/en-us/articles/11047617937181-Data-Preparation-Unique-Identifiers)
+
+[Recursive Relationships in ER diagrams - GeeksforGeeks](https://www.geeksforgeeks.org/dbms/recursive-relationships-in-er-diagrams/)
