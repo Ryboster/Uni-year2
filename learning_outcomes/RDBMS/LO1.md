@@ -36,7 +36,7 @@ At this stage, entity is not yet a table, it is instead an object with attribute
 
 
 
-An important thing about entities is that every entity should always have a unique identifier (UID). UIDs are single fields or collections of fields that uniquely identify the entity. There are many different types of UIDs, such as:
+An important thing about entities is that every entity should always have a unique identifier (UID). UIDs are single fields or collections of fields that uniquely identify records inside the entity. There are two main types of UIDs, those are:
 
 * Atomic UID: A **single** attribute that alone uniquely identifies a record. It cannot be broken into smaller parts; it is the smallest possible logical part, e.g. `UserID`
 
