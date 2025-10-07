@@ -26,43 +26,25 @@ A relational database management system (RDBMS) is software that provides tools 
 
 - enforcement of relational concepts such as **primary keys and foreign keys.
 
-
-
 ### Identifying Entities
 
 The first task in creating every database, completed during entity relationship modeling (ER Modeling), is identifying entities.
 
-At this stage, entity is not yet a table, it is instead an object with attributes, either real life or abstract object that you're trying to express/represent using a table. an example here could be employees, cars, sales ... Pretty much anything as long as there is more than one, and as long as it has some attributes.
-
-
+At this stage, entity is not yet a table, it is instead, an object with attributes, either real-life or abstract object that you're trying to express/represent using a table. an example here could be employees, cars, sales ... Pretty much anything as long as there is more than one, and as long as it has some attributes.
 
 An important thing about entities is that every entity should always have a unique identifier (UID). UIDs are single fields or collections of fields that uniquely identify records inside the entity. There are two main types of UIDs, those are:
 
-* Atomic UID: A **single** attribute that alone uniquely identifies a record. It cannot be broken into smaller parts; it is the smallest possible logical part, e.g. `UserID`
+* Atomic UID: A **single** attribute that alone uniquely identifies a record. It cannot be broken into smaller parts; it is the smallest possible logical part, e.g. `UserID`. Those then go on to become **primary and foreign** keys.
 
-* Composite UID: A collection of attributes that together uniquely identify a record, e.g. `(Order, Customer)`.
+* Composite UID: A collection of attributes that together uniquely identify a record, e.g. `(Order, Customer)`. This type of UID is later referenced as a **composite key**.
 
-* Recursive UID: 
+Those UIDs have one thing in common. They both reference exclusively other entities. A type of a UID that references the same entity is called **recursive**. A good example of a recursive UID is a manager. A manager is an employee who references (in this case manages) other employees.
 
-* Mandatory and optional UIDs
-
-* 
-
-
-
-Those are fields wherein every value is unique, i.e. does not repeat in the same field in the same entity. Every entity should have at least one UID. 
-
-The primary function of a UID is identification of records which is instrumental in precise targetting of the record during CRUD operations.
-
-There are 
-
-
-
-**
+In addition to recursive, a UID can also be **mandatory** or **optional**. If a UID is **mandatory**, it means that the reference must occur or the record is rejected. Conversely, in an **optional** UID, reference may occur, but doesn't have to. 
 
 ### Normal forms
 
-#### Unnormalized Form (UNF)
+##### Unnormalized Form (UNF)
 
 An unnormalized form does not meet any normalization criteria defined by further forms. It is usually the first step in building a database, before normalization. At this point in time you will have identified entities (tables), defined degrees of relationship (1:1/1:M/M:M), and devised main unique identifiers (primary and composite keys).
 
@@ -78,7 +60,7 @@ An example database at this point in time may look like this:
 
 This database defines the entities (Employees and Wages), degrees of relationship (1:1), and unique identifiers (Employee ID), but doesn't yet comply with 1NF because the **Name** attribute is not atomic.
 
-#### First Normal Form (1NF)
+##### First Normal Form (1NF)
 
 The first normal form enforces atomicity of fields. In this form, every field must be **atomic**, i.e. indivisable.
 
@@ -103,7 +85,7 @@ Here, the first name and surname are combined into a single field - **Name**. To
 | -------------- | ------- | --------- |
 | 0              | Charles | McCrimmon |
 
-#### Second Normal Form (2NF)
+##### Second Normal Form (2NF)
 
 The second normal form eliminates **partial dependencies**. 
 
@@ -152,7 +134,7 @@ In here, **Product Name** attribute is only *really* dependent on **Product ID**
 
 Now **Product Name** is only dependent on **Product ID**, and only that is required to retrieve it.
 
-#### Third Normal Form (3NF)
+##### Third Normal Form (3NF)
 
 The third normal form eliminates **transitive dependencies.**
 
