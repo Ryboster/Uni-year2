@@ -22,27 +22,21 @@
 
 ![](../assets/2025-10-06-05-45-45-image.png)
 
-
-
 8am - Sleep.
 
-
-
-6pm - Found and printed a set of funnels.
+6pm - Found and 3D printed a set of funnels.
 
 6:30pm - Got to work on my QuickEbookReader project.
 
 6:50pm - Researched destructors in python.
+
+7:30pm - Quickly REsearched Regex.
 
 9pm - Finished writing the script. Added a README.md, and a short video showcasing it working. Released the project on github. [Release First Stable · Ryboster/QuickEbookReader · GitHub](https://github.com/Ryboster/QuickEbookReader/releases/tag/v1)
 
 9:20pm - Researched identification vs admiration in psychology.
 
 10:40pm - Got to work on RDBMS LO 1.
-
-
-
-
 
 
 

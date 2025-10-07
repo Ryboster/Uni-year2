@@ -6,7 +6,7 @@
 
 ----------------------------------------------
 
-#### Overview
+### Overview
 
 Database normalization is the process of structuring relational databases in a way that reduces data redundancies and increases data integrity by reducing anomalies. It is accomplished by adhering to so-called normal forms that are sets of progressively strict rules constraining the database.
 
@@ -28,7 +28,7 @@ A relational database management system (RDBMS) is software that provides tools 
 
 ### Identifying Entities
 
-The first task in creating every database, completed during entity relationship modeling (ER Modeling), is identifying entities.
+The first task in designing every database, completed during entity relationship modeling (ER Modeling), is identifying entities.
 
 At this stage, entity is not yet a table, it is instead, an object with attributes, either real-life or abstract object that you're trying to express/represent using a table. an example here could be employees, cars, sales ... Pretty much anything as long as there is more than one, and as long as it has some attributes.
 
@@ -44,9 +44,9 @@ In addition to recursive, a UID can also be **mandatory** or **optional**. If a 
 
 ### Normal forms
 
-##### Unnormalized Form (UNF)
+#### Unnormalized Form (UNF)
 
-An unnormalized form does not meet any normalization criteria defined by further forms. It is usually the first step in building a database, before normalization. At this point in time you will have identified entities (tables), defined degrees of relationship (1:1/1:M/M:M), and devised main unique identifiers (primary and composite keys).
+An unnormalized form does not meet any normalization criteria defined by further forms. It is usually the first step in building a database, before normalization. At this point in time you will have identified entities that are now tables, and defined degrees of relationship (1:1/1:M/M:M),
 
 An example database at this point in time may look like this:
 
@@ -60,7 +60,7 @@ An example database at this point in time may look like this:
 
 This database defines the entities (Employees and Wages), degrees of relationship (1:1), and unique identifiers (Employee ID), but doesn't yet comply with 1NF because the **Name** attribute is not atomic.
 
-##### First Normal Form (1NF)
+#### First Normal Form (1NF)
 
 The first normal form enforces atomicity of fields. In this form, every field must be **atomic**, i.e. indivisable.
 
@@ -85,7 +85,7 @@ Here, the first name and surname are combined into a single field - **Name**. To
 | -------------- | ------- | --------- |
 | 0              | Charles | McCrimmon |
 
-##### Second Normal Form (2NF)
+#### Second Normal Form (2NF)
 
 The second normal form eliminates **partial dependencies**. 
 
@@ -134,7 +134,7 @@ In here, **Product Name** attribute is only *really* dependent on **Product ID**
 
 Now **Product Name** is only dependent on **Product ID**, and only that is required to retrieve it.
 
-##### Third Normal Form (3NF)
+#### Third Normal Form (3NF)
 
 The third normal form eliminates **transitive dependencies.**
 
@@ -176,14 +176,6 @@ Here, **Date**, which is a non-key attribute, depends on **Entry ID**, and **Day
 <td>Friday</td>
 </tr>
 </table>
-
-### Personal Experience
-
-----------------------------------------------
-
-
-
-[link to LO]
 
 ### References
 
