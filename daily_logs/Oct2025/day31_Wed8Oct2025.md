@@ -30,4 +30,6 @@
 
 https://restfulapi.net/
 
+[Jinja Blocks](https://documentation.bloomreach.com/engagement/docs/jinjablocks)
+
 <br>
