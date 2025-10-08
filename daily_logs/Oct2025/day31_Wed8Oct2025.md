@@ -14,6 +14,10 @@
 
 4:15am - Researched RESTful API
 
+
+
+8:30am - Purchased another domain; https://blazejowski.co.uk/
+
 <br>
 
 # Issues/Errors
@@ -26,10 +30,8 @@
 
 ## Resources
 
-
-
 https://restfulapi.net/
 
 [Jinja Blocks](https://documentation.bloomreach.com/engagement/docs/jinjablocks)
 
-<br>
+[python - Passing variables from Flask to JavaScript - Stack Overflow](https://stackoverflow.com/questions/37259740/passing-variables-from-flask-to-javascript)
