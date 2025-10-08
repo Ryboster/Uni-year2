@@ -18,6 +18,10 @@
 
 8:30am - Purchased another domain; https://blazejowski.co.uk/
 
+
+
+2pm - Hosted.
+
 <br>
 
 # Issues/Errors
