@@ -18,6 +18,12 @@
 
 2pm - Hosted.
 
+
+
+11am - Got pictures for passport
+
+
+
 <br>
 
 # Issues/Errors
