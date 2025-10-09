@@ -14,11 +14,7 @@
 
 4:15am - Researched RESTful API
 
-
-
 8:30am - Purchased another domain; https://blazejowski.co.uk/
-
-
 
 2pm - Hosted.
 
@@ -29,6 +25,12 @@
 <br>
 
 # Next Steps
+
+* Research HTTP headers [Accept header - HTTP | MDN](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Accept)
+
+* learn what's HATEOAS and CDN
+
+* 
 
 <br>
 
