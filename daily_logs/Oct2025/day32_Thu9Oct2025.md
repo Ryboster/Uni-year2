@@ -10,6 +10,10 @@
 
 3:30am - The `Accept -` header is a header than can be used on either end of the exchange (client or host), which tells the other party what data types (expressed as MIME types) that party is equipped to handle. For example, 
 
+3:45am - Researched HATEOAS
+
+
+
 
 
 <br>
