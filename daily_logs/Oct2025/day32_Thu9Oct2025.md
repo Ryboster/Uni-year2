@@ -12,9 +12,17 @@
 
 3:45am - Researched HATEOAS
 
+4:30am - Added explicit methods to endpoints' functions,
 
+5am - Made sure every response includes a status code,
 
+5:30am - 
 
+1pm - Wrote a reflection on this project.
+
+1:15pm - Published the reflection on LinkedIn.
+
+1:20pm - Fixed syntax in README.md
 
 <br>
 
@@ -29,7 +37,5 @@
 ## Resources
 
 [Accept header - HTTP | MDN](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Accept)
-
-
 
 <br>
