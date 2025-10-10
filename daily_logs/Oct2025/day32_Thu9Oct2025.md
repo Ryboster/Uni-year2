@@ -24,6 +24,8 @@
 
 1:20pm - Fixed syntax in README.md
 
+3pm - Went to sleep
+
 <br>
 
 # Issues/Errors
