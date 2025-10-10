@@ -6,7 +6,7 @@
 
 ----------------------------------------------
 
-Quality assurance processes help developers maintain the quality of their software by following rigurous checks 
+Quality assurance is a processes that helps developers maintain the quality of their software by defining a set of rules a quality software must follow. 
 
 
 
