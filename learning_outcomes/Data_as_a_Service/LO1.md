@@ -6,19 +6,58 @@
 
 ----------------------------------------------
 
-Quality assurance is a process that helps developers maintain the quality of their software. It defines a set of rules used to ensure that the application meets the expected specifications and requirements.
+Quality assurance (QA) is a process that helps developers maintain the quality of their software. It defines a set of rules used to ensure that the application meets the expected specifications and requirements.
 
-
+There is a myriad of different QA processes, and developers should consider which ones to incorporate to fit their specific application's needs. Some of those processes can also be automated. This article focuses on those particular processes.
 
 ### Body Section
 
 ----------------------------------------------
 
+### Unit Testing
+
+Unit testing involves writing scripts called Unit Tests. Those scripts target specific parts (or "units") of the software, and use assertions to ensure that the unit functions as expected.
+
+Each unit test follows a standardized workflow - It defines input data, sends it to the unit, and asserts that the output of that unit is correct. Consider the following example:
+
+```python
+def add_two(x:int):
+    return x + 2
+```
+
+An example unit test for this particular function could look something like this:
+
+```python
+import unittest
+def test_add_two():
+    input_data = 1
+    output_data = add_two(input_data)
+    assertEqual(output_data, input_data + 2)
+```
+
+here, the unit test defines a simple input (`input_data`), sends that input to the unit (`add_two()`), and ensures that the unit produced expected output (3). 
+
+This could then be expanded further. For example, we may want to ensure that the output data is of expected type (`integer`), or that input data of incorrect type is rejected.
+
+In either case, the beauty of unit testing lies in its simplicity and low intrusiveness. Without altering the unit itself, with just a simple method, we were able to verify that a unit hasn't mutated in a way that would cause issues in other parts of the application. 
+
+
+
+### Integration Testing
+
+Integration testing, similarly to unit testing, also focus on units. The difference however, is that integration units, instead of just testing a single unit, verify that multiple units work together; In other words they verify the **integration** of multiple units.
+
+
+
+### Performance Testing
+
+
+
 ### Personal Experience
 
 ----------------------------------------------
 
-[link to LO]
+In my experience with QA, I had made use of unit testing
 
 ### References
 
