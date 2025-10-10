@@ -8,7 +8,7 @@
 
 Quality assurance (QA) is a process that helps developers maintain the quality of their software. It defines a set of rules used to ensure that the application meets the expected specifications and requirements.
 
-There is a myriad of different QA processes, and developers should consider which ones to incorporate to fit their specific application's needs. Some of those processes can also be automated. This article focuses on those particular processes.
+There is a myriad of different QA processes, and developers should consider which ones to incorporate to fit their specific application's needs. Some of those processes can also be automated. Those processes usually involve writing different "tests" that are then ran periodically. This article focuses on those particular processes.
 
 ### Body Section
 
@@ -50,6 +50,8 @@ Integration testing, similarly to unit testing, also focus on units. The differe
 
 
 ### Performance Testing
+
+Performance tests - as the name suggests, focus on testing the performance of a given unit or system. This could mean execution time, or number of successful outcomes, or any other change over time. 
 
 
 
