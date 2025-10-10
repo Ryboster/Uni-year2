@@ -18,6 +18,10 @@
 
 5:50am - Short break.
 
+6:20am - Got to work on the first LO for Data as a Service
+
+
+
 <br>
 
 # Issues/Errors
