@@ -2,8 +2,6 @@
 
 # Activities
 
-
-
 2am - Tried adding my website to crontabs on my pi4. Encountered problems
 
 2:10am - Troubleshooting ...
@@ -21,6 +19,8 @@
 6:20am - Got to work on the first LO for Data as a Service
 
 
+
+8am - Applied for a coding tutor position.
 
 <br>
 
