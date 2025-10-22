@@ -4,7 +4,7 @@
 
 ### Abstract
 
-Software performance is affected by many different factors. One of those factors is the way we store, organize, and transform our data. By leveraging the way our data is managed and manipulated, and by adhering to industry-standard processes, methods, and techniques, we can vastly improve the quality and performance of our applications,
+Software performance is affected by many different factors. One of those factors is the way we store, organize, and transform our data. By leveraging the way our data is managed and manipulated, and by adhering to industry-standard processes, methods, and techniques, we can vastly improve the quality and performance of our software.
 
 This article includes analyses and evaluations of different ways to store, organize, and transform data.
 
@@ -18,9 +18,7 @@ To organize data means to sort, structure, or group it in some way. For example 
 
 To transform data means to alter it in some way. For example, we might want to transform the number `1` into `"1"` - This is an example of casting. Without changing the data itself, we've transformed it into something fit for different purpose. The goal of transformation is to prepare the data for a transition of some sort. For example, we might want to read an integer value from a sensor, and then print it. To do that, we'd need to transform the data from `integer` to `string`.
 
-Applications are said to robustly manage their data when the number of transformations is minimized, data is well and sensibly organized at every step of the process, and it is stored in a reasonable format.
-
-
+Applications are said to robustly manage their data when the number of transformations is minimized, data is well and sensibly organized at every step of the process, and it is stored in a fitting format (e.g. `.sqlite3` instead of `j.son` when storing large quantities of structured data)
 
 #### So what?
 
@@ -69,9 +67,21 @@ Here, we minimized conversions by storing our temporary data in a python object,
 
 With this simple change in how we store and transform our data, we've already vastly improved the scalability and performance of our application, and secured it against the natural consequence of popularity (simultaneous read and write).
 
-
+But, this example can still be improved further,
 
 ### Databases
+
+Imagine you have a large `.json` file called "projects" for storing your university projects. The file has multiple project items, each with a detailed description of the project, expressed in key-value pairs, e.g.
+
+```json
+{
+    "RESTful API": {"Date Completed": "10th Oct 2025", ...},
+    "Electronic Diary": {"Date Completed": "30th Sept 2025", ...}
+    ...
+}
+```
+
+Now imagine that you're building a new 
 
 
 
@@ -80,3 +90,5 @@ With this simple change in how we store and transform our data, we've already va
 ### Personal Experience
 
 ### References
+
+() https://olibr.com/blog/json-vs-sql-whats-the-difference/#SQL_vs_JSON_Key_Difference
