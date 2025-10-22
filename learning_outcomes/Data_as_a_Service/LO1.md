@@ -16,7 +16,7 @@ There is a myriad of different QA processes, and developers should consider whic
 
 ### Unit Testing
 
-Unit testing involves writing scripts called Unit Tests. Those scripts target specific parts (or "units") of the software, and use assertions to ensure that the unit functions as expected.
+Unit testing involves writing scripts called Unit Tests. Those scripts target specific parts (or "units") of the application, and use assertions to ensure that the unit functions as expected.
 
 Each unit test follows a standardized workflow - It defines input data, sends it to the unit, and asserts that the output of that unit is correct. Consider the following example:
 
@@ -39,13 +39,31 @@ here, the unit test defines a simple input (`input_data`), sends that input to t
 
 This could then be expanded further. For example, we may want to ensure that the output data is of expected type (`integer`), or that input data of incorrect type is rejected.
 
-In either case, the beauty of unit testing lies in its simplicity and low intrusiveness. Without altering the unit itself, with just a simple method, we were able to verify that a unit hasn't mutated in a way that would cause issues in other parts of the application. 
+#### Conclusion
+
+Unit testing is the most versatile of QA methods. It helps developers ensure that the smallest parts of their applications aren't mutating in unexpected ways over time. They are perhaps the most common given that every application has units it relies on.
+
+It is best applied when the application is still small, and other QA methods aren't yet appropriate. 
 
 
 
 ### Integration Testing
 
-Integration testing, similarly to unit testing, also focus on units. The difference however, is that integration units, instead of just testing a single unit, verify that multiple units work together; In other words they verify the **integration** of multiple units.
+Integration testing, similarly to unit testing, also focuses on units. The difference however, is that integration tests, instead of just testing a single unit, verify that multiple units work together as expected; In other words they verify the **integration** of multiple units.
+
+Consider the following example:
+
+```python
+class Employee
+    def __init__(self, role):
+        self.role = role
+
+class Company
+    def __init__(self):
+        self.employees = []
+    def HireEmployee(self, employee):
+        self.employees.append(employee)
+```
 
 
 
@@ -69,4 +87,4 @@ Sandman, Adam. (2025), Full Guide To Software Quality Assurance. Available at: h
 
 
 
-
+[What is Integration Testing? | IBM](https://www.ibm.com/think/topics/integration-testing)
