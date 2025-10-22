@@ -55,29 +55,66 @@ Consider the following example:
 
 ```python
 class Employee
-    def __init__(self, role):
-        self.role = role
+    def __init__(self, name):
+        self.name = name
 
 class Company
     def __init__(self):
         self.employees = []
-    def HireEmployee(self, employee):
-        self.employees.append(employee)
+    def hire_employee(self, employee):
+        self.employees.append(employee.name)
 ```
+
+```python
+def test_hire_empoyee_integration():
+    jeff = Employee("jeff")
+    bosch = Company()
+
+    bosch.hire_employee(jeff)
+    assert "jeff" in bosch.employees
+```
+
+In this example, a `Company` class has the ability to hire an `Employee`. To do that however, it expects that the `Employee` has a `name`. If the `Employee` class was to mutate in a way where the `name` field disappears, it would result in an error.
+
+To ensure that the two classes can work together, we write an integration test that asserts that the `Company` class adds an instance of `Employee` in the expected way.
+
+#### Conclusion
+
+Integration testing is more advanced than unit testing and requires that the application has multiple units. It is best applied when multiple units of an application need to be able to work together.
 
 
 
 ### Performance Testing
 
-Performance tests - as the name suggests, focus on testing the performance of a given unit or system. This could mean execution time, or number of successful outcomes, or any other change over time. 
+Performance tests - as the name suggests, focus on testing the performance of a given unit or system. This could mean execution time, number of successful outcomes, or any other change over time. This QA method helps ensure that a given unit of the application finishes in a time effective manner.
+
+Consider the following example:
+
+```python
+def generate_random_map():
+    map = [][]
+    for x in range(0, 10):
+        for y in range(0,10):
+            map[x][y].append(random.randint(0,10))
+
+def test_performance_of_map_generation():
+    start_time = time.time()
+    generate_random_map()
+    end_time = time.time()
+    duration = end_time - start_time
+    assert duration < 2
+    
+```
+
+In this example we define a process that generates a completely random map, registering the time at the beginning and end of it. We then derive the duration that the process took to complete, and assert that it is below some predefined amount that we deem reasonable.
+
+While crude, this example demonstrates the importance of performance testing. Sometimes processes can evolve over time leading to different time efficiencies.
+
+#### Conclusion
+
+Performance testing helps developers ensure that their applications stay efficient over time, which helps them develop for a wider range of devices. By ensuring that the process finishes execution in a predefined amount of time, they can better deduce hardware requirements on the consumer end. 
 
 
-
-### Personal Experience
-
-----------------------------------------------
-
-In my experience with QA, I had made use of unit testing
 
 ### References
 
