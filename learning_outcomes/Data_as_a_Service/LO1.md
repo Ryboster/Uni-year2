@@ -45,8 +45,6 @@ Unit testing is the most versatile of QA methods. It helps developers ensure tha
 
 It is best applied when the application is still small, and other QA methods aren't yet appropriate. 
 
-
-
 ### Integration Testing
 
 Integration testing, similarly to unit testing, also focuses on units. The difference however, is that integration tests, instead of just testing a single unit, verify that multiple units work together as expected; In other words they verify the **integration** of multiple units.
@@ -82,8 +80,6 @@ To ensure that the two classes can work together, we write an integration test t
 
 Integration testing is more advanced than unit testing and requires that the application has multiple units. It is best applied when multiple units of an application need to be able to work together.
 
-
-
 ### Performance Testing
 
 Performance tests - as the name suggests, focus on testing the performance of a given unit or system. This could mean execution time, number of successful outcomes, or any other change over time. This QA method helps ensure that a given unit of the application finishes in a time effective manner.
@@ -103,7 +99,6 @@ def test_performance_of_map_generation():
     end_time = time.time()
     duration = end_time - start_time
     assert duration < 2
-    
 ```
 
 In this example we define a process that generates a completely random map, registering the time at the beginning and end of it. We then derive the duration that the process took to complete, and assert that it is below some predefined amount that we deem reasonable.
@@ -112,16 +107,14 @@ While crude, this example demonstrates the importance of performance testing. So
 
 #### Conclusion
 
-Performance testing helps developers ensure that their applications stay efficient over time, which helps them develop for a wider range of devices. By ensuring that the process finishes execution in a predefined amount of time, they can better deduce hardware requirements on the consumer end. 
+Performance testing helps developers ensure that their applications stay efficient over time, which helps them develop for a wider range of devices. By knowing the tested hardware and the execution time, developers can better deduce hardware requirements on the consumer end, which can also aid any efforts in lowering them.
 
-
+While not all applications can benefit from performance testing, for those that can, it can be an instrumental QA process that can even make the difference between releasing the application or binning it. Applications are made for consumers, but if their hardware can't handle them, they are as good as a beached whale (not very).
 
 ### References
 
 ----------------------------------------------
 
 Sandman, Adam. (2025), Full Guide To Software Quality Assurance. Available at: https://www.inflectra.com/Ideas/Topic/Software-Quality-Assurance.aspx (10th Oct 2025)
-
-
 
 [What is Integration Testing? | IBM](https://www.ibm.com/think/topics/integration-testing)
