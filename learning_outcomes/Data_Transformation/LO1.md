@@ -14,11 +14,19 @@ This article discusses my application of some of those processes, methods, techn
 
 ---
 
-##### Agile
-
 ##### Scrum
 
+Scrum is an Agile process that focuses on developing software in cycles called "sprints". Each sprint lasts a predefined amount of time (usually a week), during which the team rendezvous for daily meetings whose goal it is to make sure that the development progresses smoothly. There are also "special" meetings at the beginning and end of each sprint called plannings, reviews, and retrospectives.
+
+
+
 ##### Kanban
+
+Kanban (japanese for "signboard") is a process that focuses on task atomization and management. In kanban, teams will take an initiative and atomize 
+
+
+
+##### Quality Assurance (QA)
 
 #### Methods
 
@@ -36,7 +44,11 @@ This article discusses my application of some of those processes, methods, techn
 
 ##### Refactoring
 
-##### Automated Testing
+##### Unit Testing
+
+
+
+
 
 #### Tools
 
@@ -50,10 +62,16 @@ Version control is a project management tool that enables developers to convenie
 
 ##### Integrated Development Environment (IDEs)
 
-IDEs, sometimes **wrongly** referred to as editors, are tools used for editing scripts. 
+IDEs, sometimes **wrongly** referred to as editors, are tools used for editing and compiling single, and sometimes even multiple scripts simultaneously. They include libraries used for spellchecking, error catching, and improving quality of life.
 
 
 
 ##### Continuous Integration and Continuous Deployment (CI/CD)
+
+CI/CD workflows are tools for automatically performing routine tasks on codebases. They can be thought of, and are often referred to, as pipelines due to their 
+
+
+
+
 
 ### References
