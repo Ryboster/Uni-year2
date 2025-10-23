@@ -48,9 +48,15 @@ Kanban (japanese for "signboard") is a process that focuses on task atomization 
 
 ---
 
-##### Version Control
+##### Version Control Systems (VCS)
 
-Version control is a project management tool that enables developers to conveniently store every unique version of their applications in cloud. For simplicity, those versions can be thought of as video game saves. Should the need arise, developers can roll back to any previous version of their application and resume development from that point onward. Many version control services nowadays also include online views for purposes such as inspection.
+Version control is a project management tool that enables developers to conveniently store every unique version of their applications. For simplicity, those versions can be thought of as video game saves. Should the need arise, developers can roll back to any previous version of their application and resume development from that point onward. Many version control services (such as Github or Bitbucket) nowadays also include online views for purposes such as inspection.
+
+Since VCS can store versions of nearly any file type, they're not only useful to developers, but other professionals as well. Graphic designers, musicians, or creative writers, can benefit from it all the same.
+
+
+
+
 
 ##### Integrated Development Environment (IDEs)
 
@@ -60,15 +66,17 @@ IDEs, sometimes **wrongly** referred to as editors, are tools used for editing a
 
 CI/CD workflows are tools for automatically performing routine tasks on codebases. They can be thought of, and are often referred to, as pipelines due to their 
 
-
-
 ### References
 
 [What is Scrum? | Scrum.org](https://www.scrum.org/resources/what-scrum-module)
 
-[Git - About Version Control](https://git-scm.com/book/ms/v2/Getting-Started-About-Version-Control)
 
-[What is an IDE? - Integrated Development Environment Explained - AWS](https://aws.amazon.com/what-is/ide/)
+
+*Git* (no date) Getting Started - About Version Control. Available at: [Git - About Version Control](https://git-scm.com/book/ms/v2/Getting-Started-About-Version-Control)  (Accessed: October 2025).
+
+AWS (no date) What is an IDE?. Available at: [What is an IDE? - Integrated Development Environment Explained - AWS](https://aws.amazon.com/what-is/ide/) (Accessed: October 2025).
+
+
 
 [What is CI&#x2F;CD?](https://about.gitlab.com/topics/ci-cd/)
 
