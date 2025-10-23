@@ -34,13 +34,15 @@ Here, we defined 8 columns:
 | ----------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------ | -------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------- |
 | Tickets that were retracted for revision. | Tickets whose completion is "blocked" by another ticket. i.e. "don't start X until Y is finished". Once Y is finished, those tickets are moved to **Backlog** | Lists available tickets that can be taken. | Tickets that are more like ideas for the most immediate future. No A/Cs, just a description. | a.k.a. "In Progress". Lists tickets that are currently being worked on. | Lists tickets whose acceptance criteria was fulfilled. Those tickets await review before either being moved back to **Developing**, or to **Done** | Completed tickets. Those tickets'  branches were merged into dev. Keeping them here allows us to catalogue pairs of branches and features. | Tickets that were rejected for whatever reason. Listing them here allows us to reevaluate those ideas at any point. |
 
-
+Personally, I think that kanban is one of the most useful processes in a software developer's arsenal. Even without explicit communication, by observing the board itself, developers can get a good idea of how the application is progressing. If tickets take too long to complete, communication efforts can be made, and methods such as pair programming can be deployed to aid the effort.
 
 
 
 ##### Quality Assurance (QA)
 
 "Quality assurance (QA) is a process that helps developers maintain the quality of their software. It defines a set of rules used to ensure that the application meets the expected specifications and requirements." (Blazejowski, Gracjan. 2025)
+
+
 
 #### Methods
 
