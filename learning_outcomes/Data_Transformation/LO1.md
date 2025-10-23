@@ -18,15 +18,13 @@ This article discusses my application of some of those processes, methods, techn
 
 Scrum is an Agile process that focuses on developing software in cycles called "sprints". Each sprint lasts a predefined amount of time (usually a week), during which the team rendezvous for daily meetings whose goal it is to make sure that the development progresses smoothly. There are also "special" meetings at the beginning and end of each sprint called plannings, reviews, and retrospectives.
 
-
-
 ##### Kanban
 
-Kanban (japanese for "signboard") is a process that focuses on task atomization and management. In kanban, teams will take an initiative and atomize 
-
-
+Kanban (japanese for "signboard") is a process that focuses on task atomization and management. In kanban, teams will devise a roadmap for introduction of a new (or improvement of an existing) feature, and divide it into small steps called tickets, tracking progress of each ticket as the project progresses.
 
 ##### Quality Assurance (QA)
+
+"Quality assurance (QA) is a process that helps developers maintain the quality of their software. It defines a set of rules used to ensure that the application meets the expected specifications and requirements." (Blazejowski, Gracjan. 2025)
 
 #### Methods
 
@@ -46,10 +44,6 @@ Kanban (japanese for "signboard") is a process that focuses on task atomization 
 
 ##### Unit Testing
 
-
-
-
-
 #### Tools
 
 ---
@@ -58,13 +52,9 @@ Kanban (japanese for "signboard") is a process that focuses on task atomization 
 
 Version control is a project management tool that enables developers to conveniently store every unique version of their applications in cloud. For simplicity, those versions can be thought of as video game saves. Should the need arise, developers can roll back to any previous version of their application and resume development from that point onward. Many version control services nowadays also include online views for purposes such as inspection.
 
-
-
 ##### Integrated Development Environment (IDEs)
 
 IDEs, sometimes **wrongly** referred to as editors, are tools used for editing and compiling single, and sometimes even multiple scripts simultaneously. They include libraries used for spellchecking, error catching, and improving quality of life.
-
-
 
 ##### Continuous Integration and Continuous Deployment (CI/CD)
 
@@ -72,6 +62,16 @@ CI/CD workflows are tools for automatically performing routine tasks on codebase
 
 
 
-
-
 ### References
+
+[What is Scrum? | Scrum.org](https://www.scrum.org/resources/what-scrum-module)
+
+[Git - About Version Control](https://git-scm.com/book/ms/v2/Getting-Started-About-Version-Control)
+
+[What is an IDE? - Integrated Development Environment Explained - AWS](https://aws.amazon.com/what-is/ide/)
+
+[What is CI&#x2F;CD?](https://about.gitlab.com/topics/ci-cd/)
+
+[What is CI/CD? | Harness](https://www.harness.io/harness-devops-academy/what-is-ci-cd)
+
+[Kanban | Atlassian](https://www.atlassian.com/agile/kanban)
