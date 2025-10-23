@@ -71,19 +71,23 @@ But, this example can still be improved further,
 
 ### Databases
 
-Imagine you have a large `.json` file called "projects" for storing your university projects. The file has multiple project items, each with a detailed description of the project, expressed in key-value pairs, e.g.
+Imagine you have a large `.json` file called "collaborations" for storing the projects you collaborated on. The file has multiple project items, each with a detailed description of the project, expressed in key-value pairs, e.g.
 
 ```json
 {
-    "RESTful API": {"Date Completed": "10th Oct 2025", ...},
-    "Electronic Diary": {"Date Completed": "30th Sept 2025", ...}
-    ...
+    "Thought Police Chip": {"Date Completed": "10th Oct 2025"},
+    "Pigeon Spies": {"Date Completed": "30th Sept 2025"}
 }
 ```
 
-Now imagine that you're building a new 
+Now imagine that you come up with the idea of adding individual collaborators to every collaboration item. Your json file could end up looking something like this
 
-
+```json
+{
+    "Thought Police Chip": {"Date Completed": "10th Oct 2025", "collaborators"=["Mark Zuckerberg", "Bill Gates"]},
+    "Pigeon Spies": {"Date Completed": "30th Sept 2025", "collaborators"=["Mark Zuckerberg", "Boris Johnson"]}
+}
+```
 
 
 
