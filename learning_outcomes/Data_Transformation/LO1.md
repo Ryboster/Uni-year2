@@ -16,11 +16,27 @@ This article discusses my application of some of those processes, methods, techn
 
 ##### Scrum
 
-Scrum is an Agile process that focuses on developing software in cycles called "sprints". Each sprint lasts a predefined amount of time (usually a week), during which the team rendezvous for daily meetings whose goal it is to make sure that the development progresses smoothly. There are also "special" meetings at the beginning and end of each sprint called plannings, reviews, and retrospectives.
+Scrum is an Agile process that focuses on developing software in cycles called "sprints". Each sprint lasts a predefined amount of time (usually a week), during which the team rendezvous for daily meetings whose goal it is to make sure that the development progresses smoothly. There are also "special" meetings at the beginning and end of each sprint called plannings, reviews, and retrospectives. Those meetings ensure that all progress made is accounted for, issues are caught early, and that the team has a plan for going forward.
+
+
 
 ##### Kanban
 
-Kanban (japanese for "signboard") is a process that focuses on task atomization and management. In kanban, teams will devise a roadmap for introduction of a new (or improvement of an existing) feature, and divide it into small steps called tickets, tracking progress of each ticket as the project progresses.
+Kanban (japanese for "signboard") is a process that focuses on task atomization and management. In kanban, teams will devise a roadmap for introduction of a new (or improvement of an existing) feature called **Initiative**, and divide it into small steps  that need to be taken to develop that feature, those are called **tickets**, tracking progress of each ticket as the project progresses.
+
+I've used kanban quite extensively in my project, the "Scattered Lands". Given the scale of the endeavour, we needed an efficient way of keeping track of our progress - Kanban emerged as the ideal candidate for that. 
+
+![](assets/2025-10-23-22-39-10-image.png)
+
+Here, we defined 8 columns: 
+
+| **Revise**                                | **Blocked**                                                                                                                                                   | **Backlog**                                | **ToDo**                                                                                     | **Developing**                                                          | **Testing**                                                                                                                                        | **Done**                                                                                                                                   | **Deleted**                                                                                                         |
+| ----------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------ | -------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------- |
+| Tickets that were retracted for revision. | Tickets whose completion is "blocked" by another ticket. i.e. "don't start X until Y is finished". Once Y is finished, those tickets are moved to **Backlog** | Lists available tickets that can be taken. | Tickets that are more like ideas for the most immediate future. No A/Cs, just a description. | a.k.a. "In Progress". Lists tickets that are currently being worked on. | Lists tickets whose acceptance criteria was fulfilled. Those tickets await review before either being moved back to **Developing**, or to **Done** | Completed tickets. Those tickets'  branches were merged into dev. Keeping them here allows us to catalogue pairs of branches and features. | Tickets that were rejected for whatever reason. Listing them here allows us to reevaluate those ideas at any point. |
+
+
+
+
 
 ##### Quality Assurance (QA)
 
@@ -60,7 +76,11 @@ Since VCS can store versions of nearly any file type, they're not only useful to
 
 ##### Integrated Development Environment (IDEs)
 
-IDEs, sometimes **wrongly** referred to as editors, are tools used for editing and compiling single, and sometimes even multiple scripts simultaneously. They include libraries used for spellchecking, error catching, and improving quality of life.
+IDEs are tools that software developers use to write applications efficiently. They are in essence text editors, albeit much fancier ones. Apart from text editing functionality, they also include tools used to build, test, spellcheck, error catch, browse, and compile applications efficiently, allowing developers to put more focus on developing the actual application, and less focus on tasks such as juggling between the text editor and file browser (a.k.a. explorer), going over every line of code to catch spelling mistakes, or worrying about how they're going to compile the application.
+
+
+
+
 
 ##### Continuous Integration and Continuous Deployment (CI/CD)
 
@@ -76,12 +96,10 @@ CI/CD workflows are tools for automatically performing routine tasks on codebase
 
 *Git* (no date) Getting Started - About Version Control. Available at: [Git - About Version Control](https://git-scm.com/book/ms/v2/Getting-Started-About-Version-Control)  (Accessed: October 2025).
 
-AWS (no date) What is an IDE?. Available at: [What is an IDE? - Integrated Development Environment Explained - AWS](https://aws.amazon.com/what-is/ide/) (Accessed: October 2025).
+AWS (no date) What is an IDE? Available at: [What is an IDE? - Integrated Development Environment Explained - AWS](https://aws.amazon.com/what-is/ide/) (Accessed: October 2025).
 
+Chinmay Gaikwad (18th October 2025) What Is CI/CD? Available at: [What is CI/CD? | Harness](https://www.harness.io/harness-devops-academy/what-is-ci-cd) (Accessed: October 2025).
 
-
-[What is CI&#x2F;CD?](https://about.gitlab.com/topics/ci-cd/)
-
-[What is CI/CD? | Harness](https://www.harness.io/harness-devops-academy/what-is-ci-cd)
+*Scrum* (no date) What is Scrum? Available at: [What is Scrum? | Scrum.org](https://www.scrum.org/resources/what-scrum-module) (Accessed: October 2025).
 
 [Kanban | Atlassian](https://www.atlassian.com/agile/kanban)
