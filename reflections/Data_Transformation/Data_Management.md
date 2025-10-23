@@ -89,6 +89,16 @@ Now imagine that you come up with the idea of adding individual collaborators to
 }
 ```
 
+Already, there are issues with this approach; Each collaborator has to be added manually, and There may be duplicates. Now what if you decide to edit one of the collaborators? Or store additional information about them? You'd have to edit the relevant entries by hand. 
+
+JSON is clearly not the most appropriate format to store related records. This is where relational databases come handy. 
+
+
+
+
+
+
+
 
 
 ### Personal Experience
