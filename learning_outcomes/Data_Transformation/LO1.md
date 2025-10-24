@@ -18,7 +18,7 @@ This article discusses my application of some of those processes, methods, techn
 
 Scrum is an Agile process that focuses on developing software in cycles called "sprints". Each sprint lasts a predefined amount of time (usually a week), during which the team rendezvous for daily meetings whose goal it is to make sure that the development progresses smoothly. There are also "special" meetings at the beginning and end of each sprint called plannings, reviews, and retrospectives. Those meetings ensure that all progress made is accounted for, issues are caught early, and that the team has a plan for going forward.
 
-
+My biggest involvement with scrum was during 
 
 ##### Kanban
 
