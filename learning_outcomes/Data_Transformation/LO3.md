@@ -16,7 +16,9 @@ In this article, I will attempt to answer those questions, defining the term **a
 
 ----------------------------------------------
 
-Communication is the exchange of information between two parties; the transmitter and receiver. In it, both parties play a role to ensure an effective 
+Communication is the exchange of information between two parties; the transmitter and receiver. In it, both parties play a role to ensure an effective flow of information, fostering clarity, understanding, and a mutual feeling of X. Communication can take both verbal and non-verbal forms, but 
+
+Listening is the role of the receiver. 
 
 
 
