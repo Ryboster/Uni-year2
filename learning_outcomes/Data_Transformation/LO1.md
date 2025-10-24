@@ -36,13 +36,9 @@ Here, we defined 8 columns:
 
 Personally, I think that kanban is one of the most useful processes in a software developer's arsenal. Even without explicit communication, by observing the board itself, developers can get a good idea of how the application is progressing. If tickets take too long to complete, communication efforts can be made, and methods such as pair programming can be deployed to aid the effort.
 
-
-
 ##### Quality Assurance (QA)
 
 "Quality assurance (QA) is a process that helps developers maintain the quality of their software. It defines a set of rules used to ensure that the application meets the expected specifications and requirements." (Blazejowski, Gracjan. 2025)
-
-
 
 #### Methods
 
@@ -72,29 +68,17 @@ Version control is a project management tool that enables developers to convenie
 
 Since VCS can store versions of nearly any file type, they're not only useful to developers, but other professionals as well. Graphic designers, musicians, or creative writers, can benefit from it all the same.
 
-
-
-
-
 ##### Integrated Development Environment (IDEs)
 
 IDEs are tools that software developers use to write applications efficiently. They are in essence text editors, albeit much fancier ones. Apart from text editing functionality, they also include tools used to build, test, spellcheck, error catch, browse, and compile applications efficiently, allowing developers to put more focus on developing the actual application, and less focus on tasks such as juggling between the text editor and file browser (a.k.a. explorer), going over every line of code to catch spelling mistakes, or worrying about how they're going to compile the application.
-
-
-
-
 
 ##### Continuous Integration and Continuous Deployment (CI/CD)
 
 CI/CD workflows are tools for automatically performing routine tasks on codebases. They can be thought of, and are often referred to, as pipelines due to their 
 
-
-
 ### References
 
 [What is Scrum? | Scrum.org](https://www.scrum.org/resources/what-scrum-module)
-
-
 
 *Git* (no date) Getting Started - About Version Control. Available at: [Git - About Version Control](https://git-scm.com/book/ms/v2/Getting-Started-About-Version-Control)  (Accessed: October 2025).
 
