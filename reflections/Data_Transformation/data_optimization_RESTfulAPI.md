@@ -10,10 +10,6 @@ Designing the application was a big undertaking as I had to ensure that it would
 
 In addition to that the data presented needed to be easily editable, so appropriate tools needed to be made.
 
-
-
-
-
 ## So what?
 
 Designing my templates, I utilized Jinja2's blocks, which came very handy in building my 2 main base templates; `base.html` (Available at: [Personal_RESTful_API/templates/base.html at main · Ryboster/Personal_RESTful_API · GitHub](https://github.com/Ryboster/Personal_RESTful_API/blob/main/templates/base.html)), and `list_base.html` (Available at:[Personal_RESTful_API/templates/list_base.html at main · Ryboster/Personal_RESTful_API · GitHub](https://github.com/Ryboster/Personal_RESTful_API/blob/main/templates/list_base.html) ). Consider the following example:
@@ -33,11 +29,19 @@ Every one of my list endpoints (of which I now have 3) has to contain the forms 
 
 Moving this definition off to a base template instead had vastly improved the efficiency of introduction of any potential extension.
 
+---
+
+Another problem I came across was providing each list entry with a page of its own - Kind of like a blog. Suppose you have a project called "Affordable Gun".
+
+![](assets/2025-10-25-08-53-38-image.png)
+
+How could you now provide this list entry with a template dedicated to it? Since each list entry may have completely different requirements and structure, you can't just use Jinja2 blocks alone. The problem was basically "How can you store different structures and content and relate them to their respective entries in an efficient way?". 
+
+To tackle this issue, I opted to expand my 
 
 
-Another problem I came across was providing each 
 
-
+used CKEditor 
 
 
 
