@@ -26,8 +26,6 @@ In both facts, the units for both the `Co2` and `Timespan` fields vary. This is 
 
 So, after weighing my options carefully, I decided that the best route forward is atomizing the fields, and storing their values in the smallest increments possible; grams and seconds respectively - regardless of the unit chosen in the POST form.
 
-
-
 ![](assets/2025-10-25-02-02-22-image.png)
 
 ![Screencast from 25-10-25 02_12_43.gif](assets/031668931c9c5c0cf497ae8bde078d0d5f318deb.gif)
@@ -39,5 +37,3 @@ This results in two critical conversion steps that need to be taken when saving 
 When saving the data, the server needs to detect and appropriately convert the unit chosen in the form to grams, and seconds.
 
 When reading the data, the application will have to detect the most appropriate unit for the given value and convert it again.
-
-

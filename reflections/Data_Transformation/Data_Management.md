@@ -41,8 +41,6 @@ def projects():
 
 In this example, we have to read and parse our `json` file everytime our user visits the page. We increase the number of I/O operations, perform unnecessary conversions between python objects and json, and increase the risk of data corruption by allowing simultaneous writing and reading. Following is an improved version of this:
 
-
-
 ```python
 with open("projects.json", "r") as file:
     projects_data = json.load(file)
