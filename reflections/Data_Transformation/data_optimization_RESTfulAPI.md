@@ -64,7 +64,7 @@ CREATE TABLE IF NOT EXISTS Projects
 
 and built a new universal template that provides only 2 operations: `CREATE` and `UPDATE`. Then, I incorporated CKEditor. 
 
-By using CKEditor I can intertwine content and structure (in html), and save the whole as plaintext in my database as just a single field; `Content`! No additional tables, no join tables, no extra overhead!
+By using CKEditor I can intertwine content and structure (in html), and save the whole as plaintext in my database as just a single field; `Content`! No additional tables, no join tables, no extra overhead, no additional templates!
 
 ![](assets/2025-10-25-09-12-22-image.png)
 
