@@ -41,6 +41,8 @@ def projects():
 
 In this example, we have to read and parse our `json` file everytime our user visits the page. We increase the number of I/O operations, perform unnecessary conversions between python objects and json, and increase the risk of data corruption by allowing simultaneous writing and reading. Following is an improved version of this:
 
+
+
 ```python
 with open("projects.json", "r") as file:
     projects_data = json.load(file)
@@ -92,14 +94,6 @@ Now imagine that you come up with the idea of adding individual collaborators to
 Already, there are issues with this approach; Each collaborator has to be added manually, and There may be duplicates. Now what if you decide to edit one of the collaborators? Or store additional information about them? You'd have to edit the relevant entries by hand. 
 
 JSON is clearly not the most appropriate format to store related records. This is where relational databases come handy. 
-
-
-
-
-
-
-
-
 
 ### Personal Experience
 

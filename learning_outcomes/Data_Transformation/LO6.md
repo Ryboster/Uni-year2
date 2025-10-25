@@ -18,12 +18,10 @@ In this article I will demonstrate how I analyze and optimize data for storage a
 
  
 
-
-
 ### References
 
 ----------------------------------------------
 
-Blazejowski, Gracjan. (2025) Data Optimization and Analysis in MauiScreenTime. Available at: [Data Optimization and Analysis in MauiScreenTime](https://github.com/Ryboster/Uni-year2/blob/main/reflections/Data_Transformation/data_optimization.md)
+Blazejowski, Gracjan. (2025) Data Optimization and Analysis in MauiScreenTime. Available at: [Data Optimization and Analysis in MauiScreenTime](https://github.com/Ryboster/Uni-year2/blob/main/reflections/Data_Transformation/data_optimization_mauiscreentime.md)
 
 
