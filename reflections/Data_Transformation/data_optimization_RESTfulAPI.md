@@ -70,7 +70,13 @@ By using CKEditor I can intertwine content and structure (in html), and save the
 
 ---
 
+This website originally used the `sqlite3` library. This introduced a few unforeseen issues. 
 
+While `sqlite3` is great for small projects as it doesn't require a local server, authentication, and has a comparetively simple syntax, it comes with a few limitations such as a limited number of supported types, a complete lack of concurrency in connections and writes, or minimal data validation. 
+
+During my collaboration with Lauren Keenan on her application, the "MauiScreentime", I was tasked with facilitation of record sourcing for a database of hers. Since this server was already in place I decided to use it to open the submissions endpoint.
+
+Then, I took on the ticket of writing an AI tool for generating the records for the database
 
 
 
@@ -81,9 +87,3 @@ By using CKEditor I can intertwine content and structure (in html), and save the
 Incorporation of these methods allowed me to vastly reduce the amount of time and effort required to extend the website in the future. While I don't have exact figures, I can now save about 2 hours on introduction of any subsequent list page as no longer do I have to create new HTML and CSS files, and ensure that the style stays consistent across different endpoints. 
 
 I have also created appreciative value with the addition of the `Content` field. It may not have saved me a lot of overhead now, but it will save more and more of it as the application (and consequently its usage) grows.
-
-
-
-
-
-
