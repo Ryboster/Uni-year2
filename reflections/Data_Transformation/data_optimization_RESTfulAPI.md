@@ -12,6 +12,8 @@ In addition to that the data presented needed to be easily editable, so appropri
 
 ## So what?
 
+##### The Expansion Problem
+
 Designing my templates, I utilized Jinja2's blocks, which came very handy in building my 2 main base templates; `base.html` (Available at: [Personal_RESTful_API/templates/base.html at main · Ryboster/Personal_RESTful_API · GitHub](https://github.com/Ryboster/Personal_RESTful_API/blob/main/templates/base.html)), and `list_base.html` (Available at:[Personal_RESTful_API/templates/list_base.html at main · Ryboster/Personal_RESTful_API · GitHub](https://github.com/Ryboster/Personal_RESTful_API/blob/main/templates/list_base.html) ). Consider the following example:
 
 ```html
@@ -30,6 +32,8 @@ Every one of my list endpoints (of which I now have 3) has to contain the forms 
 Moving this definition off to a base template instead had vastly improved the efficiency of introduction of any potential extension.
 
 ---
+
+##### The Depth Problem
 
 Another problem I came across was providing each list entry with a page of its own - Kind of like a blog. Suppose you have a project called "Affordable Gun".
 
@@ -70,15 +74,33 @@ By using CKEditor I can intertwine content and structure (in html), and save the
 
 ---
 
+##### The Concurrent Writes Problem
+
 This website originally used the `sqlite3` library. This introduced a few unforeseen issues. 
 
 While `sqlite3` is great for small projects as it doesn't require a local server, authentication, and has a comparetively simple syntax, it comes with a few limitations such as a limited number of supported types, a complete lack of concurrency in connections and writes, or minimal data validation. 
 
 During my collaboration with Lauren Keenan on her application, the "MauiScreentime", I was tasked with facilitation of record sourcing for a database of hers. Since this server was already in place I decided to use it to open the submissions endpoint.
 
-Then, I took on the ticket of writing an AI tool for generating the records for the database
+Then, I took on the task of writing an AI tool for generating the records for the database, and that's where problems really begun. The tool works in a simple way. First, it sends out a prompt to google's gemini AI and receives a correctly formatted response. Then, it iterates over the new records and sends them one by one to the submissions endpoint's API. It is at that last step when I started receiving new errors:
 
+```
+Submitting new record: 
+{'Source': 'https://ourworldindata.org/co2-emissions-from-aviation',
+ 'Fact': 'Annual CO2 emissions from aviation amounted to 0.9 Gt (billion tonnes) in 2019.', 
+ 'Co2': '900000000000000', 
+ 'Timespan': '31536000'} 
+Response: 
+{"message": "database is locked"}
+```
 
+Because the bot worked so quickly, and the `requests` library has the tendency of reusing the same connections, new write requests would be sent before the old ones had the chance to conclude. In case that the `requests` library reused a connection, it could also lead to the database staying locked until the whole script terminated. Mitigating this with simple `time.sleep()` didn't help either. 
+
+It was simply a I/O issue due to the fact that `sqlite3` doesn't have a server that it could use for pooling. When a write request comes in, the `.sqlite3` file is opened by the process, and no other process can write to it. There isn't a buffer.
+
+I solved this issue by upgrading to `PostgreSQL`.  This library runs a local server where it can pool multiple simultaneous write requests and queue them for writing to the actual file. This finally solved the problem!
+
+![Screencast from 26-10-25 08_47_35.gif](assets/30d7b84ae713641729773fd40e5a594d68452326.gif)
 
 
 
@@ -87,3 +109,5 @@ Then, I took on the ticket of writing an AI tool for generating the records for 
 Incorporation of these methods allowed me to vastly reduce the amount of time and effort required to extend the website in the future. While I don't have exact figures, I can now save about 2 hours on introduction of any subsequent list page as no longer do I have to create new HTML and CSS files, and ensure that the style stays consistent across different endpoints. 
 
 I have also created appreciative value with the addition of the `Content` field. It may not have saved me a lot of overhead now, but it will save more and more of it as the application (and consequently its usage) grows.
+
+On top of that I have made my service a lot more reliable by upgrading to `PostgreSQL`. Now, many users can use my application simultaneously without any loss of valuable data.
