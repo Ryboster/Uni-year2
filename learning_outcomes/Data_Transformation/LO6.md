@@ -14,10 +14,6 @@ In this article I will demonstrate how I analyze and optimize data for storage a
 
 ----------------------------------------------
 
-
-
-
-
 ### References
 
 ----------------------------------------------
@@ -25,3 +21,5 @@ In this article I will demonstrate how I analyze and optimize data for storage a
 Blazejowski, Gracjan. (2025) Data Optimization and Analysis in MauiScreenTime. Available at: [Data Optimization and Analysis in MauiScreenTime](https://github.com/Ryboster/Uni-year2/blob/main/reflections/Data_Transformation/data_optimization_mauiscreentime.md) (Accessed: 25th October 2025)
 
 Blazejowski, Gracjan. (2025) Data Optimization and Analysis in my Personal API. Available at: [Uni-year2/reflections/Data_Transformation/data_optimization_RESTfulAPI.md at main · Ryboster/Uni-year2 · GitHub](https://github.com/Ryboster/Uni-year2/blob/main/reflections/Data_Transformation/data_optimization_RESTfulAPI.md) (Accessed: 26th October 2025)
+
+
