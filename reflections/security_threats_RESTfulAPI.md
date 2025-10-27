@@ -83,6 +83,43 @@ To dissect the logs, the attacker basically made a few different attempts at gai
 
 ### So what?
 
+To better secure my application against this type of threat in the future I took the following steps:
+
+---
+
+#### Turned off Debug Mode
+
+Debug mode can sometimes leak proprietary information ...
+
+
+
+---
+
+#### Altered Directory Structure
+
+At first I stored all my sensitive files such as `fullchain.crt`, `private.key`, `log.txt`, or `db_creds.json` in my project's root directory (same directory as my `main.py`). This can pose a threat since a server is essentially just that - a file serving application. Since those files were within its scope, someone could've just asked my server "hey, fetch me the file called "fullchain.crt" located at /.", and the server would comply.
+
+
+
+I've since moved all of them into a directory outside of the scope of the application:
+
+```
+Personal_Website
+├── Personal_RESTful_API
+│   ├── main.py
+├── db_creds.json
+├── fullchain.crt
+├── log.txt
+├── private.key
+└── start.sh
+```
+
+
+
+
+
+
+
 'So What?' allows you to extract the meaning of 'What?'. Moreover, you should question what knowledge you and others had in the situation, and what knowledge or theories that could help you make sense of the situation.
 
 ### Now what?
