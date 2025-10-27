@@ -131,84 +131,37 @@ Now even if they succeed at gaining remote access, the damage will be minimized 
 
 
 ```
-user www-data;
-worker_processes auto;
-pid /run/nginx.pid;
-error_log /var/log/nginx/error.log;
-include /etc/nginx/modules-enabled/*.conf;
-
-events {
-	worker_connections 768;
-	# multi_accept on;
-}
-
-http {
-
-	##
-	# Basic Settings
-	##
-	client_max_body_size 100M;
-
-	sendfile on;
-	tcp_nopush on;
-	types_hash_max_size 2048;
-	# server_tokens off;
-
-	# server_names_hash_bucket_size 64;
-	# server_name_in_redirect off;
-
-	include /etc/nginx/mime.types;
-	default_type application/octet-stream;
-
-	##
-	# SSL Settings
-	##
-
-	ssl_protocols TLSv1.2 TLSv1.3; # Dropping SSLv3
-	ssl_ciphers 'ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-CHACHA20-POLY1305:ECDHE-RSA-CHACHA20-POLY1305:ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-GCM-SHA256';
-	ssl_prefer_server_ciphers on;
-
-	##
-	# Logging Settings
-	##
-
-	access_log /var/log/nginx/access.log;
-
-	##
-	# Gzip Settings
-	##
-
-	gzip on;
-
-	# gzip_vary on;
-	# gzip_proxied any;
-	# gzip_comp_level 6;
-	# gzip_buffers 16 8k;
-	# gzip_http_version 1.1;
-	# gzip_types text/plain text/css application/json application/javascript text/xml application/xml application/xml+rss text/javascript;
-
-	##
-	# Virtual Host Configs
-	##
-
-	include /etc/nginx/conf.d/*.conf;
-	include /etc/nginx/sites-enabled/*;
-
-	server {
-		listen 80;
+server {
+		listen 443 ssl;
 		server_name www.blazejowski.co.uk;
-		return 301 https://$host$request_uri;
-	}
-
-	server {
-        	listen 443 ssl;
-        	server_name www.blazejowski.co.uk;
 		ssl_certificate /etc/nginx/ssl/fullchain.crt;
 		ssl_certificate_key /etc/nginx/ssl/private.key;
-        	ssl_protocols TLSv1.2 TLSv1.3;
-        	ssl_ciphers HIGH:!aNULL:!MD5;
+		ssl_protocols TLSv1.2 TLSv1.3;
+		ssl_ciphers HIGH:!aNULL:!MD5;
 	
-		location ~ /\. (env|git|log) {
+		if ($query_string ~* "(auto_prepend_file|allow_url_include|php://|data://|expect://|%2f%2f|%3a%2f%2f)") {
+		    return 403;
+		}
+
+		### Block special characters
+		location ~ "^/[!?\$%\^]" {
+		    return 403;
+		}
+
+		### Block fishy paths
+		location ~* /(php|venv|robots|owa|admin|auth|aaa9|aab9|cgi-bin|developmentserver|metadatauploader|vendor|hello\.world|phpunit|lib|laravel|www|yii|zend|ws|V2|test|tests|testing)
+		{
+			deny all;
+		}
+
+		### Block upper levels
+		location ~ \.\.
+		{
+			deny all;
+		}
+
+		### Block sensitive extensions
+		location ~* /\.(env|git|log|sql|ht|bak|zip|tar|key|sqlite3|txt|md|crt|conf|sh|pyc|cfg|php) {
 			deny all;
 		}
 
@@ -219,30 +172,6 @@ http {
 			proxy_set_header X-Forwarded-Proto https;
 		}
 	}
-}
-
-
-#mail {
-#	# See sample authentication script at:
-#	# http://wiki.nginx.org/ImapAuthenticateWithApachePhpScript
-#
-#	# auth_http localhost/auth.php;
-#	# pop3_capabilities "TOP" "USER";
-#	# imap_capabilities "IMAP4rev1" "UIDPLUS";
-#
-#	server {
-#		listen     localhost:110;
-#		protocol   pop3;
-#		proxy      on;
-#	}
-#
-#	server {
-#		listen     localhost:143;
-#		protocol   imap;
-#		proxy      on;
-#	}
-#}
-
 ```
 
 
@@ -250,6 +179,28 @@ http {
 ---
 
 #### Implemented Fail2Ban
+
+/etc/fail2ban/jail.local
+
+```
+[nginx-403]
+enabled = true
+port    = http,https
+filter  = nginx-403
+logpath = /var/log/nginx/access.log
+maxretry = 3
+findtime = 300
+bantime  = 3600
+```
+
+/etc/fail2ban/filter.d/nginx-403.conf
+
+```
+[Definition]
+failregex = <HOST> -.* "(GET|POST|HEAD).*" 403
+ignoreregex =
+
+```
 
 
 
