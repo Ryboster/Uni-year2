@@ -131,13 +131,8 @@ Now even if they succeed at gaining remote access, the damage will be minimized 
 
 
 ```
-server {
-		listen 80;
-		server_name www.blazejowski.co.uk;
-		return 301 https://$host$request_uri;
-	}
-
-	server {
+server 
+{
 		listen 443 ssl;
 		server_name www.blazejowski.co.uk;
 		ssl_certificate /etc/nginx/ssl/fullchain.crt;
