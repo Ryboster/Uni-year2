@@ -132,6 +132,12 @@ Now even if they succeed at gaining remote access, the damage will be minimized 
 
 ```
 server {
+		listen 80;
+		server_name www.blazejowski.co.uk;
+		return 301 https://$host$request_uri;
+	}
+
+	server {
 		listen 443 ssl;
 		server_name www.blazejowski.co.uk;
 		ssl_certificate /etc/nginx/ssl/fullchain.crt;
@@ -143,30 +149,30 @@ server {
 		    return 403;
 		}
 
+		if ($request_uri ~* "\.\.")
+		{
+			return 403;
+		}
+
 		### Block special characters
 		location ~ "^/[!?\$%\^]" {
 		    return 403;
 		}
 
 		### Block fishy paths
-		location ~* /(php|venv|robots|owa|admin|auth|aaa9|aab9|cgi-bin|developmentserver|metadatauploader|vendor|hello\.world|phpunit|lib|laravel|www|yii|zend|ws|V2|test|tests|testing)
+		location ~* /(etc|php|env|venv|robots|owa|admin|auth|aaa9|aab9|cgi-bin|developmentserver|metadatauploader|vendor|hello\.world|phpunit|lib|laravel|www|yii|zend|ws|V2|test|tests|testing)
 		{
-			deny all;
-		}
-
-		### Block upper levels
-		location ~ \.\.
-		{
-			deny all;
+			return 403;
 		}
 
 		### Block sensitive extensions
-		location ~* /\.(env|git|log|sql|ht|bak|zip|tar|key|sqlite3|txt|md|crt|conf|sh|pyc|cfg|php) {
-			deny all;
+		location ~* /.*\.(env|git|log|sql|ht|bak|zip|tar|key|sqlite3|txt|md|crt|conf|sh|pyc|cfg|php|local|d) 
+		{
+			return 403;
 		}
 
 		location / {
-			proxy_pass http://127.0.0.1:8000;
+			proxy_pass http://127.0.0.1:8001;
 			proxy_set_header Host $host;
 			proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
 			proxy_set_header X-Forwarded-Proto https;
@@ -185,21 +191,21 @@ server {
 ```
 [nginx-403]
 enabled = true
-port    = http,https
-filter  = nginx-403
+port = http,https
+filter = nginx-403
 logpath = /var/log/nginx/access.log
 maxretry = 3
-findtime = 300
-bantime  = 3600
+findtime = 600
+bantime = 3600
+action = iptables-multiport[name=nginx-403, port="http,https", protocol=tcp]
 ```
 
 /etc/fail2ban/filter.d/nginx-403.conf
 
 ```
 [Definition]
-failregex = <HOST> -.* "(GET|POST|HEAD).*" 403
+failregex = ^<HOST> - - \[.*\] "(GET|POST|HEAD|OPTIONS|PUT|DELETE).*" 403 .*
 ignoreregex =
-
 ```
 
 
