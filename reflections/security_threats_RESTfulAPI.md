@@ -97,9 +97,7 @@ Debug mode can sometimes leak proprietary information ...
 
 #### Altered Directory Structure
 
-At first I stored all my sensitive files such as `fullchain.crt`, `private.key`, `log.txt`, or `db_creds.json` in my project's root directory (same directory as my `main.py`). This can pose a threat since a server is essentially just that - a file serving application. Since those files were within its scope, someone could've just asked my server "hey, fetch me the file called "fullchain.crt" located at /.", and the server would comply.
-
-
+At first I stored all my sensitive files such as `fullchain.crt`, `private.key`, `log.txt`, or `db_creds.json` in my project's root directory (same directory as my `main.py`). This can pose a threat since a server is essentially just that - a file serving application. Since those files were within its scope, someone could've just asked my server "hey, fetch me the file called "fullchain.crt" located at /.", and the server would comply unless such a case was explicitally accounted for.
 
 I've since moved all of them into a directory outside of the scope of the application:
 
@@ -114,14 +112,36 @@ Personal_Website
 └── start.sh
 ```
 
+and used environment variables to pass the values of those files to my application. While this still isn't fully hack-proof, it's by far more secure than giving the server access to those files.
+
+---
+
+#### Containerized Application
+
+If the malicious actor was to succeed at gaining remote access to my server, they would've had the ability to execute any script whatsoever on my device. To protect myself against the consequences of this, I used `docker` to create an isolated environment from which the server now runs.
+
+
+
+Now even if they succeed at gaining remote access, the damage will be minimized as whatever scripts they execute will be limited to the scope of this isolated enviornment.
+
+---
+
+#### Used Nginx and Gunicorn
 
 
 
 
 
 
-'So What?' allows you to extract the meaning of 'What?'. Moreover, you should question what knowledge you and others had in the situation, and what knowledge or theories that could help you make sense of the situation.
 
 ### Now what?
 
 'Now what?' allows you to create an action plan for the future based on the previous questions.
+
+
+
+
+
+
+
+[Configuring HTTPS servers](https://nginx.org/en/docs/http/configuring_https_servers.html)
