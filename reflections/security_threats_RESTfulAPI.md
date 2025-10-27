@@ -106,11 +106,11 @@ Personal_Website
 ├── Personal_RESTful_API
 │   ├── main.py
 ├── db_creds.json
-├── fullchain.crt
 ├── log.txt
-├── private.key
 └── start.sh
 ```
+
+and in case of `private.key` and `fullchain.crt`, I've moved them to`/etc/nginx/ssl/` to let nginx take care of securing them.
 
 and used environment variables to pass the values of those files to my application. While this still isn't fully hack-proof, it's by far more secure than giving the server access to those files.
 
