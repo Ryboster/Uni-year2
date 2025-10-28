@@ -33,8 +33,6 @@ They were trying to obtain:
 
 * `logon.aspx` - Here they were likely either trying to access the login page or the *logged in* page. [Use ASP.NET forms-based authentication - ASP.NET | Microsoft Learn](https://learn.microsoft.com/en-us/troubleshoot/developer/webapps/aspnet/development/forms-based-authentication)
 
-
-
 ##### Gaining Remote Access
 
 ```
@@ -73,17 +71,13 @@ They were trying to obtain:
 
 ```
 
-They were trying to execute remote scripts on my server. This is extremely dangerous as if they succeeded they would
+This is a PHP payload injection. It allows the attacker to pass any arbitrary script in the payload to the server, bypassing authentication and forcing execution.
 
 [PHPUnit eval-stdin.php Unauthenticated RCE &ndash; Alert Logic Support Center](https://support.alertlogic.com/hc/en-us/articles/115005711043-PHPUnit-eval-stdin-php-Unauthenticated-RCE)
 
-
-
-
-
 ### So what?
 
-To better secure my application against this type of threat in the future I took the following steps:
+This -colloquially speaking- lit my behind on fire, and scared, I decided to sacrifice the day to better prepare against such attacks in the future. I took my server down, and drafted and executed a 5-step plan:
 
 ---
 
@@ -128,7 +122,7 @@ and in case of `private.key` and `fullchain.crt`, I've moved them to`/etc/nginx/
 
 If the malicious actor was to succeed at gaining remote access to my server, they would've had complete control over my device's files and interfaces, allowing them to not only seize all of my confidential files, but also spread to other devices on the network,
 
-To protect myself against the consequences of this, I used `docker` to create an isolated environment from which the server now runs. Since my server uses `PostgreSQL`, I've created two separate containers so that even if the malicious actor somehow gains control over the server container, my database and all of its git backup mechanisms are safe.
+While I can't really predict what tactic hackers might use to try this again, to protect myself against the consequences of any successful attempt, I used `docker` to create an isolated environment from which the server now runs. Since my server uses `PostgreSQL`, I've created two separate containers so that even if the malicious actor somehow gains control over the server container, my database and all of its git backup mechanisms are safe (at least in principle).
 
 ```docker
 FROM python:3.11-slim
@@ -181,36 +175,29 @@ stdout_logfile=/var/log/fail2ban.log
 stderr_logfile=/var/log/fail2ban_err.log
 ```
 
-
-
-
-
-
-
 ---
 
 #### Used Nginx and Gunicorn
 
-To address the problem of concurrency, and somewhat increase the security of my application by 
+To address the problem of concurrency, and somewhat increase the security of my application by eliminating Flask's "hand-holding" exploits, I moved to running the application via WSGI (Web Server Gateway Interface) on gunicorn. Gunicorn can be allegorized to a ventroliquist. Frameworks such as Flask or Django attach "strings" to the endpoints and methods of application built on them. Those "strings" then allow other applications to control (or puppeteer) them via a standardized convention called WSGI. This is of course just an analogy, as nothing is actually "attached". In reality, it's simply that Flask's and DJango's `App` objects provide those interfaces, and applications such as Gunicorn or Vunicorn can use them.
 
-
-
-
+To then further protect my application, I also needed a way to deny malicious requests before they ever reach my gunicorn server. To address this problem, I used `Nginx` as a reverse proxy, and 
 
 ```
     server 
     {
         listen 443 ssl;
         server_name www.blazejowski.co.uk;
-        ssl_certificate /etc/nginx/ssl/fullchain.crt;
+        ssl_certificate /etc/nginx/ssl/fullchain.crt;      ### Let Nginx take care of securing my SSL certs
         ssl_certificate_key /etc/nginx/ssl/private.key;
-        ssl_protocols TLSv1.2 TLSv1.3;
+        ssl_protocols TLSv1.2 TLSv1.3;                     ### Chucked out the obsolete v1.1
         ssl_ciphers HIGH:!aNULL:!MD5;
 
         if ($query_string ~* "(auto_prepend_file|allow_url_include|php://|data://|expect://|%2f%2f|%3a%2f%2f)") {
             return 403;
         }
-
+    
+        ## Block higher level access
         if ($request_uri ~* "\.\.")
         {
             return 403;
@@ -242,21 +229,17 @@ To address the problem of concurrency, and somewhat increase the security of my 
     }
 ```
 
-
+[Configuring HTTPS servers](https://nginx.org/en/docs/http/configuring_https_servers.html)
 
 ---
 
 #### Implemented Fail2Ban
 
-The previous measures address the security of my application, and indeed, implementation of those has vastly increased my confidence that no low-level attack will pose much of a threat to me anymore. However, even if my server can confidently shrug off 100% of the attacks, it doesn't matter very much if the attacker sends a million requests per second. In case of a DDOS (denial of service) attack, it is important that the server can also "attack" back in some way. 
+The previous measures address the security of my application, and indeed, implementation of those has vastly increased my confidence that no low-level attack will pose much of a threat to me anymore. However, even if my server can (hypothetically speaking) confidently shrug off 100% of the attacks, it doesn't matter much if the attacker sends a million requests per second. In case of a DDOS (denial of service) attack, it is important that the server can also "attack" back in some way. 
 
-This is where the `Fail2Ban` framework comes in. By analyzing my proxy's (Nginx) logs, and filtering out unwanted requests, I can automatically ban repeated offenders, vastly freeing up the resources of the application so it can continue serving genuine users.
+This is where the `Fail2Ban` framework comes in. By analyzing my proxy's (Nginx's) logs, and filtering out unwanted requests, I can automatically ban repeated offenders, vastly freeing up the resources of the application so it can continue serving genuine users.
 
-
-
-As mentioned before, my proxy now categorizes known previous attacks as just that - attacks. 
-
-
+Since I've set up my reverse proxy to send 403 responses on known attacks, I can now capture those events using regular expressions and ban repeating offenders in my `iptables`
 
 */etc/fail2ban/jail.local*:
 
@@ -282,8 +265,4 @@ ignoreregex =
 
 ### Now what?
 
-All and all I got lucky. The malicious user's bot was targetting php servers and exploits.
-
-
-
-[Configuring HTTPS servers](https://nginx.org/en/docs/http/configuring_https_servers.html)
+All in all I was very lucky that the malicious user's bot targeted the PHP framework and not 
