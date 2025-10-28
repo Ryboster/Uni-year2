@@ -4,7 +4,7 @@
 
 ### What?
 
-On 26th of October, my server (https://blazejowski.co.uk/) crashed. Investigating the cause of it, I found that a crawler had made several malicious requests to my server. The cause of the crash was most likely that at the time my server was hosted on Flask and not a production WSGI (Web Server Gateway Interface) such as gunicorn, which made it crash under the heavy load which likely hit concurrency.
+On 26th of October, my server (https://blazejowski.co.uk/) crashed. Investigating the cause of it, I found that a crawler had made several malicious requests to my server. The cause of the crash was most likely that at the time my server was hosted on Flask and not a production WSGI (Web Server Gateway Interface) such as gunicorn, which had made it crash under concurrent load.
 
 Normally I would censor or at least obfuscate the incoming IP addresses, however, due to the fact that the requests made were clearly of malicious nature, I do not have such scrupules. And on the contrary, exposing them here may warn others of the existing threat.
 To dissect the logs, the attacker basically made two different types of attacks:
@@ -21,7 +21,19 @@ To dissect the logs, the attacker basically made two different types of attacks:
 20.65.193.168 - - [26/Oct/2025 17:17:32] "GET /owa/auth/logon.aspx HTTP/1.1" 404 -
 ```
 
-The bot was probing my server for some commonly left-behind sensitive information such as git credentials, environment variables, and configuration files. 
+They were trying to obtain:
+
+* `.git/credentials` - This would've given them access to my github ([Git - gitcredentials Documentation](https://git-scm.com/docs/gitcredentials)).
+
+* `admin.config` - This file likely would've contained information used to grant administrative privileges ([FreePBX Community Forums](https://community.freepbx.org/t/white-page-on-http-ip-address-admin-config-php/25495/2)).
+
+* `ssl-key` - This is the file that's assigned to my domain on the DNS. Stealing it would've allowed them to impersonate me.
+
+* `ssl.log` - This file contains information regarding TLS handshakes and errors during connections.
+
+* `logon.aspx` - Here they were likely either trying to access the login page or the *logged in* page. [Use ASP.NET forms-based authentication - ASP.NET | Microsoft Learn](https://learn.microsoft.com/en-us/troubleshoot/developer/webapps/aspnet/development/forms-based-authentication)
+
+
 
 ##### Gaining Remote Access
 
@@ -61,13 +73,13 @@ The bot was probing my server for some commonly left-behind sensitive informatio
 
 ```
 
-They were trying to execute remote scripts on my server. This is extremely dangerous
+They were trying to execute remote scripts on my server. This is extremely dangerous as if they succeeded they would
+
+[PHPUnit eval-stdin.php Unauthenticated RCE &ndash; Alert Logic Support Center](https://support.alertlogic.com/hc/en-us/articles/115005711043-PHPUnit-eval-stdin-php-Unauthenticated-RCE)
 
 
 
 
-
- a few different attempts at gaining confidential information and remote access. Succeeding at any of them would've provided the attacker with ammunition against me as a person, leading to potential financial losses on my part.
 
 ### So what?
 
@@ -270,6 +282,8 @@ ignoreregex =
 
 ### Now what?
 
-'Now what?' allows you to create an action plan for the future based on the previous questions.
+All and all I got lucky. The malicious user's bot was targetting php servers and exploits.
+
+
 
 [Configuring HTTPS servers](https://nginx.org/en/docs/http/configuring_https_servers.html)
