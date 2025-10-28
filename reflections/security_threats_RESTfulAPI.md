@@ -120,6 +120,96 @@ and used environment variables to pass the values of those files to my applicati
 
 If the malicious actor was to succeed at gaining remote access to my server, they would've had the ability to execute any script whatsoever on my device. To protect myself against the consequences of this, I used `docker` to create an isolated environment from which the server now runs.
 
+```bash
+sudo docker stop db_docker app_docker
+sudo docker rm db_docker app_docker
+
+sudo docker volume rm pgdata
+
+docker run -d \
+ --name db_docker \
+ --network website_network \
+ -e POSTGRES_USER=snekette \
+ -e POSTGRES_PASSWORD=AnNeuRYSSSSMMMM11 \
+ -e POSTGRES_DB=db \
+ -v pgdata:/var/lib/postgresql/data \
+ postgres:15
+
+sleep 30
+
+docker run -d \
+ --name app_docker \
+ --network website_network \
+ -p 80:80 -p 443:443 \
+ -e DB_HOST=db_docker \
+ -e DB_PORT=5432 \
+ -e DB_USERNAME=snekette \
+ -e DB_PASSWORD=AnNeuRYSSSSMMMM11 \
+ -e DB_NAME=db \
+ website_docker
+
+sudo docker logs db_docker
+
+```
+
+
+
+```docker
+FROM python:3.11-slim
+
+RUN apt-get update && apt-get install -y \
+    nginx \
+    nano \
+    fail2ban \
+    python3-dev \
+    supervisor \
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/*
+
+WORKDIR /app
+
+COPY Personal_RESTful_API/ /app/
+COPY requirements.txt /app/
+COPY start.sh /app/
+COPY nginx /etc/nginx
+COPY fail2ban /etc/fail2ban
+COPY supervisord.conf /etc/supervisor/conf.d/supervisord.conf
+
+RUN pip install --no-cache-dir -r requirements.txt
+RUN chmod +x /app/start.sh
+EXPOSE 80 443
+
+CMD ["supervisord", "-n", "-c", "/etc/supervisor/conf.d/supervisord.conf"]
+```
+
+
+
+```conf
+[supervisord]
+nodaemon=true
+
+[program:nginx]
+command=/usr/sbin/nginx -g "daemon off;"
+autorestart=true
+stdout_logfile=/var/log/nginx.log
+stderr_logfile=/var/log/nginx_err.log
+
+[program:gunicorn]
+command=gunicorn main:app
+directory=/app
+autorestart=true
+stdout_logfile=/var/log/gunicorn.log
+stderr_logfile=/var/log/gunicorn_err.log
+
+[program:fail2ban]
+command=/usr/bin/fail2ban-server -xf
+autorestart=true
+stdout_logfile=/var/log/fail2ban.log
+stderr_logfile=/var/log/fail2ban_err.log
+```
+
+
+
 
 
 Now even if they succeed at gaining remote access, the damage will be minimized as whatever scripts they execute will be limited to the scope of this isolated enviornment.
@@ -131,8 +221,8 @@ Now even if they succeed at gaining remote access, the damage will be minimized 
 
 
 ```
-server 
-{
+    server 
+    {
 		listen 443 ssl;
 		server_name www.blazejowski.co.uk;
 		ssl_certificate /etc/nginx/ssl/fullchain.crt;
