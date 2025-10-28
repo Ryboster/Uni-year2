@@ -95,9 +95,9 @@ I've since turned off the debug mode in my Flask application which closed all of
 
 #### Altered Directory Structure
 
-At first I stored all my sensitive files such as `fullchain.crt`, `private.key`, `log.txt`, or `db_creds.json` in my project's root directory (same directory as my `main.py`). This can pose a threat since a server is essentially just that - a file serving application. Since those files were within its scope, someone could've just asked my server "hey, fetch me the file called "fullchain.crt" located at /.", and the server would comply unless such a case was explicitally prevented.
+At first I stored all my sensitive files such as `fullchain.crt`, `private.key`, `log.txt`, or `db_creds.json` in my project's root directory (same directory as my `main.py`). This can pose a threat since a server is essentially just that - a file serving application. Since those files were within its scope, someone could've just asked my server "hey, fetch me the file called "`fullchain.crt`" located at /.", and the server would comply unless such a case was explicitally prevented.
 
-I've since eliminated all of those files and instead used environment variables. `start.sh` was replaced by a `CMD` block in my docker container. `log.txt` has been moved outside of the scope of the server, and `db_creds.json` was replaced with environment variables. Although environment variables are generally regarded as safer than files, one other way in which this threat could be mitigated is restructuring the directory structure in the following way:
+I've since eliminated all of those files and used environment variables instead. `start.sh` was replaced by a `CMD` block in my docker container. `log.txt` has been moved outside of the scope of the server, and `db_creds.json` was replaced with environment variables. Although environment variables are generally regarded as safer than files, one other way in which this threat could be mitigated is restructuring the directory structure in the following way:
 
 ```
 Personal_Website
@@ -116,7 +116,7 @@ and in case of `private.key` and `fullchain.crt`, I've moved them to`/etc/nginx/
 
 If the malicious actor was to succeed at gaining remote access to my server, they would've had complete control over my device's files and interfaces, allowing them to not only seize all of my confidential files, but also spread to other devices on the network,
 
-To protect myself against the consequences of this, I used `docker` to create an isolated environment from which the server now runs. Since my server uses `PostgreSQL`, I've created two separate containers so that even if malicious actor somehow gains control over the server container, my database and all of its git backup mechanisms are safe
+To protect myself against the consequences of this, I used `docker` to create an isolated environment from which the server now runs. Since my server uses `PostgreSQL`, I've created two separate containers so that even if the malicious actor somehow gains control over the server container, my database and all of its git backup mechanisms are safe.
 
 ```docker
 FROM python:3.11-slim
@@ -179,6 +179,12 @@ stderr_logfile=/var/log/fail2ban_err.log
 
 #### Used Nginx and Gunicorn
 
+To address the problem of concurrency, and somewhat increase the security of my application by 
+
+
+
+
+
 ```
     server 
     {
@@ -230,7 +236,17 @@ stderr_logfile=/var/log/fail2ban_err.log
 
 #### Implemented Fail2Ban
 
-/etc/fail2ban/jail.local
+The previous measures address the security of my application, and indeed, implementation of those has vastly increased my confidence that no low-level attack will pose much of a threat to me anymore. However, even if my server can confidently shrug off 100% of the attacks, it doesn't matter very much if the attacker sends a million requests per second. In case of a DDOS (denial of service) attack, it is important that the server can also "attack" back in some way. 
+
+This is where the `Fail2Ban` framework comes in. By analyzing my proxy's (Nginx) logs, and filtering out unwanted requests, I can automatically ban repeated offenders, vastly freeing up the resources of the application so it can continue serving genuine users.
+
+
+
+As mentioned before, my proxy now categorizes known previous attacks as just that - attacks. 
+
+
+
+*/etc/fail2ban/jail.local*:
 
 ```
 [nginx-403]
@@ -244,7 +260,7 @@ bantime = 3600
 action = iptables-multiport[name=nginx-403, port="http,https", protocol=tcp]
 ```
 
-/etc/fail2ban/filter.d/nginx-403.conf
+*/etc/fail2ban/filter.d/nginx-403.conf*:
 
 ```
 [Definition]
