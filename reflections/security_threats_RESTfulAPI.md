@@ -35,7 +35,7 @@ They were trying to obtain:
 
 ##### Gaining Remote Access
 
-```
+```log
 204.76.203.15 - - [26/Oct/2025 17:33:08] "GET /cgi-bin/luci/;stok=/locale HTTP/1.1" 404 -
 20.163.15.119 - - [26/Oct/2025 19:53:47] "GET /developmentserver/metadatauploader HTTP/1.1" 404 -
 193.142.147.209 - - [26/Oct/2025 20:06:52] "GET /cgi-bin/luci/;stok=/locale HTTP/1.1" 404 -
@@ -83,7 +83,7 @@ This -colloquially speaking- lit my behind on fire, and scared, I decided to sac
 
 #### Turned off Debug Mode
 
-Debug mode is a tool made for developers while the application is still in early stages of development. When errors occur, it provides us with detailed information as to *where* and *why* the error occurred. An example of that may look something like this:
+Debug mode is a tool made for developers meant to be used while the application is still in early stages of development. When errors occur, it provides us with detailed information as to *where* and *why* the error occurred. An example of that may look something like this:
 
 ![](assets/2025-10-28-04-30-42-image.png)
 
@@ -101,9 +101,9 @@ I've since turned off the debug mode in my Flask application which closed all of
 
 #### Altered Directory Structure
 
-At first I stored all my sensitive files such as `fullchain.crt`, `private.key`, `log.txt`, or `db_creds.json` in my project's root directory (same directory as my `main.py`). This can pose a threat since a server is essentially just that - a file serving application. Since those files were within its scope, someone could've just asked my server "hey, fetch me the file called "`fullchain.crt`" located at /.", and the server would comply unless such a case was explicitally prevented.
+At first I stored some of my sensitive files such as `fullchain.crt`, `private.key`, `log.txt`, or `db_creds.json` in my project's root directory (same directory as my `main.py`). This can pose a threat since a server is essentially just that - a file serving application. Since those files were within its scope, someone could've just asked my server "hey, fetch me the file called "`fullchain.crt`" located at /.", and the server would comply unless such a case was explicitally prevented.
 
-I've since eliminated all of those files and used environment variables instead. `start.sh` was replaced by a `CMD` block in my docker container. `log.txt` has been moved outside of the scope of the server, and `db_creds.json` was replaced with environment variables. Although environment variables are generally regarded as safer than files, one other way in which this threat could be mitigated is restructuring the directory structure in the following way:
+I've since eliminated all of those files and used environment variables instead. `start.sh` was replaced by a `CMD` block in my docker container. `log.txt` has been moved outside of the scope of the server, and `db_creds.json` was replaced with environment variables. Although environment variables are generally regarded as safer than files, one other way in which this threat could be mitigated is restructuring the directory tree in the following way:
 
 ```
 Personal_Website
@@ -179,11 +179,11 @@ stderr_logfile=/var/log/fail2ban_err.log
 
 #### Used Nginx and Gunicorn
 
-To address the problem of concurrency, and somewhat increase the security of my application by eliminating Flask's "hand-holding" exploits, I moved to running the application via WSGI (Web Server Gateway Interface) on gunicorn. Gunicorn can be allegorized to a ventroliquist. Frameworks such as Flask or Django attach "strings" to the endpoints and methods of application built on them. Those "strings" then allow other applications to control (or puppeteer) them via a standardized convention called WSGI. This is of course just an analogy, as nothing is actually "attached". In reality, it's simply that Flask's and DJango's `App` objects provide those interfaces, and applications such as Gunicorn or Vunicorn can use them.
+To address the problem of concurrency, and somewhat increase the security of my application by eliminating Flask's "hand-holding" exploits, I moved to running the application via WSGI (Web Server Gateway Interface) on gunicorn. Gunicorn can be allegorized to a ventroliquist. Frameworks such as Flask or Django attach "strings" to the endpoints and methods of applications built on them. Those "strings" then allow other server applications to control (or puppeteer) them via a standardized convention called WSGI. This is of course just an analogy, as nothing is actually "attached". In reality, it's simply that Flask's and DJango's `App` objects provide those interface, and server applications such as Gunicorn or Waitress can use them.
 
-To then further protect my application, I also needed a way to deny malicious requests before they ever reach my gunicorn server. To do this, I used `Nginx` as a reverse proxy. A proxy is essentially just an intermediary server used for purposes such as routing or load balancing. It receives user requests and redirects them to the actual end server application such as my gunicorn. By stuffing this server in between my router and my gunicorn, I can catch out and act on malicious requests early, before they have the chance to do any damage.
+To then further protect my application, I also needed a way to deny malicious requests before they ever reach my gunicorn server. To do this, I used `Nginx` as a reverse proxy. A proxy is essentially just an intermediary server used for purposes such as routing or load balancing. It receives user requests and redirects them to the actual end server such as my gunicorn. By stuffing this server in between my router and my gunicorn, I can catch out and act on malicious requests early, before they have the chance to do any damage.
 
-```
+```conf
     server 
     {
         listen 443 ssl;
@@ -229,13 +229,17 @@ To then further protect my application, I also needed a way to deny malicious re
     }
 ```
 
-[Configuring HTTPS servers](https://nginx.org/en/docs/http/configuring_https_servers.html)
+
+
+Sysoev, Igor. (no date) Configuring HTTPS servers. Available at: [Configuring HTTPS servers](https://nginx.org/en/docs/http/configuring_https_servers.html) (Accessed: 27th October 2025).
+
+Kai, Matt. (2022) WSGI Servers. Available at: [WSGI Servers - Full Stack Python](https://www.fullstackpython.com/wsgi-servers.html) (Accessed: 28th October 2025).
 
 ---
 
 #### Implemented Fail2Ban
 
-The previous measures address the security of my application, and indeed, implementation of those has vastly increased my confidence. However, even if my server can (hypothetically speaking) confidently shrug off 100% of the attacks, it doesn't matter much if the attacker sends a million requests per second. In case of a DDOS (denial of service) attack, it is important that the server can also "attack" back in some way. 
+The previous measures address the security of my application, and indeed, implementation of those has vastly increased my confidence. However, even if my server can (hypothetically speaking) shrug off 100% of the attacks, it doesn't matter much if the attacker sends a million requests per second. In case of a DDOS (denial of service) attack, it is important that the server can also "attack" back in some way. 
 
 This is where the `Fail2Ban` framework comes in. `Fail2ban` is a framework that sits alongside the proxy and reads and parses its activity logs. It defines a concept called "jails", which is a system of rules and punishments (kind of like the law), wherein if a law is broken, the offender's IP is banned (or jailed) for a set amount of time. It applies regular expressions to parse out targetted requests and counts offences commited by each individual IP. If the number of offences is greater than `maxretry`, the IP address is blocked in the `iptables` application.
 
@@ -243,7 +247,7 @@ Using this framework, I defined a new jail which complements the filters I built
 
 */etc/fail2ban/jail.local*:
 
-```
+```conf
 [nginx-403]
 enabled = true
 port = http,https
@@ -257,16 +261,18 @@ action = iptables-multiport[name=nginx-403, port="http,https", protocol=tcp]
 
 */etc/fail2ban/filter.d/nginx-403.conf*:
 
-```
+```conf
 [Definition]
 failregex = ^<HOST> - - \[.*\] "(GET|POST|HEAD|OPTIONS|PUT|DELETE).*" 403 .*
 ignoreregex =
 ```
 
-Now if the same crawler revisits my website, they'll get briefly dealt with.
+Now if the same crawler revisits my website, they'll be briefly banned.
 
 ### Now what?
 
-All in all I was very lucky that the malicious user's bot targeted the PHP framework and not Flask. Had they targeted Flask when my debug mode was still on, I would for sure be toast. I'm very glad that the attack scared me enough to put up some defenses, because I could've just shrugged the whole thing off since no damage was caused anyway.
+All in all I was very lucky that the malicious user's bot targeted the PHP framework and not Flask. Had they targeted Flask when my debug mode was still on, I would for sure be toast. I'm very glad that the attack scared me enough to put up some defenses, because I could've just as well shrugged the whole thing off since no damage was caused anyway.
 
-This experience vastly increased my awareness of what security methods and tools actually do. I now understand the importance of keeping up to date with new exploits, and how to update them myself when a new threat emerges.
+This whole activity took me 19 hours of RESTless (hehe) development (from 2am til 7:30pm), and it has vastly increased my awareness of what security methods and tools actually do. I now understand the importance of keeping up to date with new exploits, and how to update them myself when a new threat emerges.
+
+In future, I will continue closely monitoring my activity logs to keep my defenses strong and relevant. I would also like to experiment with different counter-attack measures. In case where a malicious actor just doesn't give up, I'm going to need stronger counter-measures to disincentivize them from attacking. one solution here could be spamming the actor with thousands of FTP requests and flooding their hard drives with pictures of cats, or bee movie scripts. For now this is more of a delusion of grandeur, but should the need arise, I won't hesitate to try it.
