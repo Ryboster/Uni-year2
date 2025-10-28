@@ -181,7 +181,7 @@ stderr_logfile=/var/log/fail2ban_err.log
 
 To address the problem of concurrency, and somewhat increase the security of my application by eliminating Flask's "hand-holding" exploits, I moved to running the application via WSGI (Web Server Gateway Interface) on gunicorn. Gunicorn can be allegorized to a ventroliquist. Frameworks such as Flask or Django attach "strings" to the endpoints and methods of application built on them. Those "strings" then allow other applications to control (or puppeteer) them via a standardized convention called WSGI. This is of course just an analogy, as nothing is actually "attached". In reality, it's simply that Flask's and DJango's `App` objects provide those interfaces, and applications such as Gunicorn or Vunicorn can use them.
 
-To then further protect my application, I also needed a way to deny malicious requests before they ever reach my gunicorn server. To address this problem, I used `Nginx` as a reverse proxy, and 
+To then further protect my application, I also needed a way to deny malicious requests before they ever reach my gunicorn server. To do this, I used `Nginx` as a reverse proxy. A proxy is essentially just an intermediary server used for purposes such as routing or load balancing. It receives user requests and redirects them to the actual end server application such as my gunicorn. By stuffing this server in between my router and my gunicorn, I can catch out and act on malicious requests early, before they have the chance to do any damage.
 
 ```
     server 
@@ -235,11 +235,11 @@ To then further protect my application, I also needed a way to deny malicious re
 
 #### Implemented Fail2Ban
 
-The previous measures address the security of my application, and indeed, implementation of those has vastly increased my confidence that no low-level attack will pose much of a threat to me anymore. However, even if my server can (hypothetically speaking) confidently shrug off 100% of the attacks, it doesn't matter much if the attacker sends a million requests per second. In case of a DDOS (denial of service) attack, it is important that the server can also "attack" back in some way. 
+The previous measures address the security of my application, and indeed, implementation of those has vastly increased my confidence. However, even if my server can (hypothetically speaking) confidently shrug off 100% of the attacks, it doesn't matter much if the attacker sends a million requests per second. In case of a DDOS (denial of service) attack, it is important that the server can also "attack" back in some way. 
 
-This is where the `Fail2Ban` framework comes in. By analyzing my proxy's (Nginx's) logs, and filtering out unwanted requests, I can automatically ban repeated offenders, vastly freeing up the resources of the application so it can continue serving genuine users.
+This is where the `Fail2Ban` framework comes in. `Fail2ban` is a framework that sits alongside the proxy and reads and parses its activity logs. It defines a concept called "jails", which is a system of rules and punishments (kind of like the law), wherein if a law is broken, the offender's IP is banned (or jailed) for a set amount of time. It applies regular expressions to parse out targetted requests and counts offences commited by each individual IP. If the number of offences is greater than `maxretry`, the IP address is blocked in the `iptables` application.
 
-Since I've set up my reverse proxy to send 403 responses on known attacks, I can now capture those events using regular expressions and ban repeating offenders in my `iptables`
+Using this framework, I defined a new jail which complements the filters I built on my reverse proxy:
 
 */etc/fail2ban/jail.local*:
 
@@ -263,6 +263,10 @@ failregex = ^<HOST> - - \[.*\] "(GET|POST|HEAD|OPTIONS|PUT|DELETE).*" 403 .*
 ignoreregex =
 ```
 
+Now if the same crawler revisits my website, they'll get briefly dealt with.
+
 ### Now what?
 
-All in all I was very lucky that the malicious user's bot targeted the PHP framework and not 
+All in all I was very lucky that the malicious user's bot targeted the PHP framework and not Flask. Had they targeted Flask when my debug mode was still on, I would for sure be toast. I'm very glad that the attack scared me enough to put up some defenses, because I could've just shrugged the whole thing off since no damage was caused anyway.
+
+This experience vastly increased my awareness of what security methods and tools actually do. I now understand the importance of keeping up to date with new exploits, and how to update them myself when a new threat emerges.
