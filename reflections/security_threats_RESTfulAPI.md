@@ -23,8 +23,6 @@ To dissect the logs, the attacker basically made two different types of attacks:
 
 The bot was probing my server for some commonly left-behind sensitive information such as git credentials, environment variables, and configuration files. 
 
-
-
 ##### Gaining Remote Access
 
 ```
@@ -79,17 +77,27 @@ To better secure my application against this type of threat in the future I took
 
 #### Turned off Debug Mode
 
-Debug mode is a tool made for developers while the application is still in early stages of development
+Debug mode is a tool made for developers while the application is still in early stages of development. When errors occur, it provides us with detailed information as to *where* and *why* the error occurred. An example of that may look something like this:
 
+![](assets/2025-10-28-04-30-42-image.png)
 
+As you can see, this exposes not only the specific server error that occurred, but also shows us a snippet of the actual code. Often times during development, the environment isn't fully set up yet, and developers may hard code certain secrets in their code. If an error were to occur while the server is in production, this could lead to those secrets being exposed to malicious actors.
+
+In case of Flask in particular however, there is a much more serious risk as Flask provides us with a `/console` endpoint. This endpoint acts as a shell terminal and can be used to execute malicious code remotely. If the bad actors were to gain control of it, they could -in principle- completely seize control of your device or even *multiple devices* on the same local network.
+
+![](assets/2025-10-28-04-41-37-image.png)
+
+I've since turned off the debug mode in my Flask application which closed all of those avenues.
+
+ Poudel, Akash. (2022) Hacking the Debugging Pin of a Flask Application. Available at: https://b33pl0g1c.medium.com/hacking-the-debugging-pin-of-a-flask-application-7364794c4948 (Accessed: 28th October 2025).
 
 ---
 
 #### Altered Directory Structure
 
-At first I stored all my sensitive files such as `fullchain.crt`, `private.key`, `log.txt`, or `db_creds.json` in my project's root directory (same directory as my `main.py`). This can pose a threat since a server is essentially just that - a file serving application. Since those files were within its scope, someone could've just asked my server "hey, fetch me the file called "fullchain.crt" located at /.", and the server would comply unless such a case was explicitally accounted for.
+At first I stored all my sensitive files such as `fullchain.crt`, `private.key`, `log.txt`, or `db_creds.json` in my project's root directory (same directory as my `main.py`). This can pose a threat since a server is essentially just that - a file serving application. Since those files were within its scope, someone could've just asked my server "hey, fetch me the file called "fullchain.crt" located at /.", and the server would comply unless such a case was explicitally prevented.
 
-I've since moved all of them into a directory outside of the scope of the application:
+I've since eliminated all of those files and instead used environment variables. `start.sh` was replaced by a `CMD` block in my docker container. `log.txt` has been moved outside of the scope of the server, and `db_creds.json` was replaced with environment variables. Although environment variables are generally regarded as safer than files, one other way in which this threat could be mitigated is restructuring the directory structure in the following way:
 
 ```
 Personal_Website
@@ -102,45 +110,13 @@ Personal_Website
 
 and in case of `private.key` and `fullchain.crt`, I've moved them to`/etc/nginx/ssl/` to let nginx take care of securing them.
 
-and used environment variables to pass the values of those files to my application. While this still isn't fully hack-proof, it's by far more secure than giving the server access to those files.
-
 ---
 
 #### Containerized Application
 
-If the malicious actor was to succeed at gaining remote access to my server, they would've had the ability to execute any script whatsoever on my device. To protect myself against the consequences of this, I used `docker` to create an isolated environment from which the server now runs.
+If the malicious actor was to succeed at gaining remote access to my server, they would've had complete control over my device's files and interfaces, allowing them to not only seize all of my confidential files, but also spread to other devices on the network,
 
-```bash
-sudo docker stop db_docker app_docker
-sudo docker rm db_docker app_docker
-
-sudo docker volume rm pgdata
-
-docker run -d \
- --name db_docker \
- --network website_network \
- -e POSTGRES_USER=snekette \
- -e POSTGRES_PASSWORD=AnNeuRYSSSSMMMM11 \
- -e POSTGRES_DB=db \
- -v pgdata:/var/lib/postgresql/data \
- postgres:15
-
-sleep 30
-
-docker run -d \
- --name app_docker \
- --network website_network \
- -p 80:80 -p 443:443 \
- -e DB_HOST=db_docker \
- -e DB_PORT=5432 \
- -e DB_USERNAME=snekette \
- -e DB_PASSWORD=AnNeuRYSSSSMMMM11 \
- -e DB_NAME=db \
- website_docker
-
-sudo docker logs db_docker
-
-```
+To protect myself against the consequences of this, I used `docker` to create an isolated environment from which the server now runs. Since my server uses `PostgreSQL`, I've created two separate containers so that even if malicious actor somehow gains control over the server container, my database and all of its git backup mechanisms are safe
 
 ```docker
 FROM python:3.11-slim
@@ -158,7 +134,6 @@ WORKDIR /app
 
 COPY Personal_RESTful_API/ /app/
 COPY requirements.txt /app/
-COPY start.sh /app/
 COPY nginx /etc/nginx
 COPY fail2ban /etc/fail2ban
 COPY supervisord.conf /etc/supervisor/conf.d/supervisord.conf
@@ -194,7 +169,11 @@ stdout_logfile=/var/log/fail2ban.log
 stderr_logfile=/var/log/fail2ban_err.log
 ```
 
-Now even if they succeed at gaining remote access, the damage will be minimized as whatever scripts they execute will be limited to the scope of this isolated enviornment.
+
+
+
+
+
 
 ---
 
@@ -244,6 +223,8 @@ Now even if they succeed at gaining remote access, the damage will be minimized 
         }
     }
 ```
+
+
 
 ---
 
