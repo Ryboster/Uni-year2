@@ -28,6 +28,10 @@ This example presents the threat of social engineering in Information Security. 
 
 
 
+### Information Security
+
+information security us the practice of . It involves protecting information from unauthorised access, disclosure, alteration, and destruction (Meta Compliance 23 July 2025).
+
 
 
 
@@ -36,12 +40,16 @@ This example presents the threat of social engineering in Information Security. 
 
 ----------------------------------------------
 
-[link to LO]
+
+
+
 
 ### References
 
 Holdsworth, J. Kosinski, M. (No date.) What is information security (InfoSec)? Available at: https://www.ibm.com/think/topics/information-security (Accessed: 18th November 2025).
 
 Wolford, B. (No date.) What is GDPR, the EU’s new data protection law? Available at: [What is GDPR, the EU’s new data protection law? - GDPR.eu](https://gdpr.eu/what-is-gdpr/) (Accessed: 18th November 2025).
+
+Meta Compliance (23 July 2025) Information Security vs Data Protection: Understanding the Differences. Available at: https://www.metacompliance.com/blog/data-breaches/information-security-vs-data-protection (Accessed: 18th November 2025)
 
 ----------------------------------------------
