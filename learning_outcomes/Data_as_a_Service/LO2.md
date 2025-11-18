@@ -6,7 +6,9 @@
 
 ---
 
-Information security (InfoSec) is the protection of information and data against unathorized access. Since there are various kinds of threats, protection is engineered and upheld by both software and humans (or fleshware). This article will only focus on the human aspects of InfoSec.
+Information security (InfoSec) is the protection of information and data against unathorized access and modification. Since there are various kinds of threats, protection is engineered and upheld by both software and humans (or fleshware). This article will only focus on the human aspects of InfoSec.
+
+
 
 
 
