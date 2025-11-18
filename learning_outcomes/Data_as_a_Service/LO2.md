@@ -18,7 +18,15 @@ Information security (InfoSec) is the protection of information and data against
 
 #### Social Engineering
 
-A part of the toolbelt of a malicious actor is exploiting the human weakness; Short term memory, Gullibility, Agreeability, Being non-confrontational. 
+A part of the toolbelt of a malicious actor is exploiting the human weakness; Short term memory, Gullibility, Agreeability, Being non-confrontational, and more. When a malicious actor identifies these characteristics in an individual, they can take advantage of that, potentially leading to unathorized access. Consider the following example:
+
+Patricia has short term memory. She can never remember the username and password for her work computer. To counteract that flaw, she put her credentials on a sticky note, and sticked it on her monitor so she can always access that information when she needs to. Sam is a malicious actor who gained access to the office building through some legitimate means. Walking to the conference room for a meeting, he gets a good glance of Patricia's office, and spots the sticky note on one of the monitors. Sam has a pretty good memory, so he is able to quickly memorize the contents of the sticky note. During the meeting, he excuses himself to go to the bathroom. Once in there, he pulls out his phone, connects to the company wifi, and signs in to company server as Patricia. Sam just gained unauthorized access to the organization's data.
+
+This example presents the threat of social engineering in Information Security. The company could have had the best software security in the world, but it would still fall victim to Patricia's short sightedness. A good InfoSec department will always account for ...
+
+
+
+
 
 
 
