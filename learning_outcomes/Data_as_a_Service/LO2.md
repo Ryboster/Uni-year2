@@ -12,17 +12,13 @@ Information security (InfoSec) is the protection of information and data against
 
 
 
-To describe the way in which 
-
-
-
 ### Body Section
 
 ----------------------------------------------
 
-### Social Engineering
+#### Social Engineering
 
-
+A part of the toolbelt of a malicious actor is exploiting the human weakness; Short term memory, Gullibility, Agreeability, Being non-confrontational. 
 
 
 
