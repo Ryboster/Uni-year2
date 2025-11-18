@@ -30,7 +30,7 @@ This example presents the threat of social engineering in Information Security. 
 
 ### Information Security
 
-information security us the practice of . It involves protecting information from unauthorised access, disclosure, alteration, and destruction (Meta Compliance 23 July 2025).
+information security is the practice of . It involves protecting information from unauthorised access, disclosure, alteration, and destruction (Meta Compliance 23 July 2025).
 
 
 
