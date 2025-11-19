@@ -6,7 +6,9 @@
 
 ----------------------------------------------
 
-[Explain/Describe wording]
+Common software security approaches often leave 
+
+
 
 
 
