@@ -8,10 +8,6 @@
 
 Information security (InfoSec) is the protection of information and data against unathorized access and modification. Since there are various kinds of threats, protection is engineered and upheld by both software and humans (or fleshware). This article will only focus on the human aspects of InfoSec.
 
-
-
-
-
 ### Body Section
 
 ----------------------------------------------
@@ -24,13 +20,13 @@ Patricia has short term memory. She can never remember the username and password
 
 This example presents the threat of social engineering in Information Security. The company could have had the best software security in the world, but it would still fall victim to Patricia's short sightedness. A good InfoSec department will always account for ...
 
-
-
-
-
 ### Information Security
 
 information security is the practice of . It involves protecting information from unauthorised access, disclosure, alteration, and destruction (Meta Compliance 23 July 2025).
+
+### Data Protection
+
+
 
 
 
@@ -39,10 +35,6 @@ information security is the practice of . It involves protecting information fro
 ### Personal Experience
 
 ----------------------------------------------
-
-
-
-
 
 ### References
 
