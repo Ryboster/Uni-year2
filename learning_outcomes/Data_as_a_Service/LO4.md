@@ -117,9 +117,17 @@ ignoreregex =
 
 This jail is configured to catch all 403 responses and ban repeated offenders. If you got 403 3 times within 600 seconds, your IP is banned for a 3600 seconds.
 
+
+
 #### Pitfall
 
+because fail2ban uses regex to find harmful requests, if attacks suddenly change they will no longer be matched by the patterns. As such jails need to be updated on a constant ongoing basis to catch up with the evolution of cyber attacks. This can require substantial resources.
 
+
+
+#### Mitigation
+
+By using small, highly specialized AI models, jails can catch up with the attacks. While deploying them on an ongoing basis might be very cost-ineffective, they could be a healthy addition to maintenance breaks.
 
 
 
