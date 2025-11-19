@@ -40,25 +40,52 @@ your application will always see something like this instead:
 
 * Host (`https://www.blazejowski.co.uk/about`) will be replaced with the address the proxy used to reach the server (`http://127.0.0.1/about`),
 
+This might lead to a variety of different issues depending on what your application does and how. Some of the most common issues resulting from this particular pitfall are:
 
+* The inability to generate correct absolute URLs,
 
-The address will be replaced with the local address of the proxy, and headers will either be truncated, or replaced with your proxy's default headers. 
+* Downgrading connection to HTTP,
 
-Besides logging, this might lead to further issues such as the inability to generate correct absolute URLs. In order to generate an absolute URL, applications will sometimes  grab the IP address 
+* Logging all traffic as localhost,
 
 
 
 #### Mitigation
 
+To mitigate this pitfall, Nginx can be set to always pass along client information as-is, without alteration.
 
-
-
+```nginx
+proxy_set_header X-Real-IP $remote_addr;
+proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+proxy_set_header X-Forwarded-Proto $scheme;
+proxy_set_header Host $host;
+```
 
 #### Pitfall
 
+Proxies have their own limits on the size of requests made. This means that even though your application might be well adjusted to receive or serve large files, you might still get issues such as:
 
+* `413: Request Entity Too Large` error response,
+
+* Truncated responses,
+
+* Timeouts,
 
 #### Mitigation
+
+As such, your proxy's buffer needs to be explicitally set to the largest size your application is able to receive/serve:
+
+```nginx
+client_max_body_size 50M;
+```
+
+Or proxy bufferring might need to be turned on for data streams:
+
+```nginx
+proxy_buffering off;
+```
+
+
 
 
 
