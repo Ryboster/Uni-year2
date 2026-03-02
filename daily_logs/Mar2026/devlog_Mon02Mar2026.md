@@ -100,7 +100,7 @@
 
 
 
-5pm - Father asked me for an old phone. Unfortunately, the phone was previously flashed with a rooted image. Upon factory reset, the phone 
+5pm - Father asked me for an old phone. Unfortunately, the phone was previously flashed with a rooted image. Upon factory reset, Knox was triggered and the phone is stuck in a bootup loop. Downloaded heimdall and an official image. Flashed the phone with it. 
 
 <br>
 
