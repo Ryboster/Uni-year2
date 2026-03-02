@@ -44,6 +44,10 @@
 
 8:25am - Let my team know about having to rewrite the IInstrument interface. Got a discussion started.
 
+
+
+8:45am - Got greenlit. Full steam ahead!
+
 <br>
 
 # Issues/Errors
@@ -52,7 +56,7 @@
 
 8:07am - Nevermind, Marta's done that already. We're good!
 
-8:08am - Nevermind again, those classes aren't MonoBehaviour so I can't serialize them. I'm going to have to rewrite `interface IInstrument` into a `class Instrument : Monobehaviour` for this to work.
+8:08am - Nevermind again, those classes aren't MonoBehaviour so I can't serialize them. I'm going to have to rewrite `interface IInstrument` into a `abstract class Instrument : Monobehaviour` for this to work.
 
 
 
