@@ -74,6 +74,10 @@
 
 12pm - Attended the ASD meeting
 
+
+
+12:30pm - Learned about what telemetry is from Heckie. It's basically when applications gather user data and send it back over to the developers. This is then used to extract valuable insights about the customer and application usage trends. 
+
 <br>
 
 # Issues/Errors
