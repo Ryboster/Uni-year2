@@ -6,19 +6,27 @@
 
 1:30am - Started working on my UNI_REPO_UPDATER.sh script for automatic repo updates,
 
+
+
 2:20am - Finished my UNI_REPO_UPDATER.sh script,
 
 2:25am - Break,
 
+
+
 3am - Created a special environment for cron to store its variables,
 
 3:30am - Tidied my scripts,
+
+
 
 5am - Wrote a desktop application for opening the most recent log,
 
 5:10am - With my applications done, I got to work on T-83.
 
 5:30am - Gas station break and breakfast,
+
+
 
 6:30am - Got to work on T-83.
 
@@ -28,9 +36,9 @@
 
 6:50am - There is an `AddInstrument(IInstrument instrument)` method. Excellent. Now I need to create a `ShopItem` prefab with this interface, and call the method from UI,
 
+
+
 7:10am - Built the prefabs for the two available instruments. Designing the behaviour right now,
-
-
 
 7:40am - Doggy time,
 
@@ -40,17 +48,15 @@
 
 8am - Ok, there really doesn't seem to be a cleaner way to do it. I settled for `FindWithTag()`. The impact on the performance is still minimal so it's not that bad of an idea. It will become problematic later, but that's a problem for future me. I created a new prefab; ShopInstrument. It is going to be used to definte purchasable instruments.
 
-
-
 8:25am - Let my team know about having to rewrite the IInstrument interface. Got a discussion started.
-
-
 
 8:45am - Got greenlit. Full steam ahead!
 
 8:55am - Fixed all the errors and got the project to compile. 
 
 
+
+10am - 
 
 
 
