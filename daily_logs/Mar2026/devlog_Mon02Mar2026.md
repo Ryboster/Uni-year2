@@ -28,7 +28,9 @@
 
 6:50am - There is an `AddInstrument(IInstrument instrument)` method. Excellent. Now I need to create a `ShopItem` prefab with this interface, and call the method from UI,
 
-6:55 - 
+7:10am - Built the prefabs for the two available instruments. Designing the behaviour right now,
+
+
 
 
 
