@@ -66,6 +66,14 @@
 
 11:30am - Have to redesign the shop UI.
 
+11:40am - Rebuilt the ShopItem
+
+11:55am - Rebuilt the Shop
+
+
+
+12pm - Attended the ASD meeting
+
 <br>
 
 # Issues/Errors
