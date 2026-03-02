@@ -50,6 +50,10 @@
 
 8:07am - Nevermind, Marta's done that already. We're good!
 
+8:08am - Nevermind again, those classes aren't MonoBehaviour so I can't serialize them. I'm going to have to rewrite `interface IInstrument` into a `class Instrument : Monobehaviour` for this to work.
+
+
+
 <br>
 
 # Next Steps
