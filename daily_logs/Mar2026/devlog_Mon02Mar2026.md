@@ -46,6 +46,8 @@
 
 # Issues/Errors
 
+8:05am - Unity doesn't serialize interfaces. Fudge! 
+
 <br>
 
 # Next Steps
