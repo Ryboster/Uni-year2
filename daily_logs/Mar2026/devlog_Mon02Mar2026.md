@@ -4,9 +4,13 @@
 
 12am - Fixed my DEVLOG_CREATOR.sh script for automatically creating daily logs,
 
-12:30am - Started working on my UNI_REPO_UPDATER script for automatic repo updates,
+12:30am - Started working on my UNI_REPO_UPDATER.sh script for automatic repo updates,
 
- 
+1:20am - Finished my UNI_REPO_UPDATER.sh script,
+
+1:25am - Break,
+
+
 
 <br>
 
