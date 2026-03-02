@@ -66,15 +66,13 @@
 
 11:30am - Have to redesign the shop UI.
 
-11:40am - Rebuilt the ShopItem
+11:40am - Rebuilt the ShopItem prefab. Made it a horizontal list item instead of the "cell" it used to be.
 
-11:55am - Rebuilt the Shop
-
-
-
-12pm - Attended the ASD meeting
+11:55am - Rebuilt the Shop. Added a side panel to display more information about the selected item before it is purchased.
 
 
+
+12pm - Attended the ASD meeting,
 
 12:30pm - Learned about what telemetry is from Heckie. It's basically when applications gather user data and send it back over to the developers. This is then used to extract valuable insights about the customer and application usage trends. 
 
