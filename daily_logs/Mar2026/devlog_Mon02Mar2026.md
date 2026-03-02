@@ -34,7 +34,7 @@
 
 7:40am - Doggy time,
 
-
+7:50am - Ok, this interaction is more complex than anticipated. I can't just design in in my head; insufficient mental RAM. I'm going to have to make a UML just to chart the way forward. The problem is that in order for the UI to be able to apply bought items to the Mash Tuns, my Shop is going to have to be aware of all of the mashtuns. So far, I only know of one way 
 
 
 
