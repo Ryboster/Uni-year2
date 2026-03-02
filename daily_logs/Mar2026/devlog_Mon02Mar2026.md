@@ -26,7 +26,7 @@
 
 6:45am - Investigated how upgrades are applied to mash tuns.
 
-6:55am - 
+6:50am - There is an AddInstrument(IInstrument instrument) method, great. Now I need to 
 
 
 
