@@ -80,6 +80,8 @@
 
 1pm - Attended sprint planning for the brewing game (or "Mash it!") project,
 
+1:40pm - Made a team decision to add a new kanban column for catalouging known bugs,
+
 2pm - Made a team decision to remove the brewing manual from the SRS due to divergent requirements,
 
 
