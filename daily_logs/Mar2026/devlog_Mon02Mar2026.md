@@ -92,7 +92,7 @@
 
 4:25pm - Fully constrained the Shop prefab. Sized every element appropriately. Added dragbar. Now items are populating the list without overlaps or overflows,
 
-![](/home/snek/.config/marktext/images/2026-03-02-16-22-24-image.png)
+![](/home/snek/Desktop/portfolio/Uni-year2/assets/2026-03-02-16-23-44-image.png)
 
 
 
