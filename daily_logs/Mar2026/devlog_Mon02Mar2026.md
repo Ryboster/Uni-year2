@@ -46,7 +46,7 @@
 
 # Issues/Errors
 
-8:05am - Unity doesn't serialize interfaces. Fudge! 
+8:05am - Unity doesn't serialize interfaces. Fudge! In order to serialize this I'm going to have to create a new MonoBehaviour class that subscribes to that interface. 
 
 <br>
 
