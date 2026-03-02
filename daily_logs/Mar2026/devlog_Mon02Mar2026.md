@@ -56,7 +56,7 @@
 
 
 
-10am - 
+10am - With the classes now written, I need to better define the purchasing workflow. It's a little bit tricky because ideally I'd handle the purchasing in the shop and not the item, however, that's impossible as it's the Item that handles the OnClick event.
 
 
 
