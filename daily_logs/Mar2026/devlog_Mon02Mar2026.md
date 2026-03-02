@@ -90,6 +90,8 @@
 
 3:50pm - Back to work on the Shop,
 
+4:25pm - Fully constrained the Shop prefab. Sized every element appropriately. Added dragbar. 
+
 
 
 <br>
