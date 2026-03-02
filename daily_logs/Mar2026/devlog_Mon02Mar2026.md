@@ -2,19 +2,27 @@
 
 # Activities
 
-12am - Fixed my DEVLOG_CREATOR.sh script for automatically creating daily logs,
+1am - Fixed my DEVLOG_CREATOR.sh script for automatically creating daily logs,
 
-12:30am - Started working on my UNI_REPO_UPDATER.sh script for automatic repo updates,
+1:30am - Started working on my UNI_REPO_UPDATER.sh script for automatic repo updates,
 
-1:20am - Finished my UNI_REPO_UPDATER.sh script,
+2:20am - Finished my UNI_REPO_UPDATER.sh script,
 
-1:25am - Break,
+2:25am - Break,
 
-2am - Created a special environment for cron to store its variables,
+3am - Created a special environment for cron to store its variables,
 
-2:30am - Tidied my scripts,
+3:30am - Tidied my scripts,
 
-4am - Wrote a desktop application for opening the most recent log,
+5am - Wrote a desktop application for opening the most recent log,
+
+5:10am - With my applications done, I got to work on T-83.
+
+5:30am - Gas station break and breakfast,
+
+
+
+
 
 
 
