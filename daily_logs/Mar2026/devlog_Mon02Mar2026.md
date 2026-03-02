@@ -90,7 +90,9 @@
 
 3:50pm - Back to work on the Shop,
 
-4:25pm - Fully constrained the Shop prefab. Sized every element appropriately. Added dragbar. 
+4:25pm - Fully constrained the Shop prefab. Sized every element appropriately. Added dragbar. Now items are populating the list without overlaps or overflows,
+
+![](/home/snek/.config/marktext/images/2026-03-02-16-22-24-image.png)
 
 
 
