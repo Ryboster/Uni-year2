@@ -24,7 +24,9 @@
 
 6:40am - Resolved conflicts with scene,
 
+6:45am - Investigated how upgrades are applied to mash tuns.
 
+6:55am - 
 
 
 
