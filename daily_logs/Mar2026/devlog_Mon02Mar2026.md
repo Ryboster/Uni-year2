@@ -48,6 +48,8 @@
 
 8:45am - Got greenlit. Full steam ahead!
 
+8:55am - Fixed all the errors and got the project to compile. 
+
 <br>
 
 # Issues/Errors
