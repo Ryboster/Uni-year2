@@ -78,7 +78,17 @@
 
 
 
-2pm - Decided to remove the brewing manual from the SRS due to divergent requirements,
+1pm - Attended sprint planning for the brewing game (or "Mash it!") project,
+
+2pm - Made a team decision to remove the brewing manual from the SRS due to divergent requirements,
+
+
+
+
+
+3:50pm - 
+
+
 
 <br>
 
