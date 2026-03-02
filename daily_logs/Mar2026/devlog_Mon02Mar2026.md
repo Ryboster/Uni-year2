@@ -88,7 +88,7 @@
 
 3:40pm - Scheduled a CI/CD discussion with the members of the brewing game project for Wednesday 1pm,
 
-3:50pm - 
+3:50pm - Back to work on the Shop,
 
 
 
