@@ -2,9 +2,11 @@
 
 # Activities
 
-12am - Fixed my DEVLOG_CREATOR.sh script
+12am - Fixed my DEVLOG_CREATOR.sh script for automatically creating daily logs,
 
-1am - 
+12:30am - Started working on my UNI_REPO_UPDATER script for automatic repo updates,
+
+ 
 
 <br>
 
