@@ -34,9 +34,7 @@
 
 7:40am - Doggy time,
 
-7:50am - Ok, this interaction is more complex than anticipated. I can't just design in in my head; insufficient mental RAM. I'm going to have to make a UML just to chart the way forward. The problem is that in order for the UI to be able to apply bought items to the Mash Tuns, my Shop is going to have to be aware of all of the Mash Tuns on scene. So far, I only know of one way to do this, which is `GameObject.FindGameObjectsWithTag("tag")`. 
-
-
+7:50am - Ok, this interaction is more complex than anticipated. I can't just design in in my head; insufficient mental RAM. I'm going to have to make a UML just to chart the way forward. The problem is that in order for the UI to be able to apply bought items to the Mash Tuns, my Shop is going to have to be aware of all of the Mash Tuns on scene. So far, I only know of one way to do this, which is `GameObject.FindGameObjectsWithTag("tag")`.  This is a problem because it's very inefficient, and there are already 2 other scripts doing just that - luckily only at startup.  If I don't find a better solution, I'm going to have to settle for this, and then we can improve the performance in the future by creating some sort of a central singleton class that is going to keep an updated array of all Mash Tuns on scene, accessible by other classes who need it.
 
 
 
