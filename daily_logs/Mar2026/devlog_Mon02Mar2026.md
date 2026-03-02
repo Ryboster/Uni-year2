@@ -26,7 +26,9 @@
 
 6:45am - Investigated how upgrades are applied to mash tuns.
 
-6:50am - There is an AddInstrument(IInstrument instrument) method, great. Now I need to 
+6:50am - There is an `AddInstrument(IInstrument instrument)` method. Excellent. Now I need to create a `ShopItem` prefab with this interface, and call the method from UI,
+
+6:55 - 
 
 
 
