@@ -14,7 +14,9 @@
 
 2:30am - Tidied my scripts,
 
-3am - 
+4am - Wrote a desktop application for opening the most recent log,
+
+
 
 <br>
 
