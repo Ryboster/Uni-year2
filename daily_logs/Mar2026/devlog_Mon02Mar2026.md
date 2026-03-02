@@ -68,7 +68,7 @@
 
 11:40am - Rebuilt the ShopItem prefab. Made it a horizontal list item instead of the "cell" it used to be.
 
-11:55am - Rebuilt the Shop. Added a side panel to display more information about the selected item before it is purchased.
+11:55am - Rebuilt the Shop. Added a side panel to display more information about the selected item before it is purchased. Inspired by the following UI design: https://www.gameuidatabase.com/uploads/Astral-Chain03132021-122126-84561.jpg
 
 
 
