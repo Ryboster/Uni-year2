@@ -42,6 +42,8 @@
 
 
 
+8:25am - Let my team know about having to rewrite the IInstrument interface. Got a discussion started.
+
 <br>
 
 # Issues/Errors
