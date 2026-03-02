@@ -10,7 +10,11 @@
 
 1:25am - Break,
 
+2am - Created a special environment for cron to store its variables,
 
+2:30am - Tidied my scripts,
+
+3am - 
 
 <br>
 
