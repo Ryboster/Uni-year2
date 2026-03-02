@@ -76,6 +76,10 @@
 
 12:30pm - Learned about what telemetry is from Heckie. It's basically when applications gather user data and send it back over to the developers. This is then used to extract valuable insights about the customer and application usage trends. 
 
+
+
+2pm - Decided to remove the brewing manual from the SRS due to divergent requirements,
+
 <br>
 
 # Issues/Errors
