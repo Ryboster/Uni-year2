@@ -50,6 +50,10 @@
 
 8:55am - Fixed all the errors and got the project to compile. 
 
+
+
+
+
 <br>
 
 # Issues/Errors
@@ -64,7 +68,7 @@
 
 9:24am - Shop and ShopItems are thus far disconnected. This is a problem as the Shop has something the ShopItems need - Player score. I need to somehow make the shop aware of the items it has. 
 
-
+9:40am - Solved the problem. Instead of placing the items inside the Shop prefab manually, I created a Shop script that defines the field `GameObject[] instrumentsToSell;`. Then, I simply instantiate the items in that list and set their parents to the appropriate content list.
 
 
 
