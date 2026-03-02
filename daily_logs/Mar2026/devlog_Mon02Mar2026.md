@@ -84,7 +84,9 @@
 
 
 
+3:30pm - Pestered Sergio for some soundtracks to listen to while working,
 
+3:40pm - Scheduled a CI/CD discussion with the members of the brewing game project for Wednesday 1pm,
 
 3:50pm - 
 
