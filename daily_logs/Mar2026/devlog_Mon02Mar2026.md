@@ -58,9 +58,13 @@
 
 10am - With the classes now written, I need to better define the purchasing workflow. It's a little bit tricky because ideally I'd handle the purchasing in the shop and not the item, however, that's impossible as it's the Item that handles the OnClick event.
 
-
-
 10:45am - Food break.
+
+
+
+11:10am - Marta gave me some feedback on the progress thus far. Will have to: remake the shop a little bit as we don't need two categories, add a popup window so the player can 
+
+11:30am - Have to redesign the shop UI.
 
 <br>
 
