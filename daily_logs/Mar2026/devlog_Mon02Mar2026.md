@@ -20,7 +20,9 @@
 
 5:30am - Gas station break and breakfast,
 
-6:30am - 
+6:30am - Got to work on T-83.
+
+
 
 
 
