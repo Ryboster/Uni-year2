@@ -20,7 +20,7 @@
 
 5:30am - Gas station break and breakfast,
 
-
+6:30am - 
 
 
 
