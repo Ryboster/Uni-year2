@@ -62,7 +62,9 @@
 
 
 
-9:23am - 
+9:24am - Shop and ShopItems are thus far disconnected. This is a problem as the Shop has something the ShopItems need - Player score. I need to somehow make the shop aware of the items it has. 
+
+
 
 
 
