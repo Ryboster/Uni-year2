@@ -100,7 +100,7 @@
 
 
 
-
+5pm - Father asked me for an old phone. Unfortunately, the phone was previously flashed with a rooted image. Upon factory reset, the phone 
 
 <br>
 
