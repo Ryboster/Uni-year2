@@ -20,7 +20,7 @@
 
 
 
-8am - 
+8am - Added a bug reported to me by Sergio to the "Bugs" column on our kanban,
 
 
 
@@ -66,6 +66,8 @@
 
 
 # Issues/Errors
+
+8:30am - Encountered a problem. 
 
 <br>
 
