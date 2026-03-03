@@ -8,7 +8,7 @@
 
 6am - Had to do something. Off to work on the Shop prefab now,
 
-6:10am - 
+6:10am - Added necessary fields and selection logic to Shop and ShopInstrument classes,
 
 6:20am - Added functionality to the dragbar. Included offset.
 
