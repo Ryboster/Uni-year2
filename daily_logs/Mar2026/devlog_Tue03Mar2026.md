@@ -36,7 +36,7 @@
 
 
 
-1:45pm - FINALLY, it works,
+1:45pm - Finally got it to work. Now purchasing an upgrade actually applies it to all mash tuns,
 
 1:50pm - Added comments to all classes I worked on,
 
@@ -44,7 +44,11 @@
 
 2pm - Added a "purchased" banner to the shop's sidebar,
 
-2:10pm -
+2:10pm - Fixed the bug that allowed the player to purchase an upgrade multiple times,
+
+2:25pm - Reported progress to my team,
+
+2:40pm -  
 
 
 
