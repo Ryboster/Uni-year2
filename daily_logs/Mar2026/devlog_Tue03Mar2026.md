@@ -52,6 +52,8 @@
 
 3:15pm - Corresponded with my team shortly
 
+3:30pm - Stocks going crazy. Sold to avoid further losses,
+
 <br>
 
 
