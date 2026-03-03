@@ -73,6 +73,12 @@
 
 
 
+
+
+9pm - Solved the issue
+
+
+
 # Issues/Errors
 
 8:30am - Encountered a problem. The WaterLevelGauge Instrument requires a UI element to push its updates to, but there's no easy way to assign it. Previously, there used to be an "upgrade" button directly on the UI element in question, so assigning it was a piece of cake. Now however, I am faced with 2 major options. Either FindWithTag (inefficient), or the Shop needs to serialize it to then pass it over to the item on purchase.
