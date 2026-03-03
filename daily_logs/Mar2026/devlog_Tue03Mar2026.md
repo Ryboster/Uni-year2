@@ -16,8 +16,6 @@
 
 
 
-
-
 7am - Breakfast break
 
 
@@ -31,6 +29,10 @@
 
 
 12:30pm - Rise and shine ursine (again)
+
+12:40pm - Back to work on T-82 & T-83.
+
+12:50pm - 
 
 
 
