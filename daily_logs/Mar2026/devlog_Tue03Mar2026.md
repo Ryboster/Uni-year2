@@ -38,7 +38,7 @@
 
 1:45pm - FINALLY, it works,
 
-1:50pm - Started adding comments
+1:50pm - Added comments to all classes I worked on,
 
 
 
