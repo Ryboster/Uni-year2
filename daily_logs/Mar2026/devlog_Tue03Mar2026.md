@@ -62,6 +62,10 @@
 
 3:30pm - Stocks going crazy. Sold to avoid further losses. 15% gain baby,
 
+3:40pm - Brought my log up to speed. Doggy time,
+
+
+
 <br>
 
 
@@ -69,7 +73,7 @@
 
 8:30am - Encountered a problem. The WaterLevelGauge Instrument requires a UI element to push its updates to, but there's no easy way to assign it. Previously, there used to be an "upgrade" button directly on the UI element in question, so assigning it was a piece of cake. Now however, I am faced with 2 major options. Either FindWithTag (inefficient), or the Shop needs to serialize it to then pass it over to the item on purchase.
 
-8:45am - Experimented with 
+8:45am - Experimented with FindWithTag, but unfortunately if an element is disabled, it  cannot be found like that. Instead, you need to fetch ALL GameObjects on scene to find it. That "solution" is awful. I'm going with the other option instead.
 
 <br>
 
