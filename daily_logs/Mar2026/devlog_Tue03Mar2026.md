@@ -8,6 +8,14 @@
 
 6am - Had to do something. Off to work on the Shop prefab now,
 
+6:10am - 
+
+6:20am - Added functionality to the dragbar. Included offset.
+
+6:25am - Added functionality to the close window button.
+
+
+
 <br>
 
 
