@@ -48,7 +48,9 @@
 
 2:25pm - Reported progress to my team,
 
-2:40pm -  
+2:40pm - Added a button to toggle Shop state allowing user to open it,
+
+2:50pm -
 
 
 
