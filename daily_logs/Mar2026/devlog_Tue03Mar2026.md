@@ -50,13 +50,15 @@
 
 2:40pm - Added a button to toggle Shop state allowing user to open it,
 
-2:50pm -
+2:50pm - Rearranged the files in my directories,
 
 
+
+3pm - The change I made at 1:45 broke a test. Oops. Disabled the test,
 
 3:10pm - Pushed changes. Opened PR. No conflicts.
 
-3:15pm - Corresponded with my team shortly
+3:15pm - Let my team know the PR is up,
 
 3:30pm - Stocks going crazy. Sold to avoid further losses. 15% gain baby,
 
