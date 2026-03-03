@@ -69,6 +69,8 @@
 4:30pm - Tomorrow's a meeting with Nicola. Started my Pi4 to get my website started and to work on it,
 
 
+4:50pm - Site up.
+
 
 
 # Issues/Errors
