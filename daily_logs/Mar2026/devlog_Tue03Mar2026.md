@@ -2,7 +2,7 @@
 
 # Activities
 
-3:40am- Rise and shine ursine,
+3:40am - Rise and shine ursine,
 
 
 
@@ -13,6 +13,8 @@
 6:20am - Added functionality to the dragbar. Included offset.
 
 6:25am - Added functionality to the close window button.
+
+
 
 
 
@@ -30,7 +32,13 @@
 
 
 
-3pm - 
+2pm - Added a "purchased" banner to the shop's sidebar,
+
+2:10pm -
+
+
+
+3:10pm - Pushed changes. Opened PR. No conflicts.
 
 <br>
 
