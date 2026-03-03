@@ -6,7 +6,7 @@
 
 
 
-6am - Had to do something. Off to work on the Shop prefab now.
+6am - Had to do something. Off to work on the Shop prefab now,
 
 <br>
 
