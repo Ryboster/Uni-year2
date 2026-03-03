@@ -30,9 +30,9 @@
 
 12:30pm - Rise and shine ursine (again)
 
-12:40pm - Back to work on T-82 & T-83.
+12:40pm - Back to work on T-82 & T-83,
 
-12:50pm - 
+12:50pm - Made the decision on how the upgrades are going to be applied,
 
 
 
