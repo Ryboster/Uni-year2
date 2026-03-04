@@ -20,6 +20,8 @@
 
 4:55am - Excellent! HTTPS works now!
 
+4:56am - Tried adding certbot to cron for automatic renewal. No need. Certbot runs a systemctl process that already handles that,
+
 <br>
 
 # Issues/Errors
