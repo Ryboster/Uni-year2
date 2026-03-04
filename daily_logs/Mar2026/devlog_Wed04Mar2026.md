@@ -112,7 +112,13 @@
 
 
 
+8am - Tried building a debian image. `unity` doesn't exist on debian. Fudge,
+
 8:20am - Ok, there is a docker base image built for this exact purpose; `# unityci/editor:ubuntu-2022.3.13f1-webgl-3`! Hoorah! 
+
+8:30am - Looked up how to upload a built image to ghcr,
+
+
 
 
 
@@ -160,6 +166,6 @@ https://medium.com/devopsturkiye/pushing-docker-images-to-githubs-registry-manua
 
 [Image Layer Details - unityci/editor:ubuntu-2022.3.13f1-webgl-3](https://hub.docker.com/layers/unityci/editor/ubuntu-2022.3.13f1-webgl-3/images/sha256-c852801b98a44baf04c67a787691259c4a88457327ec6cb59f12ea9ad0f9ddfd)
 
-
+https://medium.com/devopsturkiye/pushing-docker-images-to-githubs-registry-manual-and-automated-methods-19cce3544eb1
 
 <br>
