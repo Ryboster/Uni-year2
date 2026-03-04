@@ -122,7 +122,11 @@
 
 9am - While building, I shared the discoveries with my team,
 
-9:10am - Finished building. Uploading.
+9:10am - Finished building,
+
+9:20am - Uploading!
+
+
 
 
 
