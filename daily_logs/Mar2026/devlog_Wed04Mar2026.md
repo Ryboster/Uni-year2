@@ -12,11 +12,13 @@
 
 1:40am - Completed the script, ran it, aaaaaand... Godaddy's API is paid. Fantastic! Enshittification at its finest,
 
+1:45am - Looked into alternative DNS providers,
+
+1:50am - Found cloudfare,
 
 
-2am - Tried sett
 
-3am - Transferred my domain over to Cloudflare,
+2:30am - Transferred my domain over to cloudflare,
 
 
 
