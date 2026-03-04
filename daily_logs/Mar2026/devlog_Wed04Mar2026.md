@@ -20,7 +20,9 @@
 
 2:30am - Transferred my domain over to cloudflare,
 
-2:50am - Set everything up. Website runs,
+2:40am - Set everything up. Website runs,
+
+2:50am - Can't justify learning Cloudflare's API just for this one thing. Used AI to rewrite that script for cloudflare. Ran it, and it works!
 
 
 
