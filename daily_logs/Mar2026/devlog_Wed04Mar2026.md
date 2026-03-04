@@ -90,7 +90,11 @@
 
 
 
-6:30am - 
+6:30am - Started researching,
+
+6:45am - From my very cursory research, it seems that the idea is very much feasible. Just how easy it'll prove I don't yet know, but for now I have to research yaml syntax,
+
+
 
 
 
