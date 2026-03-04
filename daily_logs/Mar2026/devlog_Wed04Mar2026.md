@@ -20,6 +20,14 @@
 
 2:30am - Transferred my domain over to cloudflare,
 
+2:50am - Set everything up. Website runs,
+
+
+
+3am - Hmm, it seems cloudflare handles SSL certs differently. Can't use ZeroSSL because the CNAME record isn't being found so I can't verify that I own the domain. Looked into alternatives,
+
+
+
 
 
 4:20am - Installed certbot. Generated a new SSL certificate,
