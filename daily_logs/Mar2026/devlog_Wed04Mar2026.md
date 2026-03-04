@@ -70,7 +70,7 @@
 
 5:28am - A-ha! Turns out you have to set a "Rule" for that in the "Rules" tab,
 
-5:30am - Excellent! They have a thing just for that!
+5:30am - Excellent! They have a thing just for that! Godaddy can go bankrupt for all I care,
 
 ![](/home/snek/Desktop/portfolio/Uni-year2/assets/2026-03-04-05-28-57-image.png)
 
