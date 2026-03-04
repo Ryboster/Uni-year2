@@ -12,6 +12,14 @@
 
 
 
+4:20am - Installed certbot. Generated a new SSL certificate,
+
+4:30am - Looked for where the cert is actually applied,
+
+4:50am - Found it! It's in my nginx.conf. Updated the path to the cert,
+
+4:55am - Excellent! HTTPS works now!
+
 <br>
 
 # Issues/Errors
