@@ -78,9 +78,13 @@
 
 5:40am - Huzzah! Got it to work! Now http is being redirected to https, and name requests to www.name,
 
+![](/home/snek/Desktop/portfolio/Uni-year2/assets/2026-03-04-06-26-00-image.png)
+
 5:45am - Breakfast break and then off to researching using unity in github actions,
 
-![](/home/snek/Desktop/portfolio/Uni-year2/assets/2026-03-04-06-25-57-image.png)
+
+
+6:30am - 
 
 
 
