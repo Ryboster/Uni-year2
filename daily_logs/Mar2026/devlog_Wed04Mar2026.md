@@ -72,6 +72,8 @@
 
 5:30am - Excellent! They have a thing just for that! Godaddy can go bankrupt for all I care,
 
+![](assets/2026-03-04-06-28-32-image.png)
+
 ![](/home/snek/Desktop/portfolio/Uni-year2/assets/2026-03-04-05-28-57-image.png)
 
 
