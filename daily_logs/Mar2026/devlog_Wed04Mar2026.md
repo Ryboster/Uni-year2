@@ -112,7 +112,7 @@
 
 
 
-8:20am - Ok, Unity 
+8:20am - Ok, there is a docker base image built for this exact purpose; `# unityci/editor:ubuntu-2022.3.13f1-webgl-3`! Hoorah! 
 
 
 
