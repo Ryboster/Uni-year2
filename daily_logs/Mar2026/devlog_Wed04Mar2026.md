@@ -96,6 +96,10 @@
 
 
 
+6:55am - Found the exact trigger i was looking for:
+
+![](../assets/2026-03-04-06-57-03-image.png)
+
 
 
 
