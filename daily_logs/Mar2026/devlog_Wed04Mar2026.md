@@ -52,9 +52,9 @@
 
 4:50am - Found it! It's in my nginx.conf. Updated the path to the cert,
 
-4:55am - Excellent! HTTPS works now!
+4:55am - Excellent! HTTPS works again,
 
-4:56am - Tried adding certbot to cron for automatic renewal. No need. Certbot runs a systemctl process that already handles that,
+4:56am - Tried adding certbot to cron for automatic renewal. No need. Certbot runs a systemctl process that already handles that for me.
 
 <br>
 
