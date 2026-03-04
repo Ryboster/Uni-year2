@@ -146,6 +146,8 @@
 
 8am - Tried building a debian container. `unity` doesn't exist on debian. I need a more specialized docker base image,
 
+11:25am - The action is trying to pull the image before my authentication step. Luckily there is a thread of someone who had the exact same problem,
+
 
 
 <br>
@@ -178,7 +180,7 @@ https://medium.com/devopsturkiye/pushing-docker-images-to-githubs-registry-manua
 
 https://fadhilnoer.medium.com/automating-unity-builds-part-1-ba0c60e8d06b
 
-
+[How to run login before pulling docker images? · docker/login-action · Discussion #669 · GitHub](https://github.com/docker/login-action/discussions/669)
 
 
 
