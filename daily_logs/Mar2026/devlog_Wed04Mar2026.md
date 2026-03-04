@@ -72,15 +72,13 @@
 
 5:30am - Excellent! They have a thing just for that! Godaddy can go bankrupt for all I care,
 
-
-
-![](/home/snek/Desktop/portfolio/Uni-year2/assets/2026-03-04-05-28-57-image.png)
+![](../assets/2026-03-04-06-30-27-image.png)
 
 
 
 5:40am - Huzzah! Got it to work! Now http is being redirected to https, and name requests to www.name,
 
-![](/home/snek/Desktop/portfolio/Uni-year2/assets/2026-03-04-06-26-00-image.png)
+![](../assets/2026-03-04-06-30-45-image.png)
 
 5:45am - Breakfast break and then off to researching using unity in github actions,
 
