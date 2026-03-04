@@ -56,6 +56,14 @@
 
 4:56am - Tried adding certbot to cron for automatic renewal. No need. Certbot runs a systemctl process that already handles that for me.
 
+
+
+5:10am - Looked into solving the other issue. What I had to do on godaddy before was creating an additional parallel DNS record for requests that excluded www, let's see how it's handled on Cloudflare now,
+
+
+
+to include www, I just had to add a new 
+
 <br>
 
 # Issues/Errors
