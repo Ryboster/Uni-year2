@@ -68,6 +68,8 @@
 
 5:26am - No it wasn't. Apparently it was just my browser being polite. Including the slash at the end opens up a suggestion which prepends the www.
 
+5:30am - A-ha! Turns out you have to set a "Rule" for that in the "Rules" tab,
+
 
 
 
