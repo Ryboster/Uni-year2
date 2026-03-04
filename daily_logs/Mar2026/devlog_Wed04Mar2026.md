@@ -84,6 +84,10 @@
 
 
 
+6:25am - Fixed my relative path in MarkText to make sure the included pictures display properly on GitHub.
+
+
+
 6:30am - 
 
 
