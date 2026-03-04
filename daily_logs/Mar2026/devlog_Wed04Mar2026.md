@@ -126,6 +126,10 @@
 
 9:20am - Uploading!
 
+9:25am - This is going to take a while ... There's around 10gb to upload. Quick break.
+
+![](../assets/2026-03-04-09-29-24-image.png)
+
 
 
 
