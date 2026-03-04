@@ -116,11 +116,11 @@
 
 8:30am - Looked up how to upload a built image to ghcr,
 
+8:35am - Started building the container. This will take a while ...
 
 
 
 
-8:30am - Wrote a quick debian mockup dockerfile. Looked up how to upload it to ghcr.
 
 
 
