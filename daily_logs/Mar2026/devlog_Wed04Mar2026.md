@@ -64,6 +64,8 @@
 
 5:20am - Huh, so connecting to https://blazejowski.co.uk/ DOES prepend the www, but connecting to https://blazejowski.co.uk (without the slash at the end) doesn't. Interesting,
 
+5:25am - Removed the root name DNS record to see if that's what's doing the prepending,
+
 
 
 
