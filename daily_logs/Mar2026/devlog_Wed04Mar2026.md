@@ -102,6 +102,8 @@
 
 
 
+7:10am - Worked out enough syntax to know more or less what to do.
+
 7:30am - Did some research and ran some tests, and made some findings. 
 
 
