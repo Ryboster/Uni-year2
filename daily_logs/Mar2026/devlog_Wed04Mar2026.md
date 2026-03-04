@@ -14,7 +14,7 @@
 
 1:45am - Looked into alternative DNS providers,
 
-1:50am - Found cloudfare,
+1:50am - Found cloudfare. Their API is seemingly free,
 
 
 
