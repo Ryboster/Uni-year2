@@ -124,6 +124,8 @@ https://community.cloudflare.com/t/how-to-delete-www-domain-name/236611/2
 
 https://docs.github.com/en/actions/reference/workflows-and-actions/workflow-syntax
 
+https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows
+
 
 
 
