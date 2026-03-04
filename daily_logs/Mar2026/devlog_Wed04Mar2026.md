@@ -122,9 +122,7 @@ https://community.cloudflare.com/t/how-to-delete-www-domain-name/236611/2
 
 [Automating Unity Builds with GitHub Actions](https://www.virtualmaker.dev/blog/automating-unity-builds-with-github-actions)
 
-[Unity - Manual: UnityYAML](https://docs.unity3d.com/2020.1/Documentation/Manual/UnityYAML.html)
-
-
+https://docs.github.com/en/actions/reference/workflows-and-actions/workflow-syntax
 
 
 
