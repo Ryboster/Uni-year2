@@ -32,15 +32,13 @@
 
 3:20am - Added the script to my crontab so my website doesn't ever go down again. Finally, no more manual IP resets!
 
+3:30am - Found two mor
 
 
 
 
 
-
-
-
-3am - Hmm, it seems cloudflare handles SSL certs differently. Can't use ZeroSSL because the CNAME record isn't being found so I can't verify that I own the domain. Looked into alternatives,
+3:40am - Hmm, it seems cloudflare handles SSL certs differently. I can't use ZeroSSL because the CNAME record isn't being found so I can't verify that I own the domain. Looked into alternatives,
 
 
 
@@ -59,6 +57,10 @@
 <br>
 
 # Issues/Errors
+
+3:30am - Found two issues. 1. `www` is now required. 2. HTTPS doesn't work,
+
+
 
 <br>
 
