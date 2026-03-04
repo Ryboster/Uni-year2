@@ -102,7 +102,15 @@
 
 
 
-7:30am - Did some research and ran some tests,
+7:30am - Did some research and ran some tests, and made some findings. 
+
+
+
+8:30am - Wrote a quick debian mockup dockerfile. Looked up how to upload it to ghcr.
+
+
+
+
 
 
 
@@ -137,6 +145,8 @@ https://docs.github.com/en/actions/reference/workflows-and-actions/workflow-synt
 https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows
 
 https://stackoverflow.com/questions/59954185/github-actions-split-long-command-into-multiple-lines
+
+https://medium.com/devopsturkiye/pushing-docker-images-to-githubs-registry-manual-and-automated-methods-19cce3544eb1
 
 
 
