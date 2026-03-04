@@ -102,9 +102,11 @@
 
 
 
-7:10am - Worked out enough syntax to know more or less what to do.
+7:10am - Worked out enough syntax to know more or less what to do. Wrote a quick .yaml script. Managed to download the unity package from apt inside the action. That being said, it doesn't really help me much. It takes around 3 minutes to install all the dependecies so far (and it's not even all of them yet). I need to containerize the requirements in some easily accessible docker container that github can just access without downloading. 
 
-7:30am - Did some research and ran some tests, and made some findings. 
+![](../assets/2026-03-04-08-50-45-image.png)
+
+7:40am - Found just the thing. 
 
 
 
