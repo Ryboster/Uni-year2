@@ -22,7 +22,21 @@
 
 2:40am - Set everything up. Website runs,
 
-2:50am - Can't justify learning Cloudflare's API just for this one thing. Used AI to rewrite that script for cloudflare. Ran it, and it works!
+2:50am - Created an API token,
+
+
+
+3am - Can't justify learning Cloudflare's API just for this one thing. Used AI to rewrite my script for cloudflare,
+
+3:10am - Ran the script and it works!
+
+3:20am - Added the script to my crontab so my website doesn't ever go down again. Finally, no more manual IP resets!
+
+
+
+
+
+
 
 
 
