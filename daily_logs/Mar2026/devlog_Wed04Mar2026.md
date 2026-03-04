@@ -112,8 +112,6 @@
 
 
 
-8am - Tried building a debian image. `unity` doesn't exist on debian. Fudge,
-
 8:20am - Ok, there is a docker base image built for this exact purpose; `# unityci/editor:ubuntu-2022.3.13f1-webgl-3`! Hoorah! 
 
 8:30am - Looked up how to upload a built image to ghcr,
@@ -137,6 +135,8 @@
 # Issues/Errors
 
 3:30am - Found two issues. 1. `www` is now required. 2. HTTPS doesn't work,
+
+8am - Tried building a debian container. `unity` doesn't exist on debian. I need a more specialized docker base image,
 
 
 
