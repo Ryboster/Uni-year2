@@ -66,7 +66,9 @@
 
 5:25am - Removed the root name DNS record to see if that's what's doing the prepending,
 
-5:26am - No it wasn't. Apparently it was just my browser being polite. Including the slash at the end opens up a suggestion which prepends the www
+5:26am - No it wasn't. Apparently it was just my browser being polite. Including the slash at the end opens up a suggestion which prepends the www.
+
+
 
 
 
