@@ -150,6 +150,8 @@
 
 12:10pm - detected dubious ownership in repository
 
+![](../assets/2026-03-04-12-09-25-image.png)
+
 <br>
 
 # Next Steps
