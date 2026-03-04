@@ -86,6 +86,8 @@
 
 6:25am - Fixed my relative path in MarkText to make sure the included pictures display properly on GitHub.
 
+![](../assets/2026-03-04-06-37-58-image.png)
+
 
 
 6:30am - 
