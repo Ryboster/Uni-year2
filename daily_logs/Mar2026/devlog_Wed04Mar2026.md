@@ -4,7 +4,15 @@
 
 
 
-1am - Tried setting up DDNS. Researched how one even does that
+1am - Tried setting up DDNS. Researched how one even does that.
+
+1:20am - Ok, so a DDNS is just a script that makes an API request to your DNS provider - that's how the IP is actually updated. ez-pz,
+
+1:30am - Copied a script from the tutorial. Generated my godaddy API token,
+
+1:40am - Completed the script, ran it, aaaaaand... Godaddy's API is paid. Fantastic! Enshittification at its finest,
+
+
 
 2am - Tried sett
 
@@ -33,5 +41,7 @@
 <br>
 
 ## Resources
+
+[Quick and Dirty Dynamic DNS Using GoDaddy : 4 Steps - Instructables](https://www.instructables.com/Quick-and-Dirty-Dynamic-DNS-Using-GoDaddy/)
 
 <br>
