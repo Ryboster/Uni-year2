@@ -60,11 +60,9 @@
 
 5:10am - Looked into solving the other issue. What I had to do on godaddy before was creating an additional parallel DNS record for requests that excluded www, let's see how it's handled on Cloudflare now,
 
+5:15am - Added a new record with root name. It seems to work but only for HTTP. When connecting to http://blazejowski.co.uk, it automatically prepends the www. I'm not sure if this means it works,
 
 
-to include www, I just had to add a new 
-
-<br>
 
 # Issues/Errors
 
