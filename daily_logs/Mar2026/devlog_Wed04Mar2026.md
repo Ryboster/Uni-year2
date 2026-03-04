@@ -90,4 +90,6 @@
 
 [Quick and Dirty Dynamic DNS Using GoDaddy : 4 Steps - Instructables](https://www.instructables.com/Quick-and-Dirty-Dynamic-DNS-Using-GoDaddy/)
 
+https://community.cloudflare.com/t/how-to-delete-www-domain-name/236611/2
+
 <br>
