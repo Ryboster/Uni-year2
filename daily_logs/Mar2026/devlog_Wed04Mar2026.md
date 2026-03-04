@@ -38,15 +38,17 @@
 
 
 
-3:40am - Hmm, it seems cloudflare handles SSL certs differently. I can't use ZeroSSL because the CNAME record isn't being found so I can't verify that I own the domain. Looked into alternatives,
+3:40am - Hmm, it seems cloudflare handles SSL certs differently. I can't use ZeroSSL anymore because the CNAME record isn't being found so I can't verify that I own the domain. Looked into alternatives,
 
 
 
 
 
-4:20am - Installed certbot. Generated a new SSL certificate,
+4am - Found and installed certbot,
 
-4:30am - Looked for where the cert is actually applied,
+4:10am - Generated a new SSL certificate,
+
+4:30am - Looked into how to actually apply the cert,
 
 4:50am - Found it! It's in my nginx.conf. Updated the path to the cert,
 
