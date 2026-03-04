@@ -76,7 +76,9 @@
 
 
 
+5:40am - Huzzah! Got it to work! Now http is being redirected to https, and name requests to www.name,
 
+5:45am - Breakfast break and then off to researching using unity in github actions,
 
 
 
