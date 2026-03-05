@@ -30,6 +30,10 @@
 
 11:35am - While waiting, I'm gonna work on 8,
 
+11:40am - Charles answered. Gotta show every step along the way. Humbug,
+
+11:50am - Finished number 8. Got 75%,
+
 
 
 <br>
