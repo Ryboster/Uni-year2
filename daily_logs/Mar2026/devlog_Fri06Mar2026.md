@@ -26,6 +26,10 @@
 
 
 
+5:40pm - So, trying to find out where the stock investments are coming from to ensure safety, i came across the ideal table. Unfortunately exporting to csv is a paid feature. This looks like the perfect opportunity for some outcome evidence. I'm going to parse the table page by page and extract the information i need.
+
+
+
 <br>
 
 # Issues/Errors
