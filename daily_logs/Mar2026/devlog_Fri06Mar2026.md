@@ -8,8 +8,6 @@
 
 8:50am - Marta won't be able to attend today's ASD meeting. Will have to prepare a presentation,
 
-
-
 9:10am - Doggy time,
 
 9:25am - Back and geared up,
@@ -18,9 +16,15 @@
 
 9:50am - Back at it,
 
-
-
 10:50am - Quick break from the task. Off to writing the presentation for today's meeting.
+
+
+
+11:40am - Presentation done. Back to work on the Task 3,
+
+
+
+
 
 <br>
 
