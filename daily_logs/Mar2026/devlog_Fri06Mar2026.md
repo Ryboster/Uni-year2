@@ -20,6 +20,8 @@
 
 
 
+10:50am - Quick break from the task. Off to writing the presentation for today's meeting.
+
 <br>
 
 # Issues/Errors
