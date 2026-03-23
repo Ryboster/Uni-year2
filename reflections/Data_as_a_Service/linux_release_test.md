@@ -16,6 +16,19 @@ I was more than happy to say yes to his proposal, and following is how that went
 
 Mike wasn't able to run the game. He shared with me his [error logs](../Assets/error_log_mike_walkey.txt) and I investigated them for the exact cause of the issue.
 
+The culprit turned out to be these lines over here:
+
+```
+[2026.03.20-15.42.18:353][  0]LogVulkanRHI: Starting Vulkan Profile check for VP_UE_Vulkan_SM6:
+[2026.03.20-15.42.18:393][  0]LogVulkanRHI:    - Unsupported extension: VK_EXT_mesh_shader
+[2026.03.20-15.42.18:393][  0]LogVulkanRHI:    - Unsupported feature condition: VkPhysicalDeviceMeshShaderFeaturesEXT::meshShader == VK_TRUE
+[2026.03.20-15.42.18:393][  0]LogVulkanRHI:    - Unsupported feature condition: VkPhysicalDeviceMeshShaderFeaturesEXT::multiviewMeshShader == VK_TRUE
+[2026.03.20-15.42.18:393][  0]LogVulkanRHI:    - Unsupported feature condition: VkPhysicalDeviceMeshShaderFeaturesEXT::taskShader == VK_TRUE
+[2026.03.20-15.42.18:393][  0]LogVulkanRHI:    - Unsupported properties condition: 
+```
+
+During initialization of Vulkan (which is Linux's GPU driver)
+
 
 
 'So What?' allows you to extract the meaning of 'What?'. Moreover, you should question what knowledge you and others had in the situation, and what knowledge or theories that could help you make sense of the situation.
