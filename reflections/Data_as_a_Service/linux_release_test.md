@@ -4,7 +4,7 @@
 
 ### What?
 
-Recently, Aaron and his team (which I had left earlier) managed to reach their MVP.
+Recently, Aaron and his team (which I had left earlier) managed to reach their MVP for The Shadows of Vahlvadell project.
 
 On 16th of March 2026, I built the project for Linux. I then packaged it and sent it over to Aaron for him to post on his website.
 
@@ -14,9 +14,7 @@ I was more than happy to say yes to his proposal, and following is how that went
 
 ### So what?
 
-Mike wasn't able to run the game. He shared with me his logs and I investigated them for the exact cause of the issue.
-
-[Error Logs](../Assets/error_log_mike_walkey.txt)
+Mike wasn't able to run the game. He shared with me his [error logs](../Assets/error_log_mike_walkey.txt) and I investigated them for the exact cause of the issue.
 
 
 
