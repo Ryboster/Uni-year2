@@ -23,7 +23,11 @@ During my research and experimentation, I've managed to produce tangible evidenc
 
 ### Now what?
 
-Ultimately I wasn't able to finish the `.yaml` file fully, however this was not the goal either way.
+Ultimately I wasn't able to finish the `.yaml` file fully, however, this was never the goal either way. The goal was to find out whether it was possible - and it was. I left the rest to my team prioritizing 
+
+
+
+I aimed to chart the path ahead for the rest of the team while also 
 
 
 
