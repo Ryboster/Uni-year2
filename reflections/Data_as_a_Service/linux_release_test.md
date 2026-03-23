@@ -27,7 +27,7 @@ The culprit turned out to be these lines over here:
 [2026.03.20-15.42.18:393][  0]LogVulkanRHI:    - Unsupported properties condition: 
 ```
 
-During initialization of Vulkan (which is Linux's GPU driver)
+During initialization of Vulkan (which is Linux's graphics API - analogous to Windows' DirectX)
 
 
 
