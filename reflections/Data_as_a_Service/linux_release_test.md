@@ -25,9 +25,19 @@ The culprit turned out to be these lines over here:
 [2026.03.20-15.42.18:393][  0]LogVulkanRHI:    - Unsupported feature condition: VkPhysicalDeviceMeshShaderFeaturesEXT::multiviewMeshShader == VK_TRUE
 [2026.03.20-15.42.18:393][  0]LogVulkanRHI:    - Unsupported feature condition: VkPhysicalDeviceMeshShaderFeaturesEXT::taskShader == VK_TRUE
 [2026.03.20-15.42.18:393][  0]LogVulkanRHI:    - Unsupported properties condition: 
+VkPhysicalDeviceProperties2KHR::properties.limits.maxBoundDescriptorSets >= 9
+[2026.03.20-15.42.18:394][  0]LogVulkanRHI: Vulkan Profile check complete.
+[2026.03.20-15.42.29:755][  0]Message dialog closed, result: Ok, title: Message, text: Failed to load Vulkan Driver which is required to run the engine.
+The engine no longer fallbacks to OpenGL4 which has been deprecated.
 ```
 
-During initialization of Vulkan (which is Linux's graphics API - analogous to Windows' DirectX)
+During initialization of Vulkan (which is Linux's graphics API - analogous to Windows' DirectX), some of the shaders required by the game to run failed to load. 
+
+The game tried falling back on OpenGL (which is a more rudamentary API with fewer bells and whistles), however OpenGL was deprecated in this version of UnrealEngine.
+
+
+
+
 
 
 
