@@ -10,10 +10,6 @@ On 16th of March 2026, I built the project for Linux. I then packaged it and sen
 
 Last friday (20th March 2026), I mentioned what I had done during our weekly ASD meetings, and Michael Walkey proposed to test the Linux build for us.
 
-I was more than happy to say yes to his proposal, and following is how that went:
-
-### So what?
-
 Mike wasn't able to run the game. He shared with me his [error logs](../Assets/error_log_mike_walkey.txt) and I investigated them for the exact cause of the issue.
 
 The culprit turned out to be these lines over here:
@@ -31,11 +27,15 @@ VkPhysicalDeviceProperties2KHR::properties.limits.maxBoundDescriptorSets >= 9
 The engine no longer fallbacks to OpenGL4 which has been deprecated.
 ```
 
-During initialization of Vulkan (which is Linux's graphics API - analogous to Windows' DirectX), some of the shaders required by the game to run failed to load. 
+During initialization of Vulkan (which is Linux's graphics API - analogous to Windows' DirectX), some of the shaders required by the game to run failed to load.
 
 The game tried falling back on OpenGL (which is a more rudamentary API with fewer bells and whistles), however OpenGL was deprecated in this version of UnrealEngine, and so the game exited with an error.
 
 To further aid my investigation of why the shaders would fail to load, I requested Mike's specifications. He was running a `HP EliteDesk 800 G2 DM 35W` with a `Skylake-S GT2 [HD Graphics 530]` GPU.
+
+
+
+### So what?
 
 
 
