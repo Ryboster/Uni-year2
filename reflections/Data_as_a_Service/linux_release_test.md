@@ -29,7 +29,7 @@ The engine no longer fallbacks to OpenGL4 which has been deprecated.
 
 During initialization of Vulkan (which is Linux's graphics API - analogous to Windows' DirectX), some of the shaders required by the game to run failed to load.
 
-The game tried falling back on OpenGL (which is a more rudamentary API with fewer bells and whistles), however OpenGL was deprecated in this version of UnrealEngine, and so the game exited with an error.
+The game tried falling back on OpenGL (which is a more rudamentary cross-platform API with fewer bells and whistles), however OpenGL was deprecated in this version of UnrealEngine, and so the game exited with an error.
 
 To further aid my investigation of why the shaders would fail to load, I requested Mike's specifications. He was running a `HP EliteDesk 800 G2 DM 35W` with a `Skylake-S GT2 [HD Graphics 530]` GPU.
 
