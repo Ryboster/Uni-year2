@@ -11,7 +11,11 @@ I came to some interesting discoveries and let the team know immediately.
 
 ![](../assets/2026-03-23-06-26-28-image.png)
 
- I ended up doing more than just scouting, and I charted the path ahead for the rest of the team by wrting a few experimental `.yaml` files.
+ I ended up doing more than just scouting, and I charted the path ahead for the rest of the team by wrting a few experimental `.yaml` files, ultimately arriving at this one:
+
+![](../assets/2026-03-23-07-05-41-image.png)
+
+
 
 ### So what?
 
@@ -19,7 +23,7 @@ I approached the task with some prior experience in GitHub actions, however, it 
 
 During my research and experimentation, I've managed to produce tangible evidence suggesting that the idea is not only feasible, but actually, quite easy to implement. There also turned out to have already been tools made specifically for tasks like ours, e.g. `unityci/editor:ubuntu-2022.3.13f1-webgl-3` which is a Docker base image with Unity already baked in.
 
-![](../assets/2026-03-23-07-05-41-image.png)
+
 
 ### Now what?
 
