@@ -9,19 +9,13 @@ I aimed to "scout ahead" for the team at large and communicate my findings to mi
 
 I came to some interesting discoveries and let the team know immediately. I ended up doing more than just scouting, and I charted the path ahead for the rest of the team.
 
-
-
 ### So what?
 
 I approached the task with some prior experience in GitHub actions, however, it wasn't very relevant for the task at hand so there were many unknown unknowns. 
 
-During my research, I've managed to produce tangible evidence suggesting that the idea is not only feasible, but actually, quite easy to implement. There also turned out to have already been tools made specifically for tasks like ours.<br>
-
-
+During my research and experimentation, I've managed to produce tangible evidence suggesting that the idea is not only feasible, but actually, quite easy to implement. There also turned out to have already been tools made specifically for tasks like ours.<br>
 
 ![](../assets/2026-03-23-06-26-28-image.png)
-
-
 
 
 
