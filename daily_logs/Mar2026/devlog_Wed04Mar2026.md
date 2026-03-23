@@ -2,8 +2,6 @@
 
 # Activities
 
-
-
 1am - Tried setting up DDNS. Researched how one even does that.
 
 1:20am - Ok, so a DDNS is just a script that makes an API request to your DNS provider - that's how the IP is actually updated. ez-pz,
@@ -16,15 +14,11 @@
 
 1:50am - Found cloudfare. Their API is seemingly free,
 
-
-
 2:30am - Transferred my domain over to cloudflare,
 
 2:40am - Set everything up. Website runs,
 
 2:50am - Created an API token,
-
-
 
 3am - Can't justify learning Cloudflare's API just for this one thing. Used AI to rewrite my script for cloudflare,
 
@@ -34,15 +28,7 @@
 
 3:30am - Found two mor
 
-
-
-
-
 3:40am - Hmm, it seems cloudflare handles SSL certs differently. I can't use ZeroSSL anymore because the CNAME record isn't being found so I can't verify that I own the domain. Looked into alternatives,
-
-
-
-
 
 4am - Found and installed certbot,
 
@@ -55,8 +41,6 @@
 4:55am - Excellent! HTTPS works again,
 
 4:56am - Tried adding certbot to cron for automatic renewal. No need. Certbot runs a systemctl process that already handles that for me.
-
-
 
 5:10am - Looked into solving the other issue. What I had to do on godaddy before was creating an additional parallel DNS record for requests that excluded www, let's see how it's handled on Cloudflare now,
 
@@ -74,33 +58,23 @@
 
 ![](../assets/2026-03-04-06-30-27-image.png)
 
-
-
 5:40am - Huzzah! Got it to work! Now http is being redirected to https, and name requests to www.name,
 
 ![](../assets/2026-03-04-06-30-45-image.png)
 
 5:45am - Breakfast break and then off to researching using unity in github actions,
 
-
-
 6:25am - Fixed my relative path in MarkText to make sure the included pictures display properly on GitHub.
 
 ![](../assets/2026-03-04-06-37-58-image.png)
-
-
 
 6:30am - Started researching,
 
 6:45am - From my very cursory research, it seems that the idea is very much feasible. Just how easy it'll prove I don't yet know, but for now I have to research yaml syntax,
 
-
-
 6:55am - Found the exact trigger i was looking for:
 
 ![](../assets/2026-03-04-06-57-03-image.png)
-
-
 
 7:10am - Worked out enough syntax to know more or less what to do. Wrote a quick .yaml script. Managed to download the unity package from apt inside the action. That being said, it doesn't really help me much. It takes around 3 minutes to install all the dependecies so far (and it's not even all of them yet). I need to containerize the requirements in some easily accessible docker container that github can just access without downloading. 
 
@@ -110,15 +84,11 @@
 
 ![](../assets/2026-03-04-08-52-32-image.png)
 
-
-
 8:20am - Ok, there is a docker base image built for this exact purpose; `# unityci/editor:ubuntu-2022.3.13f1-webgl-3`! Hoorah! 
 
 8:30am - Looked up how to upload a built image to ghcr,
 
 8:35am - Started building the container. This will take a while ...
-
-
 
 9am - While building, I shared the discoveries with my team,
 
@@ -130,15 +100,7 @@
 
 ![](../assets/2026-03-04-09-29-24-image.png)
 
-
-
 11am - FINALLY finished uploading. Off to the .yaml,
-
-
-
-
-
-
 
 # Issues/Errors
 
@@ -183,9 +145,5 @@ https://medium.com/devopsturkiye/pushing-docker-images-to-githubs-registry-manua
 https://fadhilnoer.medium.com/automating-unity-builds-part-1-ba0c60e8d06b
 
 [How to run login before pulling docker images? · docker/login-action · Discussion #669 · GitHub](https://github.com/docker/login-action/discussions/669)
-
-
-
-
 
 <br>
