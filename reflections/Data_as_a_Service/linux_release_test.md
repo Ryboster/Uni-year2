@@ -6,25 +6,17 @@
 
 Recently, Aaron and his team (which I had left earlier) managed to reach their MVP.
 
-
-
 On 16th of March 2026, I built the project for Linux. I then packaged it and sent it over to Aaron for him to post on his website.
 
-Last friday (20th March 2026), I mentioned what I had done, and Michael Walkey proposed to test the Linux build for us.
+Last friday (20th March 2026), I mentioned what I had done during our weekly ASD meetings, and Michael Walkey proposed to test the Linux build for us.
 
-
-
-
-
-
-
-
-
-
-
-'What?' helps you describe the situation you want to learn from. You should identify the facts and feelings of the situation.
+I was more than happy to say yes to his proposal, and following is how that went:
 
 ### So what?
+
+
+
+
 
 'So What?' allows you to extract the meaning of 'What?'. Moreover, you should question what knowledge you and others had in the situation, and what knowledge or theories that could help you make sense of the situation.
 
