@@ -15,7 +15,7 @@ I came to some interesting discoveries and let the team know immediately. I ende
 
 I approached the task with some prior experience in GitHub actions, however, it wasn't very relevant for the task at hand so there were many unknown unknowns. 
 
-![](/home/snek/snap/marktext/9/.config/marktext/images/2026-03-23-06-25-33-image.png)
+![](../assets/2026-03-23-06-26-28-image.png)
 
 During my research, I've managed to produce tangible evidence suggesting that the idea is not only feasible, but actually, quite easy to implement. There also turned out to have already been tools made specifically for tasks like ours.<br>
 
