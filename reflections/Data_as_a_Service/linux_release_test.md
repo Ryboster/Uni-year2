@@ -37,6 +37,8 @@ The issue is that the GPU is too old and does not support `mesh shaders`. This w
 
 ### So what?
 
+To address those issues, I sought the minimum GPU requirements for the Linux build. I also made sure to include custom Vulkan installation scripts for a few select Linux distros. 
+
 
 
 
