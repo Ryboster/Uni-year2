@@ -19,15 +19,13 @@ I approached the task with some prior experience in GitHub actions, however, it 
 
 During my research and experimentation, I've managed to produce tangible evidence suggesting that the idea is not only feasible, but actually, quite easy to implement. There also turned out to have already been tools made specifically for tasks like ours, e.g. `unityci/editor:ubuntu-2022.3.13f1-webgl-3` which is a Docker base image with Unity already baked in.
 
-
-
-
-
-
-
 ![](../assets/2026-03-23-07-05-41-image.png)
 
 ### Now what?
+
+Ultimately I wasn't able to finish the `.yaml` file fully, however this was not the goal either way.
+
+
 
 'Now what?' allows you to create an action plan for the future based on the previous questions.
 
