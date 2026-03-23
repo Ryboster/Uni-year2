@@ -31,11 +31,9 @@ During initialization of Vulkan (which is Linux's graphics API - analogous to Wi
 
 The game tried falling back on OpenGL (which is a more rudamentary cross-platform API with fewer bells and whistles), however OpenGL was deprecated in this version of UnrealEngine, and so the game exited with an error.
 
-To further aid my investigation of why the shaders would fail to load, I requested Mike's specification. He was running a `HP EliteDesk 800 G2 DM 35W` with a `Skylake-S GT2 [HD Graphics 530]` GPU. 
+To further aid my investigation of why the shaders would fail to load, I requested Mike's specification. He was running a `HP EliteDesk 800 G2 DM 35W` with a `Skylake-S GT2 [HD Graphics 530]` GPU.
 
 The issue is that the GPU is too old and does not support `mesh shaders`. This was a fantastic revelation as it revealed that this game has minimum requirements to run.
-
-
 
 ### So what?
 
@@ -44,5 +42,7 @@ The issue is that the GPU is too old and does not support `mesh shaders`. This w
 
 
 ### Now what?
+
+
 
 'Now what?' allows you to create an action plan for the future based on the previous questions.
