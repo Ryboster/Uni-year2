@@ -111,6 +111,16 @@ Performance testing helps developers ensure that their applications stay efficie
 
 While not all applications can benefit from performance testing, for those that can, it can be an instrumental QA process that can even make the difference between releasing the application or binning it. Applications are made for consumers, but if their hardware can't handle them, they are as good as a beached whale (not very).
 
+
+
+### Personal Experience
+
+#### Automated Workflows
+
+
+
+
+
 ### References
 
 ----------------------------------------------
