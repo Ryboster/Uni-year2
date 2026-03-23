@@ -8,7 +8,7 @@ Recently, Aaron and his team (which I had left earlier) managed to reach their M
 
 On 16th of March 2026, I built the project for Linux. I then packaged it and sent it over to Aaron for him to post on his website.
 
-Last friday (20th March 2026), I mentioned what I had done during our weekly ASD meetings, and Michael Walkey proposed to test the Linux build for us.
+Last friday (20th March 2026), I mentioned what I had done during our weekly ASD meetings, and Mike (one of my lecturers) proposed to test the Linux build for us.
 
 Mike wasn't able to run the game. He shared with me his [error logs](../Assets/error_log_mike_walkey.txt) and I investigated them for the exact cause of the issue.
 
@@ -32,6 +32,8 @@ During initialization of Vulkan (which is Linux's graphics API - analogous to Wi
 The game tried falling back on OpenGL (which is a more rudamentary API with fewer bells and whistles), however OpenGL was deprecated in this version of UnrealEngine, and so the game exited with an error.
 
 To further aid my investigation of why the shaders would fail to load, I requested Mike's specifications. He was running a `HP EliteDesk 800 G2 DM 35W` with a `Skylake-S GT2 [HD Graphics 530]` GPU.
+
+
 
 
 
