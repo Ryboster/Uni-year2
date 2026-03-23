@@ -11,7 +11,7 @@ I came to some interesting discoveries and let the team know immediately.
 
 ![](../assets/2026-03-23-06-26-28-image.png)
 
- I ended up doing more than just scouting, and I charted the path ahead for the rest of the team.
+ I ended up doing more than just scouting, and I charted the path ahead for the rest of the team by wrting a few experimental `.yaml` files.
 
 ### So what?
 
@@ -23,15 +23,7 @@ During my research and experimentation, I've managed to produce tangible evidenc
 
 ### Now what?
 
-Ultimately I wasn't able to finish the `.yaml` file fully, however, this was never the goal either way. The goal was to find out whether it was possible - and it was. I left the rest to my team prioritizing 
-
-
-
-I aimed to chart the path ahead for the rest of the team while also 
-
-
-
-'Now what?' allows you to create an action plan for the future based on the previous questions.
+Ultimately I wasn't able to finish the `.yaml` file fully, however, this was never the goal either way. The goal was to find out whether it was possible - and it was. I left the rest to my team so I could prioritize collecting further evidence for other learning outcomes.
 
 
 
