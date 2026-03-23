@@ -35,9 +35,11 @@ During initialization of Vulkan (which is Linux's graphics API - analogous to Wi
 
 The game tried falling back on OpenGL (which is a more rudamentary API with fewer bells and whistles), however OpenGL was deprecated in this version of UnrealEngine, and so the game exited with an error.
 
-I 
+Upon investigating why those dr
 
 
+
+`Skylake-S GT2 [HD Graphics 530]`
 
 
 
