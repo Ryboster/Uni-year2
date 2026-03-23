@@ -14,7 +14,9 @@ I was more than happy to say yes to his proposal, and following is how that went
 
 ### So what?
 
-Mike wasn't able to run the game. 
+Mike wasn't able to run the game. He shared with me his logs and I investigated them for the exact cause of the issue.
+
+[Error Logs](../Assets/error_log_mike_walkey.txt)
 
 
 
