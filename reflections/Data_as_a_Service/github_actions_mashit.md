@@ -9,7 +9,8 @@ I came to some interesting discoveries and let the team know immediately. I ende
 <br>
 
 ### So what?
-During my research, I've managed to produce tangible evidence suggesting that the idea is not only feasible, but actually, quite easy to implement. There also turned out to have already been tools made specifically for tasks like ours.
+During my research, I've managed to produce tangible evidence suggesting that the idea is not only feasible, but actually, quite easy to implement. There also turned out to have already been tools made specifically for tasks like ours.<br>
+
 
 
 and that there are already tools out there to 
