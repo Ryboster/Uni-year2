@@ -21,7 +21,9 @@ During my research, I've managed to produce tangible evidence suggesting that th
 
 ![](../assets/2026-03-23-06-26-28-image.png)
 
-and that there are already tools out there to 
+
+
+
 
 
 
