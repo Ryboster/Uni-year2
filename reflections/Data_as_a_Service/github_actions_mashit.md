@@ -21,7 +21,15 @@ I came to some interesting discoveries and let the team know immediately.
 
 I approached the task with some prior experience in GitHub actions, however, it wasn't very relevant for the task at hand so there were many unknown unknowns. 
 
-During my research and experimentation, I've managed to produce tangible evidence suggesting that the idea is not only feasible, but actually, quite easy to implement. There also turned out to have already been tools made specifically for tasks like ours, e.g. `unityci/editor:ubuntu-2022.3.13f1-webgl-3` which is a Docker base image with Unity already baked in.
+During my research and experimentation, I've managed to produce tangible evidence suggesting that the idea is not only feasible, but actually, quite easy to implement. 
+
+![](../assets/2026-03-23-07-22-52-image.png)
+
+(All tasks finished successfuly except for a minor hitch with `git`)
+
+
+
+There also turned out to have already been tools made specifically for tasks like ours, e.g. `unityci/editor:ubuntu-2022.3.13f1-webgl-3` which is a Docker base image with Unity already baked in.
 
 
 
