@@ -37,9 +37,7 @@ The issue is that the GPU is too old and does not support `mesh shaders` as indi
 
 ### So what?
 
-To address those issues, I first made sure to include a couple of custom Vulkan installation scripts, for a few select Linux distros, namely: 
-
-
+To address those issues, I first made sure to include a couple of custom Vulkan installation scripts, for a few select Linux distros, namely: Ubuntu, Neon, Linuxmint, Pop, Elementary, Zorin, Tumbleweed, NixOS. I then sought 
 
 To address those issues, I sought the minimum GPU requirements for the Linux build. I also made sure to include custom Vulkan installation scripts for a few select Linux distros. 
 
