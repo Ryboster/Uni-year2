@@ -40,6 +40,26 @@
 
 4:03pm - Seventh batch. Up to 439 points.
 
+4:03pm - Eigth batch. Up to 527 points.
+
+4:03pm - Daniel purchased the ultrasonic sensor.
+
+4:03pm - Daniel found the "sweet spot". Ninth brew - up to 227 points.
+
+4:04pm - Daniel started using both mash tuns simultaneously. WIth this, the brewing process accelerated. 
+
+4:04pm - Daniel reached 1k points. Game won!
+
+
+
+4:05pm - Off to QA section. Mart asked about how the progression felt.
+
+4:05pm - Daniel said he wasn't sure how much to fill the mash tun. He wasn't sure if it overfilled and so he took the cautious approach and gradually increased the time spent filling. He also said he didn't realize he could use both mash tuns simultaneously
+
+4:07pm - What did you think the game was about? -He isn't sure, but his best guess is that you have to get the right amount of liquid - Making an educated guess. He mentions there was something to stop the overflow. 
+
+4:08pm - Marta explains it's about 
+
 <br>
 
 # Issues/Errors
