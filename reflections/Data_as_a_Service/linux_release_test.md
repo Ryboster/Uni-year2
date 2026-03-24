@@ -33,9 +33,7 @@ The game tried falling back on OpenGL (which is a more rudamentary cross-platfor
 
 To further aid my investigation of why the shaders would fail to load, I requested Mike's specification. He was running a `HP EliteDesk 800 G2 DM 35W` with a `Skylake-S GT2 [HD Graphics 530]` GPU.
 
-The issue is that the GPU is too old and does not support `mesh shaders` as indicated by this line in the error log: `Unsupported feature condition: VkPhysicalDeviceMeshShaderFeaturesEXT::meshShader == VK_TRUE`. 
-
-. This was a fantastic revelation as it revealed that this game has minimum requirements to run.
+The issue is that the GPU is too old and does not support `mesh shaders` as indicated by this line in the error log: `Unsupported feature condition: VkPhysicalDeviceMeshShaderFeaturesEXT::meshShader == VK_TRUE`. This was a fantastic revelation as it revealed that this game has minimum requirements to run.
 
 ### So what?
 
