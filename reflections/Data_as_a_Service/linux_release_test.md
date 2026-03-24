@@ -47,4 +47,6 @@ Intel (Xe HPG architecture): Arc A380
 
 Upon completion, I submitted my findings over to Aaron, and he reposted the linux version of the game along with the newly found minimum GPU requirements up on his website.
 
-### Now what
+### Now what?
+
+Now the user is aware of the requirements for the game to run, and they have an esier time installing them if their GPU is able to handle them. 
