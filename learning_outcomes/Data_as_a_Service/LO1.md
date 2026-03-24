@@ -121,7 +121,7 @@ Automated workflows are
 
 #### Beta Testing
 
-Beta testing is an opportunity for software developers to uncover bugs and issues in the product before a general release. When product reaches Beta, a copy of it is sent to testers. 
+Beta testing is an opportunity for software developers to uncover bugs and issues in the product before a general release. When a product reaches its Beta stage, a copy of it is sent over to a select group of users - Beta testers, who, acting as genuine users/clients/players, 
 
 
 
