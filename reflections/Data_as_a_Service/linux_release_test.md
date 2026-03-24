@@ -50,3 +50,5 @@ Upon completion, I submitted my findings over to Aaron, and he reposted the linu
 ### Now what?
 
 Now the user is aware of the requirements for the game to run, and they have an esier time installing them if their GPU is able to handle them.
+
+Additionally, if Aaron ever wants to optimize his game for lower-end hardware, he has a better understanding of the bottleneck and knows where to start; the `meshShader`.
