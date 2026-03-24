@@ -121,7 +121,9 @@ Automated workflows are
 
 #### Beta Testing
 
-Beta testing is a 
+Beta testing is a type of test that takes place later on in the Software Release Lifecycle. When product reaches Beta, a copy of it is sent to testers. 
+
+Beta testing is a type of a test that involves 
 
 
 
@@ -132,3 +134,5 @@ Beta testing is a
 Sandman, Adam. (2025), Full Guide To Software Quality Assurance. Available at: https://www.inflectra.com/Ideas/Topic/Software-Quality-Assurance.aspx (10th Oct 2025)
 
 [What is Integration Testing? | IBM](https://www.ibm.com/think/topics/integration-testing)
+
+https://www.productplan.com/glossary/beta-test/
