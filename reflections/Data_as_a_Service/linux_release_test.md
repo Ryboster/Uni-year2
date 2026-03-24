@@ -10,7 +10,7 @@ On 16th of March 2026, I built the project for Linux. I then packaged it and sen
 
 Last friday (20th March 2026), I mentioned what I had done during our weekly ASD meetings, and Mike (one of my lecturers) proposed to test the Linux build for us.
 
-Mike wasn't able to run the game. He shared with me his [error logs](../Assets/error_log_mike_walkey.txt) and I investigated them for the exact cause of the issue.
+Mike wasn't able to run the game. He shared with me his [error logs](../assets/error_log_mike.txt) and I investigated them for the exact cause of the issue.
 
 The culprit turned out to be these lines over here:
 
