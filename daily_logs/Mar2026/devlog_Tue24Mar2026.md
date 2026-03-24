@@ -62,7 +62,11 @@
 
 4:09pm - It is clear that Daniel had
 
-4:10pm - Any final thoughts on the UI and the general impression? I do play games casually on low settigns in graphics so i do appreciate the resolution changes. They were a bit small to read. The other thing he liked was mash tuns. 
+4:10pm - Any final thoughts on the UI and the general impression? I do play games casually on low settigns in graphics so i do appreciate the resolution changes. They were a bit small to read. The other thing he liked was the model of the mash tuns, and the low requirements.
+
+4:11pm - Daniel suggests to add a little objective indicator.
+
+
 
 <br>
 
