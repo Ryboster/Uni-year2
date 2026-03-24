@@ -121,11 +121,7 @@ Automated workflows are
 
 #### Beta Testing
 
-Beta testing is a type of test that takes place later on in the Software Release Lifecycle. When product reaches Beta, a copy of it is sent to testers. 
-
-Beta testing is a type of a test that involves 
-
-Beta testing is an opportunity for software developers to uncover bugs and issues in the product before a general release.
+Beta testing is an opportunity for software developers to uncover bugs and issues in the product before a general release. When product reaches Beta, a copy of it is sent to testers. 
 
 
 
