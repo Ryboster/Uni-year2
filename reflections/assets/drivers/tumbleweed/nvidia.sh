@@ -1,0 +1,1 @@
+sudo zypper in libvulkan1 libvulkan1-32bit

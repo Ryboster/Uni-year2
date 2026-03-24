@@ -37,7 +37,7 @@ The issue is that the GPU is too old and does not support `mesh shaders` as indi
 
 ### So what?
 
-To address those issues, I first made sure to include a couple of custom Vulkan installation scripts for a few select Linux distros, namely: Ubuntu, Neon, Linuxmint, Pop, Elementary, Zorin, Tumbleweed, NixOS. I then sought and found the minimum GPU requirements. Those are:
+To address those issues, I first made sure to include a couple of custom [Vulkan installation scripts](../assets/drivers/) for a few select Linux distros, namely: Ubuntu, Neon, Linuxmint, Pop, Elementary, Zorin, Tumbleweed, NixOS. I then sought and found the minimum GPU requirements. Those are:
 
 ```
 Nvidia (Turing architecture): RTX 2060 
@@ -45,10 +45,8 @@ AMD (RDNA2 Architecture): Radeon RX 6600
 Intel (Xe HPG architecture): Arc A380
 ```
 
+Upon completion, I submitted my findings over to Aaron, and he reposted the linux version of the game up on his website.
 
 
-To address those issues, I sought the minimum GPU requirements for the Linux build. I also made sure to include custom Vulkan installation scripts for a few select Linux distros. 
 
-### Now what?
-
-'Now what?' allows you to create an action plan for the future based on the previous questions.
+### Now what
