@@ -45,8 +45,6 @@ AMD (RDNA2 Architecture): Radeon RX 6600
 Intel (Xe HPG architecture): Arc A380
 ```
 
-Upon completion, I submitted my findings over to Aaron, and he reposted the linux version of the game up on his website.
-
-
+Upon completion, I submitted my findings over to Aaron, and he reposted the linux version of the game along with the newly found minimum GPU requirements up on his website.
 
 ### Now what
