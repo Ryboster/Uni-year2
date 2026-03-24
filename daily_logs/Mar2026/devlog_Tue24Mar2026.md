@@ -60,6 +60,10 @@
 
 4:08pm - Marta explains it's about 
 
+4:09pm - It is clear that Daniel had
+
+4:10pm - Any final thoughts on the UI and the general impression? I do play games casually on low settigns in graphics so i do appreciate the resolution changes. They were a bit small to read. The other thing he liked was mash tuns. 
+
 <br>
 
 # Issues/Errors
