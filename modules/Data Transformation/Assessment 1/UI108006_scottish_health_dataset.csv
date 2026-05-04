@@ -1,0 +1,526 @@
+Patient_ID,patient_name,Date of Birth,Email Address,Phone,post_code,Health Board,SPECIALTY,appointment_date,Wait_Time_Days,Outcome,Duration (mins),Follow Up Required,satisfaction_score,Cost
+P10328,Callum Reid,13/10/1994,callum53@hotmail.co.uk,07924 243 567,ml1 1ab,NHS Lothian,general medicine,27/05/2024,165,CbP,0,,,427.21
+P10242,Morag Anderson,02-Aug-94,morag.anderson@gmail.com,07427 148 286,ab10 1xg,NHS Fife,Orthopaedics,09/08/2024,52,Attended,11,0,,147.73
+P10436,William Anderson,28/09/1976,william.anderson@outlook.com,07438 917 134,G42 9BA,NHS Shetland,Neurology,20/12/2024,129,Cancelled by Patient,,,,507.3
+P10325,Isla Anderson,02-Mar-98,,447410000000,TD1 1DL,NHS Forth Valley,Gastroenterology,18/02/2024,27,Attended,35,0,5,486.29
+P10317,"Anderson, Linda",03-Apr-81,linda.anderson@outlook.com,07587 671 112,KA1 1HU,NHS Dumfries & Galloway,Dermatology,16/12/2024,358,attended,10,0,,112.32
+P10161,"Graham, Callum",25-Aug-98,callum.graham@outlook.com,07742 172 494,KA1 1HU,nhs orkney,Ophthalmology,03/11/2023,172,Attended,12,1,,324.18
+P10214,Richard Robertson,13-Sep-48,richard14@hotmail.co.uk,447947000000,G42 9BA,NHS Grampian,Respiratory Medicine,08/04/2024,269,CbP,,,,343.33
+P10389,Thomas Johnston,03-Dec-58,thomas.johnston@gmail.com,07354 832 397,DG1 2PH,NHS Highland,general medicine,23/11/2023,12,DNA,,,,368.1
+P10109,Alasdair MacLeod,22/05/1949,alasdair.macleod@outlook.com,07438 465 231,DG1 2PH,NHS Lothian,ENT,11/08/2024,157,Cancelled by Hospital,0,,,284.91
+P10179,Eilidh MacDonald,20-Apr-51,eilidh.macdonald@outlook.com,07533 323 247,EH1 1RE,NHS Dumfries & Galloway,Respiratory Medicine,02/10/2024,192,Did Not Attend,,,,709.58
+P10400,Elizabeth Reid,23/03/1999,elizabeth.reid@gmail.com,07559 229 252,DD1 4HN,NHS Fife,Urology,16/12/2023,63,Cancelled by Patient,,,,207.33
+P10086,Jennifer Wilson,08-Oct-92,jennifer.wilson@outlook.com,07341 587 406,DD1 4HN,NHS Highland,Neurology,25/02/2023,87,DNA,,,,797.95
+P10387,Jennifer Hamilton,24-Feb-56,jennifer.hamilton@gmail.com,447540000000,DG1 2PH,nhs orkney,Ophthalmology,05/04/2024,300,Did Not Attend,,,,63.08
+P10103,Susan Hamilton,24-Nov-93,susan.hamilton@gmail.com,07154 786 157,TD1 1DL,NHS Greater Glasgow and Clyde,general medicine,27/03/2024,152,attended,60,0,,606.81
+P10297,Isla Stewart,20-Aug-01,,07890 430 367,KA1 1HU,NHS Borders,Respiratory Medicine,09/01/2024,113,attended,15,No,,
+P10405,Linda Wilson,04-Mar-74,linda.wilson@outlook.com,07729 384 904,DD1 4HN,NHS Tayside,Respiratory Medicine,09/09/2023,318,Did Not Attend,,,,441.57
+P10257,Alasdair Smith,13-May-53,alasdair.smith@gmail.com,07757 647 937,PH1 5TJ,NHS Grampian,Respiratory Medicine,13/04/2024,163,Attended,22,0,4,476.15
+P10081,David Murray,23-Dec-43,,,KY1 1ET,NHS Lothian,Urology,17/01/2023,170,CbP,,,,£292.69
+P10347,John Hamilton,20/01/1980,,447166000000,ZE1 0TG,NHS Lothian,Urology,01/03/2023,254,DNA,,,,340.59
+P10211,Linda Robertson,07-Jul-70,linda.robertson@outlook.com,07186 402 555,IV2 5NA,NHS Dumfries & Galloway,Neurology,15/07/2024,210,Cancelled by Hospital,0,,,534.02
+P10164,John Scott,16-Apr-73,john.scott@outlook.com,447648000000,KY1 1ET,NHS WESTERN ISLES,general medicine,08/03/2023,163,DNA,0,,,287.71
+P10162,David Anderson,25-Dec-01,david.anderson@gmail.com,07796 533 383,AB10 1XG,NHS Dumfries & Galloway,Neurology,23/08/2023,273,DNA,,,,755.66
+P10152,Richard MacLeod,22-Dec-70,richard.macleod@outlook.com,,IV2 3EG,nhs ayrshire & arran,Gastroenterology,24/04/2024,99,CbP,0,,,499.54
+P10132,Richard Stewart,19-Aug-50,richard.stewart@outlook.com,,TD1 1DL,NHS Lothian,Neurology,03/04/2023,221,Cancelled by Hospital,,,,192.87
+P10095,John Reid,25-Jun-02,john.reid@outlook.com,07851 122 703,IV2 5NA,nhs ayrshire & arran,orthopaedics,21/07/2023,274,CbP,0,,,567.31
+P10239,"Johnston, Eilidh",22-Mar-97,eilidh.johnston@gmail.com,07152 532 607,KW15 1NY,NHS Fife,general medicine,28/09/2023,,DNA,,,,213.1
+P10146,Thomas Taylor,08-Oct-70,,,KA1 1HU,nhs ayrshire & arran,general medicine,23/12/2023,250,Cancelled by Hospital,0,,,766.91
+P10073,Jessica Reid,21-May-71,,,FK1 1RE,NHS Lothian,CARDIOLOGY,21/05/2024,123,attended,5,TRUE,5,179.58
+P10159,Hamish MacLeod,15-Mar-87,hamish.macleod@outlook.com,07239 213 972,PH1 5TJ,NHS Fife,Orthopaedics,06/10/2024,327,Did Not Attend,0,,,692.73
+P10024,Patricia Thomson,22-Oct-88,patricia.thomson@gmail.com,07923 576 394,AB25 1DB,NHS Fife,Urology,14/11/2024,234,Did Not Attend,,,,319.22
+P10448,Richard Scott,11-Oct-42,richard.scott@outlook.com,07557 718 944,EH8 9DX,NHS Tayside,Gastroenterology,02/03/2023,342,Attended,18,TRUE,5,£148.0
+P10108,Alasdair Scott,22-May-58,alasdair72@hotmail.co.uk,07142 105 686,G42 9BA,NHS Grampian,Ophthalmology,24/12/2023,177,Did Not Attend,0,,,676.06
+P10439,Susan Johnston,05-Nov-71,susan25@hotmail.co.uk,07686 205 448,KW15 1NY,nhs ayrshire & arran,ENT,25/09/2023,248,Did Not Attend,,,,491.84
+P10334,"Clark, John",31/02/1985,john9@hotmail.co.uk,07587 575 525,AB25 1DB,nhs orkney,general medicine,16/05/2023,132,DNA,0,,,419.6
+P10183,James Fraser,16-Nov-98,james64@hotmail.co.uk,07541 976 311,G42 9BA,NHS WESTERN ISLES,general medicine,06/07/2023,-17,Did Not Attend,,,,730.5
+P10251,Jennifer Brown,10-Mar-86,jennifer.brown@gmail.com,07864 241 220,G1 1XQ,NHS Borders,ENT,04/12/2023,38,Did Not Attend,0,,,107.8
+P10124,Patricia Campbell,15-Dec-56,patricia.campbell@gmail.com,,PH1 5TJ,NHS Grampian,orthopaedics,09/01/2023,37,Cancelled by Hospital,,,,141.47
+P10392,Thomas Anderson,08-Dec-54,thomas.anderson@gmail.com,07601 793 872,KW15 1NY,NHS Lanarkshire,Gastroenterology,19/10/2024,208,Cancelled by Hospital,0,,,77.31
+P10431,Patricia Fraser,14/11/1996,patricia.fraser@outlook.com,07607 551 553,G42 9BA,NHS WESTERN ISLES,Gastroenterology,13/12/2023,211,Attended,52,1,,742.32
+P10295,Callum Fraser,23-Dec-49,callum72@hotmail.co.uk,,AB10 1XG,NHS Lothian,Dermatology,22/04/2024,241,Did Not Attend,,,,116.53
+P10167,Fiona Johnston,16-May-66,fiona.johnston@gmail.com,07754 379 524,KY1 1ET,nhs orkney,Dermatology,27/03/2023,284,Cancelled by Hospital,,,,£397.59
+P10119,Isla Murray,15-May-91,isla.murray@gmail.com,07542 976 490,TD1 1DL,NHS Tayside,Gastroenterology,14/03/2023,323,attended,59,FALSE,2,407.4
+P10416,Patricia Clark,03-Apr-60,patricia.clark@outlook.com,07793 643 705,EH8 9DX,NHS Tayside,Urology,14/08/2023,228,CbP,,,,197.2
+P10458,Hamish Graham,15-Oct-04,hamish.graham@outlook.com,07701 396 777,iv2 5na,NHS Grampian,Neurology,10/05/2024,83,attended,52,,,779.39
+P10442,Susan Thomson,19-Dec-55,susan47@hotmail.co.uk,07964 626 639,AB25 1DB,NHS Tayside,Dermatology,26/09/2024,220,Cancelled by Hospital,,,,387.33
+P53,Richard Wilson,17-Oct-71,richard.wilson@gmail.com,07531 406 595,DD1 4HN,NHS WESTERN ISLES,general medicine,20/10/2024,N/A,Cancelled by Hospital,,,,515.14
+P10262,James Stewart,06-Jun-80,james.stewart@outlook.com,,EH8 9DX,NHS Borders,CARDIOLOGY,11/07/2023,224,attended,55,N,,169.29
+P10045,Mary Smith,07-Nov-73,mary.smith@gmail.com,,KW15 1NY,NHS Highland,Dermatology,16/07/2024,175,CbP,,,,349.04
+P10352,Michael Campbell,23-Apr-63,michael.campbell@gmail.com,07805 219 397,IV2 3EG,NHS Shetland,ENT,27/07/2023,206,Cancelled by Hospital,,,,582.63
+P10138,Isla MacLeod,23-Sep-50,isla.macleod@gmail.com,,EH8 9DX,NHS Tayside,Dermatology,02/12/2023,159,Did Not Attend,,,,52.65 GBP
+P10069,Robert MacLeod,07-Apr-55,robert.macleod@gmail.com,07311 933 311,AB10 1XG,NHS Forth Valley,Neurology,23/06/2023,294,Attended,13,FALSE,,794.36
+P10123,James Hamilton,14-Sep-92,james.hamilton@gmail.com,07345 629 882,G42 9BA,NHS Greater Glasgow and Clyde,general medicine,07/07/2024,94,DNA,,,,£190.84
+P10148,Susan Campbell,14-Apr-43,susan.campbell@outlook.com,,TD1 1DL,NHS Fife,Respiratory Medicine,28/05/2023,-42,Attended,14,1,,781.23
+P10441,Mary Wilson,10-Jul-66,mary.wilson@gmail.com,07734 319 937,ZE1 0TG,NHS Lanarkshire,Cardiology,15/07/2023,-40,Cancelled by Patient,,,,162.26
+P10284,Michael Hamilton,22-Nov-88,michael.hamilton@gmail.com,07241 218 548,EH1 1RE,NHS Fife,ENT,14/06/2023,122,CbP,,,,476.04 GBP
+P10355,Morag Brown,17/05/1959,morag.brown@gmail.com,,PH1 5TJ,NHS Lanarkshire,Ophthalmology,18/03/2023,,DNA,0,,,749.6
+P10060,Patricia Campbell,07-Apr-59,patricia.campbell@outlook.com,07349 813 331,FK1 1RE,nhs ayrshire & arran,general medicine,13/02/2023,283,CbP,,,,638.28
+P10363,Richard Graham,21-Sep-92,richard.graham@outlook.com,447872000000,DD1 4HN,NHS WESTERN ISLES,General Medicine,22/02/2024,-48,DNA,0,,,491.1
+P10261,Jennifer Wilson,16-Feb-92,jennifer.wilson@outlook.com,,TD1 1DL,NHS Borders,Cardiology,04/08/2023,238,Attended,28,0,3,732.0 GBP
+P10212,William Anderson,02-Jun-49,,447718000000,,NHS Greater Glasgow and Clyde,Ophthalmology,13/07/2024,-42,attended,53,FALSE,2,639.48
+P10127,Thomas Scott,01-Aug-86,thomas.scott@gmail.com,,DD1 4HN,NHS Borders,Orthopaedics,05/09/2024,166,Attended,58,yes,,201.56
+P10235,Alasdair Fraser,27/11/1952,alasdair.fraser@gmail.com,447238000000,AB25 1DB,NHS Tayside,CARDIOLOGY,18/02/2024,196,DNA,,,,570.89
+P10032,"Scott, Angus",02/10/1990,angus.scott@gmail.com,07361 396 435,eh1 1re,NHS Tayside,Dermatology,23/09/2024,287,Attended,32,No,,481.82
+P10072,"Smith, Thomas",28-Feb-83,thomas41@hotmail.co.uk,07406 240 491,G1 1XQ,NHS Grampian,Neurology,21/10/2023,180,DNA,,,,212.93
+P10247,"Scott, Morag",27-Mar-60,morag.scott@outlook.com,447639000000,IV2 3EG,NHS Highland,Cardiology,02/11/2023,43,Attended,55,TRUE,,113.72
+P10077,Robert Graham,27-Nov-57,robert.graham@gmail.com,,KW15 1NY,NHS Fife,Gastroenterology,03/04/2024,70,Cancelled by Hospital,,,,140.55
+P10086,Jennifer Wilson,08-Oct-92,jennifer.wilson@outlook.com,07341 587 406,DD1 4HN,NHS Highland,Neurology,25/02/2023,86,DNA,,,,797.95
+P10425,Jennifer Hamilton,23-Apr-41,jennifer.hamilton@outlook.com,07842 525 103,G42 9BA,NHS Forth Valley,orthopaedics,02/03/2024,310,Cancelled by Patient,0,,,269.18
+P10054,Jessica MacLeod,26/11/1999,jessica.macleod@gmail.com,07174 146 533,HS1 2BW,NHS Highland,Cardiology,10/01/2024,70,Cancelled by Hospital,,,,737.84
+P10264,Susan Campbell,05-Jun-43,susan.campbell@outlook.com,07664 767 401,PH1 5TJ,NHS Lanarkshire,Respiratory Medicine,06/05/2023,144,Did Not Attend,,,,765.32
+P10316,Morag Wilson,26-Feb-95,morag7@hotmail.co.uk,07584 320 878,ZE1 0TG,NHS Tayside,Ophthalmology,13/10/2023,N/A,Did Not Attend,0,,,360.74
+P10052,Patricia Smith,22-Oct-77,,07785 197 289,G1 1XQ,NHS Highland,Ophthalmology,15/04/2024,1536,DNA,0,,,550.84
+P10065,Callum Fraser,12-Aug-68,callum.fraser@gmail.com,07525 187 218,G1 1XQ,nhs orkney,Orthopaedics,16/06/2024,357,Attended,59,No,,173.27
+P10299,"Clark, Isla",24-Feb-59,isla96@hotmail.co.uk,07380 569 307,EH1 1RE,NHS Dumfries & Galloway,Respiratory Medicine,03/07/2024,209,Did Not Attend,,,,794.87
+P10222,Thomas Scott,20-Sep-88,thomas65@hotmail.co.uk,,KW15 1NY,NHS WESTERN ISLES,ENT,10/08/2024,302,attended,15,FALSE,,628.45
+P10456,James Reid,26-Jun-48,james.reid@outlook.com,07608 504 902,G42 9BA,NHS Lothian,general medicine,15/04/2023,351,Attended,31,No,4,409.92
+P10455,John Wilson,08-Sep-48,john55@hotmail.co.uk,07438 741 703,IV2 3EG,NHS Highland,Gastroenterology,15/11/2024,130,CbP,,,,100.96
+P10241,James Murray,07-Feb-65,james.murray@outlook.com,,ML1 1AB,NHS Dumfries & Galloway,orthopaedics,25/06/2023,205,Attended,11,yes,5.7,89.03
+P10092,Morag Ross,10-Sep-85,morag.ross@gmail.com,07927 672 881,KY1 1ET,nhs ayrshire & arran,Cardiology,08/06/2023,158,Cancelled by Hospital,,,,402.9
+P10203,"Murray, Sarah",23/12/2003,,07384 682 612,PA1 2BE,NHS WESTERN ISLES,Urology,19/02/2023,34,DNA,,,,193.89
+P10368,David Johnston,07-Nov-65,david65@hotmail.co.uk,07909 485 533,IV2 3EG,NHS Greater Glasgow and Clyde,General Medicine,21/11/2023,42,Cancelled by Hospital,,,,495.38
+P10301,Callum Wilson,03-Dec-94,callum.wilson@gmail.com,447535000000,KY1 1ET,NHS Tayside,CARDIOLOGY,01/07/2024,223,Cancelled by Patient,,,,328.72
+P10353,Jessica Smith,09-Jul-92,jessica.smith@outlook.com,07885 559 231,DG1 2PH,NHS Tayside,orthopaedics,06/02/2024,86,Cancelled by Hospital,0,,,264.83
+P10210,Mary Johnston,11-Mar-77,mary.johnston@outlook.com,07844 183 903,PA1 2BE,NHS Tayside,Neurology,25/11/2024,256,Cancelled by Hospital,,,,421.09
+P10461,Thomas Smith,13-Feb-83,thomas70@hotmail.co.uk,07100 614 687,DG1 2PH,NHS WESTERN ISLES,Neurology,02/10/2023,71,attended,33,No,5,105.39
+P10101,Elizabeth Hamilton,06-Jan-53,elizabeth.hamilton@gmail.com,07972 502 320,PH1 5TJ,NHS Fife,Cardiology,21/01/2024,302,attended,13,Yes,1,488.84
+P10278,Linda Thomson,16-Aug-65,linda.thomson@gmail.com,447527000000,ZE1 0TG,NHS Grampian,Urology,19/01/2024,331,Cancelled by Patient,,,,400.93
+P10229,Sarah Wilson,19-Apr-82,,07757 903 675,ZE1 0TG,NHS Grampian,Ophthalmology,03/02/2023,304,CbP,,,,335.15
+P10309,Robert Fraser,15-Apr-73,robert.fraser@gmail.com,07677 486 774,EH8 9DX,NHS Grampian,general medicine,06/01/2024,172,Did Not Attend,,,,£189.62
+P10163,Elizabeth Wilson,23-Feb-75,elizabeth.wilson@gmail.com,,PA1 2BE,nhs ayrshire & arran,General Medicine,03/04/2024,119,DNA,,,,294.73
+P10255,Robert Wilson,26-Apr-69,robert.wilson@outlook.com,,KA1 1HU,NHS Greater Glasgow and Clyde,ENT,23/01/2024,199,attended,45,No,,156.97
+P10026,Sarah Scott,15-Feb-83,,,HS1 2BW,NHS Greater Glasgow and Clyde,Neurology,12/08/2023,345,DNA,0,,,68.77
+P10369,Thomas Scott,01-Jun-56,thomas.scott@outlook.com,07743 544 761,KA1 1HU,NHS Shetland,orthopaedics,10/11/2023,292,Cancelled by Hospital,0,,,100.92
+P28,Mary Brown,10-Sep-90,mary.brown@outlook.com,447417000000,IV2 5NA,NHS Tayside,Neurology,19/07/2024,333,CbP,0,,,233.36
+P10079,James Wilson,03-Mar-96,james.wilson@gmail.com,07941 841 504,pa1 2be,NHS Tayside,ENT,09/03/2023,77,Cancelled by Hospital,,,,409.27
+P10277,John Scott,31/02/1985,john.scott@gmail.com,07309 206 585,IV2 3EG,NHS Highland,Cardiology,16/07/2024,121,CbP,,,,142.4 GBP
+P10391,Linda Smith,23/10/1965,linda23@hotmail.co.uk,07897 573 666,HS1 2BW,NHS Tayside,Orthopaedics,28/06/2023,140,Did Not Attend,0,,,401.8
+P10017,Sarah Campbell,16-Aug-76,sarah.campbell@outlook.com,07175 690 744,AB10 1XG,NHS Greater Glasgow and Clyde,Cardiology,18/02/2023,311,Cancelled by Hospital,0,,,491.39
+P10447,James Reid,19-Oct-59,james.reid@gmail.com,07974 699 177,FK1 1RE,NHS Lothian,Dermatology,12/11/2024,126,Cancelled by Patient,0,,,141.62
+P10453,Patricia Smith,08/01/1976,patricia.smith@gmail.com,,EH8 9DX,NHS Fife,Respiratory Medicine,03/10/2024,303,Did Not Attend,,,,238.46
+P10422,Michael Campbell,15-Feb-72,michael.campbell@gmail.com,,AB10 1XG,NHS WESTERN ISLES,general medicine,18/06/2024,151,Cancelled by Hospital,,,,358.39
+P10216,Hamish Clark,19-Dec-63,hamish.clark@outlook.com,07782 168 814,TD1 1DL,nhs orkney,Neurology,03/06/2023,259,attended,7,No,,556.72
+,Robert Stewart,18-Oct-87,,447356000000,EH1 1RE,NHS Shetland,Respiratory Medicine,28/04/2023,91,Cancelled by Hospital,,,,698.05
+P10306,Sarah Thomson,12/01/1953,sarah95@hotmail.co.uk,07971 234 184,ZE1 0TG,NHS Dumfries & Galloway,general medicine,04/06/2023,,CbP,,,,724.75
+P10111,Eilidh Smith,05-Sep-61,,07467 141 324,PA1 2BE,NHS Lothian,General Medicine,26/09/2023,241,Attended,50,N,,247.49
+P10187,Angus Campbell,16-Apr-05,angus.campbell@gmail.com,07290 544 745,ZE1 0TG,NHS Dumfries & Galloway,general medicine,22/11/2023,254,Attended,56,yes,,563.24
+P10383,Sarah Fraser,06-Oct-49,sarah.fraser@gmail.com,07542 143 991,KA1 1HU,nhs ayrshire & arran,CARDIOLOGY,15/07/2024,116,Cancelled by Hospital,,,,616.57
+P10384,James Clark,25-Dec-50,james.clark@outlook.com,,AB25 1DB,NHS Shetland,Gastroenterology,25/07/2024,353,CbP,,,,402
+P10064,Angus Ross,09-Apr-78,angus52@hotmail.co.uk,07990 808 528,ab25 1db,NHS WESTERN ISLES,orthopaedics,25/02/2023,341,DNA,,,,775.11
+P10315,Alasdair Campbell,16-Nov-58,alasdair.campbell@outlook.com,,IV2 5NA,NHS Fife,ENT,20/03/2023,327,Cancelled by Patient,,,,611.95 GBP
+P10304,Sarah Smith,17-Mar-46,sarah51@hotmail.co.uk,07494 823 585,HS1 2BW,NHS Lanarkshire,Cardiology,21/03/2023,365,Cancelled by Patient,,,,468.43
+P10342,David Campbell,24-Jan-92,david.campbell@outlook.com,07902 148 432,PH1 5TJ,nhs orkney,orthopaedics,18/04/2023,281,Did Not Attend,,,,692.48
+P10023,Callum Stewart,16-Feb-59,callum.stewart@gmail.com,,KA1 1HU,NHS Dumfries & Galloway,Neurology,03/10/2023,351,Attended,53,No,3,647.11
+P10118,Fiona MacDonald,13-May-05,fiona.macdonald@outlook.com,07503 981 802,KY1 1ET,NHS Lanarkshire,Gastroenterology,01/12/2024,108,Did Not Attend,,,,227.85
+P10141,John Johnston,26-Aug-03,john.johnston@gmail.com,447968000000,G42 9BA,NHS Fife,ENT,21/01/2023,145,CbP,0,,,564.38
+P10223,Mary Taylor,16/04/1971,,,G1 1XQ,nhs ayrshire & arran,Dermatology,20/04/2024,N/A,CbP,0,,,583.71
+P10150,Linda Ross,21-Nov-49,linda.ross@gmail.com,07580 687 851,KA1 1HU,nhs orkney,Ophthalmology,02/03/2024,306,Cancelled by Hospital,,,,479.64
+P10402,"Reid, Susan",07-Sep-01,susan.reid@outlook.com,,G42 9BA,nhs orkney,CARDIOLOGY,24/08/2023,149,Cancelled by Hospital,,,,773.81
+P10133,Thomas Johnston,07-Apr-45,thomas80@hotmail.co.uk,,fk1 1re,NHS Grampian,Ophthalmology,01/08/2024,276,attended,51,Yes,5.2,263.01
+P10143,Angus Stewart,31/02/1985,,07189 441 578,AB10 1XG,NHS WESTERN ISLES,Ophthalmology,25/10/2023,108,Cancelled by Hospital,,,,254.49
+P10221,Thomas Scott,14-Apr-65,thomas.scott@gmail.com,447469000000,KW15 1NY,NHS Lanarkshire,Urology,27/03/2024,-25,Cancelled by Hospital,,,,619.14
+P10246,Linda MacDonald,22-Sep-42,linda84@hotmail.co.uk,07741 749 718,AB25 1DB,NHS Fife,Ophthalmology,21/10/2023,203,Cancelled by Hospital,0,,,186.14
+P10049,Michael Hamilton,13-Sep-01,michael.hamilton@outlook.com,,ML1 1AB,NHS Lothian,Ophthalmology,10/04/2024,361,CbP,,,,265.84
+P10189,James Smith,21-Mar-41,james.smith@gmail.com,,HS1 2BW,nhs ayrshire & arran,Respiratory Medicine,05/02/2024,N/A,Did Not Attend,,,,206.92
+P10093,Eilidh Campbell,10-Sep-88,eilidh.campbell@outlook.com,,G1 1XQ,nhs orkney,Cardiology,21/06/2024,N/A,Cancelled by Patient,0,,,630.16
+P10457,Callum Fraser,,,07541 968 776,g1 1xq,NHS Lanarkshire,Gastroenterology,03/02/2023,82,Cancelled by Patient,0,,,748.17
+P10116,Hamish Brown,16-Nov-62,hamish.brown@gmail.com,07628 815 337,G42 9BA,NHS Lothian,general medicine,03/03/2023,205,DNA,,,,739.38
+P10357,Elizabeth Robertson,18-Feb-00,elizabeth.robertson@gmail.com,07664 260 775,KW15 1NY,NHS Dumfries & Galloway,General Medicine,19/07/2023,140,attended,55,yes,4,621.97
+P10240,Thomas Johnston,,thomas46@hotmail.co.uk,07541 603 302,DD1 4HN,NHS Borders,Cardiology,05/01/2024,129,Did Not Attend,,,,252.11
+P10030,Alasdair Reid,28-Jun-92,,07691 619 317,G1 1XQ,NHS Grampian,ENT,25/02/2024,116,attended,48,Yes,,543.37 GBP
+P10083,Morag Graham,11-Mar-03,morag91@hotmail.co.uk,,KA1 1HU,NHS Lothian,CARDIOLOGY,09/06/2023,1,Cancelled by Hospital,,,,334.03
+,Mary Robertson,,mary.robertson@gmail.com,07979 614 781,AB25 1DB,NHS Greater Glasgow and Clyde,Dermatology,19/07/2023,149,DNA,,,,349.34
+,Sarah Scott,08-Jul-50,sarah.scott@gmail.com,,ZE1 0TG,nhs orkney,Cardiology,28/04/2023,326,Did Not Attend,,,,369.73
+P10128,Eilidh Johnston,31/02/1985,,,PH1 5TJ,NHS Lanarkshire,CARDIOLOGY,26/06/2024,317,Did Not Attend,,,,122.84
+P10327,Angus Hamilton,25-Feb-64,angus.hamilton@outlook.com,447788000000,KA1 1HU,nhs orkney,Dermatology,22/10/2023,265,Cancelled by Patient,0,,,247.14
+P10423,James Anderson,18-Apr-87,james79@hotmail.co.uk,447804000000,AB10 1XG,NHS Shetland,Ophthalmology,07/04/2023,182,Attended,30,yes,,117.54
+P10318,Thomas Smith,12-Oct-61,thomas.smith@outlook.com,,AB25 1DB,NHS Shetland,Cardiology,07/07/2023,57,DNA,,,,462.55
+P10411,Mary MacLeod,04-Jul-66,mary.macleod@outlook.com,07700 565 456,FK1 1RE,NHS WESTERN ISLES,Ophthalmology,09/07/2024,113,Cancelled by Hospital,0,,,761.39
+P10071,"Brown, David",04-Jan-98,david.brown@outlook.com,,FK1 1RE,NHS Greater Glasgow and Clyde,Cardiology,03/05/2024,333,Did Not Attend,,,,118.4
+P10469,Alasdair Brown,06-Nov-84,alasdair.brown@outlook.com,,ML1 1AB,NHS Greater Glasgow and Clyde,General Medicine,14/11/2023,335,Did Not Attend,,,,107.53
+P10074,Angus Thomson,01-Dec-57,angus17@hotmail.co.uk,,EH1 1RE,nhs orkney,Respiratory Medicine,03/09/2024,296,CbP,,,,325.77
+P10450,Jennifer Robertson,15-Jul-98,jennifer.robertson@gmail.com,07207 232 285,AB10 1XG,NHS Dumfries & Galloway,Dermatology,24/11/2024,225,Attended,23,FALSE,2,391.51
+P10359,Linda Campbell,04-Aug-58,linda.campbell@gmail.com,,PH1 5TJ,NHS Highland,Gastroenterology,03/06/2024,36,Attended,55,Y,,290.52
+P10062,David Smith,08-Aug-97,david.smith@gmail.com,,DD1 4HN,NHS WESTERN ISLES,orthopaedics,13/12/2023,55,Attended,13,FALSE,5,117.21
+P10270,Hamish Fraser,03-Apr-91,hamish.fraser@gmail.com,,dg1 2ph,NHS Greater Glasgow and Clyde,General Medicine,17/11/2024,136,Cancelled by Hospital,,,,430.95
+P10170,"Campbell, Michael",02-Oct-05,michael.campbell@gmail.com,07716 310 701,TD1 1DL,NHS Grampian,Dermatology,12/10/2024,257,CbP,,,,60.49
+P10003,"MacLeod, Patricia",25-Sep-73,patricia.macleod@outlook.com,07880 265 652,IV2 5NA,NHS Dumfries & Galloway,General Medicine,27/06/2023,123,Cancelled by Hospital,,,,783.49
+P10287,Susan Smith,31/02/1985,,,AB10 1XG,NHS WESTERN ISLES,general medicine,15/09/2024,291,Did Not Attend,0,,,61.39
+P10105,Morag Johnston,26-Aug-78,morag.johnston@gmail.com,07617 263 525,AB25 1DB,NHS Lothian,Orthopaedics,12/06/2024,317,Attended,12,1,5,79.91
+P10230,Jessica Reid,22-Sep-56,jessica.reid@gmail.com,,PA1 2BE,NHS Greater Glasgow and Clyde,Dermatology,11/10/2023,353,CbP,0,,,268.62
+P10156,Callum Taylor,27-Jun-57,callum.taylor@gmail.com,447479000000,KY1 1ET,NHS Highland,Dermatology,20/11/2023,-32,Attended,5,No,,495.3
+P10399,Robert Brown,13-Mar-64,robert79@hotmail.co.uk,07166 573 720,ML1 1AB,NHS Lanarkshire,Cardiology,08/10/2024,17,Cancelled by Hospital,,,,431.66
+P10281,Linda Robertson,31/02/1985,linda5@hotmail.co.uk,,HS1 2BW,NHS Shetland,Cardiology,22/03/2024,329,attended,27,0,,651.2
+P10390,Patricia Thomson,13-Jan-65,patricia.thomson@outlook.com,07181 637 361,PH1 5TJ,NHS Borders,Ophthalmology,14/04/2023,267,CbP,,,,765.38
+P10280,Callum Thomson,22-Aug-53,callum23@hotmail.co.uk,,ZE1 0TG,NHS Greater Glasgow and Clyde,Cardiology,03/12/2023,192,DNA,,,,149.91
+P10137,Mary Robertson,25-May-90,mary.robertson@outlook.com,07949 761 562,DD1 4HN,nhs orkney,Urology,14/07/2023,13,Cancelled by Hospital,0,,,293.06
+P10294,Jessica Scott,05/03/1980,,,ML1 1AB,NHS Grampian,ENT,04/03/2024,250,attended,53,Y,,155.75
+P10107,Robert Brown,03-Sep-72,robert.brown@gmail.com,07789 221 647,IV2 3EG,nhs orkney,CARDIOLOGY,28/12/2023,258,CbP,,,,336.06
+P10463,Robert Ross,03-Dec-01,,07846 102 987,KW15 1NY,NHS Grampian,Ophthalmology,09/08/2023,54,DNA,,,,248.77
+P10307,James Taylor,07-Feb-47,james.taylor@gmail.com,07617 519 277,IV2 3EG,NHS Grampian,ENT,27/10/2024,290,Attended,16,Yes,,641.55
+P10234,Alasdair Campbell,04-Nov-66,alasdair17@hotmail.co.uk,07768 265 189,AB25 1DB,NHS Grampian,Cardiology,18/06/2024,-20,Attended,38,N,,383.69
+P10018,Michael Robertson,08/03/1950,michael.robertson@gmail.com,07398 133 337,FK1 1RE,NHS Dumfries & Galloway,Cardiology,26/05/2023,302,DNA,0,,,249.22
+P10104,Angus Brown,,angus.brown@outlook.com,,DG1 2PH,nhs ayrshire & arran,ENT,07/12/2023,91,Attended,29,N,2,54.23
+P10258,Sarah Robertson,14-Nov-42,sarah.robertson@gmail.com,,IV2 5NA,NHS Tayside,General Medicine,11/07/2023,153,DNA,,,,774.19
+P10075,"Smith, Eilidh",02-Apr-41,,,ZE1 0TG,NHS WESTERN ISLES,ENT,19/02/2024,258,Attended,30,1,,630.15
+P10191,Elizabeth Wilson,07-Mar-56,elizabeth.wilson@gmail.com,07118 467 367,HS1 2BW,NHS Shetland,Neurology,11/02/2023,317,CbP,,,,85.01
+P10248,Sarah Stewart,18-Nov-74,sarah.stewart@outlook.com,07329 124 332,ZE1 0TG,NHS Greater Glasgow and Clyde,Orthopaedics,23/11/2024,58,Cancelled by Patient,,,,511.77
+P10113,"Fraser, John",06-Jan-58,john.fraser@gmail.com,,FK1 1RE,NHS Forth Valley,Gastroenterology,08/03/2024,308,attended,21,TRUE,,497.4
+P10336,Linda Thomson,16-Oct-41,linda.thomson@gmail.com,07736 369 658,PH1 5TJ,nhs orkney,Neurology,06/06/2024,250,CbP,,,,97.34
+P10194,Fiona Brown,13-Jul-77,fiona.brown@gmail.com,,G42 9BA,NHS Dumfries & Galloway,general medicine,20/09/2023,334,CbP,0,,,£276.15
+P10398,Michael Taylor,08-May-70,michael.taylor@gmail.com,07915 855 108,G1 1XQ,NHS Grampian,orthopaedics,01/01/2023,17,CbP,,,,549.54
+P10180,Hamish Brown,26-Dec-46,,,DG1 2PH,NHS Borders,Ophthalmology,27/02/2024,153,CbP,,,,£354.72
+P10292,David Reid,17-Jul-92,,07223 528 369,AB25 1DB,NHS Grampian,Dermatology,01/07/2023,38,Cancelled by Patient,0,,,572.7
+P10027,Thomas Scott,02-Mar-54,thomas59@hotmail.co.uk,07860 813 653,ZE1 0TG,NHS Borders,general medicine,20/08/2023,144,CbP,,,,785.7
+P10310,Fiona Clark,09-Apr-00,fiona.clark@outlook.com,07619 210 531,ZE1 0TG,NHS Borders,Urology,17/03/2023,154,attended,53,TRUE,,90.35
+,William Scott,21-Feb-00,william.scott@gmail.com,,DD1 4HN,NHS Dumfries & Galloway,Urology,21/05/2024,,Cancelled by Patient,0,,,93.88
+P10154,Thomas MacDonald,31/02/1985,thomas.macdonald@outlook.com,07138 780 499,ML1 1AB,NHS Borders,Urology,23/09/2023,252,Attended,39,FALSE,,663.48
+P10410,William Campbell,04/12/1966,william.campbell@gmail.com,07841 763 904,EH1 1RE,NHS Borders,Respiratory Medicine,22/08/2024,326,DNA,0,,,
+P10277,John Scott,31/02/1985,john.scott@gmail.com,07309 206 585,IV2 3EG,NHS Highland,Cardiology,16/07/2024,121,CbP,,,,142.4 GBP
+P10372,Thomas Smith,07/07/2005,,447684000000,FK1 1RE,NHS Forth Valley,Ophthalmology,02/08/2024,118,Cancelled by Patient,0,,,672.19
+P10361,John Murray,10-Aug-64,john.murray@gmail.com,07216 123 930,G1 1XQ,NHS Grampian,Dermatology,05/02/2024,827,DNA,,,,702.62
+P10117,William Anderson,13-Aug-64,william.anderson@gmail.com,,ML1 1AB,NHS Forth Valley,Ophthalmology,19/07/2024,125,attended,60,No,4,557.68
+P10190,Michael Wilson,16-Mar-99,michael.wilson@gmail.com,07560 699 348,TD1 1DL,NHS Borders,General Medicine,04/01/2024,222,attended,23,FALSE,5,728.8
+P10238,Linda Scott,14-May-51,linda.scott@gmail.com,07186 861 392,AB25 1DB,NHS Highland,Respiratory Medicine,16/08/2023,347,CbP,,,,585.62
+P10131,Sarah Graham,21-Oct-52,sarah.graham@outlook.com,07936 544 526,EH1 1RE,nhs ayrshire & arran,Urology,25/11/2023,28,attended,49,Yes,,798.03
+P10346,Mary MacLeod,14/10/2003,mary58@hotmail.co.uk,07158 455 588,G1 1XQ,NHS WESTERN ISLES,Ophthalmology,01/12/2024,252,DNA,,,,453.8
+P10016,Robert Scott,22-May-71,robert90@hotmail.co.uk,07413 357 336,EH1 1RE,NHS WESTERN ISLES,Neurology,07/04/2023,142,Attended,58,Y,3.5,255.73
+P10102,John Campbell,13-Sep-81,john.campbell@gmail.com,07924 236 241,ZE1 0TG,NHS Lanarkshire,Ophthalmology,24/12/2024,324,DNA,0,,,582.8
+P10454,Sarah Scott,04/03/1991,sarah.scott@gmail.com,07640 792 463,PH1 5TJ,NHS Greater Glasgow and Clyde,Gastroenterology,04/04/2023,171,Cancelled by Hospital,0,,,657.4
+P10406,David Taylor,26-Feb-95,david.taylor@outlook.com,447862000000,PA1 2BE,NHS Fife,general medicine,02/04/2024,-23,Attended,47,TRUE,1,113.92
+P10058,Alasdair Reid,18-Aug-88,alasdair.reid@outlook.com,,KA1 1HU,NHS Borders,General Medicine,05/12/2023,284,Cancelled by Patient,0,,,477.34
+,John Clark,20-Apr-60,john.clark@gmail.com,07137 812 863,FK1 1RE,NHS WESTERN ISLES,General Medicine,01/11/2024,173,DNA,0,,,570.26
+P10293,Hamish Johnston,24-Feb-45,hamish97@hotmail.co.uk,07237 851 287,EH8 9DX,NHS Grampian,Dermatology,19/10/2023,333,Cancelled by Patient,,,,122.67
+,Sarah Scott,08-Jul-50,sarah.scott@gmail.com,,ZE1 0TG,nhs orkney,Cardiology,28/04/2023,325,Did Not Attend,,,,369.73
+P10363,Richard Graham,21-Sep-92,richard.graham@outlook.com,447872000000,DD1 4HN,NHS WESTERN ISLES,General Medicine,22/02/2024,-48,DNA,0,,,491.1
+P10196,Hamish Anderson,26-Nov-76,hamish67@hotmail.co.uk,07942 897 469,PH1 5TJ,NHS Shetland,Respiratory Medicine,02/02/2023,67,attended,40,FALSE,,488.23
+P10289,Patricia Fraser,18/01/1980,patricia33@hotmail.co.uk,07965 978 969,HS1 2BW,NHS Lothian,ENT,17/02/2023,262,DNA,,,,531.42
+P10125,Mary Robertson,22-Sep-52,mary.robertson@outlook.com,07662 633 225,ML1 1AB,NHS Fife,General Medicine,08/02/2023,-18,attended,12,Y,1,566.3
+P10435,James Murray,05-Sep-88,james.murray@gmail.com,,hs1 2bw,NHS Dumfries & Galloway,Cardiology,19/07/2024,39,Did Not Attend,,,,348.45
+P10126,David Brown,18-Dec-59,,,td1 1dl,NHS WESTERN ISLES,Dermatology,16/01/2024,287,Cancelled by Patient,,,,401.3
+P10237,Mary Thomson,12-Mar-89,mary76@hotmail.co.uk,07109 803 625,G1 1XQ,NHS Forth Valley,CARDIOLOGY,24/01/2024,190,Did Not Attend,,,,315.5
+P10133,Thomas Johnston,07-Apr-45,thomas80@hotmail.co.uk,,fk1 1re,NHS Grampian,Ophthalmology,01/08/2024,276,attended,51,Yes,5.2,263.01
+P10012,Jessica Taylor,13-Oct-42,,07852 659 919,G42 9BA,NHS Greater Glasgow and Clyde,Respiratory Medicine,13/01/2024,348,attended,39,FALSE,1,700.14
+P10394,Richard Clark,27-Jun-77,richard.clark@gmail.com,07618 269 111,EH1 1RE,NHS Greater Glasgow and Clyde,General Medicine,07/09/2023,-26,Cancelled by Patient,,,,395.22
+P10344,Susan Taylor,28-Feb-89,susan.taylor@gmail.com,,AB10 1XG,NHS Greater Glasgow and Clyde,General Medicine,27/04/2024,113,Attended,23,Yes,,412.45
+P10371,Eilidh Scott,03/09/1993,eilidh.scott@gmail.com,07107 457 818,DD1 4HN,NHS Shetland,Dermatology,05/04/2024,322,Did Not Attend,,,,615.63
+P10290,Jessica Murray,01/10/1977,,07723 316 927,KA1 1HU,NHS Lanarkshire,orthopaedics,13/04/2024,17,Attended,19,,,600.46
+P10252,Callum Fraser,,callum.fraser@gmail.com,,,NHS Shetland,Respiratory Medicine,23/09/2024,293,Attended,38,yes,,350.3
+P10147,Sarah Brown,25/10/1957,sarah.brown@gmail.com,07499 730 691,PH1 5TJ,NHS Fife,Ophthalmology,23/07/2024,177,CbP,0,,,270.64
+P10407,Sarah Hamilton,20-Feb-83,sarah.hamilton@gmail.com,07209 156 407,G1 1XQ,NHS Tayside,Ophthalmology,03/07/2024,187,Cancelled by Patient,,,,583.85
+P10038,Robert Anderson,14/01/1984,robert.anderson@gmail.com,,IV2 3EG,NHS WESTERN ISLES,general medicine,05/03/2024,242,Attended,10,Y,,461.6
+P10121,Morag Taylor,24-Jun-96,morag.taylor@outlook.com,,DD1 4HN,NHS Grampian,Cardiology,02/09/2024,204,Attended,46,FALSE,2,144.81
+P10042,Patricia Smith,05/01/1996,patricia50@hotmail.co.uk,447258000000,PH1 5TJ,nhs orkney,Cardiology,12/09/2023,333,attended,29,No,3,508.91
+P10434,Jennifer Robertson,19-Mar-93,jennifer.robertson@gmail.com,07946 337 995,AB25 1DB,NHS Lanarkshire,Dermatology,01/07/2024,294,attended,39,FALSE,1,351.99
+P10279,Eilidh Robertson,03-Sep-89,eilidh.robertson@outlook.com,07903 880 774,FK1 1RE,NHS Shetland,general medicine,16/07/2024,93,Did Not Attend,,,,491.64
+P10031,"Murray, David",22-Oct-58,david54@hotmail.co.uk,07261 478 419,KA1 1HU,NHS Grampian,General Medicine,25/03/2023,346,Cancelled by Hospital,0,,,616.21
+P10197,Jessica Thomson,23-Aug-56,jessica.thomson@gmail.com,07260 672 478,EH1 1RE,NHS Grampian,ENT,17/01/2024,191,Did Not Attend,0,,,£492.22
+P10051,Morag Brown,19-Nov-51,morag23@hotmail.co.uk,447957000000,PA1 2BE,NHS Shetland,Ophthalmology,10/01/2023,55,attended,36,yes,,401.02
+P10427,Fiona Thomson,19-Oct-93,fiona.thomson@outlook.com,,PH1 5TJ,NHS Tayside,Neurology,13/10/2024,292,attended,24,Y,,717.9
+P10338,Linda Stewart,09/04/1994,linda50@hotmail.co.uk,,PA1 2BE,NHS Greater Glasgow and Clyde,General Medicine,23/05/2023,160,CbP,,,,157.84
+P10011,Hamish Reid,27-Oct-96,,07365 869 353,ML1 1AB,nhs ayrshire & arran,Orthopaedics,03/08/2024,121,Did Not Attend,,,,164.6
+P10337,Thomas Campbell,28-Mar-77,,07939 623 299,G1 1XQ,NHS Highland,Orthopaedics,20/09/2024,289,Did Not Attend,,,,797.88
+P10099,David Fraser,22-Jul-52,david.fraser@outlook.com,,IV2 3EG,NHS Shetland,Gastroenterology,03/03/2024,165,DNA,,,,662.83
+P10082,Jennifer Fraser,23-Jun-49,jennifer.fraser@gmail.com,,PA1 2BE,NHS Lanarkshire,CARDIOLOGY,22/04/2024,90,Attended,49,FALSE,,628.12
+P10168,"Murray, Jessica",21-Sep-77,jessica.murray@outlook.com,07993 423 946,FK1 1RE,NHS Fife,Cardiology,01/03/2024,145,Attended,18,Y,,646.33
+P10053,Elizabeth Campbell,20-Jun-77,elizabeth90@hotmail.co.uk,07582 875 650,TD1 1DL,NHS Forth Valley,orthopaedics,15/09/2023,186,attended,17,yes,5,587.69
+P10097,Eilidh Wilson,21-May-52,eilidh.wilson@gmail.com,07397 468 920,KA1 1HU,NHS Shetland,orthopaedics,28/01/2023,332,DNA,0,,,661.22
+,Sarah Brown,18-Jul-86,sarah.brown@gmail.com,07682 817 987,,NHS Lothian,CARDIOLOGY,24/03/2023,1871,Cancelled by Patient,,,,597.39
+P10014,Elizabeth Graham,23-Jul-88,elizabeth.graham@gmail.com,,EH8 9DX,NHS Borders,general medicine,17/02/2024,7,DNA,,,,394.8
+P10010,Robert Anderson,05/04/1968,robert.anderson@gmail.com,447525000000,EH8 9DX,NHS Dumfries & Galloway,Respiratory Medicine,21/03/2023,55,Cancelled by Hospital,0,,,236.9
+P10459,Alasdair Brown,22-Aug-80,alasdair.brown@outlook.com,07763 784 186,KY1 1ET,NHS Shetland,Urology,20/03/2024,287,DNA,,,,407.85
+P10004,Eilidh Johnston,25-Sep-67,eilidh.johnston@gmail.com,07223 353 330,DD1 4HN,NHS Lothian,Urology,03/01/2023,31,Did Not Attend,0,,,414.06
+P10226,Michael Fraser,17-Oct-88,michael.fraser@gmail.com,07451 422 936,DG1 2PH,NHS Borders,Urology,28/06/2023,-45,Cancelled by Hospital,,,,715.98
+P10169,Isla Campbell,27/02/1949,isla.campbell@outlook.com,07552 711 635,KA1 1HU,NHS WESTERN ISLES,Cardiology,28/03/2023,353,DNA,,,,£133.79
+P10331,Robert Graham,25-Feb-64,robert43@hotmail.co.uk,07763 689 447,PH1 5TJ,NHS Shetland,Respiratory Medicine,19/07/2023,N/A,Did Not Attend,,,,162.87
+P10198,Michael Thomson,04/01/2002,michael.thomson@gmail.com,07563 445 900,KW15 1NY,NHS Forth Valley,Dermatology,21/09/2023,231,attended,47,FALSE,4,552.83
+P10120,"Murray, William",28-Jun-55,william.murray@outlook.com,07432 789 622,PA1 2BE,NHS Grampian,Respiratory Medicine,21/08/2024,86,Cancelled by Hospital,,,,103.51
+P10050,"Scott, John",15-Jun-50,john.scott@outlook.com,07211 730 858,EH8 9DX,NHS Lanarkshire,Orthopaedics,04/01/2023,1927,Did Not Attend,,,,751.27
+P10465,David Anderson,17-Feb-56,david.anderson@gmail.com,,G1 1XQ,NHS Greater Glasgow and Clyde,Dermatology,13/05/2023,350,Cancelled by Hospital,,,,357.85
+P10194,Fiona Brown,13-Jul-77,fiona.brown@gmail.com,,G42 9BA,NHS Dumfries & Galloway,general medicine,20/09/2023,335,CbP,0,,,£276.15
+P10229,Sarah Wilson,19-Apr-82,,07757 903 675,ZE1 0TG,NHS Grampian,Ophthalmology,03/02/2023,304,CbP,,,,335.15
+P10033,David Thomson,12-Dec-98,david.thomson@gmail.com,07447 326 441,KY1 1ET,NHS Lanarkshire,Neurology,12/06/2023,331,attended,14,No,4,484.6
+P10437,Eilidh MacLeod,21-Dec-44,eilidh.macleod@gmail.com,07887 772 291,IV2 3EG,NHS Borders,orthopaedics,03/10/2023,340,Did Not Attend,,,,480.94
+P10377,James MacDonald,08-Dec-61,james51@hotmail.co.uk,07939 502 324,EH8 9DX,nhs orkney,Cardiology,21/11/2023,1833,CbP,0,,,158.27
+P10397,Eilidh Scott,19-Jan-91,eilidh.scott@outlook.com,447256000000,AB25 1DB,NHS Borders,Respiratory Medicine,03/05/2024,320,Attended,32,FALSE,4,327.79
+P10470,Alasdair Johnston,20-Nov-02,alasdair.johnston@gmail.com,,KY1 1ET,NHS Shetland,Neurology,06/11/2024,N/A,attended,8,No,,340.27
+P10122,Sarah MacLeod,15-Sep-74,sarah.macleod@outlook.com,,AB25 1DB,NHS Lanarkshire,Orthopaedics,10/08/2023,N/A,attended,57,yes,4,418.95
+P10420,Richard Graham,26-Mar-92,richard.graham@outlook.com,,AB10 1XG,NHS Dumfries & Galloway,General Medicine,08/04/2024,,attended,54,0,1,746.1
+P10106,"Scott, Callum",26-Sep-87,callum.scott@gmail.com,07891 650 646,IV2 3EG,nhs ayrshire & arran,orthopaedics,14/11/2023,106,DNA,,,,104.09 GBP
+P10333,Fiona Fraser,16-Feb-66,fiona.fraser@gmail.com,07589 361 620,,NHS Borders,orthopaedics,28/07/2024,185,Cancelled by Patient,0,,,575.91
+P10401,Mary MacDonald,22-Aug-03,,,EH8 9DX,NHS Shetland,orthopaedics,14/05/2023,172,Cancelled by Patient,,,,590.59
+P10236,Michael Murray,06-Oct-05,michael.murray@outlook.com,07227 644 212,AB25 1DB,NHS Grampian,ENT,05/05/2024,116,Attended,55,yes,3,121.66
+P10199,Morag Scott,18-Nov-55,,,IV2 3EG,NHS Tayside,General Medicine,08/04/2024,297,Attended,36,Yes,2,288.04
+P10429,Hamish Clark,19-Jul-58,hamish.clark@outlook.com,07452 516 745,DD1 4HN,NHS Lanarkshire,Gastroenterology,22/02/2024,75,CbP,0,,,682.48
+P10288,David Graham,09-Jun-75,david.graham@outlook.com,07370 967 283,PH1 5TJ,NHS Dumfries & Galloway,General Medicine,21/08/2024,112,attended,25,1,3,220.56
+P10367,Morag Graham,19-Dec-69,morag13@hotmail.co.uk,07251 738 429,DD1 4HN,NHS WESTERN ISLES,Ophthalmology,13/08/2023,142,Did Not Attend,,,,295.41
+P10166,"Robertson, William",22-Nov-97,william.robertson@outlook.com,07782 469 507,G1 1XQ,NHS Borders,ENT,12/05/2023,229,Cancelled by Hospital,,,,266.48
+P10050,"Scott, John",15-Jun-50,john.scott@outlook.com,07211 730 858,EH8 9DX,NHS Lanarkshire,Orthopaedics,04/01/2023,1927,Did Not Attend,,,,751.27
+P10314,Richard Wilson,19-Dec-83,richard.wilson@gmail.com,07988 601 571,HS1 2BW,NHS Fife,Ophthalmology,22/06/2024,,Cancelled by Patient,0,,,76.71
+P10254,Fiona Brown,31/02/1985,fiona.brown@gmail.com,07299 422 869,KW15 1NY,NHS WESTERN ISLES,general medicine,14/06/2023,258,Cancelled by Hospital,,,,£701.61
+P10175,"Graham, Susan",04-Jul-83,susan.graham@gmail.com,07186 804 167,FK1 1RE,NHS Lanarkshire,ENT,22/08/2023,291,Attended,25,FALSE,1,556.33
+P10128,Eilidh Johnston,31/02/1985,,,PH1 5TJ,NHS Lanarkshire,CARDIOLOGY,26/06/2024,316,Did Not Attend,,,,122.84
+P10025,James Graham,24-Oct-46,james.graham@gmail.com,,G1 1XQ,nhs ayrshire & arran,General Medicine,02/08/2024,68,Did Not Attend,,,,707.35
+P10215,Michael Stewart,27-Jul-79,michael.stewart@outlook.com,447107000000,PH1 5TJ,nhs orkney,Orthopaedics,16/10/2024,295,Cancelled by Patient,,,,583.74
+P10343,Elizabeth Campbell,13-Nov-51,elizabeth.campbell@outlook.com,07925 548 470,KY1 1ET,NHS Grampian,Orthopaedics,23/09/2024,152,Did Not Attend,0,,,583.75
+P10245,Eilidh Fraser,23-May-68,eilidh.fraser@outlook.com,447236000000,AB10 1XG,NHS Shetland,Orthopaedics,21/01/2023,310,Cancelled by Patient,,,,356.26
+P10275,Jessica Reid,25-Nov-57,jessica.reid@outlook.com,,KW15 1NY,NHS Grampian,Dermatology,11/12/2024,351,Cancelled by Hospital,,,,£734.42
+P10228,Eilidh Graham,05-Jan-04,eilidh58@hotmail.co.uk,,AB25 1DB,nhs orkney,general medicine,14/02/2023,15,Did Not Attend,,,,549.45
+P10365,Patricia Stewart,04/04/1963,patricia.stewart@gmail.com,07609 501 262,FK1 1RE,NHS Greater Glasgow and Clyde,Orthopaedics,20/08/2023,222,Cancelled by Patient,,,,100.18
+P10078,Robert Thomson,23-Dec-78,,07150 793 406,ML1 1AB,NHS Borders,Gastroenterology,15/02/2023,72,Did Not Attend,,,,329.18
+P10085,Jennifer Brown,02-Mar-02,jennifer.brown@gmail.com,07274 753 398,DD1 4HN,nhs orkney,Respiratory Medicine,22/08/2024,329,Cancelled by Hospital,0,,,379.81
+P10129,Morag Thomson,04-Dec-93,morag.thomson@gmail.com,,IV2 5NA,NHS Forth Valley,Gastroenterology,18/06/2024,167,Cancelled by Patient,,,,472.36
+P10381,James MacLeod,23-Jan-95,james.macleod@gmail.com,07532 168 166,DD1 4HN,NHS Fife,Gastroenterology,08/09/2024,71,Cancelled by Hospital,,,,459.44
+P10324,Sarah Thomson,22-Jan-88,sarah.thomson@outlook.com,,HS1 2BW,nhs ayrshire & arran,General Medicine,07/12/2023,17,attended,39,0,,777.83
+P10444,James Reid,07-Sep-44,james.reid@gmail.com,07731 492 495,EH8 9DX,NHS Tayside,Gastroenterology,15/07/2023,226,Did Not Attend,,,,436.49
+P10375,William Scott,01-May-65,,07676 955 977,ZE1 0TG,nhs orkney,Orthopaedics,12/05/2023,189,Cancelled by Patient,,,,455.58
+P10135,Fiona Thomson,31/02/1985,fiona.thomson@outlook.com,,ML1 1AB,NHS Tayside,Dermatology,20/10/2023,291,Attended,49,yes,5,187.98
+P10215,Michael Stewart,27-Jul-79,michael.stewart@outlook.com,447107000000,PH1 5TJ,nhs orkney,Orthopaedics,16/10/2024,295,Cancelled by Patient,,,,583.74
+P10360,James Johnston,12-Mar-93,james22@hotmail.co.uk,07344 817 413,ML1 1AB,NHS Highland,Ophthalmology,03/11/2024,17,Attended,24,1,1,331.36
+P10046,Thomas Anderson,13-May-46,,447264000000,IV2 5NA,NHS Dumfries & Galloway,General Medicine,17/07/2023,124,CbP,,,,402.94
+P10386,Hamish Reid,08-Jun-03,hamish.reid@gmail.com,07227 485 932,,NHS Lothian,orthopaedics,15/08/2024,282,Attended,32,1,4,154.8
+P10064,Angus Ross,09-Apr-78,angus52@hotmail.co.uk,07990 808 528,ab25 1db,NHS WESTERN ISLES,orthopaedics,25/02/2023,341,DNA,,,,775.11
+P10449,John Murray,07-Sep-46,john.murray@outlook.com,,IV2 5NA,nhs ayrshire & arran,Orthopaedics,17/11/2024,122,CbP,,,,£660.21
+P10443,David MacDonald,19-Dec-83,david65@hotmail.co.uk,07729 221 184,ZE1 0TG,NHS Shetland,General Medicine,05/01/2023,191,Did Not Attend,0,,,708.03
+P10320,Linda Thomson,03/11/2000,linda.thomson@outlook.com,07623 984 297,KY1 1ET,NHS Lothian,Dermatology,07/12/2024,151,DNA,,,,792.28
+P10414,Callum Robertson,09/01/1952,callum.robertson@gmail.com,07702 560 314,DD1 4HN,NHS Grampian,Cardiology,18/10/2024,124,DNA,,,,744.67
+P10366,Michael Clark,06-Nov-79,michael.clark@outlook.com,07482 926 805,G1 1XQ,NHS Grampian,General Medicine,14/06/2024,168,Cancelled by Hospital,,,,466.25
+P10432,James Taylor,07-Feb-73,james22@hotmail.co.uk,07510 211 578,AB25 1DB,NHS Lothian,Dermatology,20/02/2023,195,DNA,,,,400.8
+P10218,Eilidh Campbell,02/08/1979,eilidh.campbell@gmail.com,07344 304 193,IV2 3EG,NHS Fife,Orthopaedics,04/04/2023,341,Cancelled by Patient,,,,520.09
+P10233,Morag MacLeod,03-Feb-55,morag.macleod@outlook.com,07810 863 196,EH8 9DX,nhs ayrshire & arran,CARDIOLOGY,19/05/2024,167,CbP,,,,345.35
+P10330,Susan MacLeod,11-Mar-67,susan96@hotmail.co.uk,447758000000,ZE1 0TG,NHS Highland,Neurology,12/09/2023,224,attended,36,TRUE,,600.83
+P10319,Morag Campbell,18-Sep-80,morag.campbell@outlook.com,07994 281 509,fk1 1re,nhs orkney,Gastroenterology,04/11/2023,335,Did Not Attend,0,,,514.94
+P10034,Morag Reid,15-Aug-48,morag.reid@gmail.com,07477 951 393,DD1 4HN,NHS Grampian,Urology,19/08/2024,23,Cancelled by Hospital,,,,768.29
+,Mary Robertson,07-Sep-47,mary88@hotmail.co.uk,07428 863 317,EH1 1RE,NHS Greater Glasgow and Clyde,ENT,27/01/2024,282,Cancelled by Hospital,,,,533.11
+P10160,Callum Clark,11-Apr-71,,07145 141 581,iv2 5na,NHS Dumfries & Galloway,orthopaedics,16/08/2023,286,Cancelled by Patient,0,,,535.73
+P10172,Robert Ross,01-Mar-87,robert.ross@gmail.com,07510 811 704,EH1 1RE,NHS Tayside,Cardiology,11/04/2024,207,DNA,,,,495.24
+P10466,David Clark,11/08/2002,david.clark@outlook.com,,TD1 1DL,NHS Highland,Respiratory Medicine,28/04/2023,133,Did Not Attend,,,,302.38
+P10313,Angus Fraser,12-Feb-99,angus.fraser@gmail.com,07493 802 565,IV2 3EG,NHS Borders,Respiratory Medicine,14/05/2023,325,CbP,,,,301.3
+P10067,Elizabeth Johnston,04-Jun-57,elizabeth.johnston@outlook.com,07533 290 598,AB25 1DB,NHS Tayside,Neurology,10/08/2023,162,Cancelled by Hospital,0,,,661.41
+P10348,Susan Thomson,03-Aug-72,susan.thomson@gmail.com,,IV2 3EG,NHS Lanarkshire,General Medicine,06/02/2024,-21,Cancelled by Hospital,,,,650.03
+P10274,Morag Hamilton,06-Sep-97,morag.hamilton@outlook.com,07142 693 632,KA1 1HU,nhs orkney,Gastroenterology,04/05/2024,256,Cancelled by Patient,,,,548.24
+P10002,Fiona Reid,21-Jul-03,fiona.reid@outlook.com,,DG1 2PH,NHS Dumfries & Galloway,Cardiology,05/02/2023,349,attended,21,Yes,,135.91
+P10340,Isla Ross,04-Sep-68,isla.ross@outlook.com,07818 542 531,AB10 1XG,NHS Greater Glasgow and Clyde,CARDIOLOGY,21/05/2024,,DNA,,,,232.06
+P10037,Hamish Scott,18-Apr-97,hamish.scott@outlook.com,07551 572 887,FK1 1RE,NHS Borders,Dermatology,05/10/2023,27,CbP,,,,143.51
+P10257,Alasdair Smith,13-May-53,alasdair.smith@gmail.com,07757 647 937,PH1 5TJ,NHS Grampian,Respiratory Medicine,13/04/2024,164,Attended,22,0,4,476.15
+P10329,Callum Graham,13-Nov-45,callum.graham@gmail.com,07754 450 382,AB25 1DB,NHS Grampian,Gastroenterology,03/12/2023,212,attended,10,TRUE,3,567.18
+P10452,James Campbell,05-Feb-98,james.campbell@gmail.com,447127000000,DD1 4HN,NHS Highland,Dermatology,14/01/2024,315,attended,44,No,5.2,144.86
+P10090,Michael Anderson,21/05/1966,,07235 762 277,G42 9BA,NHS Forth Valley,orthopaedics,23/12/2024,217,Cancelled by Patient,,,,668.23
+P10268,Callum Murray,28/12/1940,callum7@hotmail.co.uk,447438000000,G42 9BA,NHS WESTERN ISLES,Dermatology,15/10/2023,164,Cancelled by Hospital,,,,551.18
+P10276,John Johnston,17-Oct-71,john.johnston@outlook.com,07786 106 573,IV2 5NA,NHS Highland,Ophthalmology,20/06/2023,149,attended,48,Yes,,437.2
+P10351,Jennifer Reid,16-May-89,jennifer.reid@gmail.com,,EH8 9DX,NHS Tayside,general medicine,02/12/2024,25,CbP,,,,705.28
+P10302,Isla Murray,15-Aug-72,isla92@hotmail.co.uk,447526000000,G1 1XQ,NHS Highland,Ophthalmology,23/04/2023,235,Cancelled by Patient,,,,712.51 GBP
+P10171,Callum Campbell,16-Dec-04,callum.campbell@gmail.com,07319 626 333,ZE1 0TG,NHS Grampian,Gastroenterology,05/09/2023,185,Attended,29,,,565.28
+,Elizabeth Anderson,28-Oct-50,,,dd1 4hn,NHS Forth Valley,Dermatology,01/11/2024,102,attended,57,Yes,4,424.9
+P10063,Hamish Stewart,11-Aug-65,hamish.stewart@outlook.com,,ML1 1AB,NHS Grampian,Urology,18/10/2023,-47,Cancelled by Hospital,,,,207.24
+P10368,David Johnston,07-Nov-65,david65@hotmail.co.uk,07909 485 533,IV2 3EG,NHS Greater Glasgow and Clyde,General Medicine,21/11/2023,41,Cancelled by Hospital,,,,495.38
+P10300,Fiona Smith,12-Aug-69,fiona.smith@gmail.com,07312 985 601,EH8 9DX,NHS Forth Valley,Gastroenterology,25/01/2023,211,attended,43,Yes,2,459.19
+P10061,Michael Graham,22-Feb-45,michael27@hotmail.co.uk,07870 940 829,KW15 1NY,NHS Forth Valley,Orthopaedics,18/11/2024,72,Cancelled by Patient,0,,,377.82
+P10115,Elizabeth Graham,05-Dec-90,elizabeth.graham@gmail.com,07510 904 446,AB25 1DB,NHS Highland,Dermatology,01/11/2024,75,Cancelled by Patient,0,,,78.32
+P10285,Robert Brown,02-May-63,robert.brown@gmail.com,,DD1 4HN,NHS Dumfries & Galloway,CARDIOLOGY,15/04/2024,188,Cancelled by Patient,,,,456.06
+P69,Angus Robertson,11-Nov-48,angus.robertson@outlook.com,07813 402 667,G1 1XQ,NHS Borders,general medicine,19/10/2023,281,attended,46,1,2,769.87
+P10338,Linda Stewart,09/04/1994,linda50@hotmail.co.uk,,PA1 2BE,NHS Greater Glasgow and Clyde,General Medicine,23/05/2023,160,CbP,,,,157.84
+P10321,David Thomson,24/01/1948,david.thomson@outlook.com,,DD1 4HN,NHS WESTERN ISLES,Neurology,25/12/2023,274,CbP,,,,666.74
+P10273,John Campbell,16-Aug-82,john.campbell@gmail.com,07827 441 630,G42 9BA,NHS Lanarkshire,CARDIOLOGY,14/03/2023,338,DNA,,,,319.56
+P10036,Morag Reid,22-Nov-51,morag.reid@outlook.com,07331 240 258,DD1 4HN,NHS Lanarkshire,orthopaedics,11/11/2023,317,CbP,,,,726.99
+P10217,William Campbell,22-Jun-57,william.campbell@outlook.com,07940 385 961,,NHS Grampian,Dermatology,18/02/2024,87,Cancelled by Patient,0,,,585.81
+P10173,Richard Ross,04-Aug-58,richard.ross@outlook.com,,IV2 3EG,nhs ayrshire & arran,ENT,20/05/2023,40,Cancelled by Patient,,,,417.69
+P10087,Robert Wilson,,,447253000000,EH8 9DX,NHS Grampian,Cardiology,28/05/2023,177,Cancelled by Hospital,0,,,256.56
+P10204,"MacLeod, Alasdair",22/11/1994,alasdair53@hotmail.co.uk,07796 630 577,PA1 2BE,NHS WESTERN ISLES,Orthopaedics,14/05/2023,-13,Cancelled by Patient,0,,,£478.86
+P10356,Fiona Brown,25-Apr-55,,447731000000,PH1 5TJ,NHS Dumfries & Galloway,Urology,21/06/2024,79,DNA,0,,,775.53
+P10418,Eilidh Stewart,24-Jul-49,eilidh.stewart@outlook.com,07133 883 111,IV2 3EG,NHS Shetland,orthopaedics,11/02/2023,327,Attended,33,0,,92.94
+P10460,Robert Graham,02-Jul-85,robert.graham@outlook.com,07329 441 840,KW15 1NY,NHS Dumfries & Galloway,Urology,10/03/2024,310,Cancelled by Hospital,,,,590.27
+P10174,Mary Clark,15-Jul-55,mary.clark@outlook.com,07823 268 603,ZE1 0TG,NHS Dumfries & Galloway,orthopaedics,22/10/2023,284,attended,8,1,4,783.34 GBP
+P10374,Elizabeth Stewart,21-Feb-66,elizabeth.stewart@gmail.com,07340 566 990,EH8 9DX,NHS Highland,CARDIOLOGY,24/02/2024,111,CbP,,,,£181.27
+P10350,David Anderson,07/08/1970,david.anderson@outlook.com,07963 775 824,EH8 9DX,nhs ayrshire & arran,general medicine,19/09/2024,273,Did Not Attend,,,,198.53
+P10232,Susan Graham,14-Jul-58,susan.graham@outlook.com,07627 765 446,EH8 9DX,NHS WESTERN ISLES,Respiratory Medicine,04/01/2023,251,CbP,,,,646.49
+P10417,Isla Stewart,23-Dec-69,isla.stewart@outlook.com,447285000000,DG1 2PH,NHS Highland,Neurology,18/04/2023,174,CbP,0,,,370.79
+P10328,Callum Reid,13/10/1994,callum53@hotmail.co.uk,07924 243 567,ml1 1ab,NHS Lothian,general medicine,27/05/2024,165,CbP,0,,,427.21
+P10216,Hamish Clark,19-Dec-63,hamish.clark@outlook.com,07782 168 814,TD1 1DL,nhs orkney,Neurology,03/06/2023,260,attended,7,No,,556.72
+P10057,Jessica Clark,08-Jul-57,jessica.clark@outlook.com,447487000000,G42 9BA,NHS Lothian,orthopaedics,07/08/2023,171,DNA,0,,,799.68
+P10335,John Anderson,13-Dec-52,john91@hotmail.co.uk,,IV2 5NA,NHS Greater Glasgow and Clyde,orthopaedics,14/06/2023,75,Cancelled by Hospital,,,,645.65 GBP
+P10305,Angus Murray,18-Oct-67,,07469 638 299,IV2 3EG,NHS Fife,Ophthalmology,09/10/2023,141,Cancelled by Patient,,,,778.36
+P10249,Patricia Clark,14-Nov-63,patricia.clark@gmail.com,,ML1 1AB,NHS Grampian,orthopaedics,25/03/2023,164,CbP,0,,,483.38
+P10266,Michael Fraser,20-Dec-75,michael.fraser@outlook.com,07932 427 302,TD1 1DL,NHS Highland,Ophthalmology,04/02/2024,308,DNA,,,,£481.82
+P6,Alasdair Brown,02-Feb-05,alasdair.brown@gmail.com,07192 600 265,ZE1 0TG,NHS Lanarkshire,Cardiology,04/08/2024,16,Attended,17,FALSE,2,299.1
+P10424,Mary Johnston,03-Oct-70,mary.johnston@gmail.com,,DD1 4HN,NHS Forth Valley,orthopaedics,13/06/2024,257,Attended,5,Y,,£797.95
+P10259,Hamish Robertson,22-Jun-58,hamish.robertson@gmail.com,07251 611 985,KA1 1HU,NHS Borders,Ophthalmology,27/08/2023,325,Did Not Attend,,,,459.56
+,Eilidh Fraser,04-Oct-59,eilidh.fraser@outlook.com,07775 233 717,AB25 1DB,nhs orkney,general medicine,14/09/2024,23,CbP,,,,491.79
+P10253,Robert MacLeod,06/07/1991,robert.macleod@gmail.com,07206 179 471,G42 9BA,NHS Lothian,Ophthalmology,04/09/2023,-20,Did Not Attend,,,,£528.79
+P10435,James Murray,05-Sep-88,james.murray@gmail.com,,hs1 2bw,NHS Dumfries & Galloway,Cardiology,19/07/2024,38,Did Not Attend,,,,348.45
+P75,Thomas Taylor,19/09/1969,thomas.taylor@outlook.com,07342 855 538,DG1 2PH,NHS Fife,Gastroenterology,05/04/2024,329,DNA,,,,150.7
+P10291,Angus Fraser,07-May-80,angus59@hotmail.co.uk,07218 809 346,PH1 5TJ,NHS Fife,Cardiology,17/09/2024,186,attended,57,yes,,233.71
+P10185,Michael Scott,17-Dec-61,michael99@hotmail.co.uk,07526 178 352,PA1 2BE,NHS Highland,Ophthalmology,12/07/2023,55,DNA,,,,521.27
+P10076,Elizabeth Johnston,16-Oct-87,elizabeth53@hotmail.co.uk,07654 454 751,,nhs ayrshire & arran,Respiratory Medicine,07/02/2024,122,Cancelled by Patient,0,,,740.96
+P10193,Elizabeth Fraser,23-Jun-74,elizabeth30@hotmail.co.uk,07539 523 519,PH1 5TJ,nhs ayrshire & arran,ENT,05/08/2023,265,Did Not Attend,,,,£344.95
+P10298,Robert Reid,02-Nov-48,robert.reid@outlook.com,07920 265 482,KA1 1HU,NHS Lothian,General Medicine,25/01/2023,53,Attended,19,Y,1,350.56
+P10271,Jessica Robertson,20-Mar-91,jessica.robertson@gmail.com,07217 154 136,EH8 9DX,NHS Grampian,Ophthalmology,23/10/2023,201,Cancelled by Hospital,0,,,639.3
+P10272,Eilidh Johnston,08-Dec-79,eilidh.johnston@outlook.com,,IV2 3EG,NHS Grampian,Dermatology,12/10/2023,-16,Cancelled by Hospital,0,,,664.19
+P10256,Jennifer MacLeod,03-Mar-77,jennifer61@hotmail.co.uk,,PH1 5TJ,NHS Grampian,Urology,12/01/2024,206,attended,59,TRUE,4,706.65
+P10181,Sarah Ross,14-Dec-82,sarah.ross@gmail.com,,KA1 1HU,NHS Highland,general medicine,15/11/2023,-13,DNA,,,,481.86
+P10068,Thomas Ross,10/04/1943,thomas.ross@gmail.com,,PA1 2BE,NHS Grampian,Ophthalmology,27/09/2024,226,CbP,0,,,£706.11
+P10433,Angus Hamilton,02-Oct-73,angus6@hotmail.co.uk,447382000000,AB10 1XG,NHS Greater Glasgow and Clyde,Cardiology,18/08/2024,73,Did Not Attend,0,,,675.47
+,Patricia Robertson,16-Nov-83,patricia.robertson@outlook.com,07443 573 902,ZE1 0TG,NHS Lanarkshire,Ophthalmology,18/09/2024,296,Did Not Attend,0,,,73.38
+P10098,Sarah Clark,05/02/1961,sarah54@hotmail.co.uk,,EH8 9DX,NHS Borders,orthopaedics,01/10/2024,67,Attended,21,Yes,,558.45
+P10446,Thomas Reid,21-Sep-86,thomas.reid@gmail.com,07936 894 975,PH1 5TJ,NHS Lothian,CARDIOLOGY,02/07/2023,94,Cancelled by Hospital,,,,198.74
+P10200,William Wilson,06/11/1992,william92@hotmail.co.uk,07499 201 427,G1 1XQ,NHS Borders,Cardiology,08/04/2023,301,Cancelled by Patient,0,,,398.62
+P10205,Jessica Wilson,11-Mar-65,,,ML1 1AB,NHS Fife,General Medicine,26/09/2024,38,attended,12,Yes,,333.05
+P10413,Elizabeth Clark,07-Oct-74,elizabeth.clark@gmail.com,,KA1 1HU,NHS Dumfries & Galloway,orthopaedics,11/09/2023,N/A,Attended,11,yes,1,796.97
+P10269,Callum Ross,23-May-73,callum10@hotmail.co.uk,07606 161 317,IV2 3EG,NHS Borders,Orthopaedics,11/02/2024,303,DNA,,,,165.5
+P10176,Susan Clark,07/09/1949,susan29@hotmail.co.uk,,EH8 9DX,NHS Grampian,Urology,07/07/2024,40,attended,25,FALSE,5,£185.45
+P10406,David Taylor,26-Feb-95,david.taylor@outlook.com,447862000000,PA1 2BE,NHS Fife,general medicine,02/04/2024,-23,Attended,47,TRUE,1,113.92
+,"Stewart, Elizabeth",18-Dec-92,elizabeth.stewart@gmail.com,,PH1 5TJ,NHS Fife,ENT,13/11/2024,272,CbP,,,,638.09
+P10468,James Campbell,23-Aug-90,james.campbell@outlook.com,07904 113 921,ML1 1AB,NHS Borders,orthopaedics,21/03/2024,39,Cancelled by Patient,0,,,619.79
+P10019,Elizabeth MacLeod,13-Dec-78,elizabeth.macleod@gmail.com,07356 126 193,DG1 2PH,NHS Forth Valley,Urology,27/11/2023,21,Cancelled by Patient,0,,,489
+P10224,Jessica Thomson,10-Dec-72,,,EH1 1RE,NHS Fife,Dermatology,07/12/2024,N/A,Did Not Attend,,,,51.18
+P10296,Hamish Robertson,23-Jul-44,hamish.robertson@outlook.com,07407 960 337,FK1 1RE,nhs ayrshire & arran,Respiratory Medicine,16/09/2024,113,Cancelled by Hospital,,,,546.81
+P10376,Susan Scott,18-Nov-03,susan.scott@outlook.com,,AB25 1DB,NHS Highland,ENT,11/10/2023,82,CbP,,,,111.31
+P10283,Callum Reid,16/04/1947,,,AB10 1XG,NHS Borders,Urology,16/09/2023,139,Cancelled by Patient,,,,277.56
+,Mary Hamilton,16/01/1964,mary.hamilton@outlook.com,07849 555 633,G1 1XQ,NHS Grampian,CARDIOLOGY,14/08/2023,45,Cancelled by Patient,,,,608.21
+,Fiona Reid,14-Nov-74,fiona.reid@gmail.com,07843 296 580,HS1 2BW,NHS Forth Valley,general medicine,28/10/2024,337,Cancelled by Hospital,,,,554.83
+P10048,Fiona Scott,11-Jun-42,,07585 371 771,EH8 9DX,NHS Forth Valley,Gastroenterology,21/09/2023,195,Attended,17,TRUE,4,631.23
+P10155,Richard Brown,18-Jun-51,richard.brown@gmail.com,07493 776 295,FK1 1RE,nhs ayrshire & arran,CARDIOLOGY,03/08/2024,225,attended,20,No,,532.56
+P10260,Fiona Smith,10-Jan-86,fiona.smith@gmail.com,07460 948 655,ZE1 0TG,NHS Grampian,Dermatology,12/07/2024,305,DNA,,,,262.44
+P10213,Michael Clark,15-Apr-93,michael.clark@outlook.com,07929 774 954,HS1 2BW,nhs ayrshire & arran,orthopaedics,18/12/2024,-3,Did Not Attend,0,,,764.48
+P10000,William Anderson,24-Nov-53,william.anderson@outlook.com,07303 833 765,AB25 1DB,NHS Greater Glasgow and Clyde,orthopaedics,23/03/2023,143,Attended,27,,1,779.84
+P10136,James MacDonald,22-Dec-68,,07432 987 568,DG1 2PH,NHS Forth Valley,CARDIOLOGY,11/12/2024,293,attended,11,Yes,,234.29
+,William Scott,21-Feb-00,william.scott@gmail.com,,DD1 4HN,NHS Dumfries & Galloway,Urology,21/05/2024,,Cancelled by Patient,0,,,93.88
+P10339,Patricia Clark,27-Apr-64,patricia.clark@outlook.com,07788 255 310,PH1 5TJ,NHS Fife,General Medicine,10/09/2023,322,attended,52,yes,3,80.73
+P10043,Patricia MacLeod,12-Nov-80,patricia.macleod@outlook.com,447471000000,DG1 2PH,NHS Tayside,Orthopaedics,12/01/2024,189,Attended,24,1,4,779.28
+P10341,Isla Ross,17-Oct-88,,07197 220 882,DG1 2PH,NHS Forth Valley,Respiratory Medicine,24/12/2024,332,Cancelled by Hospital,,,,521.09
+P10041,Richard Reid,16-Dec-03,richard.reid@gmail.com,447400000000,EH1 1RE,NHS Greater Glasgow and Clyde,Gastroenterology,23/03/2024,229,Cancelled by Patient,,,,643.61
+P10144,Alasdair Murray,23-Mar-74,,07129 582 791,AB10 1XG,NHS Borders,Respiratory Medicine,20/12/2023,323,CbP,0,,,618.8
+P10393,Richard Taylor,16/06/1943,richard.taylor@outlook.com,07985 704 909,G1 1XQ,NHS Lothian,Dermatology,15/04/2023,205,Cancelled by Hospital,,,,234.02
+P10188,Mary Fraser,04-Jul-94,mary.fraser@outlook.com,07858 777 573,KY1 1ET,NHS Highland,Cardiology,10/12/2024,233,CbP,,,,208.3
+P10311,Thomas Smith,10-Mar-65,thomas72@hotmail.co.uk,,PA1 2BE,NHS Lanarkshire,general medicine,07/12/2024,343,Cancelled by Hospital,0,,,622.28
+P10006,Richard Smith,10-Aug-73,richard38@hotmail.co.uk,07159 693 853,AB25 1DB,NHS Highland,Urology,28/09/2024,30,DNA,,,,352.83
+P10034,Morag Reid,15-Aug-48,morag.reid@gmail.com,07477 951 393,DD1 4HN,NHS Grampian,Urology,19/08/2024,22,Cancelled by Hospital,,,,768.29
+P10438,Eilidh Graham,18-Nov-44,eilidh.graham@gmail.com,07375 130 779,HS1 2BW,NHS WESTERN ISLES,Urology,15/11/2024,16,DNA,,,,330.9
+P10130,"Taylor, Thomas",20/05/1944,thomas.taylor@outlook.com,07327 319 976,ka1 1hu,NHS WESTERN ISLES,Ophthalmology,02/02/2023,80,CbP,,,,477.87
+P10202,Mary Thomson,03-May-48,mary.thomson@gmail.com,,KA1 1HU,nhs ayrshire & arran,Ophthalmology,08/05/2024,,DNA,0,,,741.69 GBP
+P10186,Thomas Reid,28/04/1956,thomas.reid@gmail.com,07172 660 716,KW15 1NY,NHS Lothian,orthopaedics,01/02/2024,84,Did Not Attend,0,,,418.13
+P10322,Jessica Campbell,25-Oct-73,jessica.campbell@gmail.com,07370 199 437,DD1 4HN,nhs orkney,Orthopaedics,10/06/2024,170,CbP,0,,,£441.33
+P10206,Mary Scott,04-Feb-95,mary.scott@outlook.com,07713 906 775,g42 9ba,nhs orkney,Respiratory Medicine,21/06/2023,14,attended,50,Y,,144.49
+P10208,Fiona Graham,11-Jul-78,fiona.graham@gmail.com,07335 577 738,TD1 1DL,NHS Shetland,ENT,13/04/2024,4,Cancelled by Patient,,,,523.5
+P10462,Angus Johnston,23-Apr-60,angus.johnston@gmail.com,07360 428 669,IV2 5NA,NHS Shetland,CARDIOLOGY,12/03/2023,143,Cancelled by Hospital,,,,73.67
+P10332,Michael Graham,25-Apr-59,michael17@hotmail.co.uk,07170 435 991,KA1 1HU,NHS Lothian,Ophthalmology,09/07/2023,112,Attended,58,Yes,2,349.38
+P10009,Sarah Anderson,10-Jun-98,sarah.anderson@gmail.com,07891 385 459,IV2 5NA,NHS Lanarkshire,ENT,09/02/2023,136,Cancelled by Hospital,,,,433.57
+P10158,Elizabeth Robertson,26-Oct-82,elizabeth.robertson@gmail.com,07627 218 172,DG1 2PH,NHS Fife,Respiratory Medicine,22/12/2023,118,CbP,0,,,718.52
+P10035,"Thomson, Morag",17-Aug-96,morag.thomson@gmail.com,07908 746 762,KA1 1HU,nhs ayrshire & arran,Respiratory Medicine,24/05/2024,309,Cancelled by Patient,,,,542.04
+P10209,Linda MacDonald,08/09/1983,,07793 240 488,EH1 1RE,NHS Dumfries & Galloway,Orthopaedics,22/06/2024,270,Attended,12,yes,,193.76
+P10464,Fiona Taylor,17-May-96,fiona.taylor@gmail.com,07775 150 213,EH1 1RE,nhs ayrshire & arran,Dermatology,25/11/2023,185,Attended,9,FALSE,,96.4
+P10409,Richard Robertson,05-Jun-77,richard.robertson@outlook.com,07530 361 763,G42 9BA,NHS Borders,Urology,09/12/2023,296,Did Not Attend,,,,223.14
+P10358,Mary Campbell,01-Jan-50,mary96@hotmail.co.uk,07318 414 960,DD1 4HN,NHS Forth Valley,Gastroenterology,23/06/2024,156,Cancelled by Hospital,0,,,732.67
+P10157,John MacDonald,06/04/1992,john.macdonald@gmail.com,,,NHS Lothian,Orthopaedics,04/09/2023,277,Attended,17,yes,,776.43
+P10134,Richard Smith,05-Apr-75,richard.smith@outlook.com,,ZE1 0TG,NHS Greater Glasgow and Clyde,Urology,18/08/2024,335,Cancelled by Patient,,,,723.98
+P10177,Fiona Ross,21-May-99,fiona.ross@outlook.com,07473 573 251,DG1 2PH,NHS Greater Glasgow and Clyde,Respiratory Medicine,28/06/2024,33,Did Not Attend,0,,,500.92
+P10403,Fiona Anderson,09-Aug-68,fiona34@hotmail.co.uk,07334 141 327,,NHS Highland,Cardiology,27/09/2024,-47,CbP,,,,641
+P10088,"Anderson, David",12/05/2000,david36@hotmail.co.uk,,EH1 1RE,NHS Greater Glasgow and Clyde,CARDIOLOGY,09/06/2024,310,DNA,,,,437.38
+P10192,Angus Campbell,27-Aug-96,angus72@hotmail.co.uk,07207 271 745,EH1 1RE,NHS Tayside,CARDIOLOGY,15/12/2024,256,Did Not Attend,0,,,
+P10419,Richard Campbell,10-Nov-04,richard.campbell@outlook.com,07602 634 886,DD1 4HN,NHS Greater Glasgow and Clyde,Neurology,13/06/2023,,Cancelled by Patient,,,,333.42
+P10219,Jennifer Murray,21-Jul-41,,07168 323 520,FK1 1RE,NHS Grampian,CARDIOLOGY,04/05/2023,324,Cancelled by Patient,0,,,621.29
+P10471,Hamish Anderson,09-Mar-04,hamish.anderson@outlook.com,,EH1 1RE,NHS Borders,Gastroenterology,10/09/2024,35,DNA,,,,246.24
+P10373,Richard Johnston,18-Aug-02,richard.johnston@gmail.com,07131 734 151,IV2 3EG,NHS Greater Glasgow and Clyde,Gastroenterology,19/12/2024,50,Cancelled by Patient,0,,,£363.12
+P10354,Michael Wilson,05/04/2003,michael.wilson@gmail.com,07497 288 185,DD1 4HN,NHS Dumfries & Galloway,CARDIOLOGY,20/08/2023,340,Cancelled by Patient,0,,,60.66
+P10096,Isla Smith,17-Nov-52,isla.smith@outlook.com,07216 903 208,PA1 2BE,NHS Greater Glasgow and Clyde,Neurology,23/06/2023,83,Cancelled by Patient,0,,,59.56
+P10472,Robert Ross,23-Aug-67,,07759 710 226,G1 1XQ,NHS Lanarkshire,general medicine,24/09/2024,319,Did Not Attend,,,,623.25
+P10015,Alasdair Ross,28-Jun-74,,,PA1 2BE,NHS Lothian,ENT,09/06/2024,360,Did Not Attend,,,,416.43
+P10242,Morag Anderson,02-Aug-94,morag.anderson@gmail.com,07427 148 286,ab10 1xg,NHS Fife,Orthopaedics,09/08/2024,52,Attended,11,0,,147.73
+P10382,"Hamilton, Jennifer",31/02/1985,jennifer.hamilton@outlook.com,07781 372 699,iv2 5na,NHS Tayside,ENT,26/08/2023,340,DNA,,,,694.02
+P10451,Elizabeth Thomson,26-Jan-76,,07237 253 710,,NHS Shetland,Urology,28/12/2023,180,DNA,0,,,748.03
+P10404,Alasdair Scott,,alasdair.scott@gmail.com,07591 121 201,G1 1XQ,NHS Tayside,general medicine,09/11/2024,219,Cancelled by Patient,,,,568.67
+P10412,Isla Campbell,13/12/1979,isla.campbell@outlook.com,07389 358 929,DG1 2PH,NHS Lanarkshire,Urology,16/11/2023,N/A,CbP,,,,465.4 GBP
+P10426,Mary Campbell,15-Sep-40,,07517 147 317,DG1 2PH,NHS Grampian,General Medicine,12/11/2023,-4,attended,28,,,
+P10195,Callum Stewart,03-Apr-76,callum.stewart@outlook.com,07364 347 952,FK1 1RE,NHS Grampian,CARDIOLOGY,09/06/2023,182,attended,52,TRUE,,654.04
+P10149,Isla Johnston,17-Aug-63,isla.johnston@gmail.com,07848 342 829,IV2 5NA,NHS Forth Valley,ENT,19/01/2023,189,DNA,,,,694.51
+P10151,Fiona Murray,02-Feb-73,,07822 499 585,ML1 1AB,NHS Highland,Ophthalmology,22/07/2024,272,CbP,,,,738.53
+P10094,Jessica Clark,01/07/2001,jessica.clark@gmail.com,07429 875 953,IV2 5NA,nhs ayrshire & arran,CARDIOLOGY,23/04/2023,160,CbP,0,,,761.35
+P10066,Thomas Anderson,21-Mar-63,thomas.anderson@gmail.com,07319 310 385,DD1 4HN,NHS Lanarkshire,Dermatology,07/06/2024,135,Cancelled by Hospital,,,,490.25
+P10428,Jessica Taylor,20-Jul-47,jessica.taylor@outlook.com,447552000000,TD1 1DL,NHS WESTERN ISLES,Orthopaedics,22/06/2023,186,attended,53,N,,722.94
+P10263,William Thomson,27-Jun-03,william.thomson@outlook.com,07529 484 421,PH1 5TJ,NHS Highland,Dermatology,11/02/2023,1868,DNA,0,,,141.2
+P10415,Eilidh Graham,14-Jan-75,eilidh.graham@outlook.com,,ML1 1AB,NHS Lothian,CARDIOLOGY,06/12/2023,108,attended,13,Y,3,565.94
+P10370,Susan Reid,16/02/1983,susan.reid@outlook.com,,DD1 4HN,NHS Grampian,orthopaedics,08/04/2024,350,Attended,7,Y,,765.82
+P10362,David Campbell,05-Dec-47,david88@hotmail.co.uk,07151 834 181,KW15 1NY,NHS Dumfries & Galloway,Orthopaedics,23/10/2024,148,attended,5,Y,5,143.01
+P10378,Alasdair Campbell,01/01/1964,alasdair.campbell@gmail.com,447360000000,EH1 1RE,NHS Borders,General Medicine,13/06/2024,156,Attended,48,Yes,3.7,695.88
+P10222,Thomas Scott,20-Sep-88,thomas65@hotmail.co.uk,,KW15 1NY,NHS WESTERN ISLES,ENT,10/08/2024,302,attended,15,FALSE,,628.45
+P50,Angus MacDonald,01-Feb-86,angus.macdonald@outlook.com,,G42 9BA,NHS Lanarkshire,Gastroenterology,08/01/2023,157,Cancelled by Patient,,,,276.74
+P10231,Callum Anderson,28-Mar-46,,07445 532 794,PA1 2BE,NHS Borders,Cardiology,23/05/2024,359,attended,60,N,2,411.83
+P10380,Morag Brown,17-Dec-55,morag.brown@gmail.com,07258 957 178,TD1 1DL,NHS Borders,orthopaedics,02/07/2023,115,Cancelled by Hospital,,,,761.03
+P10022,Fiona Ross,16-Sep-97,fiona.ross@gmail.com,,DG1 2PH,NHS Fife,CARDIOLOGY,26/12/2024,340,Did Not Attend,,,,492.64
+P10364,William Reid,16-Jun-01,william.reid@gmail.com,,PH1 5TJ,NHS Borders,Gastroenterology,05/08/2024,198,CbP,,,,£349.56
+P10244,Robert Ross,06-Jan-04,robert.ross@outlook.com,,KW15 1NY,NHS Lanarkshire,Cardiology,25/08/2023,288,Did Not Attend,,,,£494.08
+P10282,Eilidh Scott,02-Apr-03,eilidh91@hotmail.co.uk,07993 992 261,FK1 1RE,NHS Shetland,Neurology,20/07/2024,358,DNA,0,,,303.53
+P10040,Callum Reid,11-Sep-85,callum.reid@outlook.com,447895000000,AB10 1XG,NHS Lothian,General Medicine,17/05/2024,279,CbP,,,,699.35
+P10308,Angus Robertson,02-May-56,angus.robertson@outlook.com,07304 281 402,ML1 1AB,NHS Dumfries & Galloway,ENT,25/06/2024,231,attended,29,,4,647.2
+P34,Linda Scott,18-Feb-83,linda.scott@outlook.com,,PA1 2BE,NHS Lothian,Ophthalmology,07/04/2023,317,DNA,,,,54.97
+P10312,Jessica Johnston,31/02/1985,jessica31@hotmail.co.uk,07448 613 942,IV2 3EG,NHS Grampian,general medicine,16/03/2023,109,Did Not Attend,0,,,340.11
+P10153,Morag Graham,23-Feb-63,morag.graham@outlook.com,,KA1 1HU,NHS Greater Glasgow and Clyde,orthopaedics,13/07/2023,31,Did Not Attend,,,,183.83
+P10140,Thomas Graham,25-Feb-44,thomas.graham@outlook.com,07237 224 811,ML1 1AB,NHS Lothian,CARDIOLOGY,02/10/2023,323,CbP,,,,265.39
+P10265,Hamish Campbell,19-Apr-94,,07519 400 718,IV2 5NA,NHS Tayside,orthopaedics,26/07/2024,126,Attended,5,Yes,,210.33
+P10114,Sarah Anderson,20-May-50,,07107 484 770,TD1 1DL,NHS Fife,Cardiology,21/07/2023,134,DNA,,,,202.77
+P10349,Sarah Thomson,28-Feb-84,sarah.thomson@outlook.com,,ph1 5tj,NHS Lanarkshire,orthopaedics,10/05/2023,350,attended,14,TRUE,,746.45
+,Linda Graham,02-May-62,linda.graham@gmail.com,07562 615 326,G42 9BA,NHS Shetland,general medicine,21/08/2024,32,DNA,,,,105.12
+P10139,James Johnston,19-Apr-70,james.johnston@outlook.com,07743 670 939,TD1 1DL,nhs ayrshire & arran,ENT,28/03/2023,296,Cancelled by Hospital,,,,171
+P10044,Alasdair Graham,17/07/1956,alasdair.graham@gmail.com,07430 826 330,HS1 2BW,NHS Greater Glasgow and Clyde,Cardiology,21/04/2024,141,Did Not Attend,,,,485.48
+P10385,William MacDonald,17-Oct-76,william.macdonald@outlook.com,07443 630 792,ZE1 0TG,nhs ayrshire & arran,general medicine,26/10/2023,353,Cancelled by Patient,0,,,397.02
+,John Reid,07-Nov-90,john.reid@gmail.com,07340 582 462,G42 9BA,NHS Forth Valley,CARDIOLOGY,09/01/2023,196,attended,7,N,4,148.94
+P10178,Thomas Ross,21-Jul-95,thomas71@hotmail.co.uk,07972 143 839,PA1 2BE,NHS Grampian,ENT,14/02/2024,344,Did Not Attend,0,,,478.23
+P10091,Susan Hamilton,22/05/1976,,447829000000,FK1 1RE,NHS Lothian,General Medicine,11/11/2024,14,Cancelled by Hospital,,,,487.27
+P10142,Hamish Campbell,28/12/1979,hamish.campbell@gmail.com,07562 949 409,TD1 1DL,NHS Fife,orthopaedics,03/04/2023,13,Cancelled by Hospital,,,,442.72
+P10396,Patricia Brown,08-Feb-01,patricia.brown@gmail.com,,HS1 2BW,NHS Greater Glasgow and Clyde,Urology,22/11/2024,80,CbP,,,,722.44 GBP
+P10039,Mary Anderson,04-Feb-98,mary.anderson@outlook.com,07101 729 461,DG1 2PH,nhs ayrshire & arran,Cardiology,17/02/2024,260,Cancelled by Patient,0,,,62.18
+,"Stewart, Fiona",13/10/1950,,,KY1 1ET,NHS Greater Glasgow and Clyde,Orthopaedics,25/12/2023,194,DNA,0,,,788.6
+P10005,Sarah Clark,14-Nov-52,sarah.clark@outlook.com,07845 447 919,EH1 1RE,NHS Dumfries & Galloway,Dermatology,09/03/2024,39,attended,58,No,,686.52
+P10407,Sarah Hamilton,20-Feb-83,sarah.hamilton@gmail.com,07209 156 407,G1 1XQ,NHS Tayside,Ophthalmology,03/07/2024,187,Cancelled by Patient,,,,583.85
+P10467,Mary Smith,28-Mar-94,mary62@hotmail.co.uk,,KW15 1NY,NHS Grampian,Respiratory Medicine,03/02/2023,364,CbP,,,,450.06
+P10345,Eilidh Graham,09-Dec-89,eilidh.graham@outlook.com,,HS1 2BW,NHS Fife,CARDIOLOGY,19/09/2023,260,Did Not Attend,,,,588.17
+P10230,Jessica Reid,22-Sep-56,jessica.reid@gmail.com,,PA1 2BE,NHS Greater Glasgow and Clyde,Dermatology,11/10/2023,353,CbP,0,,,268.62
+P10326,Morag Johnston,25-May-40,morag.johnston@gmail.com,447644000000,KA1 1HU,NHS Greater Glasgow and Clyde,general medicine,25/02/2024,-33,Cancelled by Hospital,,,,184.1
+P10388,Jennifer Campbell,08-Apr-92,jennifer.campbell@gmail.com,07693 981 714,KW15 1NY,NHS Shetland,Cardiology,15/12/2024,197,Did Not Attend,,,,418.64
+P10445,Eilidh Robertson,18-Dec-62,eilidh.robertson@outlook.com,,FK1 1RE,NHS WESTERN ISLES,General Medicine,08/09/2023,251,Did Not Attend,,,,353.02
+P10267,Richard Brown,21/06/1945,richard.brown@outlook.com,07408 381 424,HS1 2BW,NHS Fife,Gastroenterology,10/07/2023,233,attended,11,Yes,,154.05
+P10421,Callum Smith,06-Nov-73,callum.smith@outlook.com,07763 165 509,ML1 1AB,NHS Tayside,CARDIOLOGY,22/10/2024,88,Cancelled by Patient,0,,,232.04
+P10323,Isla Scott,21-Oct-60,isla78@hotmail.co.uk,07493 363 752,dg1 2ph,NHS Greater Glasgow and Clyde,Dermatology,12/05/2023,265,Did Not Attend,,,,425.82
+P10286,Robert Robertson,24-May-69,robert.robertson@gmail.com,07882 564 216,IV2 3EG,NHS Greater Glasgow and Clyde,Urology,27/05/2024,31,Cancelled by Hospital,,,,218.34
+P10303,Jessica Graham,25-Oct-87,jessica.graham@gmail.com,447370000000,EH1 1RE,nhs ayrshire & arran,orthopaedics,19/06/2024,304,Cancelled by Hospital,0,,,52
+P10408,Jennifer MacDonald,06-Feb-80,jennifer.macdonald@outlook.com,,DD1 4HN,NHS Forth Valley,CARDIOLOGY,22/09/2024,207,DNA,,,,605.82
+P10243,Linda MacDonald,04-Feb-89,,07821 556 201,DD1 4HN,NHS Greater Glasgow and Clyde,CARDIOLOGY,18/04/2024,23,CbP,,,,730.11
+P10013,Richard MacDonald,27/05/1993,richard.macdonald@outlook.com,07765 170 899,AB10 1XG,NHS Lothian,General Medicine,05/04/2023,59,Did Not Attend,,,,772.8
+P10440,Linda Fraser,12/06/1990,linda.fraser@outlook.com,,AB25 1DB,nhs orkney,Gastroenterology,08/05/2024,157,attended,9,No,,499.25
+P10021,Linda Thomson,14-Sep-41,linda.thomson@outlook.com,07833 398 621,ML1 1AB,NHS Dumfries & Galloway,Orthopaedics,05/09/2024,307,CbP,,,,
+P10055,Susan Campbell,31/02/1985,susan.campbell@gmail.com,,AB25 1DB,NHS Dumfries & Galloway,ENT,07/05/2023,58,Attended,20,No,4,86.51
+P10182,John Johnston,16-Aug-80,john.johnston@gmail.com,07476 286 502,KW15 1NY,NHS Lothian,General Medicine,21/09/2023,118,Did Not Attend,0,,,513.5
+P10207,John Brown,14-Oct-79,john.brown@gmail.com,07717 451 398,HS1 2BW,nhs ayrshire & arran,general medicine,08/01/2023,287,Did Not Attend,,,,306.16
+P10220,Elizabeth Smith,08/06/1982,,,DG1 2PH,NHS Fife,Dermatology,01/11/2024,252,Did Not Attend,0,,,180.26
+P10184,John Ross,12-Dec-75,john41@hotmail.co.uk,07268 423 854,PA1 2BE,NHS Shetland,general medicine,07/01/2024,118,Attended,36,TRUE,,470.64
+P10250,Richard Murray,23-Aug-94,,07662 609 651,AB25 1DB,NHS Lothian,Respiratory Medicine,23/10/2023,296,Cancelled by Patient,0,,,£795.43
+,"Reid, William",19/03/1971,william.reid@gmail.com,07139 162 710,TD1 1DL,NHS Fife,Urology,14/03/2024,266,Attended,55,1,4,248.89
+P10029,Alasdair Reid,17-Aug-77,alasdair.reid@outlook.com,447562000000,ZE1 0TG,NHS Borders,CARDIOLOGY,14/06/2023,131,CbP,0,,,373.91
+P10008,Angus Campbell,04-May-57,angus.campbell@gmail.com,,IV2 5NA,NHS Shetland,General Medicine,14/11/2023,-50,Did Not Attend,,,,246.47
+P10001,Fiona Robertson,08-Nov-45,fiona.robertson@gmail.com,447463000000,ML1 1AB,NHS Grampian,Urology,24/09/2023,237,DNA,,,,626.24
+P10430,Eilidh MacDonald,,eilidh51@hotmail.co.uk,,AB10 1XG,NHS Borders,Neurology,03/02/2023,314,Attended,29,,,110.08
+P10084,Angus Anderson,10/01/1949,angus.anderson@gmail.com,07484 264 849,DD1 4HN,NHS Grampian,ENT,01/12/2024,335,Did Not Attend,,,,356.96
+P10112,Robert Fraser,13-Sep-68,robert.fraser@outlook.com,07269 335 178,IV2 5NA,NHS Tayside,Dermatology,23/10/2024,339,Cancelled by Hospital,,,,493.09
+P10089,Richard Stewart,07-Mar-43,richard.stewart@gmail.com,07477 943 575,IV2 5NA,nhs ayrshire & arran,General Medicine,16/06/2023,91,CbP,,,,611.72
+P10007,Angus Graham,07-May-80,angus.graham@gmail.com,,IV2 3EG,NHS Grampian,Cardiology,09/09/2023,179,CbP,,,,276.89
+P10056,Mary Stewart,27-Apr-77,mary19@hotmail.co.uk,,ZE1 0TG,NHS Forth Valley,CARDIOLOGY,22/11/2023,254,attended,25,FALSE,4,230.73
+P10395,Thomas Ross,22-Jan-05,,07776 831 550,ML1 1AB,NHS Lothian,Cardiology,13/05/2024,23,Cancelled by Hospital,,,,712.37
+P10020,Angus Campbell,23-Jul-82,angus.campbell@gmail.com,07218 891 513,,NHS Shetland,Neurology,02/07/2024,186,Cancelled by Patient,,,,745.75
+P10059,Sarah Ross,05-Mar-85,sarah.ross@gmail.com,07967 176 937,AB10 1XG,NHS Shetland,general medicine,23/02/2023,112,attended,35,Yes,8,451.8
+P10070,Linda Taylor,14/11/1974,,07867 384 811,HS1 2BW,NHS Forth Valley,General Medicine,15/12/2023,358,Cancelled by Hospital,,,,421.04
+P10080,Linda Hamilton,12-Dec-88,linda.hamilton@gmail.com,07711 324 130,ML1 1AB,NHS Lanarkshire,ENT,04/03/2023,124,Did Not Attend,,,,787
+,Patricia Clark,18-Jul-02,,07226 461 932,KW15 1NY,NHS Tayside,orthopaedics,15/02/2023,1375,DNA,,,,318.37
+P10047,"Murray, Richard",18-Oct-46,richard80@hotmail.co.uk,447200000000,HS1 2BW,NHS Fife,orthopaedics,20/04/2023,257,attended,34,0,5,512.38
+P10165,James Taylor,11-Aug-58,james.taylor@gmail.com,,EH8 9DX,NHS WESTERN ISLES,Gastroenterology,04/12/2024,21,CbP,0,,,318.05
+P10201,William Hamilton,25-Apr-52,william.hamilton@outlook.com,07245 482 653,KY1 1ET,NHS Borders,Neurology,01/01/2024,1787,Cancelled by Patient,,,,679.62
+,Sarah Wilson,,sarah.wilson@gmail.com,07254 774 557,HS1 2BW,NHS WESTERN ISLES,Orthopaedics,26/03/2024,17,Did Not Attend,,,,614.57
+P10379,Susan Ross,16-Jan-88,susan.ross@outlook.com,447489000000,KA1 1HU,NHS Highland,ENT,25/09/2024,1062,attended,60,Yes,,383.32
+P10028,Jennifer MacLeod,21/11/1967,jennifer17@hotmail.co.uk,447950000000,AB25 1DB,NHS Shetland,Orthopaedics,26/03/2024,2,CbP,0,,,£545.79
+P10066,Thomas Anderson,21-Mar-63,thomas.anderson@gmail.com,07319 310 385,DD1 4HN,NHS Lanarkshire,Dermatology,07/06/2024,135,Cancelled by Hospital,,,,490.25
+P10110,Angus Reid,12-Aug-99,angus.reid@gmail.com,,TD1 1DL,NHS Grampian,CARDIOLOGY,28/01/2023,16,Attended,40,0,2,629.11
+P10145,Robert MacLeod,21-Nov-79,,,KA1 1HU,NHS Dumfries & Galloway,Gastroenterology,16/02/2023,246,Did Not Attend,,,,354.26
+P10100,David Campbell,31/02/1985,david.campbell@outlook.com,,IV2 5NA,NHS Dumfries & Galloway,ENT,27/01/2024,233,Cancelled by Patient,,,,135.52
+P10227,Linda Murray,14/09/2000,linda.murray@outlook.com,07748 468 994,AB10 1XG,nhs ayrshire & arran,Gastroenterology,16/10/2023,314,Cancelled by Hospital,,,,692.83
+P10225,Patricia Thomson,16-Apr-57,patricia.thomson@gmail.com,07877 296 365,ZE1 0TG,NHS Grampian,general medicine,10/02/2023,64,DNA,,,,57.13
+P44,Mary Reid,04-Jul-45,,447173000000,,NHS Forth Valley,General Medicine,21/12/2023,89,attended,15,No,,129.75
