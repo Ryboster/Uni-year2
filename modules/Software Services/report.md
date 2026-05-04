@@ -1,3 +1,9 @@
+# Deployment Strategy Report
+
+Gracjan Blazejowski, 2026.
+
+
+
 ## Section 1: Reflective Learning
 
 
