@@ -19,5 +19,6 @@ Blaze McGrowski
 
 
 [NEXT SLIDE]
-The development framework for this project will be scrum, with 2-week sprints.
+Given staff and budget constraints, the methodology for this project will be Agile, within the scrum framework. Each sprint will last 2 weeks, and the product owner here will be the clinic's practice manager.
+
 
