@@ -81,7 +81,9 @@ Hiring a dedicated QA lead brings independent unbiased oversight to the project,
 
 While developers already test their own work, they are naturally more focused on building new features. This can create blind spots within certain edge cases, or integrations - Something a feature-building-oriented mind might miss, but a user and risk oriented mind might not.
 
-It's really a matter of perspectives. Developers tend 
+[NEXT SLIDE]
+
+
 
 
 
