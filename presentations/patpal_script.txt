@@ -10,13 +10,13 @@ PetPal is a mobile and web application for a chain of veterinary clinics across 
 
 [NEXT SLIDE]
 
-This project will be developed by our team of 5 developers;
+This project will be developed by our team of 5 unique developers;
 Gracjan Blazejowski
 Gratzyan Roflovski
 Grace Jokiejowski
 Jakie Blazegrowski,
 and last but not least,
-Blaze growski
+Blaze Mcgrowski
 
 
 
