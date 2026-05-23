@@ -108,7 +108,12 @@ processes will be handled internally on the client device and only the results o
 
 During prolonged processes (e.g. filling out a form),
 Progress will be saved on the client's device locally to prevent loss. On the mobile application, the changes may be saved into RAM initially, and then comitted to memory as a hashed string if the app is closed.
-On the web application, encrypted cookies will be used. The key to the encryption will be known only to the server device. This is because 
+
+On the web application, encrypted cookies will be used. The encryption key will be stored only on the server's device. The data will be encrypted at rest and in transit to mitigate various security risks like the man-in-the-middle attack or 
+
+
+
+key to the encryption will be known only to the server device. This is because 
 
 
 
