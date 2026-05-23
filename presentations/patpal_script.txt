@@ -112,9 +112,4 @@ To prevent data loss during any process (lengthy or short), progress will be sav
 Both the web app as well as the mobile app will commit progress to local memory with every change. In case of the web app, localStorage may be used as it allows sufficient storage for the operational needs.
 [NEXT SLIDE]
 Before data packages are transmitted, they will first be encrypted with an SSH key known only to the server. This reduces our vulnerability to the man-in-the-middle attack.
-
-
-
-In transit, data packages will be stamped with an SSH key by the server. This transit key will only be stored on the server device to prevent a vulnerability to the man-in-the-middle attack.
-
-
+[NEXT SLIDE]
