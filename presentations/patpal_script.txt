@@ -107,6 +107,10 @@ To ensure that the service runs without interruptions in areas with poor connect
 processes will be handled internally on the client device and only the results of those processes will then be transmitted to the server on the nearest network availability.
 
 During prolonged processes (e.g. filling out a form),
-progress will be saved 
+progress will be saved on the client's device locally to prevent loss. On the mobile application, the changes may be saved into RAM initially, and then comitted on memory as a hashed string if the app is closed.
+
+
+
+
 
 If the internet connection goes out during a prolonged process (e.g. filling out a form), a notification will be displayed on the client's device to inform them that the changes are saved
