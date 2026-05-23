@@ -74,7 +74,9 @@ This hybrid approach allows us to maintain strong communication, planning, and s
 
 [NEXT SLIDE]
 
-While onboarding a dedicated QA specialist increases the budget,
+While onboarding a dedicated QA specialist increases the budget, doing so carries benefits that are worth considering.
+
+
 
 
 
