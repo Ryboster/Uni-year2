@@ -47,7 +47,7 @@ due to having a delegated mediator, the customer will be able to stay updated on
 [NEXT SLIDE]
 one foreseeable challenge for this project is that the customer is non technical. A solution to this is to elect the person with the best social skills as our scrum master and mediator. 
 
-This helps address the problem in two different ways; for one, since the mediators social skills are on par, they should be able to simplify highly technical terms and break them down for the client. second, since there is a delegated mediator, the client will only need to speak with a single person on the team which highly streamlines the communication pipeline and allows the client to develop
+This helps address the problem in two different ways; for one, since the mediators social skills are on par, they should be able to simplify highly technical terms and break them down for the client. second, since there is a delegated mediator, the client will only need to speak with a single person on the team which highly streamlines the communication pipeline and allows the client to develop a professional relationship with the mediator, further smoothing down the language barrier.
 
 
 
