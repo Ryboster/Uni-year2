@@ -74,7 +74,15 @@ This hybrid approach allows us to maintain strong communication, planning, and s
 
 [NEXT SLIDE]
 
-While onboarding a dedicated QA specialist increases the budget, doing so carries benefits that are worth considering.
+While onboarding a dedicated QA specialist increases the budget, and the existing developers may already be well equipped to test their own work, doing so carries additional benefits that are worth considering.
+
+[NEXT SLIDE]
+Hiring a dedicated QA lead brings independent unbiased overisght to the project, which is critical for ensuring reliability in a healthcare-related system like PetPal.
+
+
+
+
+doing so carries benefits that are worth considering.
 
 
 
