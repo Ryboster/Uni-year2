@@ -10,4 +10,14 @@ PetPal is a mobile and web application for a chain of veterinary clinics across 
 
 [NEXT SLIDE]
 
-This project will be developed iteratively using scrum. Each sprint will last 2 weeks.
+This project will be developed by our team of 5 developers;
+Gracjan Blazejowski
+Gratzyan Roflovski
+Grace Jokiejowski
+Jakie Blazegrowski,
+and last but not least,
+Blaze growski
+
+
+
+using scrum. Each sprint will last 2 weeks.
