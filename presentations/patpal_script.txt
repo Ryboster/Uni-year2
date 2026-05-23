@@ -67,22 +67,11 @@ However, XP lacks the strong project management structure that Scrum provides. C
 
 [NEXT SLIDE]
 
-Because of this, the recommended approach is to primarily use Scrum, while incorporating selected XP practices.
+Because of this, the recommended approach is to primarily use Scrum, while incorporating selected XP practices like pair programming when dealing with difficult problems.
 
 This hybrid approach allows us to maintain strong communication, planning, and stakeholder involvement through Scrum, while improving technical quality through XP practices such as pair programming and continuous testing.
 
-[NEXT SLIDE]
 
-To ensure this approach is successful for our specific client, three key enablers will be required:
 
-First, effective tools such as Jira for sprint tracking and backlog management, alongside Slack for clear and consistent communication.
-
-Second, strong development practices, including pair programming and continuous integration. These will help maintain high code quality and allow issues to be identified early.
-
-Third, clear governance and client involvement. This includes regular sprint reviews attended by the product owner, ensuring feedback is continuous and the product stays aligned with client expectations.
-
-[NEXT SLIDE]
-
-In conclusion, while both Scrum and XP offer valuable benefits, a Scrum-led approach enhanced with XP practices provides the best balance between structure, communication, and technical quality for the PetPal project.
 
 
