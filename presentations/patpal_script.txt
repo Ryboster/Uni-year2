@@ -109,9 +109,9 @@ processes will be handled internally on the client device and only the results o
 To prevent data loss during any process (lengthy or short), progress will be saved on the client's device locally to prevent loss.
 
 [NEXT SLIDE]
-On the mobile app, changes will be committed to memory with every change.
+In case of the mobile app, changes will be committed to memory with every change.
 [NEXT SLIDE]
-On the web app, localStorage will be used in place of cookies. This ensures
+In case of the web app, localStorage will be used in place of cookies. This ensures
 [NEXT SLIDE]
 
 On the web app, encrypted cookies will be used. The encryption key will be stored only on the server.
