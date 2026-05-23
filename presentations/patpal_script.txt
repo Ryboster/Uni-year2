@@ -51,9 +51,38 @@ This helps address the problem in two different ways; for one, since the mediato
 
 
 [NEXT SLIDE]
-To decide which software development lifecycle model is best fit for this project, let's compare our options.
+To determine the most effective development process for this project, we will compare Scrum with Extreme Programming (or XP).
+
+Scrum focuses on structured, time-boxed sprints, clear roles such as the product owner and scrum master, and regular feedback through sprint reviews. This makes it highly effective for maintaining organisation, especially when working with a non-technical client, as it provides predictable delivery and frequent opportunities for feedback.
+
+In contrast, XP places a stronger emphasis on engineering practices. These include pair programming, continuous integration, and test-driven development. XP is particularly focused on code quality and rapid adaptability to changing requirements.
 
 [NEXT SLIDE]
 
+Given our team structure — a small, co-located team of five developers — XP offers some clear advantages.
+
+For example, pair programming could significantly improve code quality and knowledge sharing within the team. Since we are working closely together, this would be practical to implement and would reduce the risk of bugs early in development.
+
+However, XP lacks the strong project management structure that Scrum provides. Considering our client is non-technical, having clearly defined roles, sprint reviews, and a single point of communication is essential. Scrum handles this far better than XP.
+
+[NEXT SLIDE]
+
+Because of this, the recommended approach is to primarily use Scrum, while incorporating selected XP practices.
+
+This hybrid approach allows us to maintain strong communication, planning, and stakeholder involvement through Scrum, while improving technical quality through XP practices such as pair programming and continuous testing.
+
+[NEXT SLIDE]
+
+To ensure this approach is successful for our specific client, three key enablers will be required:
+
+First, effective tools such as Jira for sprint tracking and backlog management, alongside Slack for clear and consistent communication.
+
+Second, strong development practices, including pair programming and continuous integration. These will help maintain high code quality and allow issues to be identified early.
+
+Third, clear governance and client involvement. This includes regular sprint reviews attended by the product owner, ensuring feedback is continuous and the product stays aligned with client expectations.
+
+[NEXT SLIDE]
+
+In conclusion, while both Scrum and XP offer valuable benefits, a Scrum-led approach enhanced with XP practices provides the best balance between structure, communication, and technical quality for the PetPal project.
 
 
