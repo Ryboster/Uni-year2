@@ -33,7 +33,21 @@ The remaining 4 weeks will be spent debugging, optimizing, and ensuring that the
 [NEXT SLIDE]
 In order to deliver this within the alloted time, effective resource management is key. 
 
-Each sprint planning will set out
+Each sprint planning will define specific and attainable goals to be completed within the sprints duration. 
+
+to ensure completed work aligns with project needs, each task will define acceptance criteria as well as the definition of done during backlog population.
+
+to maximise productivity, a scrum master will be elected, and their responsibilities will include backlog population, minute taking, defining acceptance criteria, definitions of done, and mediation between the product owner and the development team. 
+
+[NEXT SLIDE]
+this approach maximises productivity among additional benefits. Since the scrum master will be responsible for all the clerical work, our software developers will be able to fully focus on development. This establishes a predictable velocity, reduces workload overall, and allows developers to catch problems early. 
+
+due to having a delegated mediator, the customer will be able to stay updated on the progress, catch inconsistencies or problems early, and have a clear view of the increments being delivered. 
+
+[NEXT SLIDE]
+one foreseeable challenge for this project is that the customer is non technical. A solution to this is to elect the person with the best social skills as our scrum master and mediator. 
+
+This helps address the problem in two different ways; for one, since the mediators social skills are on par, they should be able to simplify highly technical terms and break them down for the client. second, since there is a delegated mediator, the client will only need to speak with a single person on the team which highly streamlines the communication pipeline and allows the client to develop
 
 
 
