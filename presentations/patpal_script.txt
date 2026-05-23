@@ -111,27 +111,8 @@ To prevent data loss during any process (lengthy or short), progress will be sav
 [NEXT SLIDE]
 In case of the mobile app, changes will be committed to memory with every change.
 [NEXT SLIDE]
-In case of the web app, localStorage will be used in place of cookies. This ensures
+In case of the web app, localStorage will be used in place of cookies.
 [NEXT SLIDE]
 
-Additionally, in transit, data packages will be stamped with an SSH key by the server. This transit key will only be stored on the server device.
+In transit, data packages will be stamped with an SSH key by the server. This transit key will only be stored on the server device.
 
-
-
-On the web app, encrypted cookies will be used. The encryption key will be stored only on the server.
-If internet connection goes out while the form is being uploaded ...
-
-(page refreshes. progress is lost until back online - how to prevent this)
-
-
-The data will be encrypted at rest and in transit to mitigate various security risks like the man-in-the-middle attack or 
-
-
-
-key to the encryption will be known only to the server device. This is because 
-
-
-
-
-
-If the internet connection goes out during a prolonged process (e.g. filling out a form), a notification will be displayed on the client's device to inform them that the changes are saved
