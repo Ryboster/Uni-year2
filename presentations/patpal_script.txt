@@ -74,7 +74,8 @@ This hybrid approach allows us to maintain strong communication, planning, and s
 
 [NEXT SLIDE]
 
-While onboarding a dedicated QA role increases the running cost of the development of the project  
+While onboarding a dedicated QA specialist increases the budget,
+
 
 
 
