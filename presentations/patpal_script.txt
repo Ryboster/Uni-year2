@@ -92,6 +92,14 @@ With a dedicated QA role, quality becomes a job description (or a defined respon
 
 This is especially important in an Agile Scrum environment, where frequent releases can otherwise lead to quality slipping over time.
 
+[NEXT SLIDE]
+
+Finally, investing in a QA lead is more cost-effective in the long run.
+
+Fixing bugs after deployment is significantly more expensive than catching them early. More importantly, failures in a veterinary system can damage client trust, which is far harder to recover than the cost of prevention.
+
+[NEXT SLIDE]
+
 
 
 
