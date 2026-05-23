@@ -113,6 +113,5 @@ In case of the mobile app, changes will be committed to memory with every change
 [NEXT SLIDE]
 In case of the web app, localStorage will be used in place of cookies.
 [NEXT SLIDE]
-
 In transit, data packages will be stamped with an SSH key by the server. This transit key will only be stored on the server device.
 
