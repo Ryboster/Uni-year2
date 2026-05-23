@@ -116,4 +116,5 @@ All communications between the client and the server will be conducted via HTTPS
 
 [NEXT SLIDE]
 
-For payment transactions, PCI-DSS will be used
+For payment transactions, we are lawfully required to use PCI-DSS, and for a good reason. 
+PCI-DSS stands for Payment Card Industry Data Security Standard, and it 
