@@ -77,13 +77,14 @@ This hybrid approach allows us to maintain strong communication, planning, and s
 While onboarding a dedicated QA specialist increases the budget, and the existing developers may already be well equipped to test their own work, doing so carries additional benefits that are worth considering.
 
 [NEXT SLIDE]
-Hiring a dedicated QA lead brings independent unbiased oversight to the project, which is critical for ensuring reliability in a healthcare-related system like PetPal.
+Hiring a dedicated QA specialist brings independent unbiased oversight to the project, which is critical for ensuring reliability in a healthcare-related system like PetPal.
 
 While developers already test their own work, they are naturally more focused on building new features. This can create blind spots within certain edge cases, or integrations - Something a feature-building-oriented mind might miss, but a user and risk oriented mind might not.
 
 [NEXT SLIDE]
+For PetPal specifically, this matters because the system handles sensitive and time-critical tasks such as appointment bookings, medical records, and prescription generation.
 
-For PetPal specifically, this matters because 
+
 
 
 
