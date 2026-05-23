@@ -103,7 +103,6 @@ Fixing bugs after deployment is significantly more expensive than catching them 
 Ensuring security and reliability of the service regardless of internet connectivity is of critical importance. Given the healthcare-based nature of this project, and the fact that the application handles sensitive and health-critical information, as well as processes payments, appropriate security measures will be taken,
 
 [NEXT SLIDE]
-To ensure that the service runs without interruptions in poor 
+To ensure that the service runs without interruptions in areas with poor connectivity,
+processes will be handled internally on the client device and only the results of those processes will then be transmitted to the server on the nearest network availability.
 
-
-Security is of critical importance
