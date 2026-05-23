@@ -28,7 +28,7 @@ The first 6 weeks will be spent developing a RESTful API that both the applicati
 
 Next, we will assign 6 weeks to the development of the app as well as the web service,
 
-The remaining 4 weeks will be spent debugging, optimizing, and ensuring that the application works flawlessly on low-end hardware and in areas with poor and intermittent internet connection.
+The remaining 4 weeks will be spent debugging, optimizing, and ensuring that the application works flawlessly on low-end hardware and in areas with poor and/or intermittent connectivity.
 
 [NEXT SLIDE]
 In order to deliver this within the alloted time, effective resource management is key. 
