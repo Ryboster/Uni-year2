@@ -110,6 +110,7 @@ To prevent data loss during processes (lengthy or short),
 Progress will be saved on the client's device locally to prevent loss.
 
 On the mobile app, changes will be committed to memory with every change.
+On the web app, localStorage will be used in place of cookies. 
 
 On the web app, encrypted cookies will be used. The encryption key will be stored only on the server.
 If internet connection goes out while the form is being uploaded ...
