@@ -51,4 +51,6 @@ This helps address the problem in two different ways; for one, since the mediato
 
 
 [NEXT SLIDE]
+To decide on which software development lifecycle model is best fit for this project, let's compare our options.
+
 
