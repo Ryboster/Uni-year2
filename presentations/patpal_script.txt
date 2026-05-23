@@ -100,3 +100,6 @@ Fixing bugs after deployment is significantly more expensive than catching them 
 
 [NEXT SLIDE]
 
+Ensuring security and reliability of the service regardless of internet connectivity is of critical importance. 
+
+Security is of critical importance
