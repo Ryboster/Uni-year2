@@ -86,9 +86,16 @@ For PetPal specifically, this matters because the system handles sensitive and t
 
 
 
+[NEXT SLIDE]
+
+Another key advantage is consistency and accountability. 
+
+With a dedicated QA role, quality becomes a job description (or a defined responsibility) rather than a 
 
 
+With a dedicated QA role, quality becomes a defined responsibility rather than a shared assumption. The QA lead can establish testing standards, define acceptance criteria more rigorously, and ensure that every feature meets a consistent level of quality before release.
 
+This is especially important in an Agile Scrum environment, where frequent releases can otherwise lead to quality slipping over time.
 
 
 
