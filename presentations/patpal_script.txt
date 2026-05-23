@@ -8,4 +8,6 @@ Petpal!
 PetPal is a mobile and web application for a chain of veterinary clinics across the Scottish Highlands. The application allows pet owners to book appointments, view their pet's vaccination and treatment history, receive automated reminders, and pay invoices online. Vets can access patient records, add treatment notes, and generate prescriptions.
 
 
+[NEXT SLIDE]
 
+This project will be developed iteratively using scrum. Each sprint will last 2 weeks.
