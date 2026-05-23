@@ -106,11 +106,13 @@ Ensuring security and reliability of the service regardless of internet connecti
 To ensure that the service runs without interruptions in areas with poor connectivity,
 processes will be handled internally on the client device and only the results of those processes will then be transmitted to the server on the nearest network availability.
 
-To prevent data loss during processes (lengthy or short),
-Progress will be saved on the client's device locally to prevent loss.
+To prevent data loss during any process (lengthy or short), progress will be saved on the client's device locally to prevent loss.
 
+[NEXT SLIDE]
 On the mobile app, changes will be committed to memory with every change.
-On the web app, localStorage will be used in place of cookies. 
+[NEXT SLIDE]
+On the web app, localStorage will be used in place of cookies. This ensures
+[NEXT SLIDE]
 
 On the web app, encrypted cookies will be used. The encryption key will be stored only on the server.
 If internet connection goes out while the form is being uploaded ...
