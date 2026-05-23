@@ -72,6 +72,9 @@ Because of this, the recommended approach is to primarily use Scrum, while incor
 This hybrid approach allows us to maintain strong communication, planning, and stakeholder involvement through Scrum, while improving technical quality through XP practices such as pair programming and continuous testing.
 
 
+[NEXT SLIDE]
+
+
 
 
 
