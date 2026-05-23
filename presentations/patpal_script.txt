@@ -109,7 +109,7 @@ processes will be handled internally on the client device and only the results o
 To prevent data loss during any process (lengthy or short), progress will be saved on the client's device locally to prevent loss.
 
 [NEXT SLIDE]
-In both the web app as well as the mobile app, changes will be committed to memory with every change.
+In both the web app as well as the mobile app, progress will be committed to local memory with every change. In case of the web app, localStorage may be used as it allows sufficient storage for the operational needs. 
 [NEXT SLIDE]
 In transit, data packages will be stamped with an SSH key by the server. This transit key will only be stored on the server device to prevent a vulnerability to the man-in-the-middle attack.
 
