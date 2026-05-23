@@ -109,8 +109,10 @@ processes will be handled internally on the client device and only the results o
 To prevent data loss during processes (lengthy or short),
 Progress will be saved on the client's device locally to prevent loss.
 
-On the mobile application, changes will be committed to memory with every change.
-On the web application, encrypted cookies will be used. The encryption key will be stored only on the server. If internet connection goes out while the form is being uploaded ...
+On the mobile app, changes will be committed to memory with every change.
+
+On the web app, encrypted cookies will be used. The encryption key will be stored only on the server.
+If internet connection goes out while the form is being uploaded ...
 
 (page refreshes. progress is lost until back online - how to prevent this)
 
