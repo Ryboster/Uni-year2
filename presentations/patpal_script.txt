@@ -106,4 +106,7 @@ Ensuring security and reliability of the service regardless of internet connecti
 To ensure that the service runs without interruptions in areas with poor connectivity,
 processes will be handled internally on the client device and only the results of those processes will then be transmitted to the server on the nearest network availability.
 
-If the internet connection goes out during a prolonged process (e.g. filling out a form), 
+During prolonged processes (e.g. filling out a form),
+progress will be saved 
+
+If the internet connection goes out during a prolonged process (e.g. filling out a form), a notification will be displayed on the client's device to inform them that the changes are saved
