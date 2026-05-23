@@ -114,6 +114,10 @@ In case of the mobile app, changes will be committed to memory with every change
 In case of the web app, localStorage will be used in place of cookies. This ensures
 [NEXT SLIDE]
 
+Additionally, in transit, data packages will be stamped with an SSH key by the server. This transit key will only be stored on the server device.
+
+
+
 On the web app, encrypted cookies will be used. The encryption key will be stored only on the server.
 If internet connection goes out while the form is being uploaded ...
 
