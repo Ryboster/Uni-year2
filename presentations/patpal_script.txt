@@ -112,8 +112,9 @@ To prevent data loss during any process (lengthy or short), progress will be sav
 Both the web app as well as the mobile app will commit progress to local memory with every change. In case of the web app, localStorage may be used as it allows sufficient storage for the operational needs.
 [NEXT SLIDE]
 
-All communications between the client and the server will be conducted via HTTPS - This encrypts the data packets with our TLS certficate which reduces our vulnerability to the man-in-the-middle attack.
+All communications between the client and the server will be conducted via HTTPS - This is a much more robust protocol that vastly mitigates our exposure to man-in-the-middle attacks.
 
 [NEXT SLIDE]
 For payment transactions, we are lawfully required to use PCI-DSS, and for a good reason. 
 PCI-DSS stands for Payment Card Industry Data Security Standard, and it is a 
+
