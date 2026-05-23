@@ -9,15 +9,15 @@ PetPal is a mobile and web application for a chain of veterinary clinics across 
 
 
 [NEXT SLIDE]
-
 This project will be developed by our team of 5 unique developers;
 Gracjan Blazejowski
 Gratzyan Roflovski
 Grace Jokiejowski
 Jakie Blazegrowski,
 and last but not least,
-Blaze Mcgrowski
+Blaze McGrowski
 
 
+[NEXT SLIDE]
+The development framework for this project will be scrum, with 2-week sprints.
 
-using scrum. Each sprint will last 2 weeks.
