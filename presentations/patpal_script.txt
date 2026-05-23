@@ -85,22 +85,13 @@ While developers already test their own work, they are naturally more focused on
 For PetPal specifically, this matters because the system handles sensitive and time-critical tasks such as appointment bookings, medical records, and prescription generation. This means that if a developer-made error goes unnoticed, the consequences could be quite severe; Incorrect or duplicate billing, missed appointments, or incorrect treatment. All of which would directly impact the clinic's reputation and the quality of treatment.
 
 
-
 [NEXT SLIDE]
-
 Another key advantage is consistency and accountability. 
 
-With a dedicated QA role, quality becomes a job description (or a defined responsibility) rather than a 
-
-
-With a dedicated QA role, quality becomes a defined responsibility rather than a shared assumption. The QA lead can establish testing standards, define acceptance criteria more rigorously, and ensure that every feature meets a consistent level of quality before release.
+With a dedicated QA role, quality becomes a job description (or a defined responsibility) rather than a shared assumption. The QA lead can establish more rigorous testing standards or acceptance criteria, ensuring that every feature meets a consistent level of quality before release.
 
 This is especially important in an Agile Scrum environment, where frequent releases can otherwise lead to quality slipping over time.
 
-
-
-
-doing so carries benefits that are worth considering.
 
 
 
