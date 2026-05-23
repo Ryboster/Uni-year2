@@ -1,0 +1,11 @@
+Hello and welcome to our presentation,
+
+Today, I'd like to present to you,
+
+[Next SLIDE]
+Petpal!
+
+PetPal is a mobile and web application for a chain of veterinary clinics across the Scottish Highlands. The application allows pet owners to book appointments, view their pet's vaccination and treatment history, receive automated reminders, and pay invoices online. Vets can access patient records, add treatment notes, and generate prescriptions.
+
+
+
