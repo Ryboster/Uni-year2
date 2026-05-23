@@ -22,3 +22,13 @@ Blaze McGrowski
 Given staff and budget constraints, the methodology for this project will be Agile, within the scrum framework. Each sprint will last 2 weeks, and the product owner here will be the clinic's practice manager.
 
 
+[SECTION 1]
+[NEXT SLIDE]
+The first 4 weeks will be spent developing a RESTful API that both the application and the web service will be communicating with. This is because in order to develop the app as well as the web service, we first need to establish the platform.
+
+[NEXT SLIDES]
+
+
+
+
+
