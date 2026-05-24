@@ -87,7 +87,6 @@ class TestGetTasks:
 # ────────────────────────────────────────────────────────────────────
 
 class TestLoginEndpoint:
-
     def test_correct_login_succeeds(self, client):
         ''' Verify /login returns correct object on successful login '''
         ### ARRANGE
