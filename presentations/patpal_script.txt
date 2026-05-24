@@ -120,7 +120,7 @@ For payment transactions, we are lawfully required to use PCI-DSS, and for a goo
 PCI-DSS stands for Payment Card Industry Data Security Standard, and it is a globally recognised standard for processing payment transactions, wherein all payment transactions are done through a reputable mediator such as Visa or MasterCard - We don't get any of the details, just the result of the transactions (OWASP Foundation, 2025a).
 
 [NEXT SLIDE]
-These changes will be incorporated through the established workflow. Backlog will be populated with security-oriented user stories, and our Scrum master will create specific tasks to address those stories. 
+These changes will be incorporated through our established workflow. Backlog will be populated with security-oriented user stories, and our Scrum master will create specific tasks to address those stories. Additionally, automated scans in the CI pipeline may be incorporated to ensure alignment over time.
 
 
 REFERENCES:
