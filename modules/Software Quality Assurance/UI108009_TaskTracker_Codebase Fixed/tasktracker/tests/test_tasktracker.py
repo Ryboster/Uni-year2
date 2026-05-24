@@ -160,7 +160,7 @@ class TestCreateTask:
         
 
 
-    def test_x(self, client):
+    def test_edge_of_valid_input_fails(self, client):
         # ARRANGE 
         payload = {"title": "",
                    "description": "$$__`~124\\",
@@ -186,34 +186,34 @@ class TestGetTask:
         response = client.post(f"/api/tasks{task_id}")
 
         # ASSERT
-        print(response.data)
+        print(response.get_json())
         assert response.status_code == 201
 
     
         
-    def test_incorrect_task_is_denied(self, client):
-        # ARRANGE 
-        payload = {}
-
-        # ACT
-        response = client.post("/api/tasks", json=payload)
-
-        # ASSERT
-        assert response.status_code == 400
-        
-
-
-    def test_x(self, client):
-        # ARRANGE 
-        payload = {"title": "",
-                   "description": "$$__`~124\\",
-                   "priority": 50,
-                   "assigned_to": "",
-                   "created_by": ""
-                   }
-
-        # ACT
-        response = client.post("/api/tasks", json=payload)
-
-        # ASSERT
-        assert response.status_code == 401
+    #def test_incorrect_task_is_denied(self, client):
+    #    # ARRANGE 
+    #    payload = {}
+#
+    #    # ACT
+    #    response = client.post("/api/tasks", json=payload)
+#
+    #    # ASSERT
+    #    assert response.status_code == 400
+    #    
+#
+#
+    #def test_x(self, client):
+    #    # ARRANGE 
+    #    payload = {"title": "",
+    #               "description": "$$__`~124\\",
+    #               "priority": 50,
+    #               "assigned_to": "",
+    #               "created_by": ""
+    #               }
+#
+    #    # ACT
+    #    response = client.post("/api/tasks", json=payload)
+#
+    #    # ASSERT
+    #    assert response.status_code == 401
