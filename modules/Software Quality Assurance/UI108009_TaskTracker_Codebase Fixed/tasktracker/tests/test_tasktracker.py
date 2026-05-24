@@ -178,10 +178,11 @@ class TestCreateTask:
 
 
 class TestGetTask:
+
     def test_get_task_correct_id_succeeds(self, client):
         ''' Verify that tasks can be retrieved '''
         # ARRANGE 
-        task_id = 1
+        task_id = 3
 
         # ACT
         response = client.get(f"/api/tasks/{task_id}")
