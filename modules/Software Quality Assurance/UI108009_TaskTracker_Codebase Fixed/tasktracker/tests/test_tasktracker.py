@@ -197,6 +197,7 @@ class TestCreateTask:
 
     def test_post_tasks_update_status_status_is_updated(self, client):
         ''' Verify that status on tasks can be updated '''
+
         # ARRANGE 
         title = "Release 3 pigeons"
         status = "done"
@@ -214,16 +215,10 @@ class TestCreateTask:
         client.put(f"/api/tasks/{task_id}", json={"status": status})
         
         tasks = client.get("/api/tasks")
-        
+        updated_task = next((task["id"] for task in tasks if task["id"] == task_id))
 
         # ASSERT
-
-        
-
-title = data.get('title', task['title'])
-    description = data.get('description', task['description'])
-    status = data.get('status', task['status'])
-    priority = data.get('priority', task['priority'])
+        assert updated_task["status"] == status
 
 
 class TestGetTask:
