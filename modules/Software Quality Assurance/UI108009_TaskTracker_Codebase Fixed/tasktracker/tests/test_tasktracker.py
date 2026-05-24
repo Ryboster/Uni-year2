@@ -191,6 +191,7 @@ class TestGetTask:
         assert len(response.get_json()) == 8
 
     def test_get_invalid_id_returns_error_code(self, client):
+        ''' Verify that wrong ID type returns 404 '''
         # ARRANGE 
         task_id = "one"
 
@@ -201,7 +202,8 @@ class TestGetTask:
         print(response.get_json())
         assert response.status_code == 404
 
-    def test_edge_cases(self,client):
+    def test_get_edge_case_id_succeeds(self,client):
+        ''' Verify that values at the edge of prohibited values are retrievable '''
         ### ARRANGE
         all_tasks = client.get("/api/tasks")
         max_valid_id = 0
