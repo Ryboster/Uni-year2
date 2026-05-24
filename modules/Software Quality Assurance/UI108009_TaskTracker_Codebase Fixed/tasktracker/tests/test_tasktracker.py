@@ -115,7 +115,7 @@ class TestLoginEndpoint:
         ### ASSERT
         assert "error" in response.get_json()
 
-    def test_returns_valid_http_responses(self, client):
+    def test_post_incorrect_login_values_returns_valid_http_error_code(self, client):
         ''' Verify /login returns valid http responses when given incorrect values '''
         ### ARRANGE
         test_cases = [
