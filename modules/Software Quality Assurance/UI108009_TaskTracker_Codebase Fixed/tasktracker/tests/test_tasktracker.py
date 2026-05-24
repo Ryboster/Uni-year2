@@ -191,11 +191,9 @@ class TestCreateTask:
         response = client.get("/api/tasks")
 
         # ASSERT
-        for task in response.get_json():
-            if task["title"] == title:
-                assert task["title"] == title
+        tasks = response.get_json
+        assert any(task["title"] == title for task in tasks)
 
-        assert response.status_code == 201
 
 
 class TestGetTask:
