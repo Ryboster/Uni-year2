@@ -227,4 +227,15 @@ class TestGetTask:
 class TestAS:
     def test_post_tasks_task_is_created(self, client):
         ''' Verify whether 201 responses actually create the tasks '''
-        
+        # ARRANGE 
+        payload = {"title": "Catch 3 pigeons",
+                   "description": "make big button small",
+                   "priority": 3,
+                   "assigned_to": "",
+                   "created_by": ""}
+
+        # ACT
+        response = client.post("/api/tasks", json=payload)
+
+        # ASSERT
+        assert response.status_code == 201
