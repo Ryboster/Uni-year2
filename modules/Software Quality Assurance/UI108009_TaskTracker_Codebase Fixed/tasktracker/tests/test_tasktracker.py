@@ -229,7 +229,7 @@ class TestAS:
         ''' Verify whether 201 responses actually create the tasks '''
         # ARRANGE 
         payload = {"title": "Catch 3 pigeons",
-                   "description": "make big button small",
+                   "description": "Get them from the park for free",
                    "priority": 3,
                    "assigned_to": "",
                    "created_by": ""}
