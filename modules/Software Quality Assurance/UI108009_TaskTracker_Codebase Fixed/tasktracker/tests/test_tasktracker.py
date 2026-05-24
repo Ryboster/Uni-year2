@@ -180,10 +180,10 @@ class TestCreateTask:
 class TestGetTask:
     def test_task_is_retrieved(self, client):
         # ARRANGE 
-        task_id = 0
+        task_id = 1
 
         # ACT
-        response = client.post(f"/api/tasks/{task_id}")
+        response = client.get(f"/api/tasks/{task_id}")
 
         # ASSERT
         print(response.get_json())
