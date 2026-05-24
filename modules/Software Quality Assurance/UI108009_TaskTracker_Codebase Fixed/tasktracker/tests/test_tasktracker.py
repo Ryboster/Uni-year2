@@ -130,7 +130,7 @@ class TestLoginEndpoint:
 
 
 class TestCreateTask:
-    def test_correct_task_is_created(self, client):
+    def test_post_tasks_correct_payload_succeeds(self, client):
         ''' Verify that tasks can be created '''
         # ARRANGE 
         payload = {"title": "Fix UI",
@@ -147,7 +147,7 @@ class TestCreateTask:
 
     
         
-    def test_incorrect_task_is_denied(self, client):
+    def test_post_tasks_incorrect_payload_fails(self, client):
         ''' Very that incorrect tasks are not created '''
         # ARRANGE 
         payload = {}
@@ -160,7 +160,7 @@ class TestCreateTask:
         
 
 
-    def test_edge_of_valid_input_fails(self, client):
+    def test_post_edge_of_valid_input_fails(self, client):
         # ARRANGE 
         payload = {"title": "",
                    "description": "$$__`~124\\",
