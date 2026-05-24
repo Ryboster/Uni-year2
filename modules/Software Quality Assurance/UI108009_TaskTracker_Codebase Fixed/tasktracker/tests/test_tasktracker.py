@@ -91,7 +91,7 @@ class TestLoginEndpoint:
     def test_correct_login_succeeds(self, client):
         ### ARRANGE
         username = "alice"
-        password = "1"
+        password = 1
         successful_response_keys = ["message", "user_id", "username", "role"]
 
         ### ACT
@@ -99,7 +99,7 @@ class TestLoginEndpoint:
                                                    "password": password})
         
         ### ASSERT
-        print(response)
+        print(response.get_json())
         for key in successful_response_keys:
             assert key in response.keys()
     
