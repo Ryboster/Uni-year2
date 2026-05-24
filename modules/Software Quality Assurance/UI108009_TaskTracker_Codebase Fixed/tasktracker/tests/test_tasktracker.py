@@ -192,7 +192,8 @@ class TestCreateTask:
 
         # ASSERT
         for task in response.get_json():
-            if task["title"]
+            if task["title"] == title:
+                assert task["title"] == title
 
         assert response.status_code == 201
 
@@ -241,8 +242,3 @@ class TestGetTask:
         ### Act + Assert (LOWEST case)
         response = client.get(f"/api/tasks/{min_valid_id}")
         assert len(response.get_json()) == 8
-
-
-
-class TestAS:
-    
