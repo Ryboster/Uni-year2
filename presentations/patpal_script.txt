@@ -61,8 +61,11 @@ This helps address the problem in two different ways; for one, since the mediato
 [NEXT SLIDE]
 To determine the most effective development process for this project, we will compare Scrum with Extreme Programming (or XP).
 
+[NEXT SLIDE]
+
 Scrum focuses on structured, time-boxed sprints, clear roles such as the product owner and scrum master, and regular feedback through sprint reviews. This makes it highly effective for maintaining organisation, especially when working with a non-technical client, as it provides predictable delivery and frequent opportunities for feedback.
 
+[NEXT SLIDE]
 In contrast, XP places a stronger emphasis on engineering practices. These include pair programming, continuous integration, and test-driven development. XP is particularly focused on code quality and rapid adaptability to changing requirements.
 
 [NEXT SLIDE]
