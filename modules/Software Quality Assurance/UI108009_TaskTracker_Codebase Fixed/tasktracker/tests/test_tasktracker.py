@@ -201,18 +201,21 @@ class TestGetTask:
         assert response.status_code == 404
 
     def test_edge_cases(self,client):
-
         ### ARRANGE
         all_tasks = client.get("/api/tasks")
-        highest_existent_id = 0
+        max_valid_id = 0
         for task in all_tasks.get_json():
-            if task["id"] > highest_existent_id:
-                highest_existent_id = task["id"]
+            if task["id"] > max_valid_id:
+                max_valid_id = task["id"]
 
         min_valid_id = 1
 
-        response = client.get(f"/api/tasks/{highest_existent_id}")
+        ### Act + Assert (HIGHEST case)
+        response = client.get(f"/api/tasks/{max_valid_id}")
+        assert len(response.get_json()) == 8
 
-        assert response.status_code == 404 
+        ### Act + Assert (LOWEST case)
+        response = client.get(f"/api/tasks/{min_valid_id}")
+        assert len(response.get_json()) == 8
 
 
