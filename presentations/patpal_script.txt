@@ -121,4 +121,12 @@ PCI-DSS stands for Payment Card Industry Data Security Standard, and it is a glo
 
 
 
+REFERENCES:
+
+OWASP Foundation (2025) Insecure Design
+
+OWASP Foundation (2025) Cryptographic Failures
+
+OWASP Foundation (2025) Software or Data Integrity Failures
+
 
