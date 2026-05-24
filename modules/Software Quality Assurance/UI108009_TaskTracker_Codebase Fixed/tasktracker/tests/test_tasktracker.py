@@ -163,7 +163,7 @@ class TestCreateTask:
     def test_post_tasks_extreme_payload_fails(self, client):
         ''' Verify that extreme values are rejected '''
         # ARRANGE 
-        payload = {"title": "",
+        payload = {"title": "llllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllll",
                    "description": "$$__`~124\\",
                    "priority": 50,
                    "assigned_to": "",
@@ -178,7 +178,7 @@ class TestCreateTask:
 
 
 class TestGetTask:
-    def test_task_is_retrieved(self, client):
+    def test_get_task_correct_id_retrieved(self, client):
         # ARRANGE 
         task_id = 1
 
