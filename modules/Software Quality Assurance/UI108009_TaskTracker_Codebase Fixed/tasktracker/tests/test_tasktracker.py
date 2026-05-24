@@ -195,7 +195,7 @@ class TestCreateTask:
         assert any(task["title"] == title for task in tasks)
 
 
-    def test_post_tasks_update_status_status_is_updated(self, client):
+    def test_post_tasks_update_status_is_updated(self, client):
         ''' Verify that status on tasks can be updated '''
 
         # ARRANGE 
