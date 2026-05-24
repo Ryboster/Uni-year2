@@ -116,7 +116,7 @@ class TestLoginEndpoint:
         assert "error" in response.get_json()
 
     def test_returns_valid_http_responses(self, client):
-        ''' Verify /login returns valid http responses when given incorrect data '''
+        ''' Verify /login returns valid http responses when given incorrect values '''
         ### ARRANGE
         test_cases = [
             {"username": "", "password": ""},
