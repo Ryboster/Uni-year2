@@ -162,9 +162,11 @@ class TestCreateTask:
 
     def test_x(self, client):
         # ARRANGE 
-        payload = {"dish": "",
-                   "flavour": "",
-                   "cruisine": "",
+        payload = {"title": "",
+                   "description": "",
+                   "priority": 50,
+                   "assigned_to": "",
+                   "created_by": ""
                    }
 
         # ACT
