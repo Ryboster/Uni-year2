@@ -117,15 +117,15 @@ class TestLoginEndpoint:
     def test_x():
         ### ARRANGE
         test_cases = [
-            {"username": "", "password": ""},          # empty strings
-            {"username": "   ", "password": "   "},    # whitespace only
+            {"username": "", "password": ""},
+            {"username": " ", "password": " "},
         ]
-    
+
         for case in test_cases:
             ### ACT
             response = client.post("/api/login", json=case)
             data = response.get_json()
-    
+
             ### ASSERT
             assert "error" in data
             assert response.status_code in (400, 401)
