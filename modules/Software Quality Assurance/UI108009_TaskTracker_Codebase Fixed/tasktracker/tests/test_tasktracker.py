@@ -106,7 +106,6 @@ class TestLoginEndpoint:
         ### ARRANGE
         username = "alice1"
         password = "1221"
-        successful_response_keys = ["message", "user_id", "username", "role"]
         
         ### ACT
         response = client.post("/api/login", json={"username": username,
@@ -115,6 +114,14 @@ class TestLoginEndpoint:
         ### ASSERT
         assert "error" in response.get_json()
 
-    def 
+    def test_x():
+        ### ARRANGE
+        username = ""
+        password = ""
+        
+        ### ACT
+        response = client.post("/api/login", json={"username": username,
+                                                   "password": password})
 
-    #def boundary_test(self, client):
+        ### ASSERT
+        assert "error" in response.get_json()
