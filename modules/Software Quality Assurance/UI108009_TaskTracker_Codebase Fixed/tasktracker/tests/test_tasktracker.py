@@ -131,13 +131,6 @@ class TestLoginEndpoint:
             ### ASSERT
             assert response.status_code in [400, 401]
 
-
-title = data.get('title', '')
-    description = data.get('description', '')
-    priority = data.get('priority', 3)
-    assigned_to = data.get('assigned_to')
-    created_by = data.get('created_by', 1)
-
 class TestCreateTask:
     def test_correct_task_is_created(self, client):
         # ARRANGE 
@@ -166,13 +159,19 @@ class TestCreateTask:
         response = client.post("/api/tasks", json=payload)
 
         # ASSERT
-        assert response == 1
+        assert response.status_code == 401
         
 
 
-#    def test_x(self, client):
-#        # ARRANGE 
-#
-#        # ACT
-#
-#        # ASSERT
+    def test_x(self, client):
+        # ARRANGE 
+        payload = {"title": "Fix UI",
+                   "description": "make big button small",
+                   "priority": 3,
+                   "assigned_to": "",
+                   "created_by": ""}
+
+        # ACT
+        
+
+        # ASSERT
