@@ -85,3 +85,6 @@ class TestGetTasks:
 #
 # Aim for at least 15-20 tests across different test types.
 # ────────────────────────────────────────────────────────────────────
+
+class TestLoginEndpoint:
+    
