@@ -128,9 +128,10 @@ class TestLoginEndpoint:
             ### ASSERT
             assert response.status_code in [400, 401]
 
-class TestCreateTask:
 
+class TestCreateTask:
     def test_correct_task_is_created(self, client):
+        ''' Verify that tasks can be created '''
         # ARRANGE 
         payload = {"title": "Fix UI",
                    "description": "make big button small",
