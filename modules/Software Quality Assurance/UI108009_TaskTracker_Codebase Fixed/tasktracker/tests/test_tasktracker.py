@@ -209,6 +209,11 @@ class TestCreateTask:
         client.post("/api/tasks", json=payload)
         response = client.get("/api/tasks")
         tasks = response.get_json()
+        
+        task_id = 0
+        for task in tasks:
+            if task["title"] == title:
+                task_id = task["id"]
 
         # ASSERT
         
