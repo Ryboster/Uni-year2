@@ -117,3 +117,10 @@ class TestLoginEndpoint:
 
 
     #def boundary_test(self, client):
+
+
+
+if __name__ == "__main__":
+    x = TestLoginEndpoint()
+    x.positive_test()
+    x.negative_test()
