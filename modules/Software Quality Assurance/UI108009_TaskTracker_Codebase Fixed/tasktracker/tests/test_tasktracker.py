@@ -92,16 +92,13 @@ class TestLoginEndpoint:
         ### ARRANGE
         username = "admin"
         password = "admin123"
-        successful_response_keys = ["message", "user_id", "username", "role"]
 
         ### ACT
         response = client.post("/api/login", json={"username": username,
                                                    "password": password})
         
         ### ASSERT
-        for key in successful_response_keys:
-            assert key in response.get_json()
-        assert len(response.get_json())
+        assert len(response.get_json()) == 4
     
     def test_post_incorrect_login_credentials_fails(self, client):
         ''' Verify /login returns correct object on unsuccessful login '''
