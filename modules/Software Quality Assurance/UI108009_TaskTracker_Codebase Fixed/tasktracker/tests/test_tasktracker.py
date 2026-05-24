@@ -201,13 +201,20 @@ class TestGetTask:
         assert response.status_code == 404
 
     def test_edge_cases(self,client):
+
+        all_tasks = client.get("/api/tasks")
+        highest_existent_id = 
+        for task in all_tasks.get_json():
+            task["id"]
+
+
         # ARRANGE: find real boundary from DB
         max_id = db.execute("SELECT MAX(id) FROM tasks").fetchone()[0]
-    
+
         # ACT + ASSERT: valid boundary (should exist)
         response_valid = client.get(f"/api/tasks/{max_id}")
         assert response_valid.status_code == 200
-    
+
         # ACT + ASSERT: just beyond boundary (should not exist)
         response_invalid = client.get(f"/api/tasks/{max_id + 1}")
         assert response_invalid.status_code == 404
