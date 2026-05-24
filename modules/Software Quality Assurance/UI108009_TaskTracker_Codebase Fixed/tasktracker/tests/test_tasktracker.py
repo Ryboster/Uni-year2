@@ -228,6 +228,7 @@ class TestAS:
     def test_post_tasks_task_is_created(self, client):
         ''' Verify whether 201 responses actually create the tasks '''
         # ARRANGE 
+        title = "Catch 3 pigeons"
         payload = {"title": "Catch 3 pigeons",
                    "description": "Get them from the park for free",
                    "priority": 3,
@@ -240,4 +241,7 @@ class TestAS:
 
 
         # ASSERT
+        for task in response.get_json():
+            if task["title"]
+
         assert response.status_code == 201
