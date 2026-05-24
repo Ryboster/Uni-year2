@@ -39,9 +39,11 @@ The remaining 4 weeks will be spent debugging, optimizing, and ensuring that the
 [NEXT SLIDE]
 In order to deliver this within the alloted time, effective resource management is key.
 
-Each sprint planning will define specific and attainable goals to be completed within the sprints duration. Kanban will be adopted to visualize this.
+Each sprint planning will define specific and attainable goals to be completed within the sprints duration. Kanban will be adopted to facilitate this.
 
 to ensure completed work aligns with project needs, each task will define acceptance criteria as well as the definition of done during backlog population.
+
+[NEXT SLIDE]
 
 to maximise productivity, a scrum master will be elected, and their responsibilities will include backlog population, minute taking, defining acceptance criteria, definitions of done, and mediation between the product owner and the development team. 
 
