@@ -17,6 +17,7 @@ Jakie Blazegrowski,
 and last but not least,
 Blaze McGrowski
 
+They are a team of 5 co-located developers based in Inverness.
 
 [NEXT SLIDE]
 Given staff and budget constraints, the methodology for this project will be Agile, within the scrum framework. Each sprint will last 2 weeks, and the product owner here will be the clinic's practice manager.
