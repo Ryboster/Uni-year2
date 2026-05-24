@@ -24,7 +24,7 @@ Given staff and budget constraints, the methodology for this project will be Agi
 
 [SECTION 1]
 [NEXT SLIDE]
-The first 6 weeks will be spent developing a RESTful API that both the application and the web service will be communicating with. This is because in order to develop the app as well as the web service, we first need to establish the platform; this will ensure reliable behaviour across the two mediums.
+The first 6 weeks will be delegated to the development of a RESTful API that both the mobile and the web app will be communicating with. This is because we first need to establish the platform as it will ensure reliable behaviour across the two mediums.
 
 Next, we will assign 6 weeks to the development of the app as well as the web service, this includes the implementation of various requirements such as a PCI-DSS
 
