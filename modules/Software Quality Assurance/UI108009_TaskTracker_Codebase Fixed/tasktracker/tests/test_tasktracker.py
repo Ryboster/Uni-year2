@@ -166,12 +166,13 @@ class TestCreateTask:
         response = client.post("/api/tasks", json=payload)
 
         # ASSERT
+        assert response == 1
         
 
 
-    #def test_x(self, client):
-    #    # ARRANGE 
+#    def test_x(self, client):
+#        # ARRANGE 
 #
-    #    # ACT
+#        # ACT
 #
-    #    # ASSERT
+#        # ASSERT
