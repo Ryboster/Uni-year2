@@ -94,14 +94,23 @@ class TestLoginEndpoint:
         password = "1"
         successful_response_keys = ["message", "user_id", "username", "role"]
 
-        response = client.post("/api/login", json={"username": "alice",
-                                                   "password": "1"})
+        ### ACT
+        response = client.post("/api/login", json={"username": username,
+                                                   "password": password})
         
+        ### ASSERT
         for key in successful_response_keys:
-            
-        print(response)
+            assert key in response
     
     def negative_test(self, client):
+        ### ARRANGE
+        username = "alice"
+        password = "1"
+        successful_response_keys = ["message", "user_id", "username", "role"]
+        
+        ### ACT
+
+        ### ASSERT
 
 
     def boundary_test(self, client):
