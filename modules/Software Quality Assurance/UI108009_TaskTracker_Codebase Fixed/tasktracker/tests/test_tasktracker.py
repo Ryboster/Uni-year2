@@ -89,8 +89,16 @@ class TestGetTasks:
 class TestLoginEndpoint:
 
     def positive_test(self, client):
+        ### ARRANGE
+        username = "alice"
+        password = "1"
+        successful_response_keys = ["message", "user_id", "username", "role"]
+
         response = client.post("/api/login", json={"username": "alice",
                                                    "password": "1"})
+        
+        for key in successful_response_keys:
+            
         print(response)
     
     def negative_test(self, client):
