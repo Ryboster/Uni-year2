@@ -223,3 +223,8 @@ class TestGetTask:
         assert len(response.get_json()) == 8
 
 
+
+class TestAS:
+    def test_post_tasks_task_is_created(self, client):
+        ''' Verify whether 201 responses actually create the tasks '''
+        
