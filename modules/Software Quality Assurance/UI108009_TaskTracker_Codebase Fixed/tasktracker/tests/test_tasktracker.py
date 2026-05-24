@@ -191,15 +191,16 @@ class TestGetTask:
 
     def test_non_existent_task_is_not_retrieved(self, client):
         # ARRANGE 
-        task_id = 1
+        task_id = sys.maxint
 
         # ACT
         response = client.get(f"/api/tasks/{task_id}")
 
         # ASSERT
         print(response.get_json())
-        assert len(response.get_json()) == 8
-        
+        assert response.status_code == 404
+
+    def test_
     #def test_incorrect_task_is_denied(self, client):
     #    # ARRANGE 
     #    payload = {}
