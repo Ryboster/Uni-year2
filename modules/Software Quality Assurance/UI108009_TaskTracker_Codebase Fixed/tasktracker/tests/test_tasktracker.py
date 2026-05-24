@@ -140,8 +140,8 @@ title = data.get('title', '')
 class TestCreateTask:
     def test_correct_task_is_created(self, client):
         # ARRANGE 
-        payload = {"title": "The story of my life",
-                   "description": "sex novel",
+        payload = {"title": "Fix UI",
+                   "description": "make big button small",
                    "priority": 3,
                    "assigned_to": "",
                    "created_by": ""}
@@ -154,10 +154,17 @@ class TestCreateTask:
         
     def test_incorrect_task_is_denied(self, client):
         # ARRANGE 
+        payload = {"title": "",
+                   "description": "",
+                   "priority": 0,
+                   "assigned_to": "",
+                   "created_by": ""}
 
         # ACT
+        response = client.post("/api/tasks", json=payload)
 
         # ASSERT
+        
 
     def test_x(self, client):
         # ARRANGE 
