@@ -176,6 +176,26 @@ class TestCreateTask:
         # ASSERT
         assert response.status_code == 401
 
+    def test_post_tasks_task_is_created(self, client):
+        ''' Verify whether 201 responses actually create the tasks '''
+        # ARRANGE 
+        title = "Catch 3 pigeons"
+        payload = {"title": title,
+                   "description": "Get them from the park for free",
+                   "priority": 3,
+                   "assigned_to": "",
+                   "created_by": ""}
+
+        # ACT
+        client.post("/api/tasks", json=payload)
+        response = client.get("/api/tasks")
+
+        # ASSERT
+        for task in response.get_json():
+            if task["title"]
+
+        assert response.status_code == 201
+
 
 class TestGetTask:
 
@@ -225,23 +245,4 @@ class TestGetTask:
 
 
 class TestAS:
-    def test_post_tasks_task_is_created(self, client):
-        ''' Verify whether 201 responses actually create the tasks '''
-        # ARRANGE 
-        title = "Catch 3 pigeons"
-        payload = {"title": "Catch 3 pigeons",
-                   "description": "Get them from the park for free",
-                   "priority": 3,
-                   "assigned_to": "",
-                   "created_by": ""}
-
-        # ACT
-        client.post("/api/tasks", json=payload)
-        response = client.get("/api/tasks")
-
-
-        # ASSERT
-        for task in response.get_json():
-            if task["title"]
-
-        assert response.status_code == 201
+    
