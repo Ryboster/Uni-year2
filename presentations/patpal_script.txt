@@ -37,9 +37,9 @@ at that point, petpal will be ready for deployment, and monthly updates will be 
 The remaining 4 weeks will be spent debugging, optimizing, and ensuring that the application works flawlessly on low-end hardware and in areas with poor and/or intermittent connectivity.
 
 [NEXT SLIDE]
-In order to deliver this within the alloted time, effective resource management is key. 
+In order to deliver this within the alloted time, effective resource management is key.
 
-Each sprint planning will define specific and attainable goals to be completed within the sprints duration. 
+Each sprint planning will define specific and attainable goals to be completed within the sprints duration. Kanban will be adopted to visualize this.
 
 to ensure completed work aligns with project needs, each task will define acceptance criteria as well as the definition of done during backlog population.
 
