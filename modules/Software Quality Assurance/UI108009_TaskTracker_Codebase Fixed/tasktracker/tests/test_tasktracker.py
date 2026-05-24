@@ -87,4 +87,10 @@ class TestGetTasks:
 # ────────────────────────────────────────────────────────────────────
 
 class TestLoginEndpoint:
+
+    def positive_test(self, client):
+        
     
+    def negative_test(self, client):
+
+    def boundary_test(self, client):
