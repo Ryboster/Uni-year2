@@ -87,7 +87,7 @@ class TestGetTasks:
 # ────────────────────────────────────────────────────────────────────
 
 class TestLoginEndpoint:
-    def test_correct_login_succeeds(self, client):
+    def test_post_correct_login_credentials_succeeds(self, client):
         ''' Verify /login returns correct object on successful login '''
         ### ARRANGE
         username = "admin"
@@ -102,7 +102,7 @@ class TestLoginEndpoint:
         for key in successful_response_keys:
             assert key in response.get_json()
     
-    def test_incorrect_login_fails(self, client):
+    def test_post_incorrect_login_credentials_fails(self, client):
         ''' Verify /login returns correct object on unsuccessful login '''
         ### ARRANGE
         username = "alice1"
@@ -131,6 +131,7 @@ class TestLoginEndpoint:
             assert response.status_code in [400, 401]
 
 class TestCreateTask:
+
     def test_correct_task_is_created(self, client):
         # ARRANGE 
         payload = {"title": "Fix UI",
