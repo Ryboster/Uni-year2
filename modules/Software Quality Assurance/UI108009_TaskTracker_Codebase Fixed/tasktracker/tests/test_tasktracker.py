@@ -130,6 +130,7 @@ class TestLoginEndpoint:
 
 
 class TestCreateTask:
+
     def test_post_tasks_correct_payload_succeeds(self, client):
         ''' Verify that tasks can be created '''
         # ARRANGE 
@@ -159,8 +160,8 @@ class TestCreateTask:
         assert response.status_code == 400
         
 
-
-    def test_post_edge_of_valid_input_fails(self, client):
+    def test_post_tasks_extreme_payload_fails(self, client):
+        ''' Verify that extreme values are rejected '''
         # ARRANGE 
         payload = {"title": "",
                    "description": "$$__`~124\\",
