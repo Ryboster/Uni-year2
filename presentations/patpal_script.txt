@@ -1,6 +1,6 @@
-Hello and welcome to our presentation,
+Hello and welcome to our QA Strategy Presentation,
 
-Today, I'd like to present to you,
+Today, I'd like to present to you our delivery strategy for,
 
 [Next SLIDE]
 Petpal!
