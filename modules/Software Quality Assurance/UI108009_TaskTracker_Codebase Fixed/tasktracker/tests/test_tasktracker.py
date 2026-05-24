@@ -189,9 +189,9 @@ class TestCreateTask:
         # ACT
         client.post("/api/tasks", json=payload)
         response = client.get("/api/tasks")
+        tasks = response.get_json()
 
         # ASSERT
-        tasks = response.get_json
         assert any(task["title"] == title for task in tasks)
 
 
