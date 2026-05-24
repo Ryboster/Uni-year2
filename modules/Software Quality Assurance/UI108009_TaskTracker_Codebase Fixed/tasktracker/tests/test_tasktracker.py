@@ -163,7 +163,7 @@ class TestCreateTask:
     def test_x(self, client):
         # ARRANGE 
         payload = {"title": "",
-                   "description": "",
+                   "description": "$$__`~124\\",
                    "priority": 50,
                    "assigned_to": "",
                    "created_by": ""
@@ -175,3 +175,48 @@ class TestCreateTask:
         # ASSERT
         assert response.status_code == 401
 
+
+
+class TestGetTask:
+    def test_correct_task_is_created(self, client):
+        # ARRANGE 
+        payload = {"title": "Fix UI",
+                   "description": "make big button small",
+                   "priority": 3,
+                   "assigned_to": "",
+                   "created_by": ""}
+
+        # ACT
+        response = client.post("/api/tasks", json=payload)
+
+        # ASSERT
+        assert response.status_code == 201
+
+    
+        
+    def test_incorrect_task_is_denied(self, client):
+        # ARRANGE 
+        payload = {}
+
+        # ACT
+        response = client.post("/api/tasks", json=payload)
+
+        # ASSERT
+        assert response.status_code == 400
+        
+
+
+    def test_x(self, client):
+        # ARRANGE 
+        payload = {"title": "",
+                   "description": "$$__`~124\\",
+                   "priority": 50,
+                   "assigned_to": "",
+                   "created_by": ""
+                   }
+
+        # ACT
+        response = client.post("/api/tasks", json=payload)
+
+        # ASSERT
+        assert response.status_code == 401
