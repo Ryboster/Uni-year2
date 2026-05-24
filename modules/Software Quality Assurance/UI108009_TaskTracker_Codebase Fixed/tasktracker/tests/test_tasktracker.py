@@ -151,11 +151,7 @@ class TestCreateTask:
     def test_post_tasks_incorrect_payload_fails(self, client):
         ''' Very that incorrect tasks are not created '''
         # ARRANGE 
-        payload = {"ti1324tle": "llllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllll",
-                   "desc12ription": "$$__`~124\\",
-                   "prior12412ity": 50,
-                   "assi12gned_to": "",
-                   "crea12ted_by": ""}
+        payload = {}
 
         # ACT
         response = client.post("/api/tasks", json=payload)
