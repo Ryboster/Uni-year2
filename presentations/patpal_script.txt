@@ -24,20 +24,14 @@ Given staff and budget constraints, the methodology for this project will be Agi
 
 [SECTION 1]
 [NEXT SLIDE]
+for the delivery of the service, i propose the following timeline
 
-For the delivery of the service, I propose the following timeline:
+the first 4 weeks will be spent developing the RESTful API. This takes priority because both the mobile as well as the web app will be communicating with it. Delivering it first ensures the definition of a formal workflow that both applications will follow, which in turn improves consistent behaviour and replicable results across the two mediums.
+after the API is complete, we will start developing the applications themselves, starting with the mobile app. the mobile app should ideally be developed first as it forces us to make our design decisions for the mobile platform first. Then, we can apply the same design decisions to our web app ensuring mobile-first design.
+the development of both applications will altogether take 8 weeks.
 
-The first 4 weeks will be spent developing the RESTful API. This is because 
-
-The first 6 weeks will be delegated to the development of a RESTful API that both the mobile and the web app will be communicating with. This is because we first need to establish the platform as it will ensure reliable behaviour across the two mediums.
-
-If we were to focus on creating the apps first, it'd be more difficult and potentially expensive to ensure consistent and replicable behaviour.
-
-
-
-
-Next, we will assign 6 weeks to the development of the app as well as the web service, this includes the implementation of various requirements such as a PCI-DSS
-
+the remaining time will be allocated to the development and testing of remaining features such as PCI-DSS or automated ci pipelines.
+at that point, petpal will be ready for deployment, and monthly updates will be released thereafter.
 
 The remaining 4 weeks will be spent debugging, optimizing, and ensuring that the application works flawlessly on low-end hardware and in areas with poor and/or intermittent connectivity.
 
