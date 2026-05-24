@@ -110,7 +110,7 @@ processes will be handled internally on the client device and only the results o
 To prevent data loss during any process (lengthy or short), progress will be saved on the client's device locally.
 
 [NEXT SLIDE]
-Both the web app as well as the mobile app will commit progress to local memory with every change. In case of the web app, localStorage may be used as it allows sufficient storage for the operational needs.
+Both the web app as well as the mobile app will commit progress to local memory with every change (OWASP Foundation, 2025c). In case of the web app, localStorage may be used as it allows sufficient storage for the operational needs.
 [NEXT SLIDE]
 
 All communications between the client and the server will be conducted via HTTPS - This is a much more robust protocol that vastly mitigates our exposure to man-in-the-middle attacks (OWASP Foundation, 2025b).
@@ -119,6 +119,8 @@ All communications between the client and the server will be conducted via HTTPS
 For payment transactions, we are lawfully required to use PCI-DSS, and for a good reason. 
 PCI-DSS stands for Payment Card Industry Data Security Standard, and it is a globally recognised standard for processing payment transactions, wherein all payment transactions are done through a reputable mediator such as Visa or MasterCard - We don't get any of the details, just the result of the transactions (OWASP Foundation, 2025a).
 
+[NEXT SLIDE]
+These changes will be incorporated through the 
 
 
 REFERENCES:
