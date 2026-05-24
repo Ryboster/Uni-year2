@@ -178,7 +178,8 @@ class TestCreateTask:
 
 
 class TestGetTask:
-    def test_get_task_correct_id_retrieved(self, client):
+    def test_get_task_correct_id_succeeds(self, client):
+        ''' Verify that tasks can be retrieved '''
         # ARRANGE 
         task_id = 1
 
@@ -189,7 +190,7 @@ class TestGetTask:
         print(response.get_json())
         assert len(response.get_json()) == 8
 
-    def test_invalid_value_returns_404(self, client):
+    def test_get_invalid_id_returns_error_code(self, client):
         # ARRANGE 
         task_id = "one"
 
