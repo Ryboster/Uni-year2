@@ -210,7 +210,8 @@ class TestCreateTask:
         response = client.get("/api/tasks")
         tasks = response.get_json()
         task_id = next((task["id"] for task in tasks if task["title"] == title), None)
-        
+
+        client.put(f"/api/tasks/{task_id}", )
 
         # ASSERT
         
