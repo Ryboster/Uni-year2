@@ -89,6 +89,7 @@ class TestGetTasks:
 class TestLoginEndpoint:
 
     def test_correct_login_succeeds(self, client):
+        ''' Verify /login returns correct object on successful login '''
         ### ARRANGE
         username = "admin"
         password = "admin123"
@@ -103,6 +104,7 @@ class TestLoginEndpoint:
             assert key in response.get_json()
     
     def test_incorrect_login_fails(self, client):
+        ''' Verify /login returns correct object on unsuccessful login '''
         ### ARRANGE
         username = "alice1"
         password = "1221"
@@ -115,6 +117,7 @@ class TestLoginEndpoint:
         assert "error" in response.get_json()
 
     def test_returns_valid_http_responses(self, client):
+        ''' Verify  '''
         ### ARRANGE
         test_cases = [
             {"username": "", "password": ""},
