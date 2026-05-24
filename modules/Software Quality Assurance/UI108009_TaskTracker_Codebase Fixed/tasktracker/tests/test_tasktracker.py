@@ -189,9 +189,9 @@ class TestGetTask:
         print(response.get_json())
         assert len(response.get_json()) == 8
 
-    def test_non_existent_task_is_not_retrieved(self, client):
+    def test_invalid_value_returns_404(self, client):
         # ARRANGE 
-        task_id = -1
+        task_id = "one"
 
         # ACT
         response = client.get(f"/api/tasks/{task_id}")
