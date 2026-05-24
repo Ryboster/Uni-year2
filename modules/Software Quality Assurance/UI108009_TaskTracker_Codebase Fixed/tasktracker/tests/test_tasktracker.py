@@ -154,11 +154,10 @@ class TestCreateTask:
         
     def test_incorrect_task_is_denied(self, client):
         # ARRANGE 
-        payload = {"NOTtitle": "",
-                   "NOTdescription": "",
-                   "NOTpriority": 0,
-                   "NOTassigned_to": "",
-                   "NOTcreated_by": ""}
+        payload = {"dish": "",
+                   "flavour": "",
+                   "cruisine": "",
+                   }
 
         # ACT
         response = client.post("/api/tasks", json=payload)
