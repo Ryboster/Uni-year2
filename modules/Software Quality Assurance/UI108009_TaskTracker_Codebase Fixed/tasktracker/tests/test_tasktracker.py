@@ -143,11 +143,14 @@ class TestCreateTask:
         payload = {"title": "The story of my life",
                    "description": "sex novel",
                    "priority": 3,
-                   ""}
+                   "assigned_to": "",
+                   "created_by": ""}
 
         # ACT
+        response = client.post("/api/tasks", json=payload)
 
         # ASSERT
+        assert response.status_code == 201
         
     def test_incorrect_task_is_denied(self, client):
         # ARRANGE 
