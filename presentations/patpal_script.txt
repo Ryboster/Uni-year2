@@ -92,9 +92,7 @@ Hiring a dedicated QA specialist brings independent unbiased oversight to the pr
 
 While developers already test their own work, they are naturally more focused on building new features. This can create blind spots within certain edge cases, or integrations - Something a feature-building-oriented mind might miss, but a user and risk oriented mind might not.
 
-[NEXT SLIDE]
 For PetPal specifically, this matters because the system handles sensitive and time-critical tasks such as appointment bookings, medical records, and prescription generation. This means that if a developer-made error goes unnoticed, the consequences could be quite severe; Incorrect or duplicate billing, missed appointments, or incorrect treatment. All of which would directly impact the clinic's reputation and the quality of treatment.
-
 
 [NEXT SLIDE]
 Another key advantage is consistency and accountability. 
