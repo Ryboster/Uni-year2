@@ -88,7 +88,7 @@ class TestGetTasks:
 
 class TestLoginEndpoint:
 
-    def positive_test(self, client):
+    def test_correct_login_succeeds(self, client):
         ### ARRANGE
         username = "alice"
         password = "1"
@@ -99,10 +99,11 @@ class TestLoginEndpoint:
                                                    "password": password})
         
         ### ASSERT
+        print(response)
         for key in successful_response_keys:
-            assert key in response
+            assert key in response.keys()
     
-    def negative_test(self, client):
+    def test_incorrect_login_fails(self, client):
         ### ARRANGE
         username = "alice"
         password = "1"
@@ -117,10 +118,3 @@ class TestLoginEndpoint:
 
 
     #def boundary_test(self, client):
-
-
-
-if __name__ == "__main__":
-    x = TestLoginEndpoint()
-    x.positive_test()
-    x.negative_test()
