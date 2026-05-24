@@ -89,7 +89,7 @@ class TestGetTasks:
 class TestLoginEndpoint:
 
     def positive_test(self, client):
-        
+        response = client.get("/api/login")
     
     def negative_test(self, client):
 
