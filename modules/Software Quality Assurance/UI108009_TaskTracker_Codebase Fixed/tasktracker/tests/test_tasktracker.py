@@ -180,16 +180,13 @@ class TestCreateTask:
 class TestGetTask:
     def test_correct_task_is_created(self, client):
         # ARRANGE 
-        payload = {"title": "Fix UI",
-                   "description": "make big button small",
-                   "priority": 3,
-                   "assigned_to": "",
-                   "created_by": ""}
+        task_id = 0
 
         # ACT
-        response = client.post("/api/tasks", json=payload)
+        response = client.post(f"/api/tasks{task_id}")
 
         # ASSERT
+        print(response.data)
         assert response.status_code == 201
 
     
