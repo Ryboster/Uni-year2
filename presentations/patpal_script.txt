@@ -116,7 +116,6 @@ All communications between the client and the server will be conducted via HTTPS
 
 [NEXT SLIDE]
 For payment transactions, we are lawfully required to use PCI-DSS, and for a good reason. 
-PCI-DSS stands for Payment Card Industry Data Security Standard, and it is a globally recognised standard for processing payment transactions.
-
+PCI-DSS stands for Payment Card Industry Data Security Standard, and it is a globally recognised standard for processing payment transactions, wherein all payment transactions are done through a reputable mediator such as Visa or MasterCard - We don't get any of the details 
 
 
