@@ -195,6 +195,24 @@ class TestCreateTask:
         assert any(task["title"] == title for task in tasks)
 
 
+    def test_post_tasks_update_status_status_is_updated(self, client):
+        ''' Verify that status on tasks can be updated '''
+         # ARRANGE 
+        title = "Catch 3 pigeons"
+        payload = {"title": title,
+                   "description": "Get them from the park for free",
+                   "priority": 3,
+                   "assigned_to": "",
+                   "created_by": ""}
+
+        # ACT
+        client.post("/api/tasks", json=payload)
+        response = client.get("/api/tasks")
+        tasks = response.get_json()
+
+        # ASSERT
+        
+
 
 class TestGetTask:
 
