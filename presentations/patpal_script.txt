@@ -24,6 +24,11 @@ Given staff and budget constraints, the methodology for this project will be Agi
 
 [SECTION 1]
 [NEXT SLIDE]
+
+For the delivery of the service, I propose the following timeline:
+
+The first 4 weeks will be spent developing the RESTful API. This is because 
+
 The first 6 weeks will be delegated to the development of a RESTful API that both the mobile and the web app will be communicating with. This is because we first need to establish the platform as it will ensure reliable behaviour across the two mediums.
 
 If we were to focus on creating the apps first, it'd be more difficult and potentially expensive to ensure consistent and replicable behaviour.
