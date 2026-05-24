@@ -101,7 +101,7 @@ class TestLoginEndpoint:
         ### ASSERT
         print(response.get_json())
         for key in successful_response_keys:
-            assert key in response.keys()
+            assert key in response.get_json()
     
     def test_incorrect_login_fails(self, client):
         ### ARRANGE
