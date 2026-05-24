@@ -200,8 +200,9 @@ class TestGetTask:
         print(response.get_json())
         assert response.status_code == 404
 
-    def test_wrong_type_returns_404(self,client):
-        task_id = "one"
+    def test_edge_cases(self,client):
+        task_id = 1 # min valid
+        task_id
 
         response = client.get(f"/api/tasks/{task_id}")
 
