@@ -205,6 +205,8 @@ class TestGetTask:
 
         response = client.get(f"/api/tasks/{task_id}")
 
+        assert response.status_code == 404 
+
     def test_
 
 
