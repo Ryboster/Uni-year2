@@ -176,7 +176,6 @@ class TestCreateTask:
         assert response.status_code == 401
 
 
-
 class TestGetTask:
     def test_task_is_retrieved(self, client):
         # ARRANGE 
