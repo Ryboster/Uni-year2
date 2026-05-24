@@ -178,9 +178,9 @@ class TestCreateTask:
 
 
 class TestGetTask:
-    def test_correct_task_is_created(self, client):
+    def test_task_is_retrieved(self, client):
         # ARRANGE 
-        task_id = 0
+        task_id = 1
 
         # ACT
         response = client.post(f"/api/tasks{task_id}")
