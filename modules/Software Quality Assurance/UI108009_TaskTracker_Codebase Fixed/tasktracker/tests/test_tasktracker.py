@@ -214,8 +214,9 @@ class TestCreateTask:
         task_id = next((task["id"] for task in tasks if task["title"] == title), None)
         client.put(f"/api/tasks/{task_id}", json={"status": status})
         
-        tasks = client.get("/api/tasks")
-        updated_task = next((task["id"] for task in tasks if task["id"] == task_id))
+        response = client.get("/api/tasks")
+        tasks = response.get_json()
+        updated_task = next((task for task in tasks if task["id"] == task_id))
 
         # ASSERT
         assert updated_task["status"] == status
