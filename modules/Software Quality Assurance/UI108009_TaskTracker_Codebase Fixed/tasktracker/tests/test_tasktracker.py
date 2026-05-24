@@ -132,3 +132,24 @@ class TestLoginEndpoint:
             assert response.status_code in [400, 401]
 
 
+class TestCreateTask:
+    def test_correct_task_is_created(self, client):
+        # ARRANGE 
+
+        # ACT
+
+        # ASSERT
+        
+    def test_incorrect_task_is_denied(self, client):
+        # ARRANGE 
+
+        # ACT
+
+        # ASSERT
+
+    def test_x(self, client):
+        # ARRANGE 
+
+        # ACT
+
+        # ASSERT
