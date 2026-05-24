@@ -90,8 +90,8 @@ class TestLoginEndpoint:
 
     def test_correct_login_succeeds(self, client):
         ### ARRANGE
-        username = "alice"
-        password = 1
+        username = "admin"
+        password = "admin123"
         successful_response_keys = ["message", "user_id", "username", "role"]
 
         ### ACT
@@ -99,14 +99,13 @@ class TestLoginEndpoint:
                                                    "password": password})
         
         ### ASSERT
-        print(response.get_json())
         for key in successful_response_keys:
             assert key in response.get_json()
     
     def test_incorrect_login_fails(self, client):
         ### ARRANGE
-        username = "alice"
-        password = "1"
+        username = "alice1"
+        password = "1221"
         successful_response_keys = ["message", "user_id", "username", "role"]
         
         ### ACT
@@ -114,7 +113,8 @@ class TestLoginEndpoint:
                                                    "password": password})
 
         ### ASSERT
-        assert "error" in response
+        assert "error" in response.get_json()
 
+    def 
 
     #def boundary_test(self, client):
