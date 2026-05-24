@@ -235,7 +235,9 @@ class TestAS:
                    "created_by": ""}
 
         # ACT
-        response = client.post("/api/tasks", json=payload)
+        client.post("/api/tasks", json=payload)
+        response = client.get("/api/tasks")
+
 
         # ASSERT
         assert response.status_code == 201
