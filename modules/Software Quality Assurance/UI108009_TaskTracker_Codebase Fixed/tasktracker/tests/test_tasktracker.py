@@ -132,9 +132,18 @@ class TestLoginEndpoint:
             assert response.status_code in [400, 401]
 
 
+title = data.get('title', '')
+    description = data.get('description', '')
+    priority = data.get('priority', 3)
+    assigned_to = data.get('assigned_to')
+    created_by = data.get('created_by', 1)
 class TestCreateTask:
     def test_correct_task_is_created(self, client):
         # ARRANGE 
+        payload = {"title": "The story of my life",
+                   "description": "sex novel",
+                   "priority": 3,
+                   ""}
 
         # ACT
 
