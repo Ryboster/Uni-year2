@@ -198,9 +198,9 @@ class TestCreateTask:
     def test_post_tasks_update_status_status_is_updated(self, client):
         ''' Verify that status on tasks can be updated '''
         # ARRANGE 
-        title = "Catch 3 pigeons"
+        title = "Release 3 pigeons"
         payload = {"title": title,
-                   "description": "Get them from the park for free",
+                   "description": "Make them free as birds",
                    "priority": 3,
                    "assigned_to": "",
                    "created_by": ""}
@@ -211,10 +211,15 @@ class TestCreateTask:
         tasks = response.get_json()
         task_id = next((task["id"] for task in tasks if task["title"] == title), None)
 
-        client.put(f"/api/tasks/{task_id}", )
+        client.put(f"/api/tasks/{task_id}", json={"status": "todo"})
 
         # ASSERT
         
+
+title = data.get('title', task['title'])
+    description = data.get('description', task['description'])
+    status = data.get('status', task['status'])
+    priority = data.get('priority', task['priority'])
 
 
 class TestGetTask:
