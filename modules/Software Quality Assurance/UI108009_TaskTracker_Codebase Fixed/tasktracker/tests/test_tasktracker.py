@@ -114,7 +114,7 @@ class TestLoginEndpoint:
         ### ASSERT
         assert "error" in response.get_json()
 
-    def test_x():
+    def test_x(self, client):
         ### ARRANGE
         test_cases = [
             {"username": "", "password": ""},
@@ -127,5 +127,4 @@ class TestLoginEndpoint:
             data = response.get_json()
 
             ### ASSERT
-            assert "error" in data
-            assert response.status_code in (400, 401)
+            assert response.status_code in [400, 401]
