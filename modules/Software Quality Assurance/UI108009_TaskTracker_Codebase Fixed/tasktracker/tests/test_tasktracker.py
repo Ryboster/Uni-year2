@@ -89,8 +89,11 @@ class TestGetTasks:
 class TestLoginEndpoint:
 
     def positive_test(self, client):
-        response = client.get("/api/login")
+        response = client.post("/api/login", json={"username": "alice",
+                                                   "password": "1"})
+        print(response)
     
     def negative_test(self, client):
+
 
     def boundary_test(self, client):
