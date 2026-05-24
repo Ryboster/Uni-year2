@@ -150,6 +150,18 @@ class TestCreateTask:
         
     def test_incorrect_task_is_denied(self, client):
         # ARRANGE 
+        payload = {}
+
+        # ACT
+        response = client.post("/api/tasks", json=payload)
+
+        # ASSERT
+        assert response.status_code == 400
+        
+
+
+    def test_x(self, client):
+        # ARRANGE 
         payload = {"dish": "",
                    "flavour": "",
                    "cruisine": "",
@@ -160,18 +172,4 @@ class TestCreateTask:
 
         # ASSERT
         assert response.status_code == 401
-        
 
-
-    def test_x(self, client):
-        # ARRANGE 
-        payload = {"title": "Fix UI",
-                   "description": "make big button small",
-                   "priority": 3,
-                   "assigned_to": "",
-                   "created_by": ""}
-
-        # ACT
-        
-
-        # ASSERT
