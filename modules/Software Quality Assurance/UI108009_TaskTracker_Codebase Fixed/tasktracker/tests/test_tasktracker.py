@@ -114,7 +114,7 @@ class TestLoginEndpoint:
         ### ASSERT
         assert "error" in response.get_json()
 
-    def test_x(self, client):
+    def test_returns_valid_http_responses(self, client):
         ### ARRANGE
         test_cases = [
             {"username": "", "password": ""},
@@ -124,7 +124,8 @@ class TestLoginEndpoint:
         for case in test_cases:
             ### ACT
             response = client.post("/api/login", json=case)
-            data = response.get_json()
 
             ### ASSERT
             assert response.status_code in [400, 401]
+
+
